@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>R. Checa-Garcia</title>
+		<description>Academic and personal webpage build with Jekyll on Github.</description>
+		<link>http://localhost:4000/</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Introduction to make</title>
+				<link>http://localhost:4000/computing-blog/Make-Survival/</link>
+				<pubDate>Sat, 07 Nov 2015 00:00:00 +0100</pubDate>
+				<description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Table of Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-make&quot; id=&quot;markdown-toc-what-is-make&quot;&gt;What is make?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-by-step-with-examples&quot; id=&quot;markdown-toc-step-by-step-with-examples&quot;&gt;Step by Step with examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;h3 id=&quot;what-is-make&quot;&gt;What is make?&lt;/h3&gt;
+
+&lt;p&gt;It is a command line tool to perform automatic tasks. Usually it is used on compilation of complex codes to ensure
+that all the dependencies are correcly included, but also it allows to perform other repetitive tasks efficently.&lt;/p&gt;
+
+&lt;p&gt;Often the kind of task we are doing in scientific computing are somehow hierarchical. So we extract some data information
+from a server using a program, we run a custom made model based on that data, we obtain new output datafiles that can
+be processed as an input of another program. For example a data analysis program or another code to perform additional simulations.&lt;/p&gt;
+
+&lt;p&gt;As we see in each step of the process we have a &lt;strong&gt;target&lt;/strong&gt; with one or more &lt;strong&gt;dependencies&lt;/strong&gt; that is using a &lt;strong&gt;program&lt;/strong&gt; to
+build the target from them. Make helps you to create &lt;strong&gt;rules&lt;/strong&gt; for that. The structure is more and less standard:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-make&quot; data-lang=&quot;make&quot;&gt;&lt;span class=&quot;nf&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dependency&lt;/span&gt;1 &lt;span class=&quot;n&quot;&gt;dependency&lt;/span&gt;2 &lt;span class=&quot;n&quot;&gt;dependency&lt;/span&gt;3
+    rule&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-by-step-with-examples&quot;&gt;Step by Step with examples&lt;/h3&gt;
+
+&lt;p&gt;For example, the next rule compile a Fortran code with dependences: &lt;em&gt;compute.f90 constants.f90 main.f90&lt;/em&gt; and a target 
+&lt;strong&gt;myprogram.out&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-make&quot; data-lang=&quot;make&quot;&gt;&lt;span class=&quot;nf&quot;&gt;myprogram.out &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;cte&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90
+    gfortran compute.f90 cte.f90 main.f90 -o myprogram.out&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Usually this information is stored in a file named: &lt;strong&gt;Makefile&lt;/strong&gt; which contains all the rules. And we can compile
+just writting &lt;code&gt;make&lt;/code&gt;. Let’s say that we want to compare results with several different &lt;em&gt;contants.f90&lt;/em&gt; files&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-make&quot; data-lang=&quot;make&quot;&gt;&lt;span class=&quot;nf&quot;&gt;myprogram1.out &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;cte&lt;/span&gt;1.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90
+    gfortran compute.f90 cte1.f90 main.f90 -o myprogram.out
+    
+&lt;span class=&quot;nf&quot;&gt;myprogram2.out &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;cte&lt;/span&gt;2.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90
+    gfortran compute.f90 cte2.f90 main.f90 -o myprogram.out&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We can invoke each rule by,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;make myprogram1.out&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;make myprogram2.out&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;It is quite common include a clean rule as,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-make&quot; data-lang=&quot;make&quot;&gt;&lt;span class=&quot;nf&quot;&gt;clean &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; 
+    rm -f myprogram*.out
+
+&lt;span class=&quot;nf&quot;&gt;myprogram1.out &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;cte&lt;/span&gt;1.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90
+    gfortran compute.f90 cte1.f90 main.f90 -o myprogram.out
+    
+&lt;span class=&quot;nf&quot;&gt;myprogram2.out &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compute&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;cte&lt;/span&gt;2.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90 &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;90
+    gfortran compute.f90 cte2.f90 main.f90 -o myprogram.out&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This clean rule has no dependencies, however if &lt;strong&gt;make&lt;/strong&gt; finds a file or directory named &lt;strong&gt;clean&lt;/strong&gt; then nothing is done. For this
+reason we include:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-make&quot; data-lang=&quot;make&quot;&gt;&lt;span class=&quot;nf&quot;&gt;.PHONY &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clean&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;clean &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; 
+    rm -f myprogram*.out&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s say that our fortran code process some datafiles stores in a subdirectory &lt;strong&gt;data&lt;/strong&gt; but this datafiles
+have to be downloaded from a server with the more recent information, we can include a rule for that.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-make&quot; data-lang=&quot;make&quot;&gt;&lt;span class=&quot;nf&quot;&gt;.PHONY &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;download&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;download &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; 
+    wget -O dataset.tar.gz http://mydataserver.com/nowcasting.tar.gz
+&lt;span class=&quot;nf&quot;&gt;prepare &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataset&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;gz&lt;/span&gt;
+    mv dataset.tar.gz data/
+&lt;span class=&quot;nf&quot;&gt;create &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;/&lt;span class=&quot;n&quot;&gt;dataset&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt;.&lt;span class=&quot;n&quot;&gt;gz&lt;/span&gt;
+    tar -zxf data/dataset.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With this kind of rules you have to,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; make download
+&amp;gt; make prepare
+&amp;gt; make create&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;After that you will have the file &lt;strong&gt;nowcasting.tar.gz&lt;/strong&gt; decompresed on your directory and stored also in &lt;strong&gt;data/&lt;/strong&gt;
+as &lt;strong&gt;dataset.tar.gz&lt;/strong&gt;. However is we don’t have yet downloaded the file or prepare it for extracting then 
+make doesn’t know how to proceed. Basically &lt;strong&gt;make&lt;/strong&gt; doesn’t know how to build the dependency **data/dataset.tar.gz. But we can try as,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-make&quot; data-lang=&quot;make&quot;&gt;&lt;span class=&quot;nf&quot;&gt;.PHONY &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;download&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;download &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; 
+    wget -O dataset.tar.gz http://mydataserver.com/nowcasting.tar.gz
+&lt;span class=&quot;nf&quot;&gt;prepare &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;download&lt;/span&gt;
+    mv dataset.tar.gz data/
+&lt;span class=&quot;nf&quot;&gt;create &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prepare&lt;/span&gt;
+    tar -zxf data/dataset.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And the commad &lt;strong&gt;make create&lt;/strong&gt; will do all the previous rules to achieve the rule create. Note that if you type in &lt;strong&gt;bash&lt;/strong&gt; shell &lt;strong&gt;make&lt;/strong&gt; and tab you will see all the possible rules avaliables on the &lt;strong&gt;Makefile&lt;/strong&gt; of your current directory, something very useful.&lt;/p&gt;
+
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/Make-Survival/</guid>
+			</item>
+		
+			<item>
+				<title>Descentralized Version Control Notes</title>
+				<link>http://localhost:4000/computing-blog/Mercurial-Notes/</link>
+				<pubDate>Wed, 04 Nov 2015 00:00:00 +0100</pubDate>
+				<description>&lt;div class=&quot;panel radius&quot;&gt;
+  &lt;h4 class=&quot;no_toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h4&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction-to-mercurial&quot; id=&quot;markdown-toc-introduction-to-mercurial&quot;&gt;Introduction to Mercurial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#mercurial-next-steps&quot; id=&quot;markdown-toc-mercurial-next-steps&quot;&gt;Mercurial: next steps&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#text-editors-and-hg&quot; id=&quot;markdown-toc-text-editors-and-hg&quot;&gt;Text Editors and Hg&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;introduction-to-mercurial&quot;&gt;Introduction to Mercurial&lt;/h3&gt;
+
+&lt;p&gt;Here I will introduce a very basic use of Mercurial version control system (named Hg). Let’s say that we are working on a document in LaTeX (a PhD dissertation, and article/paper, a report etc). First it is based on a local directory but we want to be able to track all the changes on the text (the evolution of the document). I recommend a this point to read the previous post about version control where is explained the basic terminology. So we are going to create a &lt;strong&gt;repository&lt;/strong&gt; of Hg.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; mkdir /home/mrmagguu/my_document
+&amp;gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/mrmagguu/my_document
+&amp;gt; hg
+
+Mercurial Distributed SCM
+
+basic commands:
+
+ add           add the specified files on the next commit
+ annotate      show changeset information by line &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; each file
+ clone         make a copy of an existing repository
+ commit        commit the specified files or all outstanding changes
+ diff          diff repository &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;or selected files&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;nb&quot;&gt;export        &lt;/span&gt;dump the header and diffs &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; one or more changesets
+ forget        forget the specified files on the next commit
+ hgview
+ init          create a new repository in the given directory
+ log           show revision &lt;span class=&quot;nb&quot;&gt;history &lt;/span&gt;of entire repository or files
+ merge         merge another revision into working directory
+ pull          pull changes from the specified &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;push          push changes to the specified destination
+ qct           start qct commit tool
+ remove        remove the specified files on the next commit
+ serve         start stand-alone webserver
+ status        show changed files in the working directory
+ summary       summarize working directory state
+ update        update working directory &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;or switch revisions&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&amp;quot;hg help&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; the full list of commands or &lt;span class=&quot;s2&quot;&gt;&amp;quot;hg -v&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; details&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Just typing Hg we have the main commands of our hg version. In my case,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg version
+Mercurial Distributed SCM &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;version 3.5.2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;see http://mercurial.selenic.com &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; more information&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2005-2015 Matt Mackall and others
+This is free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; see the &lt;span class=&quot;nb&quot;&gt;source &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; copying conditions. There is NO
+warranty&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; not even &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now to create a repository in our directory we just write:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg init&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With &lt;code&gt;ls -a&lt;/code&gt; command we can certificate that there is a new directory named &lt;strong&gt;.hg&lt;/strong&gt; that is hidden to the usual ls. Right now we have no included anything in the repository. We can do with:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg add
+adding FIGURES/FIG1.jpg
+adding my_draft.tex
+adding natbib.sty&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In my case the directory had two files and one folder with a figure. However we did not yet validated this changes. We can validate or &lt;strong&gt;commit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg commit -m &lt;span class=&quot;s1&quot;&gt;&amp;#39;Version 0.1 (initial)&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To see what happened:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg log
+changeset:   0:187c32c11d5b
+tag:         tip
+user:        Mr. Magguu &amp;lt;mr_magguu@magguu.com&amp;gt;
+date:        Wed Nov &lt;span class=&quot;m&quot;&gt;04&lt;/span&gt; 17:36:56 &lt;span class=&quot;m&quot;&gt;2015&lt;/span&gt; +0100
+summary:     Version 0.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;initial&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now I forgot to include a file with the bibliography. We copy a new file: &lt;strong&gt;biblio.bib&lt;/strong&gt; in the directory and:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg summary
+parent: 0:187c32c11d5b tip
+ Version 0.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;initial&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+branch: default
+commit: &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; unknown &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;clean&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+update: &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+phases: &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; draft&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We forgot to add the new file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg add biblio.bib
+&amp;gt; hg summary
+parent: 0:187c32c11d5b tip
+ Version 0.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;initial&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+branch: default
+commit: &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; added
+update: &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;current&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+phases: &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; draft&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ok, and&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg status
+A    biblio.bib&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Exactly like in SVN. The command hg is notificating the we have add a new file (but have not commit the addition).&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg commit -m &lt;span class=&quot;s1&quot;&gt;&amp;#39;Version 0.1 with Biblio&amp;#39;&lt;/span&gt;
+&amp;gt; hg status
+&amp;gt; hg log
+changeset:   1:891564a37700
+tag:         tip
+user:        Mr. Magguu &amp;lt;mr_magguu@magguu.com&amp;gt;
+date:        Wed Nov &lt;span class=&quot;m&quot;&gt;04&lt;/span&gt; 17:47:58 &lt;span class=&quot;m&quot;&gt;2015&lt;/span&gt; +0100
+summary:     Version 0.1 with Biblio
+
+changeset:   0:187c32c11d5b
+user:        Mr. Magguu &amp;lt;mr_magguu@magguu.com&amp;gt;
+date:        Wed Nov &lt;span class=&quot;m&quot;&gt;04&lt;/span&gt; 17:36:56 &lt;span class=&quot;m&quot;&gt;2015&lt;/span&gt; +0100
+summary:    Version 0.1 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;initial&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We see the now how useful is mercurial to track all the changes!! Let’s say that our editor saves automatically files with the symbol &lt;strong&gt;~&lt;/strong&gt; at the end but we do not want to keep track of these files. An easy way to handle with this is by creating a simple file called &lt;strong&gt;.hgignore&lt;/strong&gt; with the following text inside:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;syntax: glob
+*~&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;mercurial-next-steps&quot;&gt;Mercurial: next steps&lt;/h3&gt;
+
+&lt;p&gt;If you tried the above tiny shown tutorial then probably you will be confortable with Hg. But probably also you will have a lot of questions about Hg. For instance, the username, the email, what means the code: changeset:   1:891564a37700 or other things.&lt;/p&gt;
+
+&lt;p&gt;Let’s go step by step. At the beginning we commented that we have a working installation of Hg. We can try to verify this with:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; hg debuginstall
+checking encoding &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;UTF-8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+checking Python executable &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/bin/python&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+checking Python version &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2.7.10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+checking Python lib &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/lib/python2.7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+checking installed modules &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/lib/python2.7/dist-packages/mercurial&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+checking templates &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;/usr/share/mercurial/templates&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;...
+checking commit editor...
+checking username...
+no problems detected&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This command gives us information about the installation. In my case everthing seems correct. You have detected about Python, this is because all the extensions in Mercurial are written in Python. If you type the command &lt;code&gt;hg config&lt;/code&gt; you will have more information. The usual configuration file for a given user is found in &lt;strong&gt;/home/user/.hgrc&lt;/strong&gt;. And looks like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; more /home/mrmagguu/.hgrc
+&lt;span class=&quot;c&quot;&gt;# Mercurial Configuration Info&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ui&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; Mr. Magguu &amp;lt;mr_magguu@magguu.com&amp;gt;
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;extensions&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;graphlog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 
+&lt;span class=&quot;nv&quot;&gt;hgcia&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 
+&lt;span class=&quot;nv&quot;&gt;hgk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 
+&lt;span class=&quot;nv&quot;&gt;hgview&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 
+&lt;span class=&quot;nv&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here is the very basic configuration for the user &lt;em&gt;mrmaggugg&lt;/em&gt;. The activated extensions are indicated here just with the name follow by = .Therefore the information about the user is taken from this configuration file. You can edit manually but before you should check &lt;code&gt;hg help config&lt;/code&gt;, but because the information given is very large you can try something like &lt;code&gt;hg help config | grep user&lt;/code&gt; just to have the information with the word user of the documentation. And just to give another examples of this configuration files it has &lt;strong&gt;graphlog&lt;/strong&gt;, &lt;strong&gt;color&lt;/strong&gt; or &lt;strong&gt;hgview&lt;/strong&gt;. The first introduce the command &lt;code&gt;hg glog&lt;/code&gt; that is a kind of &lt;code&gt;hg log&lt;/code&gt; command but with additional information about branches, master version etc. &lt;strong&gt;color&lt;/strong&gt; just add color to the outputs shown on your terminal when you use any hg command. Concerning &lt;strong&gt;hgview&lt;/strong&gt; you will have &lt;code&gt;hgview&lt;/code&gt; command you will have a graphical frontend for Hg.&lt;/p&gt;
+
+&lt;h4 id=&quot;text-editors-and-hg&quot;&gt;Text Editors and Hg&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In case you are using &lt;strong&gt;VIM&lt;/strong&gt;, which is one of the main tools I use every day, I may recommend the plugin  &lt;a href=&quot;http://bolt80.com/lawrencium/&quot;&gt;lawrencium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Geany&lt;/strong&gt; is another nice tool that might integrate a version control inside with a plugin and &lt;strong&gt;gedit&lt;/strong&gt; has this posibility also with rabbitVCS. This utility is not specific of mercurial and you might use several control version software. Note that git has specific plugins.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/Mercurial-Notes/</guid>
+			</item>
+		
+			<item>
+				<title>Centralized Version Control Notes</title>
+				<link>http://localhost:4000/computing-blog/Version-Control-Notes/</link>
+				<pubDate>Mon, 02 Nov 2015 00:00:00 +0100</pubDate>
+				<description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Table of Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is&quot; id=&quot;markdown-toc-what-is&quot;&gt;What is?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-it-works&quot; id=&quot;markdown-toc-how-it-works&quot;&gt;How it works?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#who-needs-that&quot; id=&quot;markdown-toc-who-needs-that&quot;&gt;Who needs that?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-it-works-1&quot; id=&quot;markdown-toc-how-it-works-1&quot;&gt;How it works?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#terminology&quot; id=&quot;markdown-toc-terminology&quot;&gt;Terminology&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#svn-subversion&quot; id=&quot;markdown-toc-svn-subversion&quot;&gt;SVN: subversion&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#an-example-with-svn&quot; id=&quot;markdown-toc-an-example-with-svn&quot;&gt;An example with svn&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#typical-working-cycle-with-svn&quot; id=&quot;markdown-toc-typical-working-cycle-with-svn&quot;&gt;Typical working cycle with SVN&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;h3 id=&quot;what-is&quot;&gt;What is?&lt;/h3&gt;
+
+&lt;p&gt;It is a software to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Provide incremental versions (or revisions) of a set of files/directories.&lt;/li&gt;
+  &lt;li&gt;Explore the changes which resulted in each of those versions.&lt;/li&gt;
+  &lt;li&gt;Return to any of the previous versions/revisions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Therefore it is a kind of backup system but also is a kind of file server.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-it-works&quot;&gt;How it works?&lt;/h3&gt;
+
+&lt;p&gt;It is build over the concept of &lt;strong&gt;repository&lt;/strong&gt; that is a kind of register of all the changes of a set of files. Usually the information
+is stored as a hierarchy of files (like a tree file-system). Now this repository allows connections of several clients. They can read and write so the version
+control system should be able to track who, and when,  make changes on the files, and give to other users the possibility to read those
+changes.&lt;/p&gt;
+
+&lt;h3 id=&quot;who-needs-that&quot;&gt;Who needs that?&lt;/h3&gt;
+
+&lt;p&gt;All people who is working with computers and making progressive changes over files in a project. However the main advantage of the 
+version control system is when several clients are working on improve/change the same project.&lt;/p&gt;
+
+&lt;p&gt;When several users are working with the same set of files at the same time, the version control software should be able to allow changes
+but without deleting or incorrectly mixing the changes of the users. For this there are several solutions that depend on how is designed the
+version control. In those cases where we have a central repository we can allow only one person to change at one time the same file, the other
+possibility is that all users create a personal copy of the central repository and commit changes. This last process is build over the
+concept of merge code. This is something that many users are doing (in a not so clean way) when they make several copies of a code to test several changes but they
+want to preserve the original copy. Version control gives them a more clean a beautiful method to perform all this tasks even if the are just
+one single user of a given project.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-it-works-1&quot;&gt;How it works?&lt;/h3&gt;
+
+&lt;p&gt;The method might depends on the specific version control software. In the case of SVN (subversion) there is a central repository and several working copies. Every time
+that a user commits changes on the code (using a SVN client) the SVN server creates a new state of the file-system tree (that is, the repository) named &lt;strong&gt;revision&lt;/strong&gt;. Each revision has assigned one unique number (natural number). Note that in SVN each identify number refers to a full state of the file-system (not to a specific commit of a specific file). It is like
+a instantaneous-photo of the full set of files. In this situation every working copy is private and only the process of commit the changes make them public (open to other users). This is the so named Central Version Control System (CVCS). Other version control systems are based on distributed or decentralized systems, examples are git and mercurial.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://homes.cs.washington.edu/~mernst/advice/version-control-fig2.png&quot; alt=&quot;Typical CVCS-Source Univ. Washington. &quot; title=&quot;Typical CVCS-Source Univ. Washington. &quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;terminology&quot;&gt;Terminology&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Repository&lt;/strong&gt;   It was already explained. In the case of for example Mercurial it is a directory in which a kind of set files are stored: the repository has the files of the project together with the history of changes of the files.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Trunk&lt;/strong&gt;        The trunk is the directory where all the main development is stored. The idea is that this directory may be evaluated by the developers. Usually it is the last main version under development.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tags&lt;/strong&gt;         The tags directory is used to store named snapshots or revisions. Because the unique numbers assigned to each revision are not descriptive of the key points of the snapshot the Tag operation allows to provide descriptive name to specific version in the repository&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Branches&lt;/strong&gt;     Branch operation is used to create another line of development. This is a very important concept when you want your development process to fork off into two different directions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Working copy&lt;/strong&gt; Working copy is a snapshot of the repository. The repository is shared by all the users, but people do not modify it directly. Instead each developer checks out the working copy. The working copy is a private and isolated from the rest of the project users.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Commit&lt;/strong&gt;      Commit is the process of confirming and storing changes from working copy to central server (repository). After commit, changes are public and other users can retrieve these changes by &lt;strong&gt;updating their working copy&lt;/strong&gt;. Commit is an atomic operation. Either the whole commit succeeds or is rolled back. Users never see half finished commit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;svn-subversion&quot;&gt;SVN: subversion&lt;/h2&gt;
+
+&lt;p&gt;It is one of the most used version control systems. Currently it is a project of the Apache Software Foundation htts://subversion.apache.org/&lt;/p&gt;
+
+&lt;p&gt;In those cases where a distribuited version control is not needed then SVN is a robust version control software in particular the last versions.&lt;/p&gt;
+
+&lt;h3 id=&quot;an-example-with-svn&quot;&gt;An example with svn&lt;/h3&gt;
+
+&lt;p&gt;It is very easy to use svn (subversion) from the terminal. If you have correctly installed svn in a Linux/Unix machine you can follow this example:&lt;/p&gt;
+
+&lt;p&gt;First, lets imagine that you wanted to download the last version of a nice open-source code. In my case, I wanted to download and compile from the source a chess-program called scidvspc. I checked that it is a sourceforge project and then it is very easy to obtain a &lt;strong&gt;working copy&lt;/strong&gt; from the official &lt;strong&gt;repository&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; mkdir /home/mrmagguu/test_svn
+&amp;gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/mrmagguu/test_svn
+&amp;gt; svn checkout svn://svn.code.sf.net/p/scidvspc/code/ scidvspc-code&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now in your directory &lt;em&gt;test_svn&lt;/em&gt; you have a new sub-directory named: &lt;em&gt;scidvspc-code&lt;/em&gt; that &lt;strong&gt;replicates the online repository&lt;/strong&gt; stored at sourceforge.net server. Let’s try something:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; svn status 
+svn: warning: W155007: &lt;span class=&quot;s1&quot;&gt;&amp;#39;/home/mrmagguu/test_svn&amp;#39;&lt;/span&gt; is not a working copy
+&amp;gt; &lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;
+/home/mrmagguu/test_svn
+&amp;gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;scidvspc-code 
+&amp;gt; svn status&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Probably nothing is now returned, this is because simply there is nothing new to report, but as we have seen if we use the command svn in a directory that is not the working copy of a repository svn will complain. Now let’s change a file. For instance in README.txt I have changed some lowercase letters to uppercase.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; vim README.txt
+&amp;gt; svn status
+M       README.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And, yes!, it detected that we have changed README.txt. But this change is only effective in our private working copy. Nowbody knows that some lowercase letters were changed to uppercase letters. Let’s try:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; svn diff
+
+Index: README.txt
+&lt;span class=&quot;o&quot;&gt;===================================================================&lt;/span&gt;
+--- README.txt	&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;revision 2372&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
++++ README.txt	&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;working copy&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+@@ -6,19 +6,19 @@
+   Table of Contents
+ 
+ 
+-  1. introduction
+-  2. features
++  1. Introduction
++  2. Features
+         2..1 New and Improved features
+         2..2 Missing Features
+ 
+-  3. download
+-  4. installation
++  3. Download
++  4. Installation
+         4..1 Linux , FreeBSD
+         4..2 Windows
+         4..3 Mac OS X
+ 
+-  5. news
+-  6. miscellaneous
++  5. News
++  6. Miscellaneous
+      6.1 docked windows
+      6.2 how to play
+      6.3 todo
+@@ -27,7 +27,7 @@
+      6.6 thanks
+      6.7 scid&lt;span class=&quot;err&quot;&gt;&amp;#39;&lt;/span&gt;s &lt;span class=&quot;nb&quot;&gt;history&lt;/span&gt;
+ 
+-  7. changes
++  7. Changes
+         7..1 Scid vs. PC 4.14
+         7..2 Scid vs. PC 4.13
+         7..3 Scid vs. PC 4.12
+@@ -48,8 +48,8 @@
+         7..18 Scid vs. PC 4.0
+         7..19 Scid vs. PC 3.6.26.1
+ 
+-  8. contact
+-  9. links
++  8. Contact
++  9. Links&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we begin to see the advantages of version control, we can see exactly the changes with just one command. Let’s say now that we have created also new file. For instance I have created a file called: THANKS.txt with the text ‘Thank you for create this nice software.’&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; vim THANKS.txt
+&amp;gt; svn status
+M       README.txt
+?       THANKS.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;SVN indicate us that there is a new file in the &lt;strong&gt;working copy&lt;/strong&gt; but its status is unclear. SVN knows that this file is not in the main central repository but don’t know if we want to add it or not.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; svn add THANKS.txt
+A       THANKS.txt
+&amp;gt; svn status
+M       README.txt
+A       THANKS.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So we have &lt;strong&gt;A&lt;/strong&gt;dded a file to the project and we have &lt;strong&gt;M&lt;/strong&gt;odificated another file. If we would think that these changes are convinient we could commit the changes with &lt;code&gt;svn commit -m &#39;Added a file to say thank you&#39;&lt;/code&gt;. Then we will see something like…&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; svn commit -m &lt;span class=&quot;s1&quot;&gt;&amp;#39;Added a file to say thank you and few lowercase letters...&amp;#39;&lt;/span&gt;
+Sending        README.txt
+Adding         THANKS.txt
+Transmitting file data ..
+Committed revision XYZ&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The -m command indicates the message that we want to include as information of the new revision, while XYZ is the &lt;strong&gt;revision number&lt;/strong&gt; (that, remember is a unique number describing a full status of the project). Usually our commits will be validated (or not) by a developer holding the project if they are useful (or useless). On the other side, as users, we can try to update our working code to the last revision, but first we can check the status of our version. In this case I will suppose that we have commit our changes to the server and now &lt;em&gt;other user&lt;/em&gt; would like to have this revision:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; svn status -u
+   + XYZ       README.txt
+   +           THANKS.txt
+   + &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;XYZ-1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; .&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The + means changed in the repository while XYZ and (XYZ-1) are the revision numbers of the last change and the previous one. If the new user think that these changes should be incorporated to her/his working copy then…&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; svn update
+U   README.txt
+A   THANKS.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;… and her her &lt;strong&gt;working copy&lt;/strong&gt; is update with our changes.&lt;/p&gt;
+
+&lt;h3 id=&quot;typical-working-cycle-with-svn&quot;&gt;Typical working cycle with SVN&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Update your working copy -&amp;gt; &lt;code&gt;svn update&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Changes in the code -&amp;gt; &lt;code&gt;svn add&lt;/code&gt;, &lt;code&gt;svn delete&lt;/code&gt; etc…&lt;/li&gt;
+  &lt;li&gt;Check the status/details of our changes -&amp;gt; &lt;code&gt;svn status&lt;/code&gt;, &lt;code&gt;svn diff&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;(This step was not commented before). Restore to an unmodified state -&amp;gt; &lt;code&gt;svn revert&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Imagine that we have changes to uppercase some letters but other user replace some letters with numbers in the same. Usually the users realize of possible conflicts when the use svn update, then svn gives them a note indicating that two or more users have changed parts of the same files. To resolve the problem we have the tool -&amp;gt; &lt;code&gt;svn resolve&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Submitt changes -&amp;gt; &lt;code&gt;svn commit&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/Version-Control-Notes/</guid>
+			</item>
+		
+			<item>
+				<title>Fortran 90 Notebook</title>
+				<link>http://localhost:4000/computing-blog/Fortran-Notes/</link>
+				<pubDate>Thu, 29 Oct 2015 00:00:00 +0100</pubDate>
+				<description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Table of Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#terminology&quot; id=&quot;markdown-toc-terminology&quot;&gt;Terminology&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#arrays&quot; id=&quot;markdown-toc-arrays&quot;&gt;Arrays&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#examples&quot; id=&quot;markdown-toc-examples&quot;&gt;Examples&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#procedures&quot; id=&quot;markdown-toc-procedures&quot;&gt;Procedures&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#functions&quot; id=&quot;markdown-toc-functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#subroutines&quot; id=&quot;markdown-toc-subroutines&quot;&gt;Subroutines&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This notes were possible by reading from several sources, but the book &lt;em&gt;Introduction to Programming with Fortran&lt;/em&gt; &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; was specifically useful because its large set of examples and progressive definitions. My first approach to Fortran 90 relies on the manual Physique Numérique&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; that I recommend to those people interested in an introduction to Computational Physics based in Fortran.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;terminology&quot;&gt;Terminology&lt;/h2&gt;
+
+&lt;h3 id=&quot;arrays&quot;&gt;Arrays&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;explicit-shape array&lt;/strong&gt;: declared with explicit values for the bounds in each dimension of the array. For this we can have &lt;strong&gt;automatic arrays&lt;/strong&gt;, when the array is a local variable, and &lt;strong&gt;adjustable array&lt;/strong&gt; when it is a dummy argument to a subprogram or procedure.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;assumed-shape array&lt;/strong&gt;: it is a non-pointer(!) dummy argument array that takes its shape from the associated actual argument array (by actual I mean the array that is introduced or demanded by the main program when it is called the subprogram or procedure). It is interesting to combine this approach with the size() instrinc procedure that gives the actual size of an array. We then can obtain within the procedure the size of the array and use this integer value inside the subprogram. For example to allocate an intent(out) array with the correct dimensions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;deferred-shape array&lt;/strong&gt;: is an allocatable array (it has the ALLOCATABLE attribute and a specified rank but their bounds are set by allocation or argument association) or array pointer.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;automatic array&lt;/strong&gt;: it is explicit-shape and &lt;em&gt;local&lt;/em&gt;. It is usually in subprograms and the bounds are set when the subprogram is called&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;examples&quot;&gt;Examples&lt;/h4&gt;
+
+&lt;p&gt;An example with a subprogram (a subroutine) with arguments x and n will be:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt;     &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;                     &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here x is a dummy argument declared with specific bounds therefore it is a explicit-shape dummy array. However we could use an assumed-shape dummy array because in Fortran 90 and later versions the actual array size and the associated dummy arguments have the same rank and the same size in each dimension. In this situation a different approach will be:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;example_main&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt;                         &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;allocatable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;! The interface part is optional and not mandatory  &lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;! it is useful when we have external subprograms&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;! and we can help the compiler to a full consistence&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;! checking. It is recomended its use.&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;     subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt;                           &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;m&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;example&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end interface&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;! n can be read from a file for example&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;allocate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;CALL &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;end &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;example_main&lt;/span&gt;
+
+
+  &lt;span class=&quot;k&quot;&gt;subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt;                                    &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;
+
+  &lt;span class=&quot;nv&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;procedures&quot;&gt;Procedures&lt;/h3&gt;
+
+&lt;p&gt;They are very important for break the code in smaller problems, to don’t repeat code within a program, to allow a better testing strategy.&lt;/p&gt;
+
+&lt;p&gt;In general the procedures communicate with the main program or other procedure by the arguments, inside the procedure they are named dummy arguments.Because Fortran is an strongly type code, we have to define the type of each argument both in the main program and in the procedures and they have to be consistent (this is for instance ensured by the definition of an interface).&lt;/p&gt;
+
+&lt;p&gt;Inside the procedures, specifically in the subroutines, we have the possibility of define if the dummy argument is an input, an output or both, by the intent sentence in the type definition block at the beginning of the sentence. The internal local variables are simple not included in the list of arguments of the procedure and they are destroyed once the procedure end.&lt;/p&gt;
+
+&lt;p&gt;The interface block is mandatory in several cases:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. A procedure with optional or keywords arguments
+2. Function returning an array or a pointer
+3. Procedure with assumed-shape dummy arguments
+4. Procedure with dummy arguments with pointer or target attribute
+5. Procedure generic (this allow overloading)
+6. Procedure defining a user operator
+7. Procedure with a user defined assignment
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;functions&quot;&gt;Functions&lt;/h4&gt;
+
+&lt;h4 id=&quot;subroutines&quot;&gt;Subroutines&lt;/h4&gt;
+
+&lt;p&gt;A very interesting case is when the subroutine is including a procedure as argument
+this means that we have to define an interface for the function that is consistent
+with the actual procedure argument&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my_own&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ext_sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt;                         &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;d&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;interface &lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;    subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;intent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;inout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;          &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;                            &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parm1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parm2&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end interface&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;! now we have operations including call ext_sub(a,b,c) and using the arguments b and c &lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;! ..&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my_own&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In this situation we have to include information on a main program using this
+subroutine as&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;     &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parmx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parmy&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt;  &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;k&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;allocatable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dimension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:)&lt;/span&gt;  &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;z&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;    subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my_own&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;        subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+
+        &lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end interface&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;    end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my_own&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end interface&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;    subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end interface&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;    subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;end subroutine &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ext_sub2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end interface&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Introduction to Programming with Fortran, &lt;em&gt;Ian Chivers and Jane Sleightholme&lt;/em&gt;, Springer 2006. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Physique Numérique, Ph. Depondt, INSP and CNRS Université Pierre et Marie Curie, 2006. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/Fortran-Notes/</guid>
+			</item>
+		
+			<item>
+				<title>Using C procedures in a Fortran code</title>
+				<link>http://localhost:4000/computing-blog/C-in-Fortran/</link>
+				<pubDate>Tue, 27 Oct 2015 00:00:00 +0100</pubDate>
+				<description>&lt;blockquote&gt;
+  &lt;p&gt;Here I described the inter-operability between C and Fortran&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The interoperability is possible in Fortran 2003 as it incorporates an specific module called ISO_C_BINDING that ensures a correct use of the C intrinsic types.&lt;/p&gt;
+
+&lt;p&gt;Also we can have a interoperability of derived types:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;use &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;iso_c_binding&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;my_own_type&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;c_init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;real&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c_float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;p&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end type &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my_own_type&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;with the above code we can inter-operate with a typical C code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_c_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;However we can also have a procedure inter-operations. For example in Fortran we can make,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;use &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;iso_c_binding&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;c_func&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/C-in-Fortran/</guid>
+			</item>
+		
+			<item>
+				<title>Linear Algebra and Computing</title>
+				<link>http://localhost:4000/computing-blog/LinearAlgebraComputing/</link>
+				<pubDate>Fri, 23 Oct 2015 00:00:00 +0200</pubDate>
+				<description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Table of Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#reducible-matrix&quot; id=&quot;markdown-toc-reducible-matrix&quot;&gt;Reducible Matrix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;This post is dedicated to several linear algebra properties that are relevant for scientific programming.&lt;/p&gt;
+
+&lt;h3 id=&quot;reducible-matrix&quot;&gt;Reducible Matrix&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Definition:&lt;/strong&gt; An square matrix A is reducible if there is a matrix P (basis change) such that,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+PAP^{T}=\begin{bmatrix}
+  B_{11} &amp; B_{11}\\
+  0  &amp; B_{22}
+\end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;This property is very useful because the typical linear system solution &lt;script type=&quot;math/tex&quot;&gt;Ay=c&lt;/script&gt; is now more easy to resolve in terms of computing because&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{bmatrix}
+  B_{11} &amp; B_{11}\\
+  0  &amp; B_{22}
+\end{bmatrix}\begin{bmatrix}
+  y_{1} \\
+  y_{2}
+\end{bmatrix}=\begin{bmatrix}
+  c_{1}\\
+  c_{2}
+\end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;The subsystem &lt;script type=&quot;math/tex&quot;&gt;B_{22}y_{2}=c_{2}&lt;/script&gt; is indepentent of the other B matrices with the logical computational improvement.&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/LinearAlgebraComputing/</guid>
+			</item>
+		
+			<item>
+				<title>Introduction to OpenMPI</title>
+				<link>http://localhost:4000/computing-blog/OpenMPI/</link>
+				<pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate>
+				<description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h3&gt;Table of Contents&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#definitions&quot; id=&quot;markdown-toc-definitions&quot;&gt;Definitions&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#flynns-taxonomy&quot; id=&quot;markdown-toc-flynns-taxonomy&quot;&gt;Flynn’s Taxonomy&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#performance-related-concepts&quot; id=&quot;markdown-toc-performance-related-concepts&quot;&gt;Performance related concepts&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#amdahls-law&quot; id=&quot;markdown-toc-amdahls-law&quot;&gt;Amdahl’s law&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#guftafsons-law&quot; id=&quot;markdown-toc-guftafsons-law&quot;&gt;Guftafson’s law&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#network-latency-and-load-balance&quot; id=&quot;markdown-toc-network-latency-and-load-balance&quot;&gt;Network Latency and Load-Balance&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#waterfall-model-in-scientific-computing&quot; id=&quot;markdown-toc-waterfall-model-in-scientific-computing&quot;&gt;Waterfall Model in Scientific Computing&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#mpi-and-openmpi&quot; id=&quot;markdown-toc-mpi-and-openmpi&quot;&gt;MPI and OpenMPI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fortran-examples&quot; id=&quot;markdown-toc-fortran-examples&quot;&gt;Fortran Examples&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#hello-from-each-node&quot; id=&quot;markdown-toc-hello-from-each-node&quot;&gt;Hello from each node&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#different-code-for-each-node&quot; id=&quot;markdown-toc-different-code-for-each-node&quot;&gt;Different code for each node&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#example-with-send-and-recive-information&quot; id=&quot;markdown-toc-example-with-send-and-recive-information&quot;&gt;Example with send and recive information&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;This post is a short tutorial on OpenMPI. The main goals are be familiar with the
+general concepts and terminology used on MPI parallel programming. The examples of code shown
+in this tutorial are Fortran 90.&lt;/p&gt;
+
+&lt;p&gt;We have to realize that there are three important elements on parallel programing in cluster systems: hardware, software and the topology of the network. This tutorial is focused mainly on clusters that are build of nodes. This means that each node does NOT have direct access to the other node memory (we have a distributed memory and not common shared memory). The  consequence is that we will need to communicate between nodes and send and collect information/data from different machinesm, that is why it is used MPI directives. However note that the code produced with MPI can be used on a single processor or in a multicore machine.&lt;/p&gt;
+
+&lt;h3 id=&quot;definitions&quot;&gt;Definitions&lt;/h3&gt;
+
+&lt;h4 id=&quot;flynns-taxonomy&quot;&gt;Flynn’s Taxonomy&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SISD: single instruction single data (serial computer)&lt;/li&gt;
+  &lt;li&gt;SIMD: single instruction multiple data (vector computer)&lt;/li&gt;
+  &lt;li&gt;MISD: multiple instruction single data (uncommon)&lt;/li&gt;
+  &lt;li&gt;MIMD: multiple instruction multiple data (parallel computer).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We will use the terminology SPMD to mean single program multiple data. The idea is a commom code runned on several computers but each node process different data (the data of each node should be distribuited by the single code). MPI is a realization of the  SPMD by implementing several directives. In the practical Fortran 90 programming it is a module called with USE MPI and it implement several subroutines that manage the SPMD idea. The typical workflow is build a source code, compile it (in the case of Fortran 90 or C/C++ etc), and run in a machine indicating the number of tasks (or nodes) that will be used (for instance mpirun -np 123 mycode.exe).&lt;/p&gt;
+
+&lt;h4 id=&quot;performance-related-concepts&quot;&gt;Performance related concepts&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FLOPS: It is the number of floating point operations per second. It is used to describe the computation capability.&lt;/li&gt;
+  &lt;li&gt;Serial time: time to run the code in 1 machine (serial code): $t_{s}$&lt;/li&gt;
+  &lt;li&gt;Parallel time: time to process the same code with p processors: $t_{p}$&lt;/li&gt;
+  &lt;li&gt;Speedup factor: $S(p)=t_{s}/t_{p}$&lt;/li&gt;
+  &lt;li&gt;Work cost: $W(p)=pt_{p}$&lt;/li&gt;
+  &lt;li&gt;Efficiency: $E(p)=t_{s}/(pt_{p})=W(1)/W(p)$&lt;/li&gt;
+  &lt;li&gt;Serial fraction: f, is the fraction of the code that is allways serial (it is allways runned
+by only 1 processor).&lt;/li&gt;
+  &lt;li&gt;Overhead: $(Wp-W1)/W1$&lt;/li&gt;
+  &lt;li&gt;Computation time: fraction of time running the code ($t_{c}$)&lt;/li&gt;
+  &lt;li&gt;Comunication time: fraction of the time performing transmission or comunication between nodes and memory ($t_{t}$)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note: it is important maximize $t_{c}/t_{t}$&lt;/p&gt;
+
+&lt;h4 id=&quot;amdahls-law&quot;&gt;Amdahl’s law&lt;/h4&gt;
+
+&lt;p&gt;It measures the parallel performance given the serial performance.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;t_{p}=ft_{s}+(1-f)\frac{t_{s}}{p}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(p)=\frac{p}{f(p-1)+1}&lt;/script&gt;
+
+&lt;h4 id=&quot;guftafsons-law&quot;&gt;Guftafson’s law&lt;/h4&gt;
+
+&lt;p&gt;It measures the serial performance given the parallel performance.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;t_{s}=ft_{p}+(1-f)pt_{p}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(p)=f+(1-f)p&lt;/script&gt;
+
+&lt;h4 id=&quot;network-latency-and-load-balance&quot;&gt;Network Latency and Load-Balance&lt;/h4&gt;
+
+&lt;p&gt;This is another important concept: in a parallel program over a cluster with several nodes communicated by a network the time spent in communication have to be estimated. In general the time needed to send a message depends on the size of the message plus the time to establish the communication (like open the channel) called latency. Therefore, $t_{c}=L+m/B$, where L is the latency time, B is the bandwidth and m is the size of the message.&lt;/p&gt;
+
+&lt;p&gt;In the same size it is important achieve a work balance between the nodes, otherwise the computation time is constrained by the performance of one node.&lt;/p&gt;
+
+&lt;h4 id=&quot;waterfall-model-in-scientific-computing&quot;&gt;Waterfall Model in Scientific Computing&lt;/h4&gt;
+
+&lt;p&gt;In general the software is developed following the so called Waterfall Model&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://codeloop.site88.net/se/images/waterfall.jpg&quot; alt=&quot;Waterfall Model&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the case of &lt;strong&gt;scientific programming&lt;/strong&gt; we could modificate the initial stages of the waterfall model then the design is changed by:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstraction of the problem&lt;/strong&gt;   &amp;gt;(1)&amp;gt; &lt;strong&gt;Physical/Mathematical Model&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Physical/Mathematical Model&lt;/strong&gt;  &amp;gt;(2)&amp;gt; &lt;strong&gt;Formulation as an algorthim&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;However in the transition (2) is better to know in advance properties of the hardware and tolopogy to consolidate the design of the software. For these reasons a previous good knownledge of the parallel programming methodologies. Here it is explained &lt;strong&gt;OpenMPI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mpi-and-openmpi&quot;&gt;MPI and OpenMPI&lt;/h3&gt;
+
+&lt;p&gt;MPI is a standard set of directives that several tools and packages can follow (another is for instance PVM, parallel virtual machine). Here it is explained OpenMPI (but there are others like MPICH). I will explain the directives by examples, for that I recommend to the reader a UNIX/LINUX machine, an editor like geany or vim, an installed version of OpenMPI and the fortran compiler. A standard linux distribution gives to the user an easy way to install all this tools.&lt;/p&gt;
+
+&lt;p&gt;The codes here included can be compiled and executed as:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mpif90 fortran90mpi.f90 -o myprogram.exe
+
+mpirun -np &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt; myprogram.exe&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;fortran-examples&quot;&gt;Fortran Examples&lt;/h3&gt;
+
+&lt;h4 id=&quot;hello-from-each-node&quot;&gt;Hello from each node&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;use &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mpi&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;integer&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nproc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;iproc&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_INIT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_RANK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_WORLD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;iproc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_WORLD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nproc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Hello World! by &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;iproc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;from &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;nproc&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_FINALIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;different-code-for-each-node&quot;&gt;Different code for each node&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;use &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mpi&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;implicit none&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;integer &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;min_process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_STATUS_SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;integer &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_procs&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_INIT&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_RANK&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_WORLD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_SIZE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_WORLD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;num_procs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;.eq.&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then   &lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;      print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Machine &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;I am doing task 0&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;elseif&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;.eq.&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;      print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Machine &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;I am doing task 1&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;elseif&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;.eq.&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;      print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Machine &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;I am doing task 2&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;      print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Machine &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;I am doing a common task 3&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;endif&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;  call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_FINALIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;example-with-send-and-recive-information&quot;&gt;Example with send and recive information&lt;/h4&gt;
+
+&lt;p&gt;Here is explained the design of a code. It shows a possible stragegy to program a specific code by writting in natural language the logical task that should be done. This example was taken from&lt;/p&gt;
+
+&lt;p&gt;http://condor.cc.ku.edu/~grobe/docs/intro-MPI.shtml&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fortran&quot; data-lang=&quot;fortran&quot;&gt;&lt;span class=&quot;k&quot;&gt;program &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;sumvector&lt;/span&gt;
+ 
+&lt;span class=&quot;c&quot;&gt;!! The code have to sum the rows in a vector. The root process will be&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;!! here a master that send parts of the vector to each child process&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;!! (often called slave). Master and child processes calculate&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;!! the partial sum of the portion of the vector assigned.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;!! The child processes send their partial sums to the master, who calculates &lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;!! the total sum&lt;/span&gt;
+      
+&lt;span class=&quot;k&quot;&gt;use &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mpi&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;integer &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;main_process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_STATUS_SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;integer &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;num_procs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;an_id&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;main_process&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Now&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;replicate&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;process&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;parallel&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;processes&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;  
+  &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_INIT&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;MY&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;process&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;and &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;how&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;many&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;processes&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;were&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;started&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_RANK&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_WORLD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;my_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_SIZE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_COMM_WORLD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;num_procs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;my_id&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;.eq.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;root_process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then   &lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;must&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;so&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;nv&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;determine&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;how&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;many&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Initialize&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;2.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Distribute&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;portion&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;vector&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;child&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Calculate&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;segment&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;assigned&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;4.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Collect&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;partial&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;sums&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;slave&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;processes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;5.&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Print &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;them&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;and &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;them&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;grand&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;and &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;must&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;slave&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;so&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;must&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;receive&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;vector&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;segment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;2.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Calculate&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;portion&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;finally&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;send&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;portion&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;endif&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;c&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;Stop &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;call &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPI_FINALIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ierr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;stop&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;  end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/OpenMPI/</guid>
+			</item>
+		
+			<item>
+				<title>Python PDF: reportlab library</title>
+				<link>http://localhost:4000/computing-blog/reportlab-pdf/</link>
+				<pubDate>Tue, 05 May 2015 00:00:00 +0200</pubDate>
+				<description>&lt;blockquote&gt;
+  &lt;p&gt;Example of ReportLab PDF changes with Python.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;how-introduce-changes-on-pdf-files-with-python&quot;&gt;How introduce changes on PDF files with Python&lt;/h3&gt;
+
+&lt;p&gt;Here is an example to change PDF files using pyPdf and reportlab python libraries. It introduces a numeration
+on the PDF pages. At the same time there are commented several lines (with additional text for a heading).&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyPdf&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PdfFileWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PdfFileReader&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;StringIO&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;reportlab.pdfgen&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;canvas&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;reportlab.lib.pagesizes&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A4&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;reportlab.lib.units&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;reportlab.lib.colors&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blue&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;blue50transparent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;reportlab.graphics.shapes&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rect&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#canvas.setFont(&amp;quot;Times-Roman&amp;quot;, 12)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# read your existing PDF&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;existing_pdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PdfFileReader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ExamplePDFDossier.pdf&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;rb&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PdfFileWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;existing_pdf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getNumPages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;packet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StringIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;StringIO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# create a new PDF with Reportlab&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;canvas&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Canvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;packet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pagesize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;font&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getAvailableFonts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;font&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;#can.rect(225,25,100,100, fill=True, stroke=False)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;#can.setFillColor(blue50transparent)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Times-BoldItalic&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;#can.drawString(50, 755, &amp;quot;Applicant: Checa-Garcia&amp;quot;)&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;#can.drawString(250, 755, &amp;quot;Document: Teaching Dossier&amp;quot;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;offset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;44&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;offset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drawString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;410&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;765&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;offset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Dossier Page: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%i&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%i&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;existing_pdf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getNumPages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/reportlab-pdf/</guid>
+			</item>
+		
+			<item>
+				<title>Notes on WRF-gfortran-compilation</title>
+				<link>http://localhost:4000/computing-blog/science-blog/WRF_gfortran/</link>
+				<pubDate>Fri, 02 Jan 2015 00:00:00 +0100</pubDate>
+				<description>&lt;blockquote&gt;
+  &lt;p&gt;Here I described a solution for a problem in the compilation of WRF with gfortran. The problem arrives because some comments are considered code. This was posted on the &lt;a href=&quot;http://forum.wrfforum.com/viewtopic.php?f=5&amp;amp;t=6086&quot;&gt;WRF-Forum&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My diagnostic of that the problem is related with the &lt;strong&gt;C preprocessor&lt;/strong&gt;. A possible solution is change:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;CPP&lt;/span&gt;             &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  /lib/cpp -C -P&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;CPP&lt;/span&gt;             &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  /lib/cpp -P&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I think this avoid the addition of C-style comments to the .f90 files. However &lt;em&gt;this should be changed for every makefile in the directories of WRF&lt;/em&gt;. The other solution is add -cpp to the gfortran. Basically you have to change two lines:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;FORMAT_FIXED&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  -ffixed-form -cpp
+&lt;span class=&quot;nv&quot;&gt;FORMAT_FREE&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  -ffree-form -ffree-line-length-none -cpp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now the gfortran knows that cpp preprocessor is being used. The most easy way is generate the file configure.wrf as usual and before compile anything change manually those two lines by adding -cpp (and check before any compilation). Also is possible apply the changes on the ./configure script.s&lt;/p&gt;
+
+&lt;p&gt;In my case these changes were enough to compile with gfortran. Anyway, previously to do this you may try&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gfortran -v&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;the output would be the default configuration of gfortran on your machine, and probably there isn’t anything like -cpp. I guess this output may depend partially on your Linux distribution (or Unix system).&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Other users comments:&lt;/strong&gt;
+In the forum others users replied that my solution works also for &lt;em&gt;WRFDA&lt;/em&gt;. If you are using &lt;em&gt;ifort&lt;/em&gt; instead &lt;em&gt;gfortran&lt;/em&gt; another user of the forum commented that added &lt;em&gt;-fpp&lt;/em&gt; instead &lt;em&gt;-cpp&lt;/em&gt;&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">http://localhost:4000/computing-blog/science-blog/WRF_gfortran/</guid>
+			</item>
+		
+			<item>
+				<title>Introduction to Tikhonov Regularization Method</title>
+				<link>http://localhost:4000/science-blog/Tikhonov/</link>
+				<pubDate>Fri, 12 Dec 2014 00:00:00 +0100</pubDate>
+				<description>&lt;blockquote&gt;
+  &lt;p&gt;Very short comment on Tikhonov regularization&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;tikhonov-regularization-method&quot;&gt;Tikhonov regularization method&lt;/h2&gt;
+
+&lt;p&gt;This method is widely used to resolve discrete ill-posed inverse linear problems
+(also non-linear). The problem it is usually establish as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y=F(x)&lt;/script&gt;
+
+&lt;p&gt;where F(x) is a linear operator, therefore we may write,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y=Kx&lt;/script&gt;
+
+&lt;p&gt;The solution of the inverse discrete problem its usually described with the singular value decomposition (SVD). Then it is defined the pseudoinverse of K as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;K^{\dagger}=(K^{T}K)^{-1}K^{T}=V\Sigma^{\dagger}U^{T}&lt;/script&gt;
+
+&lt;p&gt;The Tikhonov regularization propose another definition of the pseudoinverse which includes a regularization matrix &lt;script type=&quot;math/tex&quot;&gt;L&lt;/script&gt;
+and a regularization parameter &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;K^{\dagger}=(K^{T}K+\alpha L^{T}L)^{-1}K^{T}=\bar{V}\Sigma^{\dagger}_{\alpha}\bar{U}^{T}&lt;/script&gt;
+
+&lt;p&gt;In order to write the last equation the generalized singular value decomposition (GSVD) is used.&lt;/p&gt;
+
+&lt;h3 id=&quot;measurements-with-noise1&quot;&gt;Measurements with noise&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+
+&lt;p&gt;The inversion method has an additional difficulty when the measurements incorporate errors, usually modelled as Gaussian Errors. In that case the vector state solution, written as &lt;script type=&quot;math/tex&quot;&gt;x^{\epsilon}&lt;/script&gt; is related with the noisy measurements &lt;script type=&quot;math/tex&quot;&gt;y^{\epsilon}&lt;/script&gt;. The problem is formulated now as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{\epsilon}=Kx^{\epsilon}&lt;/script&gt;
+
+&lt;p&gt;and the additional problem is not just how to calculate the singular values, but how different are the estimation &lt;script type=&quot;math/tex&quot;&gt;x^{\epsilon}&lt;/script&gt; and the true value &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;However also there is a methodological problem on the definition of the solution &lt;script type=&quot;math/tex&quot;&gt;x^{\epsilon}&lt;/script&gt; given that is not true that always &lt;script type=&quot;math/tex&quot;&gt;y^{\delta}\in Im(K)&lt;/script&gt;. Therefore, a new concept of solution is needed and it is usually formulated as an optimization rule:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x^{\epsilon}: ||y^{\epsilon}-Kx^{\epsilon}||\le||y^{\epsilon}-Kx||\,\,\, \forall x \in \mathcal{X}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;\mathcal{X}&lt;/script&gt; is the domain of the Forward Model.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Doicu, Adrian, Thomas Trautmann, and Franz Schreier. Numerical regularization for atmospheric inverse problems. Springer, 2010. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<guid isPermaLink="true">http://localhost:4000/science-blog/Tikhonov/</guid>
+			</item>
+		
+	</channel>
+</rss>

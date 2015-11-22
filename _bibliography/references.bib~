@@ -1,0 +1,2111 @@
+% This file was created with JabRef 2.9.2.
+% Encoding: ISO8859_1
+
+---
+---
+References
+==========
+
+@ARTICLE{Albert2009,
+  author = {Albert, Sieghard and Bauerecker, Sigurd and Boudon, Vincent and Brown,
+	Linda R and Champion, J-P and Lo{\"e}te, Michel and Nikitin, Andrei
+	and Quack, Martin},
+  title = {{Global analysis of the high resolution infrared spectrum of methane
+	$^{12}CH_{4}$ in the region from 0 to 4800cm-1}},
+  journal = {Chemical Physics},
+  year = {2009},
+  volume = {356},
+  pages = {131--146},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0301010408004801}
+}
+
+@ARTICLE{Bosch2006,
+  author = {B{\"o}sch, H and Toon, GC and Sen, B and Washenfelder, RA and Wennberg,
+	PO and Buchwitz, M and De Beek, R and Burrows, JP and Crisp, D and
+	Christi, M and others},
+  title = {{Space-based near-infrared $CO_{2}$ measurements: Testing the Orbiting
+	Carbon Observatory retrieval algorithm and validation concept using
+	SCIAMACHY observations over Park Falls, Wisconsin}},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2006},
+  volume = {111},
+  number = {D23},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2006JD007080/full}
+}
+
+@ARTICLE{Bergamaschi2007,
+  author = {Bergamaschi, P and Frankenberg, C and Meirink, JF and Krol, M and
+	Dentener, F and Wagner, T and Platt, U and Kaplan, JO and K{\"o}rner,
+	S and Heimann, M and others},
+  title = {{Satellite chartography of atmospheric methane from SCIAMACHY on
+	board ENVISAT: 2. Evaluation based on inverse model simulations}},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2007},
+  volume = {112},
+  number = {D2},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2006JD007268/full}
+}
+
+@ARTICLE{Bergamaschi2009,
+  author = {Bergamaschi, Peter and Frankenberg, Christian and Meirink, Jan Fokke
+	and Krol, Maarten and Villani, M Gabriella and Houweling, Sander
+	and Dentener, Frank and Dlugokencky, Edward J and Miller, John B
+	and Gatti, Luciana V and others},
+  title = {{Inverse modeling of global and regional $CH_{4}$ emissions using
+	SCIAMACHY satellite retrievals}},
+  journal = {Journal of Geophysical Research},
+  year = {2009},
+  volume = {114},
+  pages = {D22301},
+  number = {D22},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2009/2009JD012287.shtml}
+}
+
+@INPROCEEDINGS{Blumstein2004,
+  author = {Blumstein, Denis and Chalon, Gilles and Carlier, Thierry and Buil,
+	Christian and Hebert, Philippe and Maciaszek, Thierry and Ponce,
+	G and Phulpin, Thierry and Tournier, Bernard and Simeoni, Denis and
+	others},
+  title = {IASI instrument: Technical overview and measured performances},
+  booktitle = {Optical Science and Technology, the SPIE 49th Annual Meeting},
+  year = {2004},
+  pages = {196--207},
+  organization = {International Society for Optics and Photonics},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1318774}
+}
+
+@ARTICLE{Boersma2008,
+  author = {Boersma, K Folkert and Jacob, Daniel J and Eskes, Henk J and Pinder,
+	Robert W and Wang, Jun and others},
+  title = {{Intercomparison of SCIAMACHY and OMI tropospheric NO2 columns: Observing
+	the diurnal evolution of chemistry and emissions from space}},
+  journal = {Journal of Geophysical Research},
+  year = {2008},
+  volume = {113},
+  pages = {D16S26},
+  number = {D16},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2008/2007JD008816.shtml}
+}
+
+@ARTICLE{Bogumil2003,
+  author = {Bogumil, K and Orphal, J and Homann, T and Voigt, S and Spietz, P
+	and Fleischmann, OC and Vogel, A and Hartmann, M and Kromminga, H
+	and Bovensmann, H and others},
+  title = {Measurements of molecular absorption spectra with the SCIAMACHY pre-flight
+	model: Instrument characterization and reference data for atmospheric
+	remote-sensing in the 230--2380 nm region},
+  journal = {Journal of Photochemistry and Photobiology A: Chemistry},
+  year = {2003},
+  volume = {157},
+  pages = {167--184},
+  number = {2},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S1010603003000625}
+}
+
+@ARTICLE{Borkenau2001,
+  author = {P. Borkenau and R. Riemann and A. Angleitner and F. M. Spinath},
+  title = {Genetic and environmental influences on observed personality: evidence
+	from the German Observational Study of Adult Twins.},
+  journal = {J Pers Soc Psychol},
+  year = {2001},
+  volume = {80},
+  pages = {655--668},
+  number = {4},
+  month = {Apr},
+  abstract = {Previous behavior-genetic research on adult personality relied primarily
+	on self-reports or peer reports that may be subject to contrast effects,
+	resulting in biased estimates of genetic and environmental influences.
+	In the German Observational Study of Adult Twins (GOSAT), personality
+	traits of 168 monozygotic (MZ) and 132 dizygotic (DZ) twin pairs
+	were rated on 35 adjective scales, largely markers of the Big 5.
+	The ratings were provided by 120 judges who never met the twins but
+	observed videotaped behaviors of 1 twin of each pair in 1 of 15 different
+	settings. The aggregated video-based trait ratings were highly reliable,
+	and substantial correlations were obtained between MZ as well as
+	DZ twins. Model-fit analyses suggested about 40\% genetic, 25\% shared
+	environmental, and 35\% nonshared environmental influence. Extraversion
+	was the only trait that seemed not to be influenced by shared environment.},
+  institution = {Department of Psychology, Martin-Luther-Universität, Halle, Germany.
+	p.borkenau@psych.uni-halle.de},
+  keywords = {Adult; Environment; Female; Humans; Male; Observation; Personality;
+	Reproducibility of Results; Social Perception; Twins, genetics/psychology;
+	Videotape Recording},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pmid = {11316228},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Bovensmann1999,
+  author = {Bovensmann, H and Burrows, JP and Buchwitz, M and Frerick, J and
+	No{\"e}l, S and Rozanov, VV and Chance, KV and Goede, APH},
+  title = {SCIAMACHY: Mission objectives and measurement modes},
+  journal = {Journal of the Atmospheric Sciences},
+  year = {1999},
+  volume = {56},
+  pages = {127--150},
+  number = {2},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://journals.ametsoc.org/doi/abs/10.1175/1520-0469(1999)056%3C0127:SMOAMM%3E2.0.CO;2}
+}
+
+@ARTICLE{Boynard2009,
+  author = {Boynard, Anne and Clerbaux, Cathy and Coheur, P-F and Hurtmans, Daniel
+	and Turquety, Sol{\`e}ne and George, Maya and Hadji-Lazaro, Juliette
+	and Keim, C and Meyer-Arnek, J},
+  title = {Measurements of total and tropospheric ozone from IASI: comparison
+	with correlative satellite, ground-based and ozonesonde observations},
+  journal = {Atmospheric chemistry and physics},
+  year = {2009},
+  volume = {9},
+  pages = {6255--6271},
+  number = {16},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/9/6255/2009/}
+}
+
+@ARTICLE{Brown2003,
+  author = {Brown, Linda R and Chris Benner, D and Champion, Jean Paul and Devi,
+	V Malathy and Fejard, L and Gamache, RR and Gabard, T and Hilico,
+	JC and Lavorel, B and Loete, M and others},
+  title = {{Methane line parameters in HITRAN}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2003},
+  volume = {82},
+  pages = {219--238},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407303001559}
+}
+
+@ARTICLE{Brown2013,
+  author = {Brown, Linda R and Sung K.},
+  title = {{Methane line parameters in HITRAN2012 database}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2013},
+  volume = {in press},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407303001559}
+}
+
+@ARTICLE{Buchwitz2004,
+  author = {Buchwitz, M and Beek, R de and Bramstedt, K and No{\"e}l, S and Bovensmann,
+	H and Burrows, JP},
+  title = {Global carbon monoxide as retrieved from SCIAMACHY by WFM-DOAS},
+  journal = {Atmospheric Chemistry and Physics Discussions},
+  year = {2004},
+  volume = {4},
+  pages = {2805--2837},
+  number = {3},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys-discuss.net/4/2805/2004/acpd-4-2805-2004.html}
+}
+
+@ARTICLE{Buchwitz2005a,
+  author = {Buchwitz, M and Beek, R de and Burrows, JP and Bovensmann, H and
+	Warneke, T and Notholt, Justus and Meirink, JF and Goede, APH and
+	Bergamaschi, P and K{\"o}rner, S and others},
+  title = {Atmospheric methane and carbon dioxide from SCIAMACHY satellite data:
+	initial comparison with chemistry and transport models},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2005},
+  volume = {5},
+  pages = {941--962},
+  number = {4},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Buchwitz2005,
+  author = {Buchwitz, M and Beek, R de and No{\"e}l, S and Burrows, JP and Bovensmann,
+	H and Bremer, H and Bergamaschi, P and K{\"o}rner, S and Heimann,
+	M},
+  title = {Carbon monoxide, methane and carbon dioxide columns retrieved from
+	SCIAMACHY by WFM-DOAS: year 2003 initial data set},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2005},
+  volume = {5},
+  pages = {3313--3329},
+  number = {12},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Buchwitz2000,
+  author = {Buchwitz, Michael and Rozanov, Vladimir V and Burrows, John P},
+  title = {{A near-infrared optimized DOAS method for the fast global retrieval
+	of atmospheric $CH_{4}$, CO, $CO_{2}$, H2O, and N2O total column
+	amounts from SCIAMACHY Envisat-1 nadir radiances}},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2000},
+  volume = {105},
+  pages = {15231--15245},
+  number = {D12},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2000JD900191/full}
+}
+
+@ARTICLE{Burrows1995,
+  author = {Burrows, JP and H{\"o}lzle, E and Goede, APH and Visser, H and Fricke,
+	W},
+  title = {{SCIAMACHY Scanning imaging absorption spectrometer for atmospheric
+	chartography}},
+  journal = {Acta Astronautica},
+  year = {1995},
+  volume = {35},
+  pages = {445--451},
+  number = {7},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/009457659400278T}
+}
+
+@TECHREPORT{TNone2013,
+  author = {Butz, A and Checa-Garcia, R and Landgraf, J and Alkemade, F and Tran,
+	H and Boudon, V},
+  title = {Consolidation of S5-SWIR requirements: initial assessment and recommendations},
+  institution = {ESA reports (KIT, SRON, LISA and UB)},
+  year = {2013},
+  owner = {ramiro},
+  timestamp = {2013.09.13}
+}
+
+@ARTICLE{Butz2012,
+  author = {Butz, A and Galli, A and Hasekamp, O and Landgraf, J and Tol, P and
+	Aben, I},
+  title = {{TROPOMI aboard Sentinel-5 Precursor: Prospective performance of
+	$CH_{4}$ retrievals for aerosol and cirrus loaded atmospheres}},
+  journal = {Remote Sensing of Environment},
+  year = {2012},
+  volume = {120},
+  pages = {267--276},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S003442571200082X}
+}
+
+@ARTICLE{Butz2011,
+  author = {Butz, A and Guerlet, S and Hasekamp, O and Schepers, D and Galli,
+	A and Aben, I and Frankenberg, C and Hartmann, J-M and Tran, H and
+	Kuze, A and others},
+  title = {{Toward accurate $CO_{2}$ and $CH_{4}$ observations from GOSAT}},
+  journal = {Geophysical Research Letters},
+  year = {2011},
+  volume = {38},
+  number = {14},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/journals/gl/gl1114/2011GL047888/2011gl047888-fs02.eps}
+}
+
+@ARTICLE{Butz2009,
+  author = {Butz, Andr{\'e} and Hasekamp, Otto P and Frankenberg, Christian and
+	Aben, Ilse},
+  title = {Retrievals of atmospheric $CO_{2}$ from simulated space-borne measurements
+	of backscattered near-infrared sunlight: accounting for aerosol effects},
+  journal = {Applied optics},
+  year = {2009},
+  volume = {48},
+  pages = {3322--3336},
+  number = {18},
+  owner = {ramiro},
+  publisher = {Optical Society of America},
+  timestamp = {2013.08.09},
+  url = {http://www.opticsinfobase.org/abstract.cfm?URI=ao-48-18-3322}
+}
+
+@TECHREPORT{TNzero2013,
+  author = {Butz, A and Landgraf, J and Tran, H and Boudon, V},
+  title = {Consolidation of Requirements for the Products Derived from the Shortwave-Infrared
+	Channels of the GMES Sentinel-5 UVNSA Instrument (Project proposal)},
+  institution = {KIT, SRON, LISA and UB},
+  year = {2013},
+  owner = {ramiro},
+  timestamp = {2013.09.13}
+}
+
+@ARTICLE{Campargue2013,
+  author = {Campargue, A and Leshchishina, O and Wang, L and Mondelain, D and
+	Kassi, S},
+  title = {{The WKLMC empirical line lists (5852-7919 cm-1) for methane between
+	80 K and 296 K: final lists for atmospheric and planetary applications}},
+  journal = {Journal of Molecular Spectroscopy},
+  year = {2013},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022285213000246}
+}
+
+@ARTICLE{Chevallier2007,
+  author = {Chevallier, Fr{\'e}d{\'e}ric},
+  title = {{Impact of correlated observation errors on inverted $CO_{2}$ surface
+	fluxes from OCO measurements}},
+  journal = {Geophysical Research Letters},
+  year = {2007},
+  volume = {34},
+  pages = {L24804},
+  number = {24},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2007/2007GL030463.shtml}
+}
+
+@ARTICLE{Chevallier2011,
+  author = {Chevallier, F and Deutscher, NM and Conway, TJ and Ciais, Philippe
+	and Ciattaglia, L and Dohe, S and Fr{\"o}hlich, M and Gomez-Pelaez,
+	AJ and Griffith, David and Hase, F and others},
+  title = {{Global $CO_{2}$ fluxes inferred from surface air-sample measurements
+	and from TCCON retrievals of the $CO_{2}$ total column}},
+  journal = {Geophysical Research Letters},
+  year = {2011},
+  volume = {38},
+  pages = {L24810},
+  number = {24},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2011/2011gl049899.shtml}
+}
+
+@ARTICLE{Chevallier2009,
+  author = {Chevallier, Fr{\'e}d{\'e}ric and Maksyutov, Shamil and Bousquet,
+	Philippe and Br{\'e}on, Fran{\c{c}}ois-Marie and Saito, Ryu and Yoshida,
+	Yukio and Yokota, Tatsuya},
+  title = {{On the accuracy of the $CO_{2}$ surface fluxes to be estimated from
+	the GOSAT observations}},
+  journal = {Geophysical Research Letters},
+  year = {2009},
+  volume = {36},
+  pages = {L19807},
+  number = {19},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2009/2009GL040108.shtml}
+}
+
+@ARTICLE{Clerbaux2009,
+  author = {Clerbaux, Cathy and Boynard, Anne and Clarisse, Lieven and George,
+	Maya and Hadji-Lazaro, Juliette and Herbin, Herv{\'e} and Hurtmans,
+	Daniel and Pommier, Matthieu and Razavi, Ariane and Turquety, Sol{\`e}ne
+	and others},
+  title = {{Monitoring of atmospheric composition using the thermal infrared
+	IASI/MetOp sounder}},
+  journal = {Atmospheric chemistry and physics},
+  year = {2009},
+  volume = {9},
+  pages = {6041--6054},
+  number = {16},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/9/6041/2009/acp-9-6041-2009.html}
+}
+
+@ARTICLE{Cogan2012,
+  author = {Cogan, AJ and Boesch, H and Parker, RJ and Feng, L and Palmer, PI
+	and Blavier, J-FL and Deutscher, Nicholas M and Macatangay, Ronald
+	and Notholt, Justus and Roehl, C and others},
+  title = {Atmospheric carbon dioxide retrieved from the Greenhouse gases Observing
+	SATellite (GOSAT): Comparison with ground-based TCCON observations
+	and GEOS-Chem model calculations},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2012},
+  volume = {117},
+  number = {D21},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2012JD018087/full}
+}
+
+@ARTICLE{Coudert2008,
+  author = {Coudert, LH and Wagner, G and Birk, M and Baranov, Yu I and Lafferty,
+	WJ and Flaud, J-M},
+  title = {{The $H_{2}^{16}O$ molecule: Line position and line intensity analyses
+	up to the second triad}},
+  journal = {Journal of Molecular Spectroscopy},
+  year = {2008},
+  volume = {251},
+  pages = {339--357},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022285208001215}
+}
+
+@ARTICLE{Crisp2004,
+  author = {Crisp, David and Atlas, RM and Breon, F-M and Brown, LR and Burrows,
+	JP and Ciais, P and Connor, BJ and Doney, SC and Fung, IY and Jacob,
+	DJ and others},
+  title = {The orbiting carbon observatory (OCO) mission},
+  journal = {Advances in Space Research},
+  year = {2004},
+  volume = {34},
+  pages = {700--709},
+  number = {4},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0273117704003539}
+}
+
+@ARTICLE{Crisp2012,
+  author = {Crisp, D and Fisher, B and O'Dell, C and Frankenberg, C and Basilio,
+	R and Bosch, H and Brown, LR and Castano, R and Connor, B and Deutscher,
+	NM and others},
+  title = {{The ACOS $CO_{2}$ retrieval algorithm-Part II: Global $X_{CO2}$
+	data characterization}},
+  year = {2012},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://ro.uow.edu.au/scipapers/4755/}
+}
+
+@ARTICLE{Daumont2012,
+  author = {Daumont, L and Nikitin, AV and Thomas, X and R{\'e}galia, L and Von
+	der Heyden, P and Tyuterev, Vl G and Rey, M and Boudon, V and Wenger,
+	Ch and Lo{\"e}te, M and others},
+  title = {{New assignments in the 2$\mu$m transparency window of the $^{12}CH_{4}$
+	octad band system.}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2012},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407312004001}
+}
+
+@ARTICLE{DeSmedt2008,
+  author = {De Smedt, I and M{\"u}ller, J-F and Stavrakou, T and van der A, R
+	and Eskes, H and Van Roozendael, M},
+  title = {Twelve years of global observations of formaldehyde in the troposphere
+	using GOME and SCIAMACHY sensors},
+  journal = {Atmospheric Chemistry \& Physics},
+  year = {2008},
+  volume = {8},
+  pages = {4947--4963},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://adsabs.harvard.edu/abs/2008ACP.....8.4947D}
+}
+
+@ARTICLE{Deutscher2010,
+  author = {Deutscher, NM and Griffith, DWT and Bryant, GW and Wennberg, PO and
+	Toon, GC and Washenfelder, RA and Keppel-Aleks, Gretchen and Wunch,
+	Debra and Yavin, Yael and Allen, NT and others},
+  title = {{Total column $CO_{2}$ measurements at Darwin, Australia--Site description
+	and calibration against in situ aircraft profiles}},
+  journal = {Atmospheric Measurement Techniques},
+  year = {2010},
+  volume = {3},
+  pages = {947--958},
+  number = {4},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-meas-tech.net/3/947/2010/}
+}
+
+@ARTICLE{Devi1994,
+  author = {Devi, V Malathy and Benner, D Chris and Smith, MAH and Rinsland,
+	CP},
+  title = {{Temperature dependence of Lorentz air-broadening and pressure-shift
+	coefficients of $^{12}CH_{4}$ lines in the 2.3-$\mu$m spectral region}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {1994},
+  volume = {51},
+  pages = {439--465},
+  number = {3},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/0022407394901465}
+}
+
+@ARTICLE{Devi1993,
+  author = {Devi, V Malathy and Benner, D Chris and Smith, MAH and Rinsland,
+	CP},
+  title = {Measurements of air-broadening and pressure-shifting of methane lines
+	in the 2.3-$\mu$m region},
+  journal = {Journal of molecular spectroscopy},
+  year = {1993},
+  volume = {157},
+  pages = {95--111},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022285283710088}
+}
+
+@ARTICLE{Devi2005,
+  author = {Devi, V Malathy and Benner, D Chris and Smith, MAH and Rinsland,
+	CP and Predoi-Cross, A and Sharpe, SW and Sams, RL and Boulet, C
+	and Bouanich, JP},
+  title = {{A multispectrum analysis of the $\nu_{2}$ band of $H12 C 14 N: Part
+	I. Intensities, broadening, and shift coefficients}},
+  journal = {Journal of molecular spectroscopy},
+  year = {2005},
+  volume = {231},
+  pages = {66--84},
+  number = {1},
+  __markedentry = {[ramiro:6]},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.19},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022285204003820}
+}
+
+@ARTICLE{Dils2006,
+  author = {Dils, Bart and Mazi{\`e}re, M De and M{\"u}ller, JF and Blumenstock,
+	Thomas and Buchwitz, M and Beek, R de and Demoulin, Philippe and
+	Duchatelet, Pierre and Fast, Hans and Frankenberg, Christian and
+	others},
+  title = {{Comparisons between SCIAMACHY and ground-based FTIR data for total
+	columns of $CO$,$CH_{4}$, $CO_{2}$ and $N_{2}O$.}},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2006},
+  volume = {6},
+  pages = {1953--1976},
+  number = {7},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/6/1953/2006/}
+}
+
+@ARTICLE{Eremenko2008,
+  author = {Eremenko, M and Dufour, G and Foret, G and Keim, C and Orphal, J
+	and Beekmann, M and Bergametti, G and Flaud, J-M},
+  title = {Tropospheric ozone distributions over Europe during the heat wave
+	in July 2007 observed from infrared nadir spectra recorded by IASI},
+  journal = {Geophysical Research Letters},
+  year = {2008},
+  volume = {35},
+  number = {18},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2008GL034803/full}
+}
+
+@ARTICLE{Frankenberg2011,
+  author = {Frankenberg, C and Aben, IPBJDE and Bergamaschi, P and Dlugokencky,
+	EJ and Van Hees, R and Houweling, S and Van Der Meer, P and Snel,
+	R and Tol, P},
+  title = {Global column-averaged methane mixing ratios from 2003 to 2009 as
+	derived from SCIAMACHY: Trends and variability},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2011},
+  volume = {116},
+  number = {D4},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/journals/jd/jd1104/2010JD014849/}
+}
+
+@ARTICLE{Frankenberg2008,
+  author = {Frankenberg, Christian and Bergamaschi, Peter and Butz, Andr{\'e}
+	and Houweling, Sander and Meirink, Jan Fokke and Notholt, Justus
+	and Petersen, Anna Katinka and Schrijver, Hans and Warneke, Thorsten
+	and Aben, Ilse},
+  title = {Tropical methane emissions: A revised view from SCIAMACHY onboard
+	ENVISAT},
+  journal = {Geophysical Research Letters},
+  year = {2008},
+  volume = {35},
+  number = {15},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2008GL034300/full}
+}
+
+@ARTICLE{Frankenberg2006,
+  author = {Frankenberg, C and Meirink, JF and Bergamaschi, P and Goede, APH
+	and Heimann, M and K{\"o}rner, S and Platt, U and Van Weele, M and
+	Wagner, T},
+  title = {Satellite chartography of atmospheric methane from SCIAMACHY on board
+	ENVISAT: Analysis of the years 2003 and 2004},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2006},
+  volume = {111},
+  number = {D7},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2005JD006235/full}
+}
+
+@ARTICLE{Frankenberg2005,
+  author = {Frankenberg, C and Meirink, JF and Van Weele, M and Platt, U and
+	Wagner, T},
+  title = {Assessing methane emissions from global space-borne observations},
+  journal = {Science},
+  year = {2005},
+  volume = {308},
+  pages = {1010--1014},
+  number = {5724},
+  owner = {ramiro},
+  publisher = {American Association for the Advancement of Science},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencemag.org/content/308/5724/1010.short}
+}
+
+@ARTICLE{Frankenberg2005a,
+  author = {Frankenberg, C and Platt, U and Wagner, T},
+  title = {{Iterative maximum a posteriori (IMAP)-DOAS for retrieval of strongly
+	absorbing trace gases: Model studies for $CH_{4}$ and $CO_{2}$ retrieval
+	from near infrared spectra of SCIAMACHY onboard ENVISAT}},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2005},
+  volume = {5},
+  pages = {9--22},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/5/9/2005/acp-5-9-2005.html}
+}
+
+@ARTICLE{Frankenberg2005b,
+  author = {Frankenberg, C and Platt, U and Wagner, T},
+  title = {Retrieval of CO from SCIAMACHY onboard ENVISAT: detection of strongly
+	polluted areas and seasonal patterns in global CO abundances},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2005},
+  volume = {5},
+  pages = {1639--1644},
+  number = {6},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/5/1639/}
+}
+
+@ARTICLE{Frankenberg2008b,
+  author = {Frankenberg, C and Warneke, T and Butz, A and Aben, I and Hase, F
+	and Spietz, P and Brown, LR},
+  title = {{Pressure broadening in the 2$\nu$3 band of methane and its implication
+	on atmospheric retrievals}},
+  journal = {Atmos. Chem. Phys},
+  year = {2008},
+  volume = {8},
+  pages = {5061--5075},
+  number = {17},
+  owner = {ramiro},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Galli2012,
+  author = {Galli, A and Butz, A and Scheepmaker, RA and Hasekamp, O and Landgraf,
+	J and Tol, P and Wunch, D and Deutscher, NM and Toon, GC and Wennberg,
+	PO and others},
+  title = {{$CH_{4}$, CO, and $H_{2}O$ spectroscopy for the Sentinel-5 Precursor
+	mission: an assessment with the Total Carbon Column Observing Network
+	measurements}},
+  journal = {Atmospheric Measurement Techniques Discussions},
+  year = {2012},
+  volume = {5},
+  pages = {2131--2167},
+  number = {2},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-meas-tech-discuss.net/5/2131/2012/amtd-5-2131-2012.html}
+}
+
+@ARTICLE{George2009,
+  author = {George, Maya and Clerbaux, Cathy and Hurtmans, Daniel and Turquety,
+	Sol{\`e}ne and Coheur, P-F and Pommier, Matthieu and Hadji-Lazaro,
+	Juliette and Edwards, DP and Worden, Helen and Luo, Ming and others},
+  title = {Carbon monoxide distributions from the IASI/METOP mission: evaluation
+	with other space-borne remote sensors},
+  journal = {Atmospheric chemistry and physics},
+  year = {2009},
+  volume = {9},
+  pages = {8317--8330},
+  number = {21},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/9/8317/2009/}
+}
+
+@BOOK{Gottwald2011,
+  title = {SCIAMACHY: Exploring the Changing Earth's Atmosphere},
+  publisher = {Springer},
+  year = {2011},
+  author = {Gottwald, Manfred and Bovensmann, Heinrich},
+  owner = {ramiro},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Guanter2012,
+  author = {Guanter, Luis and Frankenberg, Christian and Dudhia, Anu and Lewis,
+	Philip E and G{\'o}mez-Dans, Jos{\'e} and Kuze, Akihiko and Suto,
+	Hiroshi and Grainger, Roy G},
+  title = {Retrieval and global assessment of terrestrial chlorophyll fluorescence
+	from GOSAT space measurements},
+  journal = {Remote Sensing of Environment},
+  year = {2012},
+  volume = {121},
+  pages = {236--251},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0034425712000909}
+}
+
+@ARTICLE{Guo2012,
+  author = {Meng Guo and Xiufeng Wang and Jing Li and Kunpeng Yi and Guosheng
+	Zhong and Hiroshi Tani},
+  title = {Assessment of global carbon dioxide concentration using MODIS and
+	GOSAT data.},
+  journal = {Sensors (Basel)},
+  year = {2012},
+  volume = {12},
+  pages = {16368--16389},
+  number = {12},
+  abstract = {Carbon dioxide (CO(2)) is the most important greenhouse gas (GHG)
+	in the atmosphere and is the greatest contributor to global warming.
+	CO(2) concentration data are usually obtained from ground observation
+	stations or from a small number of satellites. Because of the limited
+	number of observations and the short time series of satellite data,
+	it is difficult to monitor CO(2) concentrations on regional or global
+	scales for a long time. The use of the remote sensing data such as
+	the Advanced Very High Resolution Radiometer (AVHRR) or Moderate
+	Resolution Imaging Spectroradiometer (MODIS) data can overcome these
+	problems, particularly in areas with low densities of CO(2) concentration
+	watch stations. A model based on temperature (MOD11C3), vegetation
+	cover (MOD13C2 and MOD15A2) and productivity (MOD17A2) of MODIS (which
+	we have named the TVP model) was developed in the current study to
+	assess CO(2) concentrations on a global scale. We assumed that CO(2)
+	concentration from the Thermal And Near infrared Sensor for carbon
+	Observation (TANSO) aboard the Greenhouse gases Observing SATellite
+	(GOSAT) are the true values and we used these values to check the
+	TVP model accuracy. The results indicate that the accuracy of the
+	TVP model is different in different continents: the greatest Pearson's
+	correlation coefficient (R2) was 0.75 in Eurasia (RMSE = 1.16) and
+	South America (RMSE = 1.17); the lowest R2 was 0.57 in Australia
+	(RMSE = 0.73). Compared with the TANSO-observed CO(2) concentration
+	(XCO(2)), we found that the accuracy throughout the World is between
+	-2.56~3.14 ppm. Potential sources of TVP model uncertainties were
+	also analyzed and identified.},
+  doi = {10.3390/s121216368},
+  institution = {Graduate School of Agriculture, Hokkaido University, Sapporo 060-8589,
+	Japan. guomeng@env.agr.hokudai.ac.jp},
+  language = {eng},
+  medline-pst = {epublish},
+  owner = {ramiro},
+  pii = {s121216368},
+  pmid = {23443383},
+  timestamp = {2013.08.09},
+  url = {http://dx.doi.org/10.3390/s121216368}
+}
+
+@INPROCEEDINGS{Hamazaki2004,
+  author = {Hamazaki, T and Kaneko, Y and Kuze, A},
+  title = {Carbon dioxide monitoring from the GOSAT satellite},
+  booktitle = {Proceedings XXth ISPRS conference, Istanbul, Turkey},
+  year = {2004},
+  volume = {1223},
+  owner = {ramiro},
+  timestamp = {2013.08.09}
+}
+
+@INPROCEEDINGS{Hamazaki2005,
+  author = {Hamazaki, Takashi and Kaneko, Yutaka and Kuze, Akihiko and Kondo,
+	Kayoko},
+  title = {Fourier transform spectrometer for greenhouse gases observing satellite
+	(GOSAT)},
+  booktitle = {Fourth International Asia-Pacific Environmental Remote Sensing Symposium
+	2004: Remote Sensing of the Atmosphere, Ocean, Environment, and Space},
+  year = {2005},
+  pages = {73--80},
+  organization = {International Society for Optics and Photonics},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=857363}
+}
+
+@BOOK{Hartmann2008,
+  title = {Collisional effects on molecular spectra: laboratory experiments
+	and models, consequences for applications},
+  publisher = {Access Online via Elsevier},
+  year = {2008},
+  author = {Hartmann, Jean-Michel and Boulet, Christian and Robert, Daniel},
+  owner = {ramiro},
+  timestamp = {2013.08.20}
+}
+
+@ARTICLE{Houweling2005,
+  author = {Houweling, S and Hartmann, W and Aben, I and Schrijver, H and Skidmore,
+	J and Roelofs, G-J and Breon, F-M},
+  title = {{Evidence of systematic errors in SCIAMACHY-observed $CO_{2}$ due
+	to aerosols}},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2005},
+  volume = {5},
+  pages = {3003--3013},
+  number = {11},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/5/3003/2005/acp-5-3003-2005.html}
+}
+
+@ARTICLE{Houweling2006,
+  author = {Houweling, Sea and R{\"o}ckmann, T and Aben, I and Keppler, F and
+	Krol, MC and Meirink, JF and Dlugokencky, EJ and Frankenberg, C},
+  title = {Atmospheric constraints on global emissions of methane from plants},
+  journal = {Geophysical Research Letters},
+  year = {2006},
+  volume = {33},
+  pages = {L15821},
+  number = {15},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2006/2006GL026162.shtml}
+}
+
+@ARTICLE{Ingmann2012,
+  author = {Ingmann, Paul and Veihelmann, Ben and Langen, J{\"o}rg and Lamarre,
+	Daniel and Stark, Hendrik and Courr{\`e}ges-Lacoste, Gr{\'e}gory
+	Bazalgette},
+  title = {Requirements for the GMES Atmosphere Service and ESA's implementation
+	concept: Sentinels-4/-5 and-5p},
+  journal = {Remote Sensing of Environment},
+  year = {2012},
+  volume = {120},
+  pages = {58--69},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0034425712000673}
+}
+
+@ARTICLE{Jacquemart2005,
+  author = {Jacquemart, David and Gamache, Robert and Rothman, Laurence S},
+  title = {Semi-empirical calculation of air-broadened half-widths and air pressure-induced
+	frequency shifts of water-vapor absorption lines},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2005},
+  volume = {96},
+  pages = {205--239},
+  number = {2},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407305001056}
+}
+
+@ARTICLE{Jacquinet-Husson2005,
+  author = {Jacquinet-Husson, N and Scott, NA and Ch{\'e}din, A and Garceran,
+	K and Armante, R and Chursin, AA and Barbe, A and Birk, M and Brown,
+	LR and Camy-Peyret, C and others},
+  title = {The 2003 edition of the GEISA/IASI spectroscopic database},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2005},
+  volume = {95},
+  pages = {429--467},
+  number = {4},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407305000282}
+}
+
+@ARTICLE{Jenouvrier2007,
+  author = {Jenouvrier, Alain and Daumont, Ludovic and R{\'e}galia-Jarlot, Laurence
+	and Tyuterev, Vladimir G and Carleer, Michel and Vandaele, Ann Carine
+	and Mikhailenko, Semen and Fally, Sophie},
+  title = {{Fourier transform measurements of water vapor line parameters in
+	the $4200-6600\,cm^{- 1}$ region}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2007},
+  volume = {105},
+  pages = {326--355},
+  number = {2},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407306003025}
+}
+
+@ARTICLE{Kadygrov2009,
+  author = {Kadygrov, Nikolay and Maksyutov, Shamil and Eguchi, Nawo and Aoki,
+	Tadao and Nakazawa, Takakiyo and Yokota, Tatsuya and Inoue, Gen},
+  title = {{Role of simulated GOSAT total column $CO_{2}$ observations in surface
+	$CO_{2}$ flux uncertainty reduction}},
+  journal = {Journal of Geophysical Research},
+  year = {2009},
+  volume = {114},
+  pages = {D21208},
+  number = {D21},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2009/2008JD011597.shtml}
+}
+
+@ARTICLE{Kopacz2010,
+  author = {Kopacz, Monika and Jacob, DJ and Fisher, JA and Logan, JA and Zhang,
+	Lin and Megretskaia, IA and Yantosca, RM and Singh, Kumaresh and
+	Henze, DK and Burrows, JP and others},
+  title = {Global estimates of CO sources with high resolution by adjoint inversion
+	of multiple satellite datasets (MOPITT, AIRS, SCIAMACHY, TES)},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2010},
+  volume = {10},
+  pages = {855--876},
+  number = {3},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-chem-phys.net/10/855/2010/}
+}
+
+@ARTICLE{Kuai2012,
+  author = {Kuai, Le and Wunch, Debra and Shia, Run-Lie and Connor, Brian and
+	Miller, Charles and Yung, Yuk},
+  title = {Vertically constrained CO 2 retrievals from TCCON measurements},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2012},
+  volume = {113},
+  pages = {1753--1761},
+  number = {14},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407312002397}
+}
+
+@INPROCEEDINGS{Kuze2005,
+  author = {Kuze, Akihiko and Kondo, Kayoko and Kaneko, Yutaka and Hamazaki,
+	Takashi},
+  title = {Greenhouse gases observation from the GOSAT satellite},
+  booktitle = {AGU Fall Meeting Abstracts},
+  year = {2005},
+  volume = {1},
+  pages = {03},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://adsabs.harvard.edu/abs/2005AGUFM.A14C..03K}
+}
+
+@ARTICLE{Kuze2009,
+  author = {Akihiko Kuze and Hiroshi Suto and Masakatsu Nakajima and Takashi
+	Hamazaki},
+  title = {Thermal and near infrared sensor for carbon observation Fourier-transform
+	spectrometer on the Greenhouse Gases Observing Satellite for greenhouse
+	gases monitoring.},
+  journal = {Appl Opt},
+  year = {2009},
+  volume = {48},
+  pages = {6716--6733},
+  number = {35},
+  month = {Dec},
+  abstract = {The Greenhouse Gases Observing Satellite (GOSAT) monitors carbon dioxide
+	(CO(2)) and methane (CH(4)) globally from space using two instruments.
+	The Thermal and Near Infrared Sensor for Carbon Observation Fourier-Transform
+	Spectrometer (TANSO-FTS) detects gas absorption spectra of the solar
+	short wave infrared (SWIR) reflected on the Earth's surface as well
+	as of the thermal infrared radiated from the ground and the atmosphere.
+	TANSO-FTS is capable of detecting three narrow bands (0.76, 1.6,
+	and 2.0 microm) and a wide band (5.5-14.3 microm) with 0.2 cm(-1)
+	spectral resolution (interval). The TANSO Cloud and Aerosol Imager
+	(TANSO-CAI) is an ultraviolet (UV), visible, near infrared, and SWIR
+	radiometer designed to detect cloud and aerosol interference and
+	to provide the data for their correction. GOSAT is placed in a sun-synchronous
+	orbit 666 km at 13:00 local time, with an inclination angle of 98
+	degrees . A brief overview of the GOSAT project, scientific requirements,
+	instrument designs, hardware performance, on-orbit operation, and
+	data processing is provided.},
+  institution = {Japan Aerospace Exploration Agency 2-1-1 Sengen, Tsukuba, Ibaraki,
+	305-8505, Japan. kuze.akihiko@jaxa.jp},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pii = {190794},
+  pmid = {20011012},
+  timestamp = {2013.08.09}
+}
+
+@INCOLLECTION{Lahoz2010,
+  author = {Lahoz, William},
+  title = {Research satellites},
+  booktitle = {Data Assimilation},
+  publisher = {Springer},
+  year = {2010},
+  pages = {301--321},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://link.springer.com/chapter/10.1007/978-3-540-74703-1_12}
+}
+
+@ARTICLE{Lee2013,
+  author = {Jung-Eun Lee and Christian Frankenberg and Christiaan van der Tol
+	and Joseph A Berry and Luis Guanter and C. Kevin Boyce and Joshua
+	B Fisher and Eric Morrow and John R Worden and Salvi Asefi and Grayson
+	Badgley and Sassan Saatchi},
+  title = {Forest productivity and water stress in Amazonia: observations from
+	GOSAT chlorophyll fluorescence.},
+  journal = {Proc Biol Sci},
+  year = {2013},
+  volume = {280},
+  pages = {20130171},
+  number = {1761},
+  month = {Jun},
+  abstract = {It is unclear to what extent seasonal water stress impacts on plant
+	productivity over Amazonia. Using new Greenhouse gases Observing
+	SATellite (GOSAT) satellite measurements of sun-induced chlorophyll
+	fluorescence, we show that midday fluorescence varies with water
+	availability, both of which decrease in the dry season over Amazonian
+	regions with substantial dry season length, suggesting a parallel
+	decrease in gross primary production (GPP). Using additional SeaWinds
+	Scatterometer onboard QuikSCAT satellite measurements of canopy water
+	content, we found a concomitant decrease in daily storage of canopy
+	water content within branches and leaves during the dry season, supporting
+	our conclusion. A large part (r(2) = 0.75) of the variance in observed
+	monthly midday fluorescence from GOSAT is explained by water stress
+	over moderately stressed evergreen forests over Amazonia, which is
+	reproduced by model simulations that include a full physiological
+	representation of photosynthesis and fluorescence. The strong relationship
+	between GOSAT and model fluorescence (r(2) = 0.79) was obtained using
+	a fixed leaf area index, indicating that GPP changes are more related
+	to environmental conditions than chlorophyll contents. When the dry
+	season extended to drought in 2010 over Amazonia, midday basin-wide
+	GPP was reduced by 15 per cent compared with 2009.},
+  doi = {10.1098/rspb.2013.0171},
+  institution = {Jet Propulsion Laboratory, California Institute of Technology, Pasadena,
+	CA, USA. jung-eun.lee@jpl.nasa.gov},
+  language = {eng},
+  medline-pst = {epublish},
+  owner = {ramiro},
+  pii = {rspb.2013.0171},
+  pmid = {23760636},
+  timestamp = {2013.08.09},
+  url = {http://dx.doi.org/10.1098/rspb.2013.0171}
+}
+
+@ARTICLE{Lisak2008,
+  author = {Lisak, Daniel and Hodges, Joseph T},
+  title = {{Low-uncertainty $H_{2}O$ line intensities for the 930-nm region}},
+  journal = {Journal of Molecular Spectroscopy},
+  year = {2008},
+  volume = {249},
+  pages = {6--13},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022285207003347}
+}
+
+@ARTICLE{Lodi2012,
+  author = {Lodi, Lorenzo and Tennyson, Jonathan},
+  title = {{Line lists for $H_{2}^{18}O$ and $H_{2}^{17}O$ based on empirical
+	line positions and ab initio intensities}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2012},
+  volume = {113},
+  pages = {850--858},
+  owner = {ramiro},
+  timestamp = {2013.08.20},
+  url = {http://adsabs.harvard.edu/abs/2012JQSRT.113..850L}
+}
+
+@ARTICLE{Lyulin2009,
+  author = {Lyulin, OM and Nikitin, AV and Perevalov, VI and Morino, Isamu and
+	Yokota, Tatsuya and Kumazawa, Ryoichi and Watanabe, Takeshi},
+  title = {{Measurements of $N_{2}$- and $O_{2}$-broadening and shifting parameters
+	of methane spectral lines in the 5550-6236 $cm^{- 1}$ region}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2009},
+  volume = {110},
+  pages = {654--668},
+  number = {9},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407309000752}
+}
+
+@ARTICLE{MalathyDevi2002a,
+  author = {Malathy Devi, V and Chris Benner, D and Brown, Linda R and Smith,
+	Mary Ann H and Rinsland, Curtis P and Sams, Robert L and Sharpe,
+	Steven W},
+  title = {Multispectrum analysis of self-and N< sub> 2</sub>-broadening, shifting
+	and line mixing coefficients in the $\nu$< sub> 6</sub> band of<
+	sup> 12</sup> CH< sub> 3</sub> D},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2002},
+  volume = {72},
+  pages = {139--191},
+  number = {2},
+  __markedentry = {[ramiro:6]},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.19},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407301001200}
+}
+
+@ARTICLE{MalathyDevi2002,
+  author = {Malathy Devi, V and Chris Benner, D and Smith, Mary Ann H and Rinsland,
+	Curtis P and Brown, Linda R},
+  title = {Multispectrum analysis of self-and nitrogen-broadening, pressure
+	shifting and line mixing in the $\nu$< sub> 3</sub> parallel band
+	of< sup> 12</sup> CH< sub> 3</sub> D},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2002},
+  volume = {73},
+  pages = {603--640},
+  number = {6},
+  __markedentry = {[ramiro:6]},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.19},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407301001820}
+}
+
+@ARTICLE{Martin2013,
+  author = {M.A Martin and Coudert L. et al},
+  title = {Positions and intensities of water vapor transitions in 0-6000 cm-1
+	region},
+  journal = {Journal of Chemical Physics},
+  year = {2013},
+  volume = {356},
+  pages = {131--146},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0301010408004801}
+}
+
+@ARTICLE{Meirink2008,
+  author = {Meirink, Jan Fokke and Bergamaschi, Peter and Frankenberg, Christian
+	and d'Amelio, Monica TS and Dlugokencky, Edward J and Gatti, Luciana
+	V and Houweling, Sander and Miller, John B and R{\"o}ckmann, Thomas
+	and Villani, M Gabriella and others},
+  title = {Four-dimensional variational data assimilation for inverse modeling
+	of atmospheric methane emissions: Analysis of SCIAMACHY observations},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2008},
+  volume = {113},
+  number = {D17},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/journals/jd/jd0817/2007JD009740/2007jd009740-t02.txt}
+}
+
+@ARTICLE{Messerschmidt2011,
+  author = {Messerschmidt, Janina and Geibel, Marc Christoph and Blumenstock,
+	Thomas and Chen, Hilin and Deutscher, Nicholas M and Engel, Andreas
+	and Feist, Dietrich G and Gerbig, Christoph and Gisi, Michael and
+	Hase, Frank and others},
+  title = {Calibration of TCCON column-averaged $CO_{2}$: the first aircraft
+	campaign over European TCCON sites},
+  journal = {Atmospheric Chemistry and Physics},
+  year = {2011},
+  volume = {11},
+  pages = {10765--10777},
+  number = {21},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Messerschmidt2012,
+  author = {Messerschmidt, J and Parazoo, N and Deutscher, NM and Roehl, C and
+	Warneke, T and Wennberg, PO and Wunch, D},
+  title = {Evaluation of atmosphere-biosphere exchange estimations with TCCON
+	measurements},
+  journal = {Atmospheric Chemistry and Physics Discussions},
+  year = {2012},
+  volume = {12},
+  pages = {12759--12800},
+  number = {5},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Nikitin2013,
+  author = {Nikitin, Andrei and Boudon, Vincent and Wenger, Christian and Albert,
+	Sieghard and Brown, Linda and Bauerecker, Sigurd and Quack, Martin},
+  title = {{High resolution spectroscopy and first global analysis of the Tetradecad
+	region of methane $^{12}CH_{4}$.}},
+  journal = {Phys. Chem. Chem. Phys.},
+  year = {2013},
+  owner = {ramiro},
+  publisher = {The Royal Society of Chemistry},
+  timestamp = {2013.08.20},
+  url = {http://pubs.rsc.org/en/content/articlehtml/2013/cp/c3cp50799h}
+}
+
+@ARTICLE{Nikitin2010,
+  author = {Nikitin, AV and Lyulin, OM and Mikhailenko, SN and Perevalov, VI
+	and Filippov, NN and Grigoriev, IM and Morino, I and Yokota, T and
+	Kumazawa, R and Watanabe, T},
+  title = {{GOSAT-2009 methane spectral line list in the $5550-6236\,cm^{-1}$
+	range}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2010},
+  volume = {111},
+  pages = {2211--2224},
+  number = {15},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407310001792}
+}
+
+@ARTICLE{ODell2012,
+  author = {O'Dell, CW and Connor, B and B{\"o}sch, H and O'Brien, D and Frankenberg,
+	C and Castano, R and Christi, M and Eldering, D and Fisher, B and
+	Gunson, M and others},
+  title = {The ACOS CO 2 retrieval algorithm--Part 1: Description and validation
+	against synthetic observations},
+  journal = {Atmospheric Measurement Techniques},
+  year = {2012},
+  volume = {5},
+  pages = {99--121},
+  number = {1},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-meas-tech.net/5/99/2012/amt-5-99-2012.html}
+}
+
+@ARTICLE{Oshchepkov2012,
+  author = {Oshchepkov, Sergey and Bril, Andrey and Yokota, Tatsuya and Morino,
+	Isamu and Yoshida, Yukio and Matsunaga, Tsuneo and Belikov, Dmitry
+	and Wunch, Debra and Wennberg, Paul and Toon, Geoffrey and others},
+  title = {Effects of atmospheric light scattering on spectroscopic observations
+	of greenhouse gases from space: Validation of PPDF-based $CO_{2}$
+	retrievals from GOSAT},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2012},
+  volume = {117},
+  number = {D12},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2012/2012JD017505.shtml}
+}
+
+@ARTICLE{Oshchepkov2013b,
+  author = {Oshchepkov, Sergey and Bril, Andrey and Yokota, Tatsuya and Wennberg,
+	Paul O and Deutscher, Nicholas M and Wunch, Debra and Toon, Geoffrey
+	C and Yoshida, Yukio and O'Dell, Christopher W and Crisp, David and
+	others},
+  title = {Effects of atmospheric light scattering on spectroscopic observations
+	of greenhouse gases from space. Part 2: algorithm intercomparison
+	in the GOSAT data processing for $CO_{2}$ retrievals over TCCON sites},
+  journal = {Journal of Geophysical Research: Atmospheres},
+  year = {2013},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1002/jgrd.50146/full}
+}
+
+@ARTICLE{Oshchepkov2013,
+  author = {Sergey Oshchepkov and Andrey Bril and Tatsuya Yokota and Yukio Yoshida
+	and Thomas Blumenstock and Nicholas M Deutscher and Susanne Dohe
+	and Ronald Macatangay and Isamu Morino and Justus Notholt and Markus
+	Rettinger and Christof Petri and Matthias Schneider and Ralf Sussman
+	and Osamu Uchino and Voltaire Velazco and Debra Wunch and Dmitry
+	Belikov},
+  title = {Simultaneous retrieval of atmospheric $CO_{2}$ and light path modification
+	from space-based spectroscopic observations of greenhouse gases:
+	methodology and application to GOSAT measurements over TCCON sites.},
+  journal = {Appl Opt},
+  year = {2013},
+  volume = {52},
+  pages = {1339--1350},
+  number = {6},
+  month = {Feb},
+  abstract = {This paper presents an improved photon path length probability density
+	function method that permits simultaneous retrievals of column-average
+	greenhouse gas mole fractions and light path modifications through
+	the atmosphere when processing high-resolution radiance spectra acquired
+	from space. We primarily describe the methodology and retrieval setup
+	and then apply them to the processing of spectra measured by the
+	Greenhouse gases Observing SATellite (GOSAT). We have demonstrated
+	substantial improvements of the data processing with simultaneous
+	carbon dioxide and light path retrievals and reasonable agreement
+	of the satellite-based retrievals against ground-based Fourier transform
+	spectrometer measurements provided by the Total Carbon Column Observing
+	Network (TCCON).},
+  institution = {Center for Global Environmental Research, National Institute for
+	Environmental Studies, Tsukuba, Ibaraki, Japan. sergey.oshchepkov@nies.go.jp},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pii = {249352},
+  pmid = {23435008},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Oshchepkov2013a,
+  author = {Sergey Oshchepkov and Andrey Bril and Tatsuya Yokota and Yukio Yoshida
+	and Thomas Blumenstock and Nicholas M Deutscher and Susanne Dohe
+	and Ronald Macatangay and Isamu Morino and Justus Notholt and Markus
+	Rettinger and Christof Petri and Matthias Schneider and Ralf Sussman
+	and Osamu Uchino and Voltaire Velazco and Debra Wunch and Dmitry
+	Belikov},
+  title = {Simultaneous retrieval of atmospheric $CO_{2}$ and light path modification
+	from space-based spectroscopic observations of greenhouse gases:
+	methodology and application to GOSAT measurements over TCCON sites.},
+  journal = {Appl Opt},
+  year = {2013},
+  volume = {52},
+  pages = {1339--1350},
+  number = {6},
+  month = {Feb},
+  abstract = {This paper presents an improved photon path length probability density
+	function method that permits simultaneous retrievals of column-average
+	greenhouse gas mole fractions and light path modifications through
+	the atmosphere when processing high-resolution radiance spectra acquired
+	from space. We primarily describe the methodology and retrieval setup
+	and then apply them to the processing of spectra measured by the
+	Greenhouse gases Observing SATellite (GOSAT). We have demonstrated
+	substantial improvements of the data processing with simultaneous
+	carbon dioxide and light path retrievals and reasonable agreement
+	of the satellite-based retrievals against ground-based Fourier transform
+	spectrometer measurements provided by the Total Carbon Column Observing
+	Network (TCCON).},
+  institution = {Center for Global Environmental Research, National Institute for
+	Environmental Studies, Tsukuba, Ibaraki, Japan. sergey.oshchepkov@nies.go.jp},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pii = {249352},
+  pmid = {23435008},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Parker2011,
+  author = {Parker, Robert and Boesch, Hartmut and Cogan, Austin and Fraser,
+	Annemarie and Feng, Liang and Palmer, Paul I and Messerschmidt, Janina
+	and Deutscher, Nicholas and Griffith, David WT and Notholt, Justus
+	and others},
+  title = {Methane observations from the Greenhouse Gases Observing SATellite:
+	Comparison to ground-based TCCON data and model calculations},
+  journal = {Geophysical Research Letters},
+  year = {2011},
+  volume = {38},
+  pages = {L15807},
+  number = {15},
+  owner = {ramiro},
+  publisher = {American Geophysical Union},
+  timestamp = {2013.08.09},
+  url = {http://www.agu.org/pubs/crossref/2011/2011GL047871.shtml}
+}
+
+@INPROCEEDINGS{Phulpin2002,
+  author = {Phulpin, T and Cayla, F and Chalon, G and Diebel, D and Schl{\"u}ssel,
+	P},
+  title = {IASI on board Metop: Project status and scientific preparation},
+  booktitle = {12th International TOVS Study Conference, Lorne, Victoria, Australia},
+  year = {2002},
+  volume = {26},
+  owner = {ramiro},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Predoi-Cross2006,
+  author = {Predoi-Cross, Adriana and Brawley-Tremblay, Marco and Brown, Linda
+	R and Devi, V Malathy and Benner, D Chris},
+  title = {{Multispectrum analysis of $^{12}CH_{4}$ from 4100 to 4635cm- 1:
+	II. Air-broadening coefficients (widths and shifts)}},
+  journal = {Journal of Molecular Spectroscopy},
+  year = {2006},
+  volume = {236},
+  pages = {201--215},
+  number = {2},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022285206000178}
+}
+
+@ARTICLE{Predoi-Cross2005,
+  author = {Predoi-Cross, Adriana and Brown, Linda R and Devi, V Malathy and
+	Brawley-Tremblay, M and Benner, D Chris},
+  title = {Multispectrum analysis of< sup> 12</sup> CH< sub> 4</sub> from 4100
+	to 4635cm< sup>- 1</sup>: 1. Self-broadening coefficients (widths
+	and shifts)},
+  journal = {Journal of molecular spectroscopy},
+  year = {2005},
+  volume = {232},
+  pages = {231--246},
+  number = {2},
+  __markedentry = {[ramiro:6]},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.19},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022285205000573}
+}
+
+@ARTICLE{Predoi-Cross2009,
+  author = {Predoi-Cross, APCA and McKellar, ARW and Benner, D Chris and Devi,
+	V Malathy and Gamache, RR and Miller, CE and Toth, RA and Brown,
+	LR},
+  title = {{Temperature dependences for air-broadened Lorentz half-width and
+	pressure shift coefficients in the 30013 00001 and 30012 00001 bands
+	of $CO_{2}$ near 1600 nm}},
+  journal = {Canadian Journal of Physics (This article is part of a Special Issue
+	on Spectroscopy at the University of New Brunswick in honour of Colan
+	Linton and Ron Lees.)},
+  year = {2009},
+  volume = {87},
+  pages = {517--535},
+  number = {5},
+  owner = {ramiro},
+  publisher = {NRC Research Press},
+  timestamp = {2013.08.20},
+  url = {http://www.nrcresearchpress.com/doi/abs/10.1139/P08-137}
+}
+
+@ARTICLE{Rinsland1991,
+  author = {Rinsland, Curtis P and Goldman, Aaron and Smith, Mary Ann H and Devi,
+	V Malathy},
+  title = {{Measurements of Lorentz air-broadening coefficients and relative
+	intensities in the $H_{2}^{16}O$ pure rotational and $\nu_2$ bands
+	from long horizontal path atmospheric spectra}},
+  journal = {Applied optics},
+  year = {1991},
+  volume = {30},
+  pages = {1427--1438},
+  number = {12},
+  owner = {ramiro},
+  publisher = {Optical Society of America},
+  timestamp = {2013.08.20},
+  url = {http://www.opticsinfobase.org/abstract.cfm?id=38772}
+}
+
+@ARTICLE{Rinsland2008,
+  author = {Rinsland, Curtis P and Malathy Devi, V and Chris Benner, D and Blake,
+	Thomas A and Sams, Robert L and Brown, Linda R and Kleiner, Isabelle
+	and Dehayem-Kamadjeu, A and M{\"u}ller, HSP and Gamache, RR and others},
+  title = {Multispectrum analysis of the $\nu$< sub> 4</sub> band of CH< sub>
+	3</sub> CN: Positions, intensities, self-and N< sub> 2</sub>-broadening,
+	and pressure-induced shifts},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2008},
+  volume = {109},
+  pages = {974--994},
+  number = {6},
+  __markedentry = {[ramiro:6]},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.19},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407307003421}
+}
+
+@ARTICLE{Rohen2005,
+  author = {Rohen, Guenter and Von Savigny, C and Sinnhuber, M and Llewellyn,
+	EJ and Kaiser, JW and Jackman, CH and Kallenrode, M-B and Schr{\"o}ter,
+	Jens and Eichmann, K-U and Bovensmann, H and others},
+  title = {Ozone depletion during the solar proton events of October/November
+	2003 as seen by SCIAMACHY},
+  journal = {Journal of Geophysical Research: Space Physics (1978--2012)},
+  year = {2005},
+  volume = {110},
+  number = {A9},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2004JA010984/full}
+}
+
+@ARTICLE{Rothman2013,
+  author = {Rothman, LS and Gordon, IE and Babikov, Y and Barbe, A and Benner,
+	D Chris and Bernath, PF and Birk, M and Bizzocchi, L and Boudon,
+	V and Brown, LR and others},
+  title = {{The HITRAN 2012 Molecular Spectroscopic Database}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2013},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407313002859}
+}
+
+@ARTICLE{Rothman2009,
+  author = {Rothman, Laurence S and Gordon, Iouli E and Barbe, Alain and Benner,
+	D Chris and Bernath, Peter F and Birk, Manfred and Boudon, Vincent
+	and Brown, Linda R and Campargue, Alain and Champion, J-P and others},
+  title = {{The HITRAN 2008 molecular spectroscopic database}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2009},
+  volume = {110},
+  pages = {533--572},
+  number = {9},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407309000727}
+}
+
+@ARTICLE{Rothman2005,
+  author = {Rothman, Laurence S and Jacquemart, D and Barbe, A and Chris Benner,
+	D and Birk, M and Brown, LR and Carleer, MR and Chackerian Jr, C
+	and Chance, K and Coudert, LH et al and others},
+  title = {{The HITRAN 2004 molecular spectroscopic database}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2005},
+  volume = {96},
+  pages = {139--204},
+  number = {2},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.16},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407305001081}
+}
+
+@ARTICLE{Schlussel2005,
+  author = {Schl{\"u}ssel, Peter and Hultberg, Tim H and Phillips, Pepe L and
+	August, Thomas and Calbet, Xavier},
+  title = {{The operational IASI Level 2 processor}},
+  journal = {Advances in space research},
+  year = {2005},
+  volume = {36},
+  pages = {982--988},
+  number = {5},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0273117705002838}
+}
+
+@ARTICLE{Shirin2006,
+  author = {Shirin, Sergei V and Polyansky, Oleg L and Zobov, Nikolai F and Ovsyannikov,
+	Roman I and Cs{\'a}sz{\'a}r, Attila G and Tennyson, Jonathan},
+  title = {{Spectroscopically determined potential energy surfaces of the $H_{2}^{16}O$,
+	$H_{2}^{17}O$, and $H_{2}^{18}O$ isotopologues of water}},
+  journal = {Journal of Molecular Spectroscopy},
+  year = {2006},
+  volume = {236},
+  pages = {216--223},
+  number = {2},
+  owner = {ramiro},
+  publisher = {San Diego [etc.] Academic Press.},
+  timestamp = {2013.08.20}
+}
+
+@ARTICLE{Sinnhuber2005,
+  author = {Sinnhuber, B-M and Rozanov, A and Sheode, N and Afe, OT and Richter,
+	A and Sinnhuber, M and Wittrock, F and Burrows, JP and Stiller, GP
+	and Von Clarmann, T and others},
+  title = {Global observations of stratospheric bromine monoxide from SCIAMACHY},
+  journal = {Geophysical research letters},
+  year = {2005},
+  volume = {32},
+  number = {20},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.09},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2005GL023839/full}
+}
+
+@ARTICLE{Smith2010,
+  author = {Smith, MAH and Chris Benner, D and Predoi-Cross, A and Devi, V Malathy},
+  title = {{Multispectrum analysis of 12CH4 in the $\nu_{4}$ spectral region:
+	II. Self-broadened half widths, pressure-induced shifts, temperature
+	dependences and line mixing}},
+  journal = {Journal of quantitative spectroscopy \& radiative transfer},
+  year = {2010},
+  volume = {111},
+  pages = {1152--1166},
+  number = {9},
+  __markedentry = {[ramiro:6]},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.19},
+  url = {http://cat.inist.fr/?aModele=afficheN&amp;cpsidt=22626155}
+}
+
+@ARTICLE{Spinath2002,
+  author = {Frank M Spinath and Alois Angleitner and Peter Borkenau and Rainer
+	Riemann and Heike Wolf},
+  title = {German Observational Study of Adult Twins (GOSAT): a multimodal investigation
+	of personality, temperament and cognitive ability.},
+  journal = {Twin Res},
+  year = {2002},
+  volume = {5},
+  pages = {372--375},
+  number = {5},
+  month = {Oct},
+  abstract = {The German Observational Study of Adult Twins (GOSAT) is the largest
+	population-based observational twin study in Germany to date. Embedded
+	in the Bielefeld Longitudinal Study of Adult Twins (BiLSAT), it addresses
+	the etiology of personality, temperament and cognitive ability in
+	a sample of 300 monozygotic (MZ) and dizygotic (DZ) adult twin pairs
+	between 18 and 70 years of age. A major aim of the GOSAT lies in
+	the utilization of different modes of measurement, (i.e., peer reports
+	and observational data), in addition to self-reports which have been
+	used predominantly in past behavioral genetic research on personality
+	and temperament in adults. Participants completed a full day assessment
+	at the University of Bielefeld including videotaped social interactions
+	and presentations, psychometric intelligence tests and computerized
+	elementary cognitive tasks as well as objective measures and unobtrusive
+	behavior counts. The research design of the GOSAT was devised to
+	reduce the potential impact of systematic rater bias on estimates
+	of genetic and environmental influences to a minimum. In combination
+	with extensive self- and peer report data on key personality and
+	personality related dimensions available from the BiLSAT, the GOSAT
+	provides a rich dataset, which currently includes DNA samples from
+	80\% of its participants.},
+  doi = {10.1375/136905202320906110},
+  institution = {Department of Psychology, University of Bielefeld, Bielefeld, Germany.
+	fspin@uni-bielefeld.de},
+  keywords = {Adult; Bias (Epidemiology); Cognition; Environment; Gene Library;
+	Germany; Humans; Intelligence Tests; Longitudinal Studies; Multivariate
+	Analysis; Neuropsychological Tests; Observer Variation; Personality
+	Assessment; Personality, genetics; Phenotype; Psychometrics; Questionnaires;
+	Research Design; Social Behavior; Temperament; Twins, genetics/psychology;
+	Videotape Recording},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pmid = {12537861},
+  timestamp = {2013.08.09},
+  url = {http://dx.doi.org/10.1375/136905202320906110}
+}
+
+@ARTICLE{Spinath2003,
+  author = {Frank M Spinath and Thomas G O'Connor},
+  title = {A behavioral genetic study of the overlap between personality and
+	parenting.},
+  journal = {J Pers},
+  year = {2003},
+  volume = {71},
+  pages = {785--808},
+  number = {5},
+  month = {Oct},
+  abstract = {The current study had three aims. The first was to examine the covariation
+	between personality of parents and parenting behaviors. The second
+	aim was to examine the genetic and environmental influences on parenting
+	behaviors. The third aim was to examine the extent to which the association
+	between personality and parenting was mediated by genetic and environmental
+	factors. Personality (Five Factor Model, NEO-FFI) and parenting data
+	were collected as part of a larger German study of 300 adult twin
+	pairs (GOSAT). The current paper analyzes data on a subset of the
+	300 twin pairs from the GOSAT sample who were concordant for having
+	children (n=98 pairs or 196 individuals). Results indicated modest
+	overlap between personality and parenting. In addition, univariate
+	behavioral genetic analyses indicated moderate genetic influence
+	on select parenting dimensions. Results also indicated that the moderate
+	phenotypic covariation between personality and parenting was attributed
+	largely to nongenetic factors. Implications of the findings for research
+	on parenting and personality are considered.},
+  institution = {Department of Psychology, University of Bielefeld, Germany. fspin@uni-bielefeld.de},
+  keywords = {Adolescent; Adult; Affect; Aged; Female; Genetics, Behavioral; Genotype;
+	Germany; Humans; Internal-External Control; Male; Middle Aged; Parenting,
+	psychology; Personality Development; Personality, genetics; Phenotype;
+	Social Environment; Social Support; Twins, Dizygotic, genetics/psychology;
+	Twins, Monozygotic, genetics/psychology},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pii = {07105004},
+  pmid = {12932210},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Spinath2006,
+  author = {Frank M Spinath and Heike Wolf},
+  title = {CoSMoS and TwinPaW: initial report on two new German twin studies.},
+  journal = {Twin Res Hum Genet},
+  year = {2006},
+  volume = {9},
+  pages = {787--790},
+  number = {6},
+  month = {Dec},
+  abstract = {After briefly recapitulating two earlier German twin studies (BiLSAT
+	and GOSAT), we present two new German twin studies with a longitudinal
+	perspective: CoSMoS and TwinPaW. The twin study on Cognitive ability,
+	Self-reported Motivation and School performance (CoSMoS) aims to
+	investigate predictors and influences of school performance in a
+	genetically sensitive design, beginning with children in late elementary
+	school. The Twin study on Personality And Wellbeing (TwinPaW) focuses
+	on adult personality and its relation to physical health as well
+	as health-related behavior in an adult sample of twins. Both studies
+	are characterized by an effort to recruit new large twin samples
+	through a novel recruitment procedure aimed at reducing self-selective
+	sampling. In two German federal states, contact information on persons
+	born on the same day and with the same name was retrieved from record
+	sections. From the resulting pool of more than 36,000 addresses we
+	contacted approximately 2000 parents of twins aged 9 and 10 for CoSMoS,
+	as well as 2000 adult twin pairs for TwinPaW by telephone and mail.
+	Personal contact by telephone proved to be more efficient with agreement
+	rates of 63\% in the children sample and 65\% in the adult sample.
+	In this article we briefly describe the rationale and the study aims
+	of CoSMoS and TwinPaW as well as the characteristics of the sample
+	we have recruited so far.},
+  doi = {10.1375/183242706779462903},
+  institution = {h@mx.uni-saarland.de},
+  keywords = {Adolescent; Adult; Child; Cognition; Educational Status; Female; Genetics,
+	Behavioral; Germany; Health Status; Humans; Longitudinal Studies;
+	Male; Motivation; Personality, genetics; Twin Studies as Topic},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pmid = {17254409},
+  timestamp = {2013.08.09},
+  url = {http://dx.doi.org/10.1375/183242706779462903}
+}
+
+@ARTICLE{Suto2013,
+  author = {Hiroshi Suto and Jun Yoshida and Raphael Desbiens and Takahiro Kawashima
+	and Akihiko Kuze},
+  title = {Characterization and correction of spectral distortions induced by
+	microvibrations onboard the GOSAT Fourier transform spectrometer.},
+  journal = {Appl Opt},
+  year = {2013},
+  volume = {52},
+  pages = {4969--4980},
+  number = {20},
+  month = {Jul},
+  abstract = {Microvibrations onboard greenhouse gases observing satellite (GOSAT)
+	cause scan speed variations in the TANSO Fourier transform spectrometer.
+	The associated periodic sampling errors generate ghost features in
+	O2 A-band spectra, where surface pressure and aerosol properties
+	are retrieved to determine the optical path through the atmosphere.
+	A correction algorithm has been developed to re-compute the interferograms
+	at equally spaced sampling intervals. The key is to determine iteratively
+	the amplitude and phase of sinusoidal perturbations with predetermined
+	frequencies to minimize the magnitude of the out-of-band ghosts artifacts
+	after correction of the sampling grid. This correction algorithm
+	drastically reduces errors in retrieved surface pressure and improves
+	agreement with ground-based observations.},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pii = {259050},
+  pmid = {23852213},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Thompson2012,
+  author = {Thompson, David R and Chris Benner, D and Brown, Linda R and Crisp,
+	David and Malathy Devi, V and Jiang, Yibo and Natraj, Vijay and Oyafuso,
+	Fabiano and Sung, Keeyoon and Wunch, Debra and others},
+  title = {{Atmospheric validation of high accuracy $CO_{2}$ absorption coefficients
+	for the OCO-2 mission}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2012},
+  volume = {113},
+  pages = {2265--2276},
+  number = {17},
+  __markedentry = {[ramiro:]},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.09.16},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407312002804}
+}
+
+@INPROCEEDINGS{Toon2009,
+  author = {Toon, Geoff and Blavier, Jean-Francois and Washenfelder, Rebecca
+	and Wunch, Debra and Keppel-Aleks, Gretchen and Wennberg, Paul and
+	Connor, Brian and Sherlock, Vanessa and Griffith, David and Deutscher,
+	Nick and others},
+  title = {Total column carbon observing network (TCCON)},
+  booktitle = {Fourier Transform Spectroscopy},
+  year = {2009},
+  organization = {Optical Society of America},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://www.opticsinfobase.org/abstract.cfm?URI=FTS-2009-JMA3}
+}
+
+@ARTICLE{Toth,
+  author = {Toth, Robert A},
+  title = {{Line lists of water vapor parameters from 500 to 8000 $cm^{- 1}$}},
+  journal = {JPL Nasa},
+  owner = {ramiro},
+  timestamp = {2013.08.20},
+  url = {http://mark4sun.jpl.nasa.gov/data/spec}
+}
+
+@ARTICLE{Tran2006,
+  author = {Tran, H and Flaud, P-M and Gabard, Tony and Hase, F and Von Clarmann,
+	T and Camy-Peyret, Claude and Payan, S and Hartmann, J-M},
+  title = {{Model, software and database for line-mixing effects in the $\nu_3$
+	and $\nu_4$ bands of $CH_{4}$ and tests using laboratory and planetary
+	measurements: $N_2$(and air) broadenings and the earth atmosphere}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2006},
+  volume = {101},
+  pages = {284--305},
+  number = {2},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407305003596}
+}
+
+@ARTICLE{Tran2010,
+  author = {Ha Tran and Hartmann, J.M and Toon, G and Brown, LR and Frankenberg,
+	C and Warneke, T and Spietz, P and Hase, F},
+  title = {{The 2$\nu_{3}$ band of $CH_{4}$ revisited with line mixing: Consequences
+	for spectroscopy and atmospheric retrievals at 1.67 $\mu$m}},
+  journal = {Journal of Quantitative Spectroscopy and Radiative Transfer},
+  year = {2010},
+  volume = {111},
+  pages = {1344--1356},
+  number = {10},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.20},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022407310000865}
+}
+
+@ARTICLE{Tran2008,
+  author = {Tran, H and Hartmann, J-M},
+  title = {{An improved O2 A band absorption model and its consequences for
+	retrievals of photon paths and surface pressures}},
+  journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+  year = {2008},
+  volume = {113},
+  number = {D18},
+  owner = {ramiro},
+  publisher = {Wiley Online Library},
+  timestamp = {2013.08.22},
+  url = {http://onlinelibrary.wiley.com/doi/10.1029/2008JD010011/full}
+}
+
+@ARTICLE{Veefkind2012,
+  author = {Veefkind, JP and Aben, I and McMullan, K and F{\"o}rster, H and de
+	Vries, J and Otter, G and Claas, J and Eskes, HJ and de Haan, JF
+	and Kleipool, Q and others},
+  title = {TROPOMI on the ESA Sentinel-5 Precursor: A GMES mission for global
+	observations of the atmospheric composition for climate, air quality
+	and ozone layer applications},
+  journal = {Remote Sensing of Environment},
+  year = {2012},
+  volume = {120},
+  pages = {70--83},
+  owner = {ramiro},
+  publisher = {Elsevier},
+  timestamp = {2013.08.09},
+  url = {http://www.sciencedirect.com/science/article/pii/S0034425712000661}
+}
+
+@ARTICLE{VonSavigny2005,
+  author = {Von Savigny, C and Rozanov, A and Bovensmann, H and Eichmann, K-U
+	and No{\"e}l, S and Rozanov, V and Sinnhuber, B-M and Weber, M and
+	Burrows, JP and Kaiser, JW},
+  title = {The ozone hole breakup in September 2002 as seen by SCIAMACHY on
+	ENVISAT},
+  journal = {Journal of the atmospheric sciences},
+  year = {2005},
+  volume = {62},
+  pages = {721--734},
+  number = {3},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://journals.ametsoc.org/doi/abs/10.1175/JAS-3328.1}
+}
+
+@ARTICLE{Voors2012,
+  author = {Voors, Robert and de Vries, Johan and Oort, Marc and van der Valk,
+	Nick and Aben, Ilse and Veefkind, Pepijn and Bhatti, Ianjit and Lobb,
+	Dan and Wood, Trevor},
+  title = {TROPOMI, the Sentinel 5 Precursor instrument for air quality and
+	climate observations: status of the current design},
+  journal = {Proc. ICSO},
+  year = {2012},
+  volume = {174},
+  owner = {ramiro},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Wagner2013,
+  author = {G. Wagner and M. Birk},
+  title = {{Water line intensities in the 1$\mu$m region}},
+  journal = {Journal of Quantitative Spectroscopy \& Radiative Transfer},
+  year = {2013},
+  volume = {in preparation},
+  owner = {ramiro},
+  timestamp = {2013.08.21}
+}
+
+@ARTICLE{Wang2012,
+  author = {Li-Wen Wang and Ya-Xing Wei},
+  title = {Monitoring gas concentration from carbon emissions by remote sensing},
+  journal = {Guang Pu Xue Yu Guang Pu Fen Xi},
+  year = {2012},
+  volume = {32},
+  pages = {1639--1643},
+  number = {6},
+  month = {Jun},
+  abstract = {Global climate warming has become the focus question of international
+	global climate change research, and is an important factor influencing
+	world economy, political situation, and ecological environment. Produced
+	carbon emission gases such as CO2, CH4, N2O, etc. caused by human
+	activity are the main reason for global warming. In order to forecast
+	future climate change and construct accurate carbon cycle model,
+	monitoring accuracy of gas concentration from carbon emission must
+	be improved. In the present paper, the newest progress in the international
+	research results about monitoring gas concentration from carbon emissions
+	by remote sensing was considered, monitoring method for carbon emissions
+	was introduced, and remotely sensed monitoring technology about gas
+	concentration from carbon emissions (including thermal infrared,
+	sun spectrum, active remote sensing monitoring technology) was stated.
+	In detail, several present and future satellite sensors were introduced
+	(including TOVS, AIRS, IASI, SCIAMACHY, GOSAT, OCO, A-SCOPE and ASCENDS),
+	and monitoring results achieved by these sensors were analyzed.},
+  institution = {Center for Marine Economic and Sustainable Development, Liaoning
+	Key Laboratory of Physical Geography and Geomatics, and College of
+	Urban and Environmental Science, Liaoning Normal University, Dalian
+	116029, China. wlw9585@163.com},
+  language = {chi},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pmid = {22870656},
+  timestamp = {2013.08.09}
+}
+
+@ARTICLE{Wunch2011,
+  author = {Debra Wunch and Geoffrey C Toon and Jean-François L Blavier and Rebecca
+	A Washenfelder and Justus Notholt and Brian J Connor and David W
+	T Griffith and Vanessa Sherlock and Paul O Wennberg},
+  title = {The total carbon column observing network.},
+  journal = {Philos Trans A Math Phys Eng Sci},
+  year = {2011},
+  volume = {369},
+  pages = {2087--2112},
+  number = {1943},
+  month = {May},
+  abstract = {A global network of ground-based Fourier transform spectrometers has
+	been founded to remotely measure column abundances of CO(2), CO,
+	CH(4), N(2)O and other molecules that absorb in the near-infrared.
+	These measurements are directly comparable with the near-infrared
+	total column measurements from space-based instruments. With stringent
+	requirements on the instrumentation, acquisition procedures, data
+	processing and calibration, the Total Carbon Column Observing Network
+	(TCCON) achieves an accuracy and precision in total column measurements
+	that is unprecedented for remote-sensing observations (better than
+	0.25\% for CO(2)). This has enabled carbon-cycle science investigations
+	using the TCCON dataset, and allows the TCCON to provide a link between
+	satellite measurements and the extensive ground-based in situ network.},
+  doi = {10.1098/rsta.2010.0240},
+  institution = {Department of Earth Science and Engineering, California Institute
+	of Technology, Pasadena, CA 91125, USA. dwunch@caltech.edu},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {ramiro},
+  pii = {369/1943/2087},
+  pmid = {21502178},
+  timestamp = {2013.08.09},
+  url = {http://dx.doi.org/10.1098/rsta.2010.0240}
+}
+
+@ARTICLE{Wunch2010,
+  author = {Wunch, Debra and Toon, Geoffrey C and Wennberg, Paul O and Wofsy,
+	Steven C and Stephens, Britton B and Fischer, Marc L and Uchino,
+	Osamu and Abshire, James B and Bernath, Peter and Biraud, Sebastien
+	C and others},
+  title = {Calibration of the Total Carbon Column Observing Network using aircraft
+	profile data},
+  journal = {Atmospheric Measurement Techniques},
+  year = {2010},
+  volume = {3},
+  pages = {1351--1362},
+  number = {5},
+  owner = {ramiro},
+  publisher = {Copernicus GmbH},
+  timestamp = {2013.08.09},
+  url = {http://www.atmos-meas-tech.net/3/1351/}
+}
+
+@ARTICLE{Yokomizo2008,
+  author = {Yokomizo, Masato},
+  title = {Greenhouse gases observing SATellite (GOSAT) ground systems},
+  journal = {Fujitsu Sci Tech J},
+  year = {2008},
+  volume = {44},
+  pages = {410{\`A}},
+  owner = {ramiro},
+  timestamp = {2013.08.09}
+}
+
+@INPROCEEDINGS{Yokota2004,
+  author = {Yokota, Tatsuya and Oguma, Hiroyuki and Morino, Isamu and Higurashi,
+	Akiko and Aoki, Tadao and Inoue, Gen},
+  title = {{Test measurements by a BBM of the nadir-looking SWIR FTS aboard
+	GOSAT to monitor $CO_{2}$ column density from space}},
+  booktitle = {Fourth International Asia-Pacific Environmental Remote Sensing Symposium
+	2004: Remote Sensing of the Atmosphere, Ocean, Environment, and Space},
+  year = {2004},
+  pages = {182--188},
+  organization = {International Society for Optics and Photonics},
+  owner = {ramiro},
+  timestamp = {2013.08.09},
+  url = {http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=857154}
+}
+
+@ARTICLE{Yokota2009,
+  author = {Yokota, T and Yoshida, Y and Eguchi, N and Ota, Y and Tanaka, T and
+	Watanabe, H and Maksyutov, S},
+  title = {{Global concentrations of $CO_{2}$ and $CH_{4}$ retrieved from GOSAT:
+	First preliminary results}},
+  journal = {Sola},
+  year = {2009},
+  volume = {5},
+  pages = {160--163},
+  number = {0},
+  owner = {ramiro},
+  publisher = {J-STAGE},
+  timestamp = {2013.08.09},
+  url = {http://japanlinkcenter.org/JST.JSTAGE/sola/2009-041?from=Google}
+}
+

@@ -1,0 +1,65 @@
+- title: Start
+  url: "/index.html"
+  side: left
+
+- title: About
+  url: "/about"
+  side: left
+
+- title: "Research"
+  url: "/research/index_re"
+  side: left
+  dropdown:
+  - title: "Overview"
+    url: "/research/overview"
+  - title: "My codes"
+    url: "/research/my-codes/"
+  - title: "Reviews"
+    url: "/research/reviews/"
+  - title: "Resources"
+    url: "/research/resources/"
+
+- title: "Teaching"
+  url: "/teaching/index_te/"
+  side: left
+  dropdown:
+  - title: "Overview"
+    url: "/teaching/overview/"
+  - title: "Resources"
+    url: "/teaching/resources/"
+
+- title: Academic Blog
+  url: "/blog/archive"
+  side: left
+  dropdown:
+  - title: Science Blog
+    url: "/blog/archive_science/"
+  - title: Computing Blog
+    url: "/blog/archive_computing/"
+
+
+    
+- title: Personal blog
+  url: "/blog/"
+  side: left
+  dropdown:
+  - title: Opinion
+    url: "/blog/archive_personal/"
+  - title: Stories
+    url: "/blog/archive_stories/"
+  - title: "Blog Archive"
+    url: "/blog/archive/"
+  - title: "Blog Tags"
+    url: "/blog/archive_tags/"
+
+- title: Open Letters
+  url: "/blog/open_letters/"
+  side: left
+
+- title: "Search"
+  url: "/search/"
+  side: right
+
+- title: "Contact"
+  url: "/contact/"
+  side: right

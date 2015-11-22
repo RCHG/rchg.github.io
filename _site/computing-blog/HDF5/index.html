@@ -1,0 +1,991 @@
+<!doctype html>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HDF5 Notebook</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css" />
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] 
+      }
+    });
+  </script>
+
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Volkhov' rel='stylesheet' type='text/css' />
+  </noscript>
+  
+  
+	
+	<meta name="description" content="Introduction to HDF terms and definitions" />
+	
+	
+
+	
+
+
+
+	
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png" />
+
+
+
+
+	
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png" />	
+
+
+
+
+	
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png" />
+
+
+
+
+	
+	<meta name="msapplication-TileColor" content="#fabb00" />
+
+
+
+	<!-- Facebook Optimization -->
+	<meta property="og:locale" content="en_EN" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="HDF5 Notebook" />
+	<meta property="og:description" content="Academic and personal webpage build with Jekyll on Github." />
+	<meta property="og:url" content="http://localhost:4000//computing-blog/HDF5/" />
+	<meta property="og:site_name" content="R. Checa-Garcia" />
+	
+
+	
+
+	<!-- Search Engine Optimization -->
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt" />
+
+	
+</head>
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> R. Checa-Garcia</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/search/">Search</a></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/contact/">Contact</a></li>
+
+            
+            
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/index.html">Start</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/about">About</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/research/index_re">Research</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/overview">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/my-codes/">My codes</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/reviews/">Reviews</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/teaching/index_te/">Teaching</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/overview/">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/archive">Academic Blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_science/">Science Blog</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_computing/">Computing Blog</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/">Personal blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_personal/">Opinion</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_stories/">Stories</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive/">Blog Archive</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_tags/">Blog Tags</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/blog/open_letters/">Open Letters</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-with-text" style=" background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('http://localhost:4000/images//pattern_jquery-dark-grey-tile.png')">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="masthead-title">R. Checa-Garcia webpage | HDF5 Notebook</div>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+ <a href="http://localhost:4000">Start</a>
+ 
+   
+    
+        <a href="http://localhost:4000/computing-blog/">computing blog</a>
+    
+  
+    
+        <a class="current">HDF5 Notebook</a>
+    
+  
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<span itemprop="name">
+					<p class="subheadline">Notebook</p>
+					<h1>HDF5 Notebook</h1>
+				</span>
+			</header>
+
+
+			
+			<p class="teaser" itemprop="description">
+				Introduction to HDF terms and definitions
+			</p>
+			
+            
+			
+						<div id="page-meta" class="t30b">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://rchg.github.io/" target="_blank"> rchg</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2014-10-20" itemprop="datePublished"> 2014-10-20</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> Databases</span> </span>
+			</p>
+
+			</div><!--  /.page-meta -->
+
+			
+
+			<span itemprop="articleSection">
+			<blockquote>
+  <p>Still under construction… mainly a collection of information of the manual at this stage…</p>
+</blockquote>
+
+<div class="panel radius">
+  <h4 class="no_toc" id="table-of-contents">Table of Contents</h4>
+<ul id="markdown-toc">
+  <li><a href="#hdf5-groups" id="markdown-toc-hdf5-groups">HDF5 Groups</a></li>
+  <li><a href="#hdf5-datasets" id="markdown-toc-hdf5-datasets">HDF5 Datasets</a></li>
+</ul>
+
+</div>
+
+<p>An HDF5 file is a container for storing a variety of scientific data and is composed of two primary types of objects: groups and datasets.</p>
+
+<ul>
+  <li><strong>HDF5 group</strong>: a grouping structure containing zero or more HDF5 objects, together with supporting metadata</li>
+  <li><strong>HDF5 dataset</strong>: a multidimensional array of data elements, together with supporting metadata</li>
+</ul>
+
+<p>Any HDF5 group or dataset may have an associated <em>attribute list</em>. An HDF5 attribute is a user-defined HDF5 structure that provides extra information about an HDF5 object.</p>
+
+<p>Working with groups and datasets is similar in many ways to working with directories and files in UNIX. As with UNIX directories and files, an HDF5 object in an HDF5 file is often referred to by its full path name (also called an absolute path name).</p>
+
+<ul>
+  <li><strong>/</strong> means the root group.</li>
+  <li><strong>/foo</strong> means a member of the root group called foo.</li>
+  <li><strong>/foo/zoo</strong> means a member of the group foo, which in turn is a member of the root group.</li>
+</ul>
+
+<h4 id="hdf5-groups">HDF5 Groups</h4>
+
+<p>An HDF5 group is a structure containing zero or more HDF5 objects. A group has two parts:</p>
+
+<ul>
+  <li>A group header, which contains a group name and a list of group attributes.</li>
+  <li>A group symbol table, which is a list of the HDF5 objects that belong to the group.</li>
+</ul>
+
+<h4 id="hdf5-datasets">HDF5 Datasets</h4>
+
+<p>A dataset is stored in a file in two parts: a header and a data array.</p>
+
+<p>The header contains information that is needed to interpret the array portion of the dataset, as well as metadata (or pointers to metadata) that describes or annotates the dataset. Header information includes the name of the object, its dimensions, its number-type, information about how the data itself is stored on disk, and other information used by the library to speed up access to the dataset or maintain the file’s integrity.</p>
+
+<p>There are four essential classes of information in any header: name, datatype, dataspace, and storage layout:</p>
+
+<ul>
+  <li><code>_Name_</code>. A dataset name is a sequence of alphanumeric ASCII characters.</li>
+  <li><code>_Datatype_</code>. HDF5 allows one to define many different kinds of datatypes. There are two categories of datatypes: atomic datatypes and compound datatypes. Atomic datatypes can also be system-specific, or NATIVE, and all datatypes can be names:</li>
+</ul>
+
+<p>Atomic datatypes include integers and floating-point numbers. Each atomic type belongs to a particular class and has several properties: size, order, precision, and offset. In this introduction, we consider only a few of these properties.</p>
+
+<p>Atomic classes include integer, float, string, bit field, and opaque. (Note: Only integer, float and string classes are available in the current implementation.)</p>
+
+<p>Properties of integer types include size, order (endian-ness), and signed-ness (signed/unsigned).</p>
+
+<p>Properties of float types include the size and location of the exponent and mantissa, and the location of the sign bit.</p>
+
+<p>The datatypes that are supported in the current implementation are:</p>
+
+<p>NATIVE datatypes. Although it is possible to describe nearly any kind of atomic datatype, most applications will use predefined datatypes that are supported by their compiler. In HDF5 these are called native datatypes. NATIVE datatypes are C-like datatypes that are generally supported by the hardware of the machine on which the library was compiled. In order to be portable, applications should almost always use the NATIVE designation to describe data values in memory.</p>
+
+<p>(See Datatypes in the HDF User’s Guide for further information.)</p>
+
+<p>A <strong>compound datatype</strong> is one in which a collection of several datatypes are represented as a single unit, a compound datatype, similar to a struct in C. The parts of a compound datatype are called members. The members of a compound datatype may be of any datatype, including another compound datatype. It is possible to read members from a compound type without reading the whole type.</p>
+
+<p><strong>Named datatypes</strong>. Normally each dataset has its own datatype, but sometimes we may want to share a datatype among several datasets. This can be done using a named datatype. A named datatype is stored in the file independently of any dataset, and referenced by all datasets that have that datatype. Named datatypes may have an associated attributes list. See Datatypes in the HDF User’s Guide for further information.</p>
+
+<p><strong>Dataspace</strong>. A dataset dataspace describes the dimensionality of the dataset. The dimensions of a dataset can be fixed (unchanging), or they may be unlimited, which means that they are extendible (i.e. they can grow larger).</p>
+
+<p>Properties of a dataspace consist of the rank (number of dimensions) of the data array, the actual sizes of the dimensions of the array, and the maximum sizes of the dimensions of the array. For a fixed-dimension dataset, the actual size is the same as the maximum size of a dimension. When a dimension is unlimited, the maximum size is set to the value H5P_UNLIMITED. (An example below shows how to create extendible datasets.)</p>
+
+<p>A dataspace can also describe portions of a dataset, making it possible to do partial I/O operations on selections. Selection is supported by the dataspace interface (H5S). Given an n-dimensional dataset, there are currently four ways to do partial selection:</p>
+
+<p>Since I/O operations have two end-points, the raw data transfer functions require two dataspace arguments: one describes the application memory dataspace or subset thereof, and the other describes the file dataspace or subset thereof.</p>
+
+<p>(See Dataspaces and Partial I/O in the HDF User’s Guide for further information.)</p>
+
+<p><strong>Storage layout</strong>. The HDF5 format makes it possible to store data in a variety of ways. The default storage layout format is contiguous, meaning that data is stored in the same linear way that it is organized in memory. Two other storage layout formats are currently defined for HDF5: compact, and chunked. In the future, other storage layouts may be added.</p>
+
+<p>Compact storage is used when the amount of data is small and can be stored directly in the object header. (Note: Compact storage is not supported in this release.)</p>
+
+<p>Chunked storage involves dividing the dataset into equal-sized “chunks” that are stored separately. Chunking has three important benefits.</p>
+
+<ul>
+  <li>It makes it possible to achieve good performance when accessing subsets of the datasets, even when the subset to be chosen is orthogonal to the normal storage order of the dataset.</li>
+  <li>It makes it possible to compress large datasets and still achieve good performance when accessing subsets of the dataset.</li>
+  <li>It makes it possible efficiently to extend the dimensions of a dataset in any direction.</li>
+</ul>
+
+<p>(See Datasets in the HDF User’s Guide for further information. Also see Dataset Chunking Issues.)</p>
+
+<p class="text-right"><small><a href="#toc">Up to table of contents</a></small></p>
+
+
+			</span>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://rchg.github.io/" target="_blank"> rchg</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2014-10-20" itemprop="datePublished"> 2014-10-20</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> Databases</span> </span>
+			</p>
+
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/computing-blog/matplotlib-intro/">&laquo; Matplotlib Tips</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/blog/archive/" title="Blog Archive">Archive</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/science-blog/Mie-Scattering/">Mie Scattering &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			</div><!--  /.page-meta -->
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+	<div class="medium-3 columns">
+		<aside>
+
+	<div class="panel radius">
+		<h4>R. Checa-Garcia</h4>
+        <h6>Atmospheric Physics Scientist</h5>
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li class="icon-home" >
+                  <a href="http://github.com/rchg" target="_blank"  title="Working here...">Academic Institution</a>
+                </li>
+            
+              
+                <li class="icon-github" >
+                  <a href="http://github.com/rchg" target="_blank"  title="My GitHub site...">GitHub</a>
+                </li>
+            
+              
+                <li class="icon-sourceforge" >
+                  <a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank"  title="My SourceForge site...">SourceForge</a>
+                </li>
+            
+              
+                <li class="icon-bitbucket" >
+                  <a href="http://bitbucket.org/rchecagarcia" target="_blank"  title="My bitbucket site...">Bitbucket</a>
+                </li>
+            
+              
+                <li class="icon-paper-plane" >
+                  <a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank"  title="My Google Scholar...">Scholar</a>
+                </li>
+            
+              
+                <li class="icon-paperclip" >
+                  <a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank"  title="My ResearchGate...">ResearchGate</a>
+                </li>
+            
+            </ul>
+	</div>
+
+
+
+
+	<div class="panel radius">
+<h3>Tags</h3>
+<span class="pr20">
+
+  
+  
+<span class="icon-price-tag pr10">review (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">atmospheric-physics (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">scientific-computing (12)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">linux (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">visualization (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">python (3)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">databases (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">radiative-theory (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">nwpm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">earth-modeling (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">esm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">regularization (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">inverse-problem (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">fortran (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">wrf (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mpi (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">math (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">programming (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">c/c++ (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">vcs (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">svn (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">hg (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mercurial (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">make (1)<br></span> </span>
+
+</div>
+
+	<div class="panel radius">
+    <h3>Categories</h3>
+
+  
+  
+<span class="icon-archive pr10">science-blog (6)<br></span> 
+  
+  
+<span class="icon-archive pr10">computing-blog (13)<br></span> </span>
+	</div>
+</aside>
+
+	</div><!-- /.medium-4.columns -->
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">About This Site</h5>
+
+            <p class="shadow-black">
+              Academic and personal webpage build with Jekyll on Github.
+              <a href="http://localhost:4000/info/">More ›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Services</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href=""  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Thank you!</h5>
+              
+            
+              
+            
+              
+            
+              
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href=""  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://sareidia.deviantart.com/" target="_blank"  title="Pictures by Sareidia">Few Pictures by Sareidia</a>
+                </li>
+            
+              
+                <li class="web-link" >
+                  <a href="https://storybird.com/members/zuzol/reposts/" target="_blank"  title="Pictures by ZUZOL">Few Pictures by ZUZOL</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="b30 small-12 medium-6 columns credits">
+            <p>
+              Created with &hearts;
+              by&nbsp;<a href="http://rchg.github.io/">rchg</a>
+              with&nbsp;<a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
+              based&nbsp;on&nbsp;<a href="http://phlow.github.io/feeling-responsive/">Feeling&nbsp;Responsive</a>.
+            </p>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+            <ul class="inline-list">
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-home" title="Working here..."></a></li>
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-github" title="My GitHub site..."></a></li>
+            
+              <li><a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank" class="icon-sourceforge" title="My SourceForge site..."></a></li>
+            
+              <li><a href="http://bitbucket.org/rchecagarcia" target="_blank" class="icon-bitbucket" title="My bitbucket site..."></a></li>
+            
+              <li><a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank" class="icon-paper-plane" title="My Google Scholar..."></a></li>
+            
+              <li><a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank" class="icon-paperclip" title="My ResearchGate..."></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

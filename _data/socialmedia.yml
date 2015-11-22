@@ -1,0 +1,35 @@
+- name: Academic Institution
+  url: http://github.com/rchg
+  class: icon-home
+  title: Working here...
+  
+- name: GitHub
+  url: http://github.com/rchg
+  class: icon-github
+  title: "My GitHub site..."
+
+- name: SourceForge
+  url: http://sourceforge.net/u/rchecagarcia/profile/
+  class: icon-sourceforge
+  title: "My SourceForge site..."
+
+- name: Bitbucket
+  url: http://bitbucket.org/rchecagarcia
+  class: icon-bitbucket
+  title: "My bitbucket site..."
+
+- name: Scholar
+  url: https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao
+  class: icon-paper-plane
+  title: "My Google Scholar..."
+
+- name: ResearchGate
+  url: http://www.researchgate.net/profile/Ramiro_Checa-Garcia
+  class: icon-paperclip
+  title: "My ResearchGate..."
+  
+
+# - name: Xing
+#   url: https://www.xing.com/profile/Moritzmo_Sauer
+#   class: icon-xing
+#   title: Xing Profil

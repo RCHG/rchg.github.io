@@ -1,0 +1,23 @@
+<aside>
+
+{% include author_profile %}
+
+
+	<div class="panel radius">
+<h3>Tags</h3>
+<span class="pr20">
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+<span class="icon-price-tag pr10">{{t | downcase | replace:" ","-" }} ({{ posts | size }})<br></span> {% endfor %}</span>
+
+</div>
+
+	<div class="panel radius">
+    <h3>Categories</h3>
+{% for cat in site.categories %}
+  {% assign c = cat | first %}
+  {% assign nposts = cat | last %}
+<span class="icon-archive pr10">{{c | downcase | replace:" ","-" }} ({{ nposts | size }})<br></span> {% endfor %}</span>
+	</div>
+</aside>

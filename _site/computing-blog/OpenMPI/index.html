@@ -1,0 +1,1083 @@
+<!doctype html>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Introduction to OpenMPI</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css" />
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] 
+      }
+    });
+  </script>
+
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Volkhov' rel='stylesheet' type='text/css' />
+  </noscript>
+  
+  
+	
+	<meta name="description" content="Fortran and OpenMPI" />
+	
+	
+
+	
+
+
+
+	
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png" />
+
+
+
+
+	
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png" />	
+
+
+
+
+	
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png" />
+
+
+
+
+	
+	<meta name="msapplication-TileColor" content="#fabb00" />
+
+
+
+	<!-- Facebook Optimization -->
+	<meta property="og:locale" content="en_EN" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Introduction to OpenMPI" />
+	<meta property="og:description" content="Academic and personal webpage build with Jekyll on Github." />
+	<meta property="og:url" content="http://localhost:4000//computing-blog/OpenMPI/" />
+	<meta property="og:site_name" content="R. Checa-Garcia" />
+	
+
+	
+
+	<!-- Search Engine Optimization -->
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt" />
+
+	
+</head>
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> R. Checa-Garcia</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/search/">Search</a></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/contact/">Contact</a></li>
+
+            
+            
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/index.html">Start</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/about">About</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/research/index_re">Research</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/overview">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/my-codes/">My codes</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/reviews/">Reviews</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/teaching/index_te/">Teaching</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/overview/">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/archive">Academic Blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_science/">Science Blog</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_computing/">Computing Blog</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/">Personal blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_personal/">Opinion</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_stories/">Stories</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive/">Blog Archive</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_tags/">Blog Tags</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/blog/open_letters/">Open Letters</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-with-text" style=" background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('http://localhost:4000/images//pattern_jquery-dark-grey-tile.png')">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="masthead-title">R. Checa-Garcia webpage |  OpenMPI with Fortran</div>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+ <a href="http://localhost:4000">Start</a>
+ 
+   
+    
+        <a href="http://localhost:4000/computing-blog/">computing blog</a>
+    
+  
+    
+        <a class="current">Introduction to OpenMPI</a>
+    
+  
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<span itemprop="name">
+					<p class="subheadline">Notebook</p>
+					<h1>Introduction to OpenMPI</h1>
+				</span>
+			</header>
+
+
+			
+			<p class="teaser" itemprop="description">
+				Fortran and OpenMPI
+			</p>
+			
+            
+			
+						<div id="page-meta" class="t30b">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2015-09-10" itemprop="datePublished"> 2015-09-10</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> MPI</span> <span class="icon-price-tag pr10"> Fortran</span> </span>
+			</p>
+
+			</div><!--  /.page-meta -->
+
+			
+
+			<span itemprop="articleSection">
+			<section id="table-of-contents" class="toc">
+  <header>
+    <h3>Table of Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#definitions" id="markdown-toc-definitions">Definitions</a>    <ul>
+      <li><a href="#flynns-taxonomy" id="markdown-toc-flynns-taxonomy">Flynn’s Taxonomy</a></li>
+      <li><a href="#performance-related-concepts" id="markdown-toc-performance-related-concepts">Performance related concepts</a></li>
+      <li><a href="#amdahls-law" id="markdown-toc-amdahls-law">Amdahl’s law</a></li>
+      <li><a href="#guftafsons-law" id="markdown-toc-guftafsons-law">Guftafson’s law</a></li>
+      <li><a href="#network-latency-and-load-balance" id="markdown-toc-network-latency-and-load-balance">Network Latency and Load-Balance</a></li>
+      <li><a href="#waterfall-model-in-scientific-computing" id="markdown-toc-waterfall-model-in-scientific-computing">Waterfall Model in Scientific Computing</a></li>
+    </ul>
+  </li>
+  <li><a href="#mpi-and-openmpi" id="markdown-toc-mpi-and-openmpi">MPI and OpenMPI</a></li>
+  <li><a href="#fortran-examples" id="markdown-toc-fortran-examples">Fortran Examples</a>    <ul>
+      <li><a href="#hello-from-each-node" id="markdown-toc-hello-from-each-node">Hello from each node</a></li>
+      <li><a href="#different-code-for-each-node" id="markdown-toc-different-code-for-each-node">Different code for each node</a></li>
+      <li><a href="#example-with-send-and-recive-information" id="markdown-toc-example-with-send-and-recive-information">Example with send and recive information</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<h3 id="introduction">Introduction</h3>
+
+<p>This post is a short tutorial on OpenMPI. The main goals are be familiar with the
+general concepts and terminology used on MPI parallel programming. The examples of code shown
+in this tutorial are Fortran 90.</p>
+
+<p>We have to realize that there are three important elements on parallel programing in cluster systems: hardware, software and the topology of the network. This tutorial is focused mainly on clusters that are build of nodes. This means that each node does NOT have direct access to the other node memory (we have a distributed memory and not common shared memory). The  consequence is that we will need to communicate between nodes and send and collect information/data from different machinesm, that is why it is used MPI directives. However note that the code produced with MPI can be used on a single processor or in a multicore machine.</p>
+
+<h3 id="definitions">Definitions</h3>
+
+<h4 id="flynns-taxonomy">Flynn’s Taxonomy</h4>
+
+<ul>
+  <li>SISD: single instruction single data (serial computer)</li>
+  <li>SIMD: single instruction multiple data (vector computer)</li>
+  <li>MISD: multiple instruction single data (uncommon)</li>
+  <li>MIMD: multiple instruction multiple data (parallel computer).</li>
+</ul>
+
+<p>We will use the terminology SPMD to mean single program multiple data. The idea is a commom code runned on several computers but each node process different data (the data of each node should be distribuited by the single code). MPI is a realization of the  SPMD by implementing several directives. In the practical Fortran 90 programming it is a module called with USE MPI and it implement several subroutines that manage the SPMD idea. The typical workflow is build a source code, compile it (in the case of Fortran 90 or C/C++ etc), and run in a machine indicating the number of tasks (or nodes) that will be used (for instance mpirun -np 123 mycode.exe).</p>
+
+<h4 id="performance-related-concepts">Performance related concepts</h4>
+
+<ul>
+  <li>FLOPS: It is the number of floating point operations per second. It is used to describe the computation capability.</li>
+  <li>Serial time: time to run the code in 1 machine (serial code): $t_{s}$</li>
+  <li>Parallel time: time to process the same code with p processors: $t_{p}$</li>
+  <li>Speedup factor: $S(p)=t_{s}/t_{p}$</li>
+  <li>Work cost: $W(p)=pt_{p}$</li>
+  <li>Efficiency: $E(p)=t_{s}/(pt_{p})=W(1)/W(p)$</li>
+  <li>Serial fraction: f, is the fraction of the code that is allways serial (it is allways runned
+by only 1 processor).</li>
+  <li>Overhead: $(Wp-W1)/W1$</li>
+  <li>Computation time: fraction of time running the code ($t_{c}$)</li>
+  <li>Comunication time: fraction of the time performing transmission or comunication between nodes and memory ($t_{t}$)</li>
+</ul>
+
+<p>Note: it is important maximize $t_{c}/t_{t}$</p>
+
+<h4 id="amdahls-law">Amdahl’s law</h4>
+
+<p>It measures the parallel performance given the serial performance.</p>
+
+<script type="math/tex; mode=display">t_{p}=ft_{s}+(1-f)\frac{t_{s}}{p}</script>
+
+<script type="math/tex; mode=display">S(p)=\frac{p}{f(p-1)+1}</script>
+
+<h4 id="guftafsons-law">Guftafson’s law</h4>
+
+<p>It measures the serial performance given the parallel performance.</p>
+
+<script type="math/tex; mode=display">t_{s}=ft_{p}+(1-f)pt_{p}</script>
+
+<script type="math/tex; mode=display">S(p)=f+(1-f)p</script>
+
+<h4 id="network-latency-and-load-balance">Network Latency and Load-Balance</h4>
+
+<p>This is another important concept: in a parallel program over a cluster with several nodes communicated by a network the time spent in communication have to be estimated. In general the time needed to send a message depends on the size of the message plus the time to establish the communication (like open the channel) called latency. Therefore, $t_{c}=L+m/B$, where L is the latency time, B is the bandwidth and m is the size of the message.</p>
+
+<p>In the same size it is important achieve a work balance between the nodes, otherwise the computation time is constrained by the performance of one node.</p>
+
+<h4 id="waterfall-model-in-scientific-computing">Waterfall Model in Scientific Computing</h4>
+
+<p>In general the software is developed following the so called Waterfall Model</p>
+
+<p><img src="http://codeloop.site88.net/se/images/waterfall.jpg" alt="Waterfall Model" /></p>
+
+<p>In the case of <strong>scientific programming</strong> we could modificate the initial stages of the waterfall model then the design is changed by:</p>
+
+<p><strong>Abstraction of the problem</strong>   &gt;(1)&gt; <strong>Physical/Mathematical Model</strong></p>
+
+<p>and</p>
+
+<p><strong>Physical/Mathematical Model</strong>  &gt;(2)&gt; <strong>Formulation as an algorthim</strong></p>
+
+<p>However in the transition (2) is better to know in advance properties of the hardware and tolopogy to consolidate the design of the software. For these reasons a previous good knownledge of the parallel programming methodologies. Here it is explained <strong>OpenMPI</strong></p>
+
+<h3 id="mpi-and-openmpi">MPI and OpenMPI</h3>
+
+<p>MPI is a standard set of directives that several tools and packages can follow (another is for instance PVM, parallel virtual machine). Here it is explained OpenMPI (but there are others like MPICH). I will explain the directives by examples, for that I recommend to the reader a UNIX/LINUX machine, an editor like geany or vim, an installed version of OpenMPI and the fortran compiler. A standard linux distribution gives to the user an easy way to install all this tools.</p>
+
+<p>The codes here included can be compiled and executed as:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">mpif90 fortran90mpi.f90 -o myprogram.exe
+
+mpirun -np <span class="m">4</span> myprogram.exe</code></pre></div>
+
+<h3 id="fortran-examples">Fortran Examples</h3>
+
+<h4 id="hello-from-each-node">Hello from each node</h4>
+
+<div class="highlight"><pre><code class="language-fortran" data-lang="fortran"><span class="k">program </span><span class="nv">main</span>
+    <span class="k">use </span><span class="nv">mpi</span>
+    <span class="kt">integer</span> <span class="kd">::</span> <span class="nv">ierr</span><span class="p">,</span> <span class="nv">nproc</span><span class="p">,</span> <span class="nv">iproc</span>
+    <span class="k">call </span><span class="nv">MPI_INIT</span><span class="p">(</span><span class="nv">ierr</span><span class="p">)</span>
+    <span class="k">call </span><span class="nv">MPI_COMM_RANK</span><span class="p">(</span><span class="nv">MPI_COMM_WORLD</span><span class="p">,</span> <span class="nv">iproc</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">)</span>
+    <span class="k">call </span><span class="nv">MPI_COMM_SIZE</span><span class="p">(</span><span class="nv">MPI_COMM_WORLD</span><span class="p">,</span> <span class="nv">nproc</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">)</span>
+    <span class="k">print</span> <span class="o">*</span><span class="p">,</span> <span class="s1">&#39;Hello World! by &#39;</span><span class="p">,</span><span class="nv">iproc</span><span class="p">,</span><span class="s1">&#39;from &#39;</span><span class="p">,</span><span class="nv">nproc</span>
+    <span class="k">call </span><span class="nv">MPI_FINALIZE</span><span class="p">(</span><span class="nv">ierr</span><span class="p">)</span>
+<span class="k">end program </span><span class="nv">main</span></code></pre></div>
+
+<h4 id="different-code-for-each-node">Different code for each node</h4>
+
+<div class="highlight"><pre><code class="language-fortran" data-lang="fortran"><span class="k">program </span><span class="nv">main</span>
+  <span class="k">use </span><span class="nv">mpi</span>
+  <span class="k">implicit none</span>
+<span class="k">  </span><span class="kt">integer </span><span class="nv">num_id</span><span class="p">,</span> <span class="nv">min_process</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">,</span> <span class="nv">status</span><span class="p">(</span><span class="nv">MPI_STATUS_SIZE</span><span class="p">)</span>
+  <span class="kt">integer </span><span class="nv">num_procs</span>
+  <span class="k">call </span><span class="nv">MPI_INIT</span> <span class="p">(</span><span class="nv">ierr</span><span class="p">)</span>
+  <span class="k">call </span><span class="nv">MPI_COMM_RANK</span> <span class="p">(</span><span class="nv">MPI_COMM_WORLD</span><span class="p">,</span> <span class="nv">num_id</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">)</span>
+  <span class="k">call </span><span class="nv">MPI_COMM_SIZE</span> <span class="p">(</span><span class="nv">MPI_COMM_WORLD</span><span class="p">,</span> <span class="nv">num_procs</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="nv">num_id</span> <span class="ow">.eq.</span> <span class="mi">0</span> <span class="p">)</span> <span class="k">then   </span>
+<span class="k">      print</span> <span class="o">*</span><span class="p">,</span><span class="s1">&#39;Machine &#39;</span><span class="p">,</span><span class="nv">num_id</span><span class="p">,</span> <span class="s1">&#39;I am doing task 0&#39;</span>
+  <span class="nv">elseif</span> <span class="p">(</span><span class="nv">num_id</span> <span class="ow">.eq.</span> <span class="mi">1</span> <span class="p">)</span> <span class="k">then</span>
+<span class="k">      print</span> <span class="o">*</span><span class="p">,</span><span class="s1">&#39;Machine &#39;</span><span class="p">,</span><span class="nv">num_id</span><span class="p">,</span> <span class="s1">&#39;I am doing task 1&#39;</span>
+  <span class="nv">elseif</span> <span class="p">(</span><span class="nv">num_id</span> <span class="ow">.eq.</span> <span class="mi">2</span> <span class="p">)</span> <span class="k">then</span>
+<span class="k">      print</span> <span class="o">*</span><span class="p">,</span><span class="s1">&#39;Machine &#39;</span><span class="p">,</span><span class="nv">num_id</span><span class="p">,</span> <span class="s1">&#39;I am doing task 2&#39;</span>
+  <span class="k">else</span>
+<span class="k">      print</span> <span class="o">*</span><span class="p">,</span><span class="s1">&#39;Machine &#39;</span><span class="p">,</span><span class="nv">num_id</span><span class="p">,</span> <span class="s1">&#39;I am doing a common task 3&#39;</span>
+  <span class="k">endif</span>
+<span class="k">  call </span><span class="nv">MPI_FINALIZE</span><span class="p">(</span><span class="nv">ierr</span><span class="p">)</span>
+<span class="k">end program </span><span class="nv">main</span></code></pre></div>
+
+<h4 id="example-with-send-and-recive-information">Example with send and recive information</h4>
+
+<p>Here is explained the design of a code. It shows a possible stragegy to program a specific code by writting in natural language the logical task that should be done. This example was taken from</p>
+
+<p>http://condor.cc.ku.edu/~grobe/docs/intro-MPI.shtml</p>
+
+<div class="highlight"><pre><code class="language-fortran" data-lang="fortran"><span class="k">program </span><span class="nv">sumvector</span>
+ 
+<span class="c">!! The code have to sum the rows in a vector. The root process will be</span>
+<span class="c">!! here a master that send parts of the vector to each child process</span>
+<span class="c">!! (often called slave). Master and child processes calculate</span>
+<span class="c">!! the partial sum of the portion of the vector assigned.</span>
+<span class="c">!! The child processes send their partial sums to the master, who calculates </span>
+<span class="c">!! the total sum</span>
+      
+<span class="k">use </span><span class="nv">mpi</span>
+<span class="kt">integer </span><span class="nv">num_id</span><span class="p">,</span> <span class="nv">main_process</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">,</span> <span class="nv">status</span><span class="p">(</span><span class="nv">MPI_STATUS_SIZE</span><span class="p">)</span>
+<span class="kt">integer </span><span class="nv">num_procs</span><span class="p">,</span> <span class="nv">an_id</span>
+<span class="nv">main_process</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nv">c</span> <span class="nv">Now</span> <span class="nv">replicate</span> <span class="nv">this</span> <span class="nv">process</span> <span class="nv">to</span> <span class="nv">create</span> <span class="nv">parallel</span> <span class="nv">processes</span><span class="err">.</span>  
+  <span class="k">call </span><span class="nv">MPI_INIT</span> <span class="p">(</span><span class="nv">ierr</span><span class="p">)</span>
+<span class="nv">c</span> <span class="nv">find</span> <span class="nv">out</span> <span class="nv">MY</span> <span class="nv">process</span> <span class="nv">ID</span><span class="p">,</span> <span class="nb">and </span><span class="nv">how</span> <span class="nv">many</span> <span class="nv">processes</span> <span class="nv">were</span> <span class="nv">started</span><span class="err">.</span>
+  <span class="k">call </span><span class="nv">MPI_COMM_RANK</span> <span class="p">(</span><span class="nv">MPI_COMM_WORLD</span><span class="p">,</span> <span class="nv">my_id</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">)</span>
+  <span class="k">call </span><span class="nv">MPI_COMM_SIZE</span> <span class="p">(</span><span class="nv">MPI_COMM_WORLD</span><span class="p">,</span> <span class="nv">num_procs</span><span class="p">,</span> <span class="nv">ierr</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nv">my_id</span> <span class="ow">.eq.</span> <span class="nv">root_process</span><span class="p">)</span> <span class="k">then   </span>
+<span class="nv">c</span>   <span class="nv">I</span> <span class="nv">must</span> <span class="nv">be</span> <span class="nv">the</span> <span class="nv">root</span> <span class="nv">process</span><span class="p">,</span> <span class="nv">so</span> <span class="nv">I</span> <span class="nv">will</span> <span class="nv">query</span> <span class="nv">the</span> <span class="nv">user</span>
+<span class="nv">c</span>   <span class="nv">to</span> <span class="nv">determine</span> <span class="nv">how</span> <span class="nv">many</span> <span class="nv">numbers</span> <span class="nv">to</span> <span class="nb">sum</span><span class="err">.</span>
+<span class="nv">c</span>   <span class="mf">1.</span> <span class="nv">Initialize</span> <span class="nv">a</span> <span class="nv">vector</span><span class="p">,</span>
+<span class="nv">c</span>   <span class="mf">2.</span> <span class="nv">Distribute</span> <span class="nv">a</span> <span class="nv">portion</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">vector</span> <span class="nv">to</span> <span class="nv">each</span> <span class="nv">child</span> <span class="nv">process</span><span class="p">,</span>
+<span class="nv">c</span>   <span class="mf">3.</span> <span class="nv">Calculate</span> <span class="nv">the</span> <span class="nb">sum </span><span class="nv">of</span> <span class="nv">the</span> <span class="nv">values</span> <span class="nv">in</span> <span class="nv">the</span> <span class="nv">segment</span> <span class="nv">assigned</span><span class="p">,</span>
+<span class="nv">c</span>   <span class="mf">4.</span> <span class="nv">Collect</span> <span class="nv">the</span> <span class="nv">partial</span> <span class="nv">sums</span> <span class="nv">from</span> <span class="nv">slave</span> <span class="nv">processes</span><span class="p">,</span>
+<span class="nv">c</span>   <span class="mf">5.</span> <span class="k">Print </span><span class="nv">them</span><span class="p">,</span> <span class="nb">and </span><span class="nv">add</span> <span class="nv">them</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">grand</span> <span class="nb">sum</span><span class="p">,</span> <span class="nb">and </span><span class="k">print </span><span class="nv">it</span><span class="err">.</span>
+  <span class="k">else</span>
+<span class="nv">c</span>   <span class="mf">1.</span> <span class="nv">I</span> <span class="nv">must</span> <span class="nv">be</span> <span class="nv">slave</span> <span class="nv">process</span><span class="p">,</span> <span class="nv">so</span> <span class="nv">I</span> <span class="nv">must</span> <span class="nv">receive</span> <span class="nv">my</span> <span class="nv">vector</span> <span class="nv">segment</span><span class="p">,</span>
+<span class="nv">c</span>   <span class="mf">2.</span> <span class="nv">Calculate</span> <span class="nv">the</span> <span class="nb">sum </span><span class="nv">of</span> <span class="nv">my</span> <span class="nv">portion</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nv">vector</span><span class="p">,</span>
+<span class="nv">c</span>   <span class="mf">3.</span> <span class="nb">and</span><span class="p">,</span> <span class="nv">finally</span><span class="p">,</span> <span class="nv">send</span> <span class="nv">my</span> <span class="nv">portion</span> <span class="nv">of</span> <span class="nv">the</span> <span class="nb">sum </span><span class="nv">to</span> <span class="nv">the</span> <span class="nv">root</span> <span class="nv">process</span><span class="err">.</span>
+  <span class="k">endif</span>
+<span class="nv">c</span>   <span class="k">Stop </span><span class="nv">this</span> <span class="nv">process</span><span class="err">.</span>
+  <span class="k">call </span><span class="nv">MPI_FINALIZE</span><span class="p">(</span><span class="nv">ierr</span><span class="p">)</span>
+  <span class="k">stop</span>
+<span class="k">  end</span></code></pre></div>
+
+
+			</span>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2015-09-10" itemprop="datePublished"> 2015-09-10</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> MPI</span> <span class="icon-price-tag pr10"> Fortran</span> </span>
+			</p>
+
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/computing-blog/reportlab-pdf/">&laquo; Python PDF: reportlab library</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/blog/archive/" title="Blog Archive">Archive</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/computing-blog/LinearAlgebraComputing/">Linear Algebra and Computing &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			</div><!--  /.page-meta -->
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+	<div class="medium-3 columns">
+		<aside>
+
+	<div class="panel radius">
+		<h4>R. Checa-Garcia</h4>
+        <h6>Atmospheric Physics Scientist</h5>
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li class="icon-home" >
+                  <a href="http://github.com/rchg" target="_blank"  title="Working here...">Academic Institution</a>
+                </li>
+            
+              
+                <li class="icon-github" >
+                  <a href="http://github.com/rchg" target="_blank"  title="My GitHub site...">GitHub</a>
+                </li>
+            
+              
+                <li class="icon-sourceforge" >
+                  <a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank"  title="My SourceForge site...">SourceForge</a>
+                </li>
+            
+              
+                <li class="icon-bitbucket" >
+                  <a href="http://bitbucket.org/rchecagarcia" target="_blank"  title="My bitbucket site...">Bitbucket</a>
+                </li>
+            
+              
+                <li class="icon-paper-plane" >
+                  <a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank"  title="My Google Scholar...">Scholar</a>
+                </li>
+            
+              
+                <li class="icon-paperclip" >
+                  <a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank"  title="My ResearchGate...">ResearchGate</a>
+                </li>
+            
+            </ul>
+	</div>
+
+
+
+
+	<div class="panel radius">
+<h3>Tags</h3>
+<span class="pr20">
+
+  
+  
+<span class="icon-price-tag pr10">review (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">atmospheric-physics (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">scientific-computing (12)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">linux (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">visualization (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">python (3)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">databases (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">radiative-theory (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">nwpm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">earth-modeling (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">esm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">regularization (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">inverse-problem (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">fortran (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">wrf (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mpi (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">math (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">programming (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">c/c++ (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">vcs (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">svn (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">hg (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mercurial (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">make (1)<br></span> </span>
+
+</div>
+
+	<div class="panel radius">
+    <h3>Categories</h3>
+
+  
+  
+<span class="icon-archive pr10">science-blog (6)<br></span> 
+  
+  
+<span class="icon-archive pr10">computing-blog (13)<br></span> </span>
+	</div>
+</aside>
+
+	</div><!-- /.medium-4.columns -->
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">About This Site</h5>
+
+            <p class="shadow-black">
+              Academic and personal webpage build with Jekyll on Github.
+              <a href="http://localhost:4000/info/">More ›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Services</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href=""  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Thank you!</h5>
+              
+            
+              
+            
+              
+            
+              
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href=""  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://sareidia.deviantart.com/" target="_blank"  title="Pictures by Sareidia">Few Pictures by Sareidia</a>
+                </li>
+            
+              
+                <li class="web-link" >
+                  <a href="https://storybird.com/members/zuzol/reposts/" target="_blank"  title="Pictures by ZUZOL">Few Pictures by ZUZOL</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="b30 small-12 medium-6 columns credits">
+            <p>
+              Created with &hearts;
+              by&nbsp;<a href="http://rchg.github.io/">rchg</a>
+              with&nbsp;<a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
+              based&nbsp;on&nbsp;<a href="http://phlow.github.io/feeling-responsive/">Feeling&nbsp;Responsive</a>.
+            </p>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+            <ul class="inline-list">
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-home" title="Working here..."></a></li>
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-github" title="My GitHub site..."></a></li>
+            
+              <li><a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank" class="icon-sourceforge" title="My SourceForge site..."></a></li>
+            
+              <li><a href="http://bitbucket.org/rchecagarcia" target="_blank" class="icon-bitbucket" title="My bitbucket site..."></a></li>
+            
+              <li><a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank" class="icon-paper-plane" title="My Google Scholar..."></a></li>
+            
+              <li><a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank" class="icon-paperclip" title="My ResearchGate..."></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

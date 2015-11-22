@@ -1,0 +1,1061 @@
+<!doctype html>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Descentralized Version Control Notes</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css" />
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] 
+      }
+    });
+  </script>
+
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Volkhov' rel='stylesheet' type='text/css' />
+  </noscript>
+  
+  
+	
+	<meta name="description" content="Version Control Notes: Hg" />
+	
+	
+
+	
+
+
+
+	
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png" />
+
+
+
+
+	
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png" />	
+
+
+
+
+	
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png" />
+
+
+
+
+	
+	<meta name="msapplication-TileColor" content="#fabb00" />
+
+
+
+	<!-- Facebook Optimization -->
+	<meta property="og:locale" content="en_EN" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Descentralized Version Control Notes" />
+	<meta property="og:description" content="Academic and personal webpage build with Jekyll on Github." />
+	<meta property="og:url" content="http://localhost:4000//computing-blog/Mercurial-Notes/" />
+	<meta property="og:site_name" content="R. Checa-Garcia" />
+	
+
+	
+
+	<!-- Search Engine Optimization -->
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt" />
+
+	
+</head>
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> R. Checa-Garcia</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/search/">Search</a></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/contact/">Contact</a></li>
+
+            
+            
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/index.html">Start</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/about">About</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/research/index_re">Research</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/overview">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/my-codes/">My codes</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/reviews/">Reviews</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/teaching/index_te/">Teaching</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/overview/">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/archive">Academic Blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_science/">Science Blog</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_computing/">Computing Blog</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/">Personal blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_personal/">Opinion</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_stories/">Stories</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive/">Blog Archive</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_tags/">Blog Tags</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/blog/open_letters/">Open Letters</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-with-text" style=" background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('http://localhost:4000/images//pattern_jquery-dark-grey-tile.png')">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="masthead-title">R. Checa-Garcia webpage | Mercurial</div>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+ <a href="http://localhost:4000">Start</a>
+ 
+   
+    
+        <a href="http://localhost:4000/computing-blog/">computing blog</a>
+    
+  
+    
+        <a class="current">Descentralized Version Control Notes</a>
+    
+  
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<span itemprop="name">
+					<p class="subheadline">Notebook</p>
+					<h1>Descentralized Version Control Notes</h1>
+				</span>
+			</header>
+
+
+			
+			<p class="teaser" itemprop="description">
+				Version Control Notes: Hg
+			</p>
+			
+            
+			
+						<div id="page-meta" class="t30b">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://rchg.github.io/" target="_blank"> rchg</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2015-11-04" itemprop="datePublished"> 2015-11-04</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> VCS</span> <span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> Hg</span> <span class="icon-price-tag pr10"> Mercurial</span> </span>
+			</p>
+
+			</div><!--  /.page-meta -->
+
+			
+
+			<span itemprop="articleSection">
+			<div class="panel radius">
+  <h4 class="no_toc" id="table-of-contents">Table of Contents</h4>
+<ul id="markdown-toc">
+  <li><a href="#introduction-to-mercurial" id="markdown-toc-introduction-to-mercurial">Introduction to Mercurial</a></li>
+  <li><a href="#mercurial-next-steps" id="markdown-toc-mercurial-next-steps">Mercurial: next steps</a>    <ul>
+      <li><a href="#text-editors-and-hg" id="markdown-toc-text-editors-and-hg">Text Editors and Hg</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h3 id="introduction-to-mercurial">Introduction to Mercurial</h3>
+
+<p>Here I will introduce a very basic use of Mercurial version control system (named Hg). Let’s say that we are working on a document in LaTeX (a PhD dissertation, and article/paper, a report etc). First it is based on a local directory but we want to be able to track all the changes on the text (the evolution of the document). I recommend a this point to read the previous post about version control where is explained the basic terminology. So we are going to create a <strong>repository</strong> of Hg.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; mkdir /home/mrmagguu/my_document
+&gt; <span class="nb">cd</span> /home/mrmagguu/my_document
+&gt; hg
+
+Mercurial Distributed SCM
+
+basic commands:
+
+ add           add the specified files on the next commit
+ annotate      show changeset information by line <span class="k">for</span> each file
+ clone         make a copy of an existing repository
+ commit        commit the specified files or all outstanding changes
+ diff          diff repository <span class="o">(</span>or selected files<span class="o">)</span>
+ <span class="nb">export        </span>dump the header and diffs <span class="k">for</span> one or more changesets
+ forget        forget the specified files on the next commit
+ hgview
+ init          create a new repository in the given directory
+ log           show revision <span class="nb">history </span>of entire repository or files
+ merge         merge another revision into working directory
+ pull          pull changes from the specified <span class="nb">source</span>
+<span class="nb"> </span>push          push changes to the specified destination
+ qct           start qct commit tool
+ remove        remove the specified files on the next commit
+ serve         start stand-alone webserver
+ status        show changed files in the working directory
+ summary       summarize working directory state
+ update        update working directory <span class="o">(</span>or switch revisions<span class="o">)</span>
+
+<span class="o">(</span>use <span class="s2">&quot;hg help&quot;</span> <span class="k">for</span> the full list of commands or <span class="s2">&quot;hg -v&quot;</span> <span class="k">for</span> details<span class="o">)</span></code></pre></div>
+
+<p>Just typing Hg we have the main commands of our hg version. In my case,</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg version
+Mercurial Distributed SCM <span class="o">(</span>version 3.5.2<span class="o">)</span>
+<span class="o">(</span>see http://mercurial.selenic.com <span class="k">for</span> more information<span class="o">)</span>
+
+Copyright <span class="o">(</span>C<span class="o">)</span> 2005-2015 Matt Mackall and others
+This is free software<span class="p">;</span> see the <span class="nb">source </span><span class="k">for</span> copying conditions. There is NO
+warranty<span class="p">;</span> not even <span class="k">for</span> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</code></pre></div>
+
+<p>Now to create a repository in our directory we just write:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg init</code></pre></div>
+
+<p>With <code>ls -a</code> command we can certificate that there is a new directory named <strong>.hg</strong> that is hidden to the usual ls. Right now we have no included anything in the repository. We can do with:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg add
+adding FIGURES/FIG1.jpg
+adding my_draft.tex
+adding natbib.sty</code></pre></div>
+
+<p>In my case the directory had two files and one folder with a figure. However we did not yet validated this changes. We can validate or <strong>commit</strong></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg commit -m <span class="s1">&#39;Version 0.1 (initial)&#39;</span></code></pre></div>
+
+<p>To see what happened:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg log
+changeset:   0:187c32c11d5b
+tag:         tip
+user:        Mr. Magguu &lt;mr_magguu@magguu.com&gt;
+date:        Wed Nov <span class="m">04</span> 17:36:56 <span class="m">2015</span> +0100
+summary:     Version 0.1 <span class="o">(</span>initial<span class="o">)</span></code></pre></div>
+
+<p>Now I forgot to include a file with the bibliography. We copy a new file: <strong>biblio.bib</strong> in the directory and:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg summary
+parent: 0:187c32c11d5b tip
+ Version 0.1 <span class="o">(</span>initial<span class="o">)</span>
+branch: default
+commit: <span class="m">1</span> unknown <span class="o">(</span>clean<span class="o">)</span>
+update: <span class="o">(</span>current<span class="o">)</span>
+phases: <span class="m">1</span> draft</code></pre></div>
+
+<p>We forgot to add the new file:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg add biblio.bib
+&gt; hg summary
+parent: 0:187c32c11d5b tip
+ Version 0.1 <span class="o">(</span>initial<span class="o">)</span>
+branch: default
+commit: <span class="m">1</span> added
+update: <span class="o">(</span>current<span class="o">)</span>
+phases: <span class="m">1</span> draft</code></pre></div>
+
+<p>Ok, and</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg status
+A    biblio.bib</code></pre></div>
+
+<p>Exactly like in SVN. The command hg is notificating the we have add a new file (but have not commit the addition).</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg commit -m <span class="s1">&#39;Version 0.1 with Biblio&#39;</span>
+&gt; hg status
+&gt; hg log
+changeset:   1:891564a37700
+tag:         tip
+user:        Mr. Magguu &lt;mr_magguu@magguu.com&gt;
+date:        Wed Nov <span class="m">04</span> 17:47:58 <span class="m">2015</span> +0100
+summary:     Version 0.1 with Biblio
+
+changeset:   0:187c32c11d5b
+user:        Mr. Magguu &lt;mr_magguu@magguu.com&gt;
+date:        Wed Nov <span class="m">04</span> 17:36:56 <span class="m">2015</span> +0100
+summary:    Version 0.1 <span class="o">(</span>initial<span class="o">)</span></code></pre></div>
+
+<p>We see the now how useful is mercurial to track all the changes!! Let’s say that our editor saves automatically files with the symbol <strong>~</strong> at the end but we do not want to keep track of these files. An easy way to handle with this is by creating a simple file called <strong>.hgignore</strong> with the following text inside:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">syntax: glob
+*~</code></pre></div>
+
+<h3 id="mercurial-next-steps">Mercurial: next steps</h3>
+
+<p>If you tried the above tiny shown tutorial then probably you will be confortable with Hg. But probably also you will have a lot of questions about Hg. For instance, the username, the email, what means the code: changeset:   1:891564a37700 or other things.</p>
+
+<p>Let’s go step by step. At the beginning we commented that we have a working installation of Hg. We can try to verify this with:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; hg debuginstall
+checking encoding <span class="o">(</span>UTF-8<span class="o">)</span>...
+checking Python executable <span class="o">(</span>/usr/bin/python<span class="o">)</span>
+checking Python version <span class="o">(</span>2.7.10<span class="o">)</span>
+checking Python lib <span class="o">(</span>/usr/lib/python2.7<span class="o">)</span>...
+checking installed modules <span class="o">(</span>/usr/lib/python2.7/dist-packages/mercurial<span class="o">)</span>...
+checking templates <span class="o">(</span>/usr/share/mercurial/templates<span class="o">)</span>...
+checking commit editor...
+checking username...
+no problems detected</code></pre></div>
+
+<p>This command gives us information about the installation. In my case everthing seems correct. You have detected about Python, this is because all the extensions in Mercurial are written in Python. If you type the command <code>hg config</code> you will have more information. The usual configuration file for a given user is found in <strong>/home/user/.hgrc</strong>. And looks like:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; more /home/mrmagguu/.hgrc
+<span class="c"># Mercurial Configuration Info</span>
+<span class="o">[</span>ui<span class="o">]</span>
+<span class="nv">username</span> <span class="o">=</span> Mr. Magguu &lt;mr_magguu@magguu.com&gt;
+
+<span class="o">[</span>extensions<span class="o">]</span>
+<span class="nv">graphlog</span> <span class="o">=</span> 
+<span class="nv">hgcia</span> <span class="o">=</span> 
+<span class="nv">hgk</span> <span class="o">=</span> 
+<span class="nv">hgview</span> <span class="o">=</span> 
+<span class="nv">color</span> <span class="o">=</span></code></pre></div>
+
+<p>Here is the very basic configuration for the user <em>mrmaggugg</em>. The activated extensions are indicated here just with the name follow by = .Therefore the information about the user is taken from this configuration file. You can edit manually but before you should check <code>hg help config</code>, but because the information given is very large you can try something like <code>hg help config | grep user</code> just to have the information with the word user of the documentation. And just to give another examples of this configuration files it has <strong>graphlog</strong>, <strong>color</strong> or <strong>hgview</strong>. The first introduce the command <code>hg glog</code> that is a kind of <code>hg log</code> command but with additional information about branches, master version etc. <strong>color</strong> just add color to the outputs shown on your terminal when you use any hg command. Concerning <strong>hgview</strong> you will have <code>hgview</code> command you will have a graphical frontend for Hg.</p>
+
+<h4 id="text-editors-and-hg">Text Editors and Hg</h4>
+
+<ul>
+  <li>In case you are using <strong>VIM</strong>, which is one of the main tools I use every day, I may recommend the plugin  <a href="http://bolt80.com/lawrencium/">lawrencium</a></li>
+  <li><strong>Geany</strong> is another nice tool that might integrate a version control inside with a plugin and <strong>gedit</strong> has this posibility also with rabbitVCS. This utility is not specific of mercurial and you might use several control version software. Note that git has specific plugins.</li>
+</ul>
+
+			</span>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://rchg.github.io/" target="_blank"> rchg</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2015-11-04" itemprop="datePublished"> 2015-11-04</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> VCS</span> <span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> Hg</span> <span class="icon-price-tag pr10"> Mercurial</span> </span>
+			</p>
+
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/computing-blog/Version-Control-Notes/">&laquo; Centralized Version Control Notes</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/blog/archive/" title="Blog Archive">Archive</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/computing-blog/Make-Survival/">Introduction to make &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			</div><!--  /.page-meta -->
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+	<div class="medium-3 columns">
+		<aside>
+
+	<div class="panel radius">
+		<h4>R. Checa-Garcia</h4>
+        <h6>Atmospheric Physics Scientist</h5>
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li class="icon-home" >
+                  <a href="http://github.com/rchg" target="_blank"  title="Working here...">Academic Institution</a>
+                </li>
+            
+              
+                <li class="icon-github" >
+                  <a href="http://github.com/rchg" target="_blank"  title="My GitHub site...">GitHub</a>
+                </li>
+            
+              
+                <li class="icon-sourceforge" >
+                  <a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank"  title="My SourceForge site...">SourceForge</a>
+                </li>
+            
+              
+                <li class="icon-bitbucket" >
+                  <a href="http://bitbucket.org/rchecagarcia" target="_blank"  title="My bitbucket site...">Bitbucket</a>
+                </li>
+            
+              
+                <li class="icon-paper-plane" >
+                  <a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank"  title="My Google Scholar...">Scholar</a>
+                </li>
+            
+              
+                <li class="icon-paperclip" >
+                  <a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank"  title="My ResearchGate...">ResearchGate</a>
+                </li>
+            
+            </ul>
+	</div>
+
+
+
+
+	<div class="panel radius">
+<h3>Tags</h3>
+<span class="pr20">
+
+  
+  
+<span class="icon-price-tag pr10">review (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">atmospheric-physics (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">scientific-computing (12)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">linux (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">visualization (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">python (3)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">databases (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">radiative-theory (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">nwpm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">earth-modeling (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">esm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">regularization (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">inverse-problem (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">fortran (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">wrf (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mpi (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">math (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">programming (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">c/c++ (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">vcs (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">svn (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">hg (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mercurial (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">make (1)<br></span> </span>
+
+</div>
+
+	<div class="panel radius">
+    <h3>Categories</h3>
+
+  
+  
+<span class="icon-archive pr10">science-blog (6)<br></span> 
+  
+  
+<span class="icon-archive pr10">computing-blog (13)<br></span> </span>
+	</div>
+</aside>
+
+	</div><!-- /.medium-4.columns -->
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">About This Site</h5>
+
+            <p class="shadow-black">
+              Academic and personal webpage build with Jekyll on Github.
+              <a href="http://localhost:4000/info/">More ›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Services</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href=""  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Thank you!</h5>
+              
+            
+              
+            
+              
+            
+              
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href=""  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://sareidia.deviantart.com/" target="_blank"  title="Pictures by Sareidia">Few Pictures by Sareidia</a>
+                </li>
+            
+              
+                <li class="web-link" >
+                  <a href="https://storybird.com/members/zuzol/reposts/" target="_blank"  title="Pictures by ZUZOL">Few Pictures by ZUZOL</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="b30 small-12 medium-6 columns credits">
+            <p>
+              Created with &hearts;
+              by&nbsp;<a href="http://rchg.github.io/">rchg</a>
+              with&nbsp;<a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
+              based&nbsp;on&nbsp;<a href="http://phlow.github.io/feeling-responsive/">Feeling&nbsp;Responsive</a>.
+            </p>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+            <ul class="inline-list">
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-home" title="Working here..."></a></li>
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-github" title="My GitHub site..."></a></li>
+            
+              <li><a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank" class="icon-sourceforge" title="My SourceForge site..."></a></li>
+            
+              <li><a href="http://bitbucket.org/rchecagarcia" target="_blank" class="icon-bitbucket" title="My bitbucket site..."></a></li>
+            
+              <li><a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank" class="icon-paper-plane" title="My Google Scholar..."></a></li>
+            
+              <li><a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank" class="icon-paperclip" title="My ResearchGate..."></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

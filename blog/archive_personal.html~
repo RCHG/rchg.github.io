@@ -1,0 +1,36 @@
+---
+layout: default
+title: "List of Personal Blog entries"
+teaser: "These are all the personal entries."
+breadcrumb: true
+sidebar: right
+header:
+    title: R. Checa-Garcia webpage | All My Blog Entries
+    pattern: pattern_jquery-dark-grey-tile.png
+permalink: "blog/archive_science/"
+---
+<div id="blog-index" class="row">
+	<div class="small-8 columns t30">
+		<h1>{{ page.title }}</h1>
+		{% if page.teaser %}<p class="teaser">{{ page.teaser }}</p>{% endif %}
+
+		<dl class="accordion" data-accordion>
+			{% assign counter = 1 %}
+			{% for post in site.categories.comment-blog limit:1000 %}
+			<dd class="accordion-navigation">
+			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
+				<div id="panel{{ counter }}" class="content">
+					{% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+					<a href="{{ site.url }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>
+				</div>
+			</dd>
+			{% assign counter=counter | plus:1 %}
+			{% endfor %}
+		</dl>
+	</div><!-- /.small-8.columns -->
+	
+	
+	<div class="medium-4 columns t30">
+		{% include sidebar %}
+	</div><!-- /.medium-3.columns -->
+</div><!-- /.row -->

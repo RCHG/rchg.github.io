@@ -1,0 +1,12 @@
+- menu_name: "Thank you!"
+
+- name: "Few Pictures by Sareidia"
+  url: "http://sareidia.deviantart.com/"
+  class: "network-entypo"
+  title: "Pictures by Sareidia"
+
+- name: "Few Pictures by ZUZOL"
+  url: "https://storybird.com/members/zuzol/reposts/"
+  class: "web-link"
+  title: "Pictures by ZUZOL"
+

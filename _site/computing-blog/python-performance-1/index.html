@@ -1,0 +1,944 @@
+<!doctype html>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Performance and Python (I)</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css" />
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] 
+      }
+    });
+  </script>
+
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Volkhov' rel='stylesheet' type='text/css' />
+  </noscript>
+  
+  
+	
+	<meta name="description" content="Tools and tips to improve the performance of python scripts. In this post is explained the library pycallgraph that can be used as an stand-alone command line or within our Python code. The use is illustrated with a real algorithm." />
+	
+	
+
+	
+
+
+
+	
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png" />
+
+
+
+
+	
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png" />	
+
+
+
+
+	
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png" />
+
+
+
+
+	
+	<meta name="msapplication-TileColor" content="#fabb00" />
+
+
+
+	<!-- Facebook Optimization -->
+	<meta property="og:locale" content="en_EN" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Performance and Python (I)" />
+	<meta property="og:description" content="Academic and personal webpage build with Jekyll on Github." />
+	<meta property="og:url" content="http://localhost:4000//computing-blog/python-performance-1/" />
+	<meta property="og:site_name" content="R. Checa-Garcia" />
+	
+
+	
+
+	<!-- Search Engine Optimization -->
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt" />
+
+	
+</head>
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> R. Checa-Garcia</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/search/">Search</a></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a href="http://localhost:4000/contact/">Contact</a></li>
+
+            
+            
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/index.html">Start</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/about">About</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/research/index_re">Research</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/overview">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/my-codes/">My codes</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/reviews/">Reviews</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/research/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/teaching/index_te/">Teaching</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/overview/">Overview</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/teaching/resources/">Resources</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/archive">Academic Blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_science/">Science Blog</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_computing/">Computing Blog</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a href="http://localhost:4000/blog/">Personal blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_personal/">Opinion</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_stories/">Stories</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive/">Blog Archive</a></li>
+                    
+
+                      
+                        
+                      
+
+                      <li><a href="http://localhost:4000/blog/archive_tags/">Blog Tags</a></li>
+                    
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+
+            
+            
+              <li><a href="http://localhost:4000/blog/open_letters/">Open Letters</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+
+              
+                
+              
+
+          
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-with-text" style=" background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('http://localhost:4000/images//pattern_jquery-dark-grey-tile.png')">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="masthead-title">R. Checa-Garcia webpage | Performance and Python</div>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+ <a href="http://localhost:4000">Start</a>
+ 
+   
+    
+        <a href="http://localhost:4000/computing-blog/">computing blog</a>
+    
+  
+    
+        <a class="current">Performance and Python (I)</a>
+    
+  
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<span itemprop="name">
+					<p class="subheadline">Notebook</p>
+					<h1>Performance and Python (I)</h1>
+				</span>
+			</header>
+
+
+			
+			<p class="teaser" itemprop="description">
+				Tools and tips to improve the performance of python scripts. In this post is explained the library pycallgraph that can be used as an stand-alone command line or within our Python code. The use is illustrated with a real algorithm.
+			</p>
+			
+            
+			
+						<div id="page-meta" class="t30b">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://rchg.github.io/" target="_blank"> rchg</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2014-12-05" itemprop="datePublished"> 2014-12-05</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> Python</span> </span>
+			</p>
+
+			</div><!--  /.page-meta -->
+
+			
+
+			<span itemprop="articleSection">
+			<p>In this post, I will introduce a python library quite useful to evaluate the most critical functions in your code (those that are most often called, and those where the program spent more time). To better understand how this library actually works, a good method is explain an example.</p>
+
+<p>Therefore, I will use a numerical python code that I programmed to calculate the scattering properties of homogeneous spheres with Mie Scattering. The calculation needs the values of the Mie angular functions which are defined by recurrence relations (<a href="http://http://localhost:4000/Mie-Scattering/">see this post</a> ). Typically, we have to program functions like,</p>
+
+<script type="math/tex; mode=display">S_{1}(\theta) = \sum_{n=1}^{N_{max}}\frac{2n+1}{n(n+1)}\left[ a_{n}\pi_{n}(\theta)+b_{n}\tau_{n}(\theta) \right]</script>
+
+<p>where,</p>
+
+<script type="math/tex; mode=display">\pi_{n}(\theta)=f(\pi_{n-1}(\theta),\pi_{n-2}(\theta))</script>
+
+<script type="math/tex; mode=display">\tau_{n}(\theta)=g(\pi_{n-1}(\theta),\pi_{n-2}(\theta))</script>
+
+<p>at this point the specific form of the functions <script type="math/tex">f</script> and <script type="math/tex">g</script> is not critical. But if we analized the equation of <script type="math/tex">S_{1}(\theta)</script> there is a sum of $\pi_{n}(\theta)$ for increasing values of n. Due to the recurrence definition we have to evaluate several times similar or identical expressions.</p>
+
+<p>Let’s say that in first instance we are not aware of this fact, however we want to diagnose where the code spends more time and resources. For that we install the library:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>pip install pycallgraph</code></pre></div>
+
+<p>We could use the library like a bash shell program or import it within our program. In the first case,</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>pycallgraph graphviz -- testTHIS.py</code></pre></div>
+
+<p>This will generate a image file <strong>pycallgraph.png</strong>. However, it is more useful and versatile to introduce directly in the script because it is possible to diagnose expecifically a function or block of code:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pymie_core</span> <span class="kn">as</span> <span class="nn">pymie</span>
+<span class="kn">from</span> <span class="nn">pycallgraph</span> <span class="kn">import</span> <span class="n">PyCallGraph</span>
+<span class="kn">from</span> <span class="nn">pycallgraph.output</span> <span class="kn">import</span> <span class="n">GraphvizOutput</span>
+
+<span class="k">with</span> <span class="n">PyCallGraph</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="n">GraphvizOutput</span><span class="p">()):</span>
+    <span class="n">pymie</span><span class="o">.</span><span class="n">mie_scat_lognormals</span><span class="p">(</span><span class="n">a_n</span><span class="p">,</span> <span class="n">a_m</span><span class="p">,</span> <span class="n">a_d</span><span class="p">,</span> <span class="n">a_sig</span><span class="p">,</span> <span class="n">a_mode</span><span class="p">)</span></code></pre></div>
+
+<p>In this case I would like to evaluate the function <strong>mie_scat_lognormals</strong>. Within this function <strong>mie_scat_lognormals</strong> of the library pymie_core are calculated series of the type: <script type="math/tex">S_{1}(\theta)</script>.</p>
+
+<p>If we just execute our python script we will find an image file, which in this case is,</p>
+
+<figure>
+<img src="/images/pycallgraph_before_2.png" />
+	<figcaption><a title="Graphviz Image">Graphviz Image to analyze the function pymie.mie_scat_lognormals.</a></figcaption>
+</figure>
+
+<p>I have indicated the large number of evaluations of the Mie angular functions. Therefore this motivate check the code because any improvement would mean a much better performance. In this code, I introduced a main change storing in a numpy array the results of the mie angular functions to avoid the huge number of evaluations. The result of run again the python script is now,</p>
+
+<figure>
+<img src="/images/pycallgraph_2.png" />
+	<figcaption><a title="Graphviz Image">Graphviz Image to check the function pymie.mie_scat_lognormals after the code improvement.</a></figcaption>
+</figure>
+
+<p>We appreciate that before there was <script type="math/tex">4\,300\,000</script>  calls and after <script type="math/tex">300\,000</script> function calls. By using this library we could figure out where our code is spending more time and what functions are critical in terms of global perfomance.</p>
+
+
+			</span>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://rchg.github.io/" target="_blank"> rchg</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2014-12-05" itemprop="datePublished"> 2014-12-05</time>
+				
+
+				<span class="icon-archive pr20"> COMPUTING-BLOG</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Scientific-computing</span> <span class="icon-price-tag pr10"> Python</span> </span>
+			</p>
+
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/science-blog/Online-Coupled-Models/">&laquo; Online Coupled Models</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/blog/archive/" title="Blog Archive">Archive</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/science-blog/Tikhonov/">Introduction to Tikhonov Regularization Method &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			</div><!--  /.page-meta -->
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+	<div class="medium-3 columns">
+		<aside>
+
+	<div class="panel radius">
+		<h4>R. Checa-Garcia</h4>
+        <h6>Atmospheric Physics Scientist</h5>
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li class="icon-home" >
+                  <a href="http://github.com/rchg" target="_blank"  title="Working here...">Academic Institution</a>
+                </li>
+            
+              
+                <li class="icon-github" >
+                  <a href="http://github.com/rchg" target="_blank"  title="My GitHub site...">GitHub</a>
+                </li>
+            
+              
+                <li class="icon-sourceforge" >
+                  <a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank"  title="My SourceForge site...">SourceForge</a>
+                </li>
+            
+              
+                <li class="icon-bitbucket" >
+                  <a href="http://bitbucket.org/rchecagarcia" target="_blank"  title="My bitbucket site...">Bitbucket</a>
+                </li>
+            
+              
+                <li class="icon-paper-plane" >
+                  <a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank"  title="My Google Scholar...">Scholar</a>
+                </li>
+            
+              
+                <li class="icon-paperclip" >
+                  <a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank"  title="My ResearchGate...">ResearchGate</a>
+                </li>
+            
+            </ul>
+	</div>
+
+
+
+
+	<div class="panel radius">
+<h3>Tags</h3>
+<span class="pr20">
+
+  
+  
+<span class="icon-price-tag pr10">review (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">atmospheric-physics (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">scientific-computing (12)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">linux (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">visualization (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">python (3)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">databases (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">radiative-theory (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">nwpm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">earth-modeling (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">esm (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">regularization (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">inverse-problem (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">fortran (4)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">wrf (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mpi (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">math (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">programming (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">c/c++ (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">vcs (2)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">svn (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">hg (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">mercurial (1)<br></span> 
+  
+  
+<span class="icon-price-tag pr10">make (1)<br></span> </span>
+
+</div>
+
+	<div class="panel radius">
+    <h3>Categories</h3>
+
+  
+  
+<span class="icon-archive pr10">science-blog (6)<br></span> 
+  
+  
+<span class="icon-archive pr10">computing-blog (13)<br></span> </span>
+	</div>
+</aside>
+
+	</div><!-- /.medium-4.columns -->
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">About This Site</h5>
+
+            <p class="shadow-black">
+              Academic and personal webpage build with Jekyll on Github.
+              <a href="http://localhost:4000/info/">More ›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Services</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href=""  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Thank you!</h5>
+              
+            
+              
+            
+              
+            
+              
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href=""  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://sareidia.deviantart.com/" target="_blank"  title="Pictures by Sareidia">Few Pictures by Sareidia</a>
+                </li>
+            
+              
+                <li class="web-link" >
+                  <a href="https://storybird.com/members/zuzol/reposts/" target="_blank"  title="Pictures by ZUZOL">Few Pictures by ZUZOL</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="b30 small-12 medium-6 columns credits">
+            <p>
+              Created with &hearts;
+              by&nbsp;<a href="http://rchg.github.io/">rchg</a>
+              with&nbsp;<a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
+              based&nbsp;on&nbsp;<a href="http://phlow.github.io/feeling-responsive/">Feeling&nbsp;Responsive</a>.
+            </p>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+            <ul class="inline-list">
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-home" title="Working here..."></a></li>
+            
+              <li><a href="http://github.com/rchg" target="_blank" class="icon-github" title="My GitHub site..."></a></li>
+            
+              <li><a href="http://sourceforge.net/u/rchecagarcia/profile/" target="_blank" class="icon-sourceforge" title="My SourceForge site..."></a></li>
+            
+              <li><a href="http://bitbucket.org/rchecagarcia" target="_blank" class="icon-bitbucket" title="My bitbucket site..."></a></li>
+            
+              <li><a href="https://scholar.google.de/citations?user=9X_DoXYAAAAJ&hl=en&oi=ao" target="_blank" class="icon-paper-plane" title="My Google Scholar..."></a></li>
+            
+              <li><a href="http://www.researchgate.net/profile/Ramiro_Checa-Garcia" target="_blank" class="icon-paperclip" title="My ResearchGate..."></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
