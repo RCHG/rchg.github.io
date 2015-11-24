@@ -5,7 +5,7 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-permalink: /index.html
+permalink: index.html
 breadcrumb: true
 header:
     title: R. Checa-Garcia webpage
