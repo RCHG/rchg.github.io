@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: Notebook
-title: "Centralized Version Control Notes"
+title: "Centralized Version Control"
 teaser: "Version Control Notes: SVN"
 breadcrumb: true
 tags: [VCS, Scientific-computing, SVN]
