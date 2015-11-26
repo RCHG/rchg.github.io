@@ -16,11 +16,10 @@ author: ramiro_chg
 
 
 <section id="table-of-contents" class="toc">
-  <header>
-    <h3>Table of Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
+<div class="panel radius" markdown="1">
+#### Table of Contents
+{:.no_toc }
+*  TOC
 {:toc}
 </div>
 </section><!-- /#table-of-contents -->
