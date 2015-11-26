@@ -18,7 +18,7 @@ header:
 </div>
 
 <div class="panel radius" markdown="1">
-  {% include alert info=' <a href="teaching/resources/">Teaching Resources and Links</a>' %}
+  {% include alert info=' <a href="/teaching/resources/">Teaching Resources and Links</a>' %}
   </div>
   
 </div><!-- /.medium-4.columns -->
