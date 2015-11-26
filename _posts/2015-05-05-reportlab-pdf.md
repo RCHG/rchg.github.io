@@ -2,8 +2,8 @@
 layout: page
 sidebar: right
 subheadline: Tips
-title: "Python PDF: reportlab library"
-teaser: "An example of how to use it"
+title: "Python PDF: reportlab"
+teaser: "An example of how to use reportlab library"
 breadcrumb: true
 tags: [Scientific-computing, Visualization, Python]
 categories:
