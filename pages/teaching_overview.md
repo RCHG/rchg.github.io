@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: "Teaching"
 subheadline: "Overview of my teaching background"
-permalink: "/teaching/overview/"
+permalink: "teaching/overview/"
 header:
     title: R. Checa-Garcia webpage | Teaching Overview
     pattern: pattern_jquery-dark-grey-tile.png
@@ -18,7 +18,7 @@ header:
 </div>
 
 <div class="panel radius" markdown="1">
-  {% include alert info=' <a href="/teaching/resources/">Teaching Resources and Links</a>' %}
+  {% include alert info=' <a href="teaching/resources/">Teaching Resources and Links</a>' %}
   </div>
   
 </div><!-- /.medium-4.columns -->
