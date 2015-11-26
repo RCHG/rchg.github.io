@@ -10,6 +10,7 @@ tags:
     - [Review, Atmospheric-Physics]
 categories:
     - science-blog
+    - review
 header:
     title: R. Checa-Garcia webpage | Book Review"
     pattern: pattern_jquery-dark-grey-tile.png
