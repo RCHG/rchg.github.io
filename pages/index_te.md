@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: "Academic Info "
 subheadline: "My teaching background"
-permalink: "/teaching/index_te/"
+permalink: "teaching/"
 header:
     title: R. Checa-Garcia webpage | Teaching Info
     pattern: pattern_jquery-dark-grey-tile.png
