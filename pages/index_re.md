@@ -35,7 +35,7 @@ transfer theory, inverse problems and processing of satellite products.
   <div class="small-4 columns">
   {% include alert info=' <a href="/research/overview/">Research Overview</a>' %}</div>
   <div class="small-4 columns">
-  {% include alert info=' <a href="/research/my_code/">My own sofware codes</a>' %}</div>
+  {% include alert info=' <a href="/research/my-codes/">My own sofware codes</a>' %}</div>
   <div class="small-4 columns">
   {% include alert info=' <a href="/research/resources/">Resources and Links</a>' %}</div>
 </div>
