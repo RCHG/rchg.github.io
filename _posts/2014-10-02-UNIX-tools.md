@@ -2,8 +2,8 @@
 layout: page
 sidebar: right
 subheadline: Tips
-title:  "UNIX commands: pr, cut, grep..."
-teaser: "Terminal Linux-Unix Tools"
+title:  "UNIX commands"
+teaser: "Terminal Linux-Unix Tools: pr, cut, grep..."
 breadcrumb: true
 tags:
     - [Scientific-computing, Linux]
