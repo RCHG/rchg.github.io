@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: "Academic Info "
 subheadline: "My research background"
-permalink: "/research/index_re/"
+permalink: "research/"
 header:
     title: R. Checa-Garcia webpage | Research Info
     pattern: pattern_jquery-dark-grey-tile.png
