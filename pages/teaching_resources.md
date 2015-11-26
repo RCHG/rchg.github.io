@@ -18,7 +18,7 @@ breadcrumb: true
 </div>
 
 <div class="panel radius" markdown="1">
-  {% include alert info=' <a href="/teaching/overview/">Teaching Overview</a>' %}
+  {% include alert info=' <a href="teaching/overview/">Teaching Overview</a>' %}
   </div>
   
 </div><!-- /.medium-4.columns -->
