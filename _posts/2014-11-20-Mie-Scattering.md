@@ -17,7 +17,7 @@ header:
 
 [^1]: Hansen, J.E., and L.D. Travis, 1974: Light scattering in planetary atmospheres. Space Sci. Rev., 16, 527-610, doi:10.1007/BF00168069.
 
-**Definition**: Mie Scattering is a solution of the scattering problem described with the Maxwell Equations when the scatter is a spherical particle. Initially the solution of Mie (or Lorenz-Mie) was designed for homogeneous spheres, however there are extensions for multi-layered spheres and with important limitations for other geometrical objects. The calculation is relatively efficient but depends on the **size parameter**, \[x=2\pi r/\lambda\]. When this parameter increases the number of terms of the series necessaries to calculate the relevant amounts also grows.
+**Definition**: Mie Scattering is a solution of the scattering problem described with the Maxwell Equations when the scatter is a spherical particle. Initially the solution of Mie (or Lorenz-Mie) was designed for homogeneous spheres, however there are extensions for multi-layered spheres and with important limitations for other geometrical objects. The calculation is relatively efficient but depends on the **size parameter**, $$x=2\pi r/\lambda$$. When this parameter increases the number of terms of the series necessaries to calculate the relevant amounts also grows.
 {:.smallblock}
 
 ### The Scattering problem
