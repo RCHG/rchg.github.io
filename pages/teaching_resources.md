@@ -79,7 +79,8 @@ but also are appeling for didactic purposes:
 - [MMA Focus](http://www.maa.org/press/periodicals/maa-focus)
 - [Mathematics Magazine Horizons](http://www.maa.org/press/periodicals/mathematics-magazine)
 
-
+<small markdown="1">[Up to table of contents](#toc)</small>
+{: .text-right }
 
 
 </div><!-- /.medium-8.columns -->
