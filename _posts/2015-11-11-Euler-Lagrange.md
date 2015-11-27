@@ -22,13 +22,13 @@ header:
 
 ### An important preliminar result
 
-Given to real numbers a and b with $$a<b \in R$$ and a continous function $$g(x): [a,b]\leftarrow \mathbb{R}$$. If,
+Given to real numbers a and b with $$a<b \in R$$ and a continous function $$g(x): [a,b]\rightarrow \mathbb{R}$$. If,
 
 $$\int_{a}^{b}\eta(x)g(x)dx=0 \qquad \forall \eta(x)\in \mathcal{C}^{2} \,, with\,, \eta(a)=\eta(b)=0 $$
 
 then,
 
-$$\g(x)=0 \qquad \foral x\in [a,b] $$
+$$g(x)=0 \qquad \forall x\in [a,b] $$
 
 {:.smallquote}
 
