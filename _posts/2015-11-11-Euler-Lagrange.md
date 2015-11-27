@@ -20,7 +20,7 @@ header:
 **Previous**: The Euler-Lagrance Equations are well known from Analitic Mechanics and Minimum Action Principle, a very elegant alternative to Newton formulation of Mechanics. Here is exposed just as a mathematical tool within Calculus of Variations branch of Mathematical Analysis.
 {:.smallblock}
 
-### An important preliminar result
+##### An important preliminar result
 
 Given to real numbers a and b with $$a<b \in R$$ and a continous function $$g(x): [a,b]\rightarrow \mathbb{R}$$. If,
 
