@@ -64,6 +64,22 @@ This last link is interesting not only because of the topic itself but because t
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
+### Mathematics
+
+To teach mathematics at University level I have found several interesting resources. If you speak Spanish then I would recommend you to take a look at:
+
+- [Materiales Docencia Matematicas](http://analisismatematico.ugr.es/pages/docencia/materiales) 
+
+While there also specific publications like:
+
+- [Math Horizons](http://www.maa.org/press/periodicals/math-horizons)
+
+but also are appeling for didactic purposes:
+
+- [MMA Focus](http://www.maa.org/press/periodicals/maa-focus)
+- [Mathematics Magazine Horizons](http://www.maa.org/press/periodicals/mathematics-magazine)
+
+
 
 
 </div><!-- /.medium-8.columns -->
