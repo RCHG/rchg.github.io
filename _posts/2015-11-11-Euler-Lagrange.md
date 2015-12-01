@@ -22,6 +22,7 @@ header:
 
 ### An important preliminar result
 
+
 Given to real numbers a and b with $$a<b \in R$$ and a continous function $$g(x): [a,b]\rightarrow \mathbb{R}$$. If,
 
 $$\int_{a}^{b}\eta(x)g(x)dx=0 \qquad \forall \eta(x)\in \mathcal{C}^{2} \,, with\,, \eta(a)=\eta(b)=0 $$
@@ -35,6 +36,7 @@ This lemma is what is needed to demostrate that the Euler-Lagrange Equations are
 
 
 ## Theorem of Euler-Lagrange
+
 
 Given a function $$f:[a,b]\rightarrow\mathbb{R}$$ twice differentiable, so $$f(x)\in \mathcal{C}^{2}$$, with prescribed boundary values $$f(a)=f_{a}$$ and  $$f(b)=f_{b}$$ and a continous function $$g(x): [a,b]\rightarrow \mathbb{R}$$. We define an integral as,
 
