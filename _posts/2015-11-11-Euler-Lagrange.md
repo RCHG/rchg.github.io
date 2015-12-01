@@ -20,7 +20,7 @@ header:
 **Previous**: The Euler-Lagrance Equations are well known from Analitic Mechanics and Minimum Action Principle, a very elegant alternative to Newton formulation of Mechanics. Here is exposed just as a mathematical tool within Calculus of Variations branch of Mathematical Analysis.
 {:.smallblock}
 
-### An important preliminar result
+#### An important preliminar result
 
 
 Given to real numbers a and b with $$a<b \in R$$ and a continous function $$g(x): [a,b]\rightarrow \mathbb{R}$$. If,
@@ -35,10 +35,10 @@ $$g(x)=0 \qquad \forall x\in [a,b] $$
 This lemma is what is needed to demostrate that the Euler-Lagrange Equations are the solution to this other problem:
 
 
-## Theorem of Euler-Lagrange
+### Theorem of Euler-Lagrange
 
 
-Given a function $$f:[a,b]\rightarrow\mathbb{R}$$ twice differentiable, so $$f(x)\in \mathcal{C}^{2}$$, with prescribed boundary values $$f(a)=f_{a}$$ and  $$f(b)=f_{b}$$ and a continous function $$g(x): [a,b]\rightarrow \mathbb{R}$$. We define an integral as,
+Given a function $$f:[a,b]\rightarrow\mathbb{R}$$ twice differentiable, so $$f(x)\in \mathcal{C}^{2}$$, with prescribed boundary values $$f(a)=f_{a}$$ and  $$f(b)=f_{b}$$ and a twice differentiable function $$g(x,f,f')$$ on all its arguments. We define an integral as,
 
 $$I[x,f] = \int_{a}^{b}g(x,f,f')dx $$
 
@@ -49,5 +49,17 @@ $$\frac{\partial g}{\partial f} - \frac{d}{dx}\left( \frac{\partial g}{\partial 
 
 From a partical point of view the derivatives of the $$g$$ function with respect to $$f$$ and $$f'$$ are done with the usual derivation rules.
 {:.notice}
+
+This equation is well know by all the students who know Analytical Mechanics. In fact this result can be extended (both the Lemma and the Theorem) to a problem with several functions then,
+
+Given a set of functions $$f_{i}:[a,b]\rightarrow\mathbb{R}$$ twice differentiable, so $$f_{i}(x)\in \mathcal{C}^{2}$$, with prescribed boundary values $$f_{i}(a)=f_{i,a}$$ and  $$f_{i}(b)=f_{i,b}$$ and a twice differential function $$g(x,f_{1},...,f_{k},f'_{1},...,f'_{k})$$
+
+$$I[x,f_{1},...,f_{k},f'_{1},...,f'_{k}] = \int_{a}^{b}g(x,f_{1},...,f_{k},f'_{1},...,f'_{k})dx $$
+
+Then, if $$I[x,f_{1},...,f_{k},f'_{1},...,f'_{k}]$$ have a minimum value for the set function $$f_{i}$$, then these function $$f_{i}$$ satisfaces the following system of differential equations,
+
+$$\frac{\partial g}{\partial f_{1}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{1}} \right)=0 $$
+$$\frac{\partial g}{\partial f_{2}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{2}} \right)=0 $$
+$$\frac{\partial g}{\partial f_{k}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{k}} \right)=0 $$
 
 
