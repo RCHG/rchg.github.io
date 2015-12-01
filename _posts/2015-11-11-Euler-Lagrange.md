@@ -29,9 +29,10 @@ $$\int_{a}^{b}\eta(x)g(x)dx=0 \qquad \forall \eta(x)\in \mathcal{C}^{2} \,, with
 then,
 
 $$g(x)=0 \qquad \forall x\in [a,b] $$
+---
 
 This lemma is what is needed to demostrate that the Euler-Lagrange Equations are the solution to this other problem:
----
+
 
 #### Theorem of Euler-Lagrange
 ---
