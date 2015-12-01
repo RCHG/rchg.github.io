@@ -62,4 +62,10 @@ $$\frac{\partial g}{\partial f_{1}} - \frac{d}{dx}\left( \frac{\partial g}{\part
 $$\frac{\partial g}{\partial f_{2}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{2}} \right)=0 $$
 $$\frac{\partial g}{\partial f_{k}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{k}} \right)=0 $$
 
+### The Isoperimetric problem
 
+The previous result can be also extended to cases in which the function $$f(x)$$ have to satisface an additional constrain like,
+
+$$C[x,f] = \int_{a}^{b}h(x,f,f')dx $$
+
+where the function $$h$$ and the value $C$ are both known. This problem can be resolved given the Theorem of Euler-Lagrange and the method of Lagrange Multipliers.
