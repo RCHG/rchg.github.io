@@ -30,5 +30,19 @@ then,
 
 $$g(x)=0 \qquad \forall x\in [a,b] $$
 
-{:.smallquote}
+This lemma is what is needed to demostrate that the Euler-Lagrange Equations are the solution to this other problem:
+
+#### Theorem of Euler-Lagrange
+
+Given a function $$f:[a,b]\rightarrow\mathbb{R}$$ twice differentiable, so $$f(x)\in \mathcal{C}^{2}$$, with prescribed boundary values $$f(a)=f_{a}$$ and  $$f(b)=f_{b}$$ and a continous function $$g(x): [a,b]\rightarrow \mathbb{R}$$. We define an integral as,
+
+$$I[x,f] = \int_{a}^{b}g(x,f,f')dx $$
+
+Then, if $$I[x,f]$$ have a minimum value for the function $$f$$, then the function $$f$$ satisfaces the following differential equation,
+
+$$\frac{\partial g}{\partial f} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'} \right)=0 $$
+
+From a partical point of view the derivatives of the $$g$$ function with respect to $$f$$ and $$f'$$ are done with the usual derivation rules.
+{:.notice}
+
 
