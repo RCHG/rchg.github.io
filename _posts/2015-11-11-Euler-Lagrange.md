@@ -59,7 +59,11 @@ $$I[x,f_{1},...,f_{k},f'_{1},...,f'_{k}] = \int_{a}^{b}g(x,f_{1},...,f_{k},f'_{1
 Then, if $$I[x,f_{1},...,f_{k},f'_{1},...,f'_{k}]$$ have a minimum value for the set function $$f_{i}$$, then these function $$f_{i}$$ satisfaces the following system of differential equations,
 
 $$\frac{\partial g}{\partial f_{1}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{1}} \right)=0 $$
+
 $$\frac{\partial g}{\partial f_{2}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{2}} \right)=0 $$
+
+$$ ... $$
+
 $$\frac{\partial g}{\partial f_{k}} - \frac{d}{dx}\left( \frac{\partial g}{\partial f'_{k}} \right)=0 $$
 
 ### The Isoperimetric problem
