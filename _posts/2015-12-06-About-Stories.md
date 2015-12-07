@@ -9,6 +9,7 @@ tags:
     - [Opinion]
 categories:
     - stories-blog
+    - comment-blog
 header:
     title: "R. Checa-Garcia webpage |  Hannah Arent: I"
     pattern: pattern_jquery-dark-grey-tile.png
