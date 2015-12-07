@@ -1,16 +1,16 @@
 ---
 layout: page
 sidebar: right
-subheadline: "Essay"
+subheadline: Essay
 title:  "Hannah Arendt: Personas en tiempos oscuros"
-teaser: "Una notas..."
-author: ramiro_chg
+teaser: ""Una notas... sobre narrar historias"
 breadcrumb: true
-tags: [Opinion]
+tags:
+    - [Opinion]
 categories:
     - stories-blog
 header:
-    title: R. Checa-Garcia webpage | Hannah Arendt: I"
+    title: R. Checa-Garcia webpage |  Hannah Arent: I
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
