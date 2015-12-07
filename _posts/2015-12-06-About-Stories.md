@@ -10,7 +10,6 @@ tags:
     - [Opinion]
 categories:
     - stories-blog
-    - opinion
 header:
     title: R. Checa-Garcia webpage | Hannah Arendt: I"
     pattern: pattern_jquery-dark-grey-tile.png
