@@ -1,16 +1,16 @@
 ---
 layout: page
 sidebar: right
-subheadline: Review
+subheadline: Essay
 title:  "Hannah Arendt: Personas en tiempos oscuros"
-teaser: "Un comentario"
+teaser: "Una notas..."
 author: ramiro_chg
 breadcrumb: true
 tags:
-    - [Review, Atmospheric-Physics]
+    - [Opinion]
 categories:
     - stories-blog
-    - opinnion
+    - opinion
 header:
     title: R. Checa-Garcia webpage | Hannah Arendt: I"
     pattern: pattern_jquery-dark-grey-tile.png
