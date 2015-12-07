@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 subheadline: Essay
 title:  "Hannah Arendt: Personas en tiempos oscuros"
-teaser: ""Una notas... sobre narrar historias"
+teaser: "Una notas... sobre narrar historias"
 breadcrumb: true
 tags:
     - [Opinion]
