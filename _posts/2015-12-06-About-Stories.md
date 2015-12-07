@@ -8,13 +8,11 @@ author: ramiro_chg
 breadcrumb: true
 tags: [Opinion]
 categories:
-
     - stories-blog
 header:
     title: R. Checa-Garcia webpage | Hannah Arendt: I"
     pattern: pattern_jquery-dark-grey-tile.png
 ---
-
 
 ### Narrar en Hannah Arendt
 
