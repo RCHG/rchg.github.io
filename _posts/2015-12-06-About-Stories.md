@@ -7,7 +7,7 @@ teaser: "Una notas..."
 author: ramiro_chg
 breadcrumb: true
 tags:
-    - [Opinion]
+    - Opinion
 categories:
     - stories-blog
 header:
