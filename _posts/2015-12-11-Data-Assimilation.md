@@ -136,7 +136,7 @@ Note here an important property of Optimal interpolation shared with other stati
 
 ### Variational approaches: 3D-Var [^3]
 
-The optimal interpolation method can be formulated also directly as a variational problem. This means that we begin with the definition of a **cost function** that has to be minimized to obtain our analysis). In this formulation we have similar methodologies to inverse methods in remote sensing. Formally we will have an statistical problem and our goal is to maximize the a posteriori probability of the true state of the atmosphere constrained by the observations. 
+The optimal interpolation method can be formulated also directly as a variational problem. This means that we begin with the definition of a **cost function** that has to be minimized to obtain our analysis). In this formulation we have similar methodologies to inverse methods[^2] in remote sensing. Formally we will have an statistical problem and our goal is to maximize the a posteriori probability of the true state of the atmosphere constrained by the observations. 
 
 $$J(x)=(x-x_{b})P_{b}^{-1}(x-x_{b})+(y_{0}-H(x))^{T}P_{o}^{-1}(y_{0}-H(x))$$
 
