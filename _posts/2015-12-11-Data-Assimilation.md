@@ -23,6 +23,11 @@ header:
 </div>
 </section><!-- /#table-of-contents -->
 
+[^1]:Daley, R., Atmospheric Data Analysis, Cambridge University Press, pp. 457, 1991.
+[^2]:Albert Tarantola, Inverse Problem Theory and Model Parameter Estimation. SIAM, 2005.
+[^3]:Kalnay, E., Atmospheric Modeling, Data Assimilation and Predictability, Cambridge University Press, pp. 341,2003, Chap.
+[^4]:Thiebaux, H.J. and Pedder, M.A. Spatial Objective Analysis with applications in atmospheric science, Academic Press1987.
+
 ### Data Assimilation?
 
 > The ambitious and elusive goal of data
@@ -164,10 +169,6 @@ whose optimization also needs the linear tangent evolution operator
 
 ### References
 
-General textbook literature for data assimilation
-[^1]:  Daley, R., Atmospheric Data Analysis, Cambridge University Press, pp. 457, 1991.
-[^2]:  Albert Tarantola, Inverse Problem Theory and Model Parameter Estimation. SIAM, 2005.
-[^3]:  Kalnay, E., Atmospheric Modeling, Data Assimilation and Predictability, Cambridge University Press, pp. 341, 2003, Chap.
-[^4]:  Thiebaux, H.J. and Pedder, M.A. Spatial Objective Analysis with applications in atmospheric science, Academic Press1987.
+
 
 
