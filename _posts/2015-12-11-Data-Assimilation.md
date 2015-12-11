@@ -113,11 +113,11 @@ The situation on the case of atmospheric models is more complicated because we h
 
 This point is important, we have now a situation with several fields defining the state of the system, for example the prognostic variables $$x=(\rho_{s},w,T,u,v)$$, so pressure, temperature, air moisture and wind fields. Our model has defined a grid. So we will have, let's say, n scalar variables in total (n=5m if m is the number of grid points).
 
-We proceed as before but not we have to introduce a new concept, the **forward observational operator** which translates a given prognostic state vector into our measurements (not necessarily the variables $x=(\rho_{s},w,T,u,v)$$). 
+We proceed as before but not we have to introduce a new concept, the **forward observational operator** which translates a given prognostic state vector into our measurements -not necessarily the variables $$x=(\rho_{s},w,T,u,v)$$-. 
 
 $$x_{t} - x_{b} =  W(y_{o}-H(x_{b}))-e_{a}$$
  
-Our measurements are a vector $$y_{o}$%$ with usually different dimension p than the state vector. H is the forward observational operator. The weights are then a matrix of numbers (nxp). The **observational increments** are defined by: $$d=(y_{o}-H(x_{b}))$$. The matrix W is often named gain matrix. The observational errors are defined by: $e_{o,i}=y_{o,i}-H(x_{t,i})$. Note that each measurements is done in an specific point $r_{i}$ of the space not necessarily in our model grid. Because we don't know the true values we have to move the statistical analysis by introducing the statistical properties of the errors we have (sometimes these are hypothesis). Another key definition is the error covariance matrix:
+Our measurements are a vector $$y_{o}$$ with usually different dimension p than the state vector. H is the forward observational operator. The weights are then a matrix of numbers (nxp). The **observational increments** are defined by: $$d=(y_{o}-H(x_{b}))$$. The matrix W is often named gain matrix. The observational errors are defined by: $$e_{o,i}=y_{o,i}-H(x_{t,i})$$. Note that each measurements is done in an specific point $$r_{i}$$ of the space not necessarily in our model grid. Because we don't know the true values we have to move the statistical analysis by introducing the statistical properties of the errors we have (sometimes these are hypothesis). Another key definition is the error covariance matrix:
 
 $$P_{b}=E(e_{b}e_{b}^{T})$$ (in the case of background errors). Each element of the matrix has the form $$P_{l,k}E(e_{b,j}e_{b,k})$$ and represents the statistical covariance between the errors of two prognostic variables (it may be the the temperature at two points, or the air moisture in a grid point and the wind velocity and other grind point etc...).
 
