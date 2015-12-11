@@ -14,6 +14,8 @@ header:
 ---
 
 > Post under construction
+[^1]: I recommend to check the following course: http://www2.geog.ucl.ac.uk/~plewis/geogg124/intro.html in case you are interested on learn about this topic.
+
 
 ### Land Surface Schemes in Climate Models
 
@@ -35,7 +37,7 @@ where,
 Beyond this simple formulation the estimation of each term can be challening depending on earth surface type (and atmospheric conditions). 
 
 
-### Modelling Vegetation
+### Modelling Vegetation [^1]
 
 Vegetation might be understand as a kind of land surface with very simple general parameters or ideally is considered a system between a bare soil and the boundarly atmospheric layer. This is one of the most interestings improvement of current Earth Systems Models as the vegetation plays an important role on the carbon and water cycles (also with a key interaction with the solar radiation). 
 
