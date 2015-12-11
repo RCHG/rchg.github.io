@@ -23,10 +23,11 @@ header:
 </div>
 </section><!-- /#table-of-contents -->
 
-[^1]:Daley, R., Atmospheric Data Analysis, Cambridge University Press, pp. 457, 1991.
-[^2]:Albert Tarantola, Inverse Problem Theory and Model Parameter Estimation. SIAM, 2005.
-[^3]:Kalnay, E., Atmospheric Modeling, Data Assimilation and Predictability, Cambridge University Press, pp. 341,2003, Chap.
-[^4]:Thiebaux, H.J. and Pedder, M.A. Spatial Objective Analysis with applications in atmospheric science, Academic Press1987.
+[^1]: Daley, R., Atmospheric Data Analysis, Cambridge University Press, pp. 457, 1991.
+[^2]: Albert Tarantola, Inverse Problem Theory and Model Parameter Estimation. SIAM, 2005.
+[^3]: Kalnay, E., Atmospheric Modeling, Data Assimilation and Predictability, Cambridge University Press, pp. 341,2003, Chap.
+[^4]: Thiebaux, H.J. and Pedder, M.A. Spatial Objective Analysis with applications in atmospheric science, Academic Press1987.
+[^5]: Saroja Polavarapu, Introduction to Data Assimilation (Presentation). GCC Summer School, Banff. May 22-28, 2004
 
 ### Data Assimilation?
 
@@ -75,11 +76,11 @@ In weather forecasting we would like to combine information from observations (p
 
 ### Most easy example:
 
-Given a set of N observations of two variables (x,y) and given a model y = M (x; a, b) where a and b are parameters of the model. The parameters are estimated from the measurements  by optimizing a designed estimator.
+Given a set of N observations of two variables (x,y) and given a model y = f (x; m, n) where m and m are  parameters of the model (real numbers). The parameters are estimated from the measurements by optimizing a designed estimator.
 
-The conditions in atmospheric models are much more complex and first the dimension of the system is very large, the dynamics is not linear anymore, the system is undetermined as the dimension of x and y is very different. 
+But the conditions in atmospheric models are much more complex and first the dimension of the system is very large, the dynamics is not linear anymore, the system is undetermined as the dimension of x and y is very different. 
 
-### Data Analysis: tasting the problem 
+### Data Analysis: tasting the problem [^5]
 
 Data assimilation is derived from data analysis a very simple examples is when we have a scalar variable x and a single observation:
 
@@ -104,7 +105,7 @@ when the cross-correlation $$E(e_{b}e{o})=0$$
 The situation on the case of atmospheric models is more complicated because we have a model-grid and the observations are not exactly in our grid or not necessarily and is possible that we have a kind of heterogeneous sources with different error properties. 
 
 
-### Optimal Interpolation[^3] 
+### Optimal Interpolation [^3] 
 
 This point is important, we have now a situation with several fields defining the state of the system, for example the prognostic variables $$x=(\rho_{s},w,T,u,v)$$, so pressure, temperature, air moisture and wind fields. Our model has defined a grid. So we will have, let's say, n scalar variables in total (n=5m if m is the number of grid points).
 
@@ -129,7 +130,7 @@ all the amounts are know and the $$P_{a}=(1-Wh)P_{b}$$. A main issue here is per
 Note here an important property of Optimal interpolation shared with other statistical interpolation schemes as 3D-Var. The method implements statistical properties of all the involved amounts. Other methodologies more empirical based simply on build an interpolation function over the grid.
 
 
-### Variational approaches[^3]: 3D-Var
+### Variational approaches: 3D-Var [^3]
 
 The optimal interpolation method can be formulated also directly as a variational problem. This means that we begin with the definition of a **cost function** that has to be minimized to obtain our analysis). In this formulation we have similar methodologies to inverse methods in remote sensing. Formally we will have an statistical problem and our goal is to maximize the a posteriori probability of the true state of the atmosphere constrained by the observations. 
 
