@@ -123,7 +123,7 @@ $$P_{b}=E(e_{b}e_{b}^{T})$$ (in the case of background errors). Each element of 
 
 Now we have to deal with the forward observation operator which is usually highly non-linear. This means that it is better build our study over the **linear observation operator** defined as a pxn matrix with elements $$h_{i,j}=\partial H_{i}\partial x_{l}$$. The idea of this definition is to write now the observation increment as,
 
-$$d=y_{o}-H(x_{b})\simeq y_{o}-H(x_{t})-h((x_{b}-x_{t})=e_{o}-he_{b}$$ 
+$$d=y_{o}-H(x_{b})\simeq y_{o}-H(x_{t})-h(x_{b}-x_{t})=e_{o}-he_{b}$$ 
  
 With the three definitions $$P_{a},P_{b},P_{o}$$. It is assumed that $$P_{o,b}=0$$. The **optimal interpolation** minimizes the amount $$e_{a}^{T}e_{a}$$ an scalar product of two error vectors of the analysis with a weighting matrix,
 
