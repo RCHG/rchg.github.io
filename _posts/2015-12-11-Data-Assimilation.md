@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: Notebook
-title:  "Data Assimlation Notebook"
+title:  "Data Assimilation Notebook"
 teaser: "Introduction to Data Assimilation in NWPM"
 breadcrumb: true
 tags:
@@ -24,9 +24,13 @@ header:
 </section><!-- /#table-of-contents -->
 
 [^1]: Daley, R., Atmospheric Data Analysis, Cambridge University Press, pp. 457, 1991.
+
 [^2]: Albert Tarantola, Inverse Problem Theory and Model Parameter Estimation. SIAM, 2005.
+
 [^3]: Kalnay, E., Atmospheric Modeling, Data Assimilation and Predictability, Cambridge University Press, pp. 341,2003, Chap.
+
 [^4]: Thiebaux, H.J. and Pedder, M.A. Spatial Objective Analysis with applications in atmospheric science, Academic Press1987.
+
 [^5]: Saroja Polavarapu, Introduction to Data Assimilation (Presentation). GCC Summer School, Banff. May 22-28, 2004
 
 ### Data Assimilation?
