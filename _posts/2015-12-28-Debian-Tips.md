@@ -17,6 +17,16 @@ header:
 
 My own daily use computer is a Lenovo Thinkpad T440s and I have installed only a Debian Linux distribution, in particular the *testing version*, this means that usually I have to solve by myself tipical problems that the stable distribution doesn't have. Here I am including a list of those problems that I was able to solve, maybe alone maybe with the help of several forums in internet.
 
+<section id="table-of-contents" class="toc">
+<div class="panel radius" markdown="1">
+#### Table of Contents
+{:.no_toc }
+*  TOC
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
+
 ### December 2015 IWLWIFI ISSUES
 
 In Dec-2015 there were an update of the non-free package that control the intel wifi card ensembled on the Lenovo T440s, however the update broked my internet wifi conection. Here you have several steps to solve the problem:
