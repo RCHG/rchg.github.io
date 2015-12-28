@@ -27,7 +27,7 @@ My own daily use computer is a Lenovo Thinkpad T440s and I have installed only a
 </section><!-- /#table-of-contents -->
 
 
-### December 2015 IWLWIFI ISSUES
+### December 2015: iwlwifi 
 
 In Dec-2015 there were an update of the non-free package that control the intel wifi card ensembled on the Lenovo T440s, however the update broked my internet wifi conection. Here you have several steps to solve the problem:
 
