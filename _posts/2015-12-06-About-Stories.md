@@ -11,7 +11,7 @@ categories:
     - stories-blog
     - comment-blog
 header:
-    title: "R. Checa-Garcia webpage |  Hannah Arent: I"
+    title: "R. Checa-Garcia webpage |  Hannah Arendt: I"
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
