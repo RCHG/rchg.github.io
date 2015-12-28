@@ -58,5 +58,7 @@ ls /lib/firmware/*ucode
 
 Now we can check the stable equivalent package at [Stable-version-iwlwifi](https://packages.debian.org/jessie/firmware-iwlwifi) and confirm that **iwlwifi-7260-7.ucode** is there. Therefore simply download here the files on this package [firmware-nonfree_0.43.tar.gz](http://http.debian.net/debian/pool/non-free/f/firmware-nonfree/firmware-nonfree_0.43.tar.gz). Wa can extract the file named **iwlwifi-7260-7.ucode-22.1.7.0** and copy at /lib/firmware with the name **iwlwifi-7260-7.ucode**. You can simply reboot the machine and the wifi is alive again.
 
+<small markdown="1">[Up to table of contents](#toc)</small>
+{: .text-right }
 
 
