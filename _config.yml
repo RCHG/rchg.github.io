@@ -19,7 +19,7 @@ collections:
         output: true
     computing-blog:
         output: true
-    open-letters:
+    personal-blog:
         output: true
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
@@ -142,7 +142,7 @@ defaults:
   -
     scope:
       path: ""
-      type: open-letters
+      type: personal-blog
     values:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
