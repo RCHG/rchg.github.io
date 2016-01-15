@@ -84,9 +84,12 @@ but also are appeling for didactic purposes:
 
 ### Sport and Physics
 
-There is an Olympic game every year in Spain for the students of Physics in High-Schools. You can check the last problems and their solutions (in Spanish) at:
+There is an Olympic game every year in Spain for the students of Physics in High-Schools. You can check the last problems and their solutions for Spain (in Spanish) at:
 
 - [Olimpiada de Física España](http://www.rsef.es/oef/index.php/problemas-de-la-oef)
+
+an International:
+
 - [2014 International Olympics of Physics](http://ipho2014.kz/loader/fromorg/1)
 - [Previous International Olympics of Physics](http://ipho.phy.ntnu.edu.tw/problems-and-solutions_5.html)
 
