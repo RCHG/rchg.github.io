@@ -44,7 +44,7 @@
   side: left
   dropdown:
   - title: Opinion
-    url: "blog/archive_personal/"
+    url: "blog/archive_opinnion/"
   - title: Stories
     url: "blog/archive_stories/"
   - title: "Blog Archive"
