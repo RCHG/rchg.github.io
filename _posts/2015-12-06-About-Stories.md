@@ -6,7 +6,7 @@ title:  "Hannah Arendt: Personas en tiempos oscuros"
 teaser: "Una notas... sobre narrar historias"
 breadcrumb: true
 tags:
-    - [Opinion]
+    - Opinion
 categories:
     - personal-blog
 header:
