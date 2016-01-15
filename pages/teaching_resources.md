@@ -86,7 +86,8 @@ but also are appeling for didactic purposes:
 
 There is an Olympic game every year in Spain for the students of Physics in High-Schools. You can check the last problems and their solutions (in Spanish) at:
 
-- [Olimpiada de Física](http://www.rsef.es/oef/index.php/problemas-de-la-oef)
+- [Olimpiada de Física España](http://www.rsef.es/oef/index.php/problemas-de-la-oef)
+- [International Olympics of Physics](http://ipho2014.kz/loader/fromorg/1)
 
 In general these problems should be solved correctly by a student of 1 years of Physics at the University. The problems are themself not very difficult and should be easy for a typical student of Physics. All the problems are including the picture that allows to solve the problem. For University students I recommend to do not include any additional help like drawings or notes, in this way the students should be able to take the relevant information to solve the problem (from the text ifself).
 
