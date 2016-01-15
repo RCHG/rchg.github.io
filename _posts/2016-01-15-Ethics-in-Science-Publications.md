@@ -6,7 +6,8 @@ title:  "Ethics in Science & Publications"
 teaser: "Minimal survival about Ethics in Sicence Publications"
 breadcrumb: true
 tags:
-    - [Opinion, Ethics]
+    - Opinion
+    - Ethics
 categories:
     - personal-blog
 header:
