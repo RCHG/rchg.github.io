@@ -6,10 +6,9 @@ title:  "Ethics in Science & Publications"
 teaser: "Minimal survival about Ethics in Sicence Publications"
 breadcrumb: true
 tags:
-    - [Opinion]
+    - [Opinion, Ethics]
 categories:
-    - science-blog
-    - comment-blog
+    - personal-blog
 header:
     title: "R. Checa-Garcia webpage |  Ethics in Science & Publications"
     pattern: pattern_jquery-dark-grey-tile.png
