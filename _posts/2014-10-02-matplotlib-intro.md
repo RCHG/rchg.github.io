@@ -35,4 +35,27 @@ mpl.rcParams['font.family'] = 'Gentium Basic'
 
 Also this can be change directly in the matplotlib rc file. I recommend also take a look to the [matplotlib font API](http://matplotlib.org/api/font_manager_api.html).
 
+### Plotting Time Series
 
+Just an illustrative example on how to plot time series by including a date-time object.
+
+{% highlight python %}
+import matplotlib.dates as mdates
+
+years = mdates.YearLocator()          # every year
+months = mdates.MonthLocator()        # every month
+yearsFmt = mdates.DateFormatter('%Y')
+
+plt.plot(ts_time, ts_val, ls='-', alpha=0.9, ms=4,
+        marker='o', lw=1.4)
+                     
+plt.gcf().autofmt_xdate()
+plt.fmt_xdata = mdates.DateFormatter('%Y-%m-%d')
+plt.gca().set_xlim(['1978-01-15 00:00:00','2015-01-15 00:00:00'])
+
+plt.gca().xaxis.set_major_locator(years)
+plt.gca().xaxis.set_major_formatter(yearsFmt)
+plt.gca().xaxis.set_minor_locator(months)
+    
+plt.show()
+{% endhighlight %}
