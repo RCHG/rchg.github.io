@@ -27,7 +27,11 @@ header:
 
 [^1]: *Atmospheric Modelling, Data Assimilaton and Predictability*, **Eugenia Kalnay*, Cambridge University Press.
 
-## SPECTRAL MODEL GRID
+## Climate Model Resolutions
+
+The numerical formulation of the equations included on the current climate models is a subject of research. The climate model resolution indicates information on this discretization process both in time and space. The two main discretization methods are the finite difference method to formulate the differential equations and the spectral method which allows analyitical expressions for the spaces derivatives. Here is specified several typical resolutions of both Spectral and Finite differences methods.
+
+### Spectral Model Grid
 
 The spectral models uses a different methodology for space discretization based on spectral expansion (it can be considered a Galerkin approach) 
 
@@ -36,7 +40,7 @@ More information can be found [ECMWF](http://www.ecmwf.int/newsevents/training/r
 In general the main advantage of spectral models is that space derivatives can be calculated analytically instead of numerically. Also in general the pole problem is not present. However the main disadvantages are the difficulties to include directly typical space grid physical processed (althought it can be done with a transformation method). It is mainly designed for global models and not limited-area models. 
 
 
-### Typical Model Spectral Resolutions
+#### Typical Model Spectral Resolutions
 
 |Truncation	| lat x lon	| km at Eq	|deg at Eq | In ICCP Reports |
 |-----------|-----------|-----------|----------|-----------------|
@@ -49,6 +53,7 @@ In general the main advantage of spectral models is that space derivatives can b
 | T255	    |256x512	  |60	        |0.703125  |                 |
 | T382	    |576x1152	  |38       	|0.313     |                 |
 | T799	    |800x1600	  |25 	      |0.225     |                 |
+
 
 <figure class="half">
 <a
