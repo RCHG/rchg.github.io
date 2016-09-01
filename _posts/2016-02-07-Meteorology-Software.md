@@ -33,8 +33,7 @@ header:
 - [cdat](http://sourceforge.net/projects/cdat/) CDAT is a collection of Python modules for the analysis and visualization of atmospheric science data. (Please check also: [badc](https://badc.nerc.ac.uk/help/software/cdat/) and [esg.llnl]( http://esg.llnl.gov/cdat))
 - [cmor](http://www-pcmdi.llnl.gov/software-portal/cmor/documentation) It is the so called "Climate Model Output Rewriter" (CMOR, pronounced "Seymour"). Instead of a collection of Python modules it is collection of FORTRAN 90 functions. The main idea is to produce **CF-compliant netCDF files** that fulfill the requirements of many of the climate community's standard model experiments. These experiments are collectively referred to as MIP's and include, for example, AMIP, CMIP, CFMIP, PMIP, APE, and IPCC scenario runs. The output resulting from CMOR is "self-describing" and facilitates analysis of results across models. 
 - [DB-All.e](http://www.arpa.emr.it/dettaglio_documento.asp?id=514&idlivello=64) DB-All.e can import observations from various sources into a unique, high-level, physically-based data model (lon, lat, time, level, parameter, etc.), where they can be manipulated at will and exported back to BUFR or CREX messages.
-
-:.smallquote}
+{:.smallquote}
 
 #### Visualization Tools
 
