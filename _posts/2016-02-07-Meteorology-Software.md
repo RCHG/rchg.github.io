@@ -43,6 +43,7 @@ header:
 - [ncview](http://meteora.ucsd.edu/~pierce/ncview_home_page.html)
 - [ncl](http://www.ncl.ucar.edu/overview.shtml)
 - [IRIS](http://scitools.org.uk/iris/) A python library for Meteorology and Climatology. Iris provides a community-driven Python library for analysing and visualising meteorological and oceanographic data sets. It reads and writes (CF-)netCDF, GRIB, and PP files. It can be used to create graphs and maps via integration with matplotlib and cartopy.
+- [matplotlib](http://matplotlib.org) Althought it is not specific of atmospheric sciences, it is broadly used due to its versatily.
 {:.smallquote}
 
 #### Libraries
