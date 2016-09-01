@@ -62,6 +62,28 @@ href="http://eo.ucar.edu/staff/rrussell/climate/modeling/images/ipcc_ar4_wg1_ch1
  </a></figcaption>
 </figure>
 
+
+### Finite Methods
+
+As a comparative example here are some typical grids of the UKCA model (Hadley Centre version of the Unified Model at UK).
+
+## <span class="mw-headline" id="Climate_Models_used_by_UKCA">Climate Models used by UKCA</span>
+
+The UKCA model runs within the Hadley Centre version of the Unified Model. There are a number of different versions of this climate model at a number of resolutions which are used for UKCA development.
+
+| UM Version | Model | Horizontal Resolution | Vertical Levels | Model Top | Scheme Used |
+|------------|-------|-----------------------|-----------------|-----------|-------------|
+| 6.1 | HadGAM1a | N48 (2.5°×3.75°) | L60 | ~84km | Tropospheric Chemistry |
+| 6.1 | HadGAM2 | N48 | L60 | ~84km | Stratospheric Chemistry |
+| 6.6.4 | HadGEM2-ES | N96 | L38 | ~40km | Hadley Centre Earth System Model |
+| 7.1 | HadGEM3-A | N96 (1.25°×1.875°) | L38 | ~40km | Tropospheric Chemistry |
+| 7.3 | HadGEM3-A r2.0 | N96 | L38 | ~40km | Tropospheric Chemistry |
+| 7.3 | HadGEM3-A r2.0 | N96 | L63 | ~40km | Tropospheric Chemistry |
+| 7.3 | HadGEM3-A r2.0 | N96 | L85 |   85km | Stratospheric Chemistry |
+| 7.3 | HadGEM3-A r2.0 | N48 | L60 | ~84km | Stratospheric Chemistry |
+| 7.3 | HadGEM3-AO r2.0 | N48 | L60 | ~84km | QUEST Earth System Model |
+
+
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
