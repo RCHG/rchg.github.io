@@ -49,6 +49,14 @@ transfer theory, inverse problems and processing of satellite products.
 {: .text-right }
 
 ---
+### Researcher at University of Reading
+
+Currently I am working on [research projects](www.met.reading.ac.uk/userpages/vr912734.php) related with estimation of radiative forcing of greenhouse gases and their role in global warming, [for example](http://environmentalresearchweb.org/cws/article/news/67032
+). The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
+
+### Research Assistant at Leibniz-Gemeinschaft 
+
+My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust emissions and transport based on simulated remote sensing images (in particular evaluate the role of mineralogy). [Mineral DUst Conference](https://www.researchgate.net/publication/282665817_Sensitivity_Studies_of_MSG_products_with_COSMO-MUSCAT_and_RRTOV) where the two key components are: RRTOV and COSMO-MUSCAT.
 
 ### Research Assistant at KIT
 
