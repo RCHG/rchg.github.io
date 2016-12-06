@@ -49,6 +49,7 @@ transfer theory, inverse problems and processing of satellite products.
 {: .text-right }
 
 ---
+
 ### Researcher at University of Reading
 
 Currently I am working on [research projects](www.met.reading.ac.uk/userpages/vr912734.php) related with estimation of radiative forcing of greenhouse gases and their role in global warming, [for example](http://environmentalresearchweb.org/cws/article/news/67032
