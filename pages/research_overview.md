@@ -52,7 +52,7 @@ transfer theory, inverse problems and processing of satellite products.
 ### Researcher at University of Reading
 
 Currently I am working on [research projects](www.met.reading.ac.uk/userpages/vr912734.php) related with estimation of radiative forcing of greenhouse gases and their role in global warming, [for example](http://environmentalresearchweb.org/cws/article/news/67032
-) in the recent slowdown. The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
+) in the [recent slowdown](https://www.smurphs.leeds.ac.uk/new-publication-the-contribution-of-greenhouse-gases-to-the-recent-slowdown-in-global-mean-temperature-trends/). The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
 
 #### Research Assistant at Leibniz-Gemeinschaft 
 
