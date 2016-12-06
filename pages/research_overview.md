@@ -59,7 +59,7 @@ Currently I am working on [research projects](https://www.met.reading.ac.uk/user
 
 #### Research Assistant at Leibniz-Gemeinschaft 
 
-My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust emissions and transport based on simulated remote sensing images (in particular evaluate the role of mineralogy). In the [Mineral Dust Conference](https://www.researchgate.net/publication/282665817_Sensitivity_Studies_of_MSG_products_with_COSMO-MUSCAT_and_RRTOV) it was presented an overview of the steps of this research, where the two key components are: RRTOV and COSMO-MUSCAT.
+My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust emissions and transport based on simulated remote sensing images (in particular evaluate the role of mineralogy). In the 2015-Leipzig [Mineral Dust Conference](https://www.researchgate.net/publication/282665817_Sensitivity_Studies_of_MSG_products_with_COSMO-MUSCAT_and_RRTOV) was presented an overview of the steps of this research, where the two key components are: RRTOV and COSMO-MUSCAT.
 
 ### Research Assistant at KIT
 
