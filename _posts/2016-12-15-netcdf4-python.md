@@ -2,9 +2,9 @@
 layout: page
 sidebar: right
 subheadline: Tips
-title: "Netcdf4 Python"
-excerpt: "dealing with months since..."
-teaser: "Improving the file netcdftime.py ..."
+title: "NetCDF4 Python"
+excerpt: "Dealing with months since..."
+teaser: "This post shows a simple improving the file netcdftime.py to deal with months units.    "
 breadcrumb: true
 tags: [Python]
 categories:
