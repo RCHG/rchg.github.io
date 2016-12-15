@@ -24,10 +24,11 @@ Added by:
     Ramiro Checa-Garcia <r.checagarcia@gmail.com>
 
 Description of changes:
-    The original file of netcdf4 has been changed to include months units. Apparently given some
-    possible ambiguities on the exact date-time when the units are "months since" this
-    is not included on the original netcdftime.py code. Here I added this possibility but the user
-    should be sure about the correct intrepretation of the results.
+    The original file of netcdf4 has been changed to include months units. Apparently
+    given some possible ambiguities on the exact date-time when the units are 
+    "months since" this is not included on the original netcdftime.py code. Here, 
+    I added this possibility for units but the user should be sure about the correct 
+    intrepretation of the results.
 
 """
 import numpy as np
