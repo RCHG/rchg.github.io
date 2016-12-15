@@ -40,7 +40,10 @@ try:
 except ImportError:  # python 3.x
     pass
 
-from datetime import datetime
+from datetime import datetime       # RCHG:
+                                    # Note that this has been changed. To simply replace
+                                    # the original netcdftime.py this line should be:
+                                    # from ._datetime import datetime   
 
 microsec_units = ['microseconds','microsecond', 'microsec', 'microsecs']
 millisec_units = ['milliseconds', 'millisecond', 'millisec', 'millisecs']
