@@ -20,7 +20,7 @@ header:
 Performs conversions of netCDF time coordinate data to/from datetime objects.
 It is based on the original netcdftime.py file from netcdf4 python library.
 
-Added by:
+Changes added by:
     Ramiro Checa-Garcia <r.checagarcia@gmail.com>
 
 Description of changes:
