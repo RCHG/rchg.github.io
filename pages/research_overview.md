@@ -61,6 +61,7 @@ Currently I am working on [research projects](https://www.met.reading.ac.uk/user
 **Radiative Forcing and Climate Change**
 
 - *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
+{:.smallquote}
 
 #### Research Assistant at Leibniz-Gemeinschaft 
 
@@ -135,7 +136,7 @@ Two different theories are used to understand the liquid-vapor interfaces: the V
 **Radiative Forcing and Climate Change**
 
 - The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends, *R Checa-Garcia*, KP Shine, MI Hegglin, **Environmental Research Letters** 11 (9), 094018
-
+{:.smallquote}
 
 **Remote Sensing of Trace Gases**
 
