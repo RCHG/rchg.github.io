@@ -56,6 +56,11 @@ transfer theory, inverse problems and processing of satellite products.
 Currently I am working on [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) related with estimation of radiative forcing of greenhouse gases and their role in global warming, [for example](http://environmentalresearchweb.org/cws/article/news/67032
 ) in the [recent slowdown](https://www.smurphs.leeds.ac.uk/new-publication-the-contribution-of-greenhouse-gases-to-the-recent-slowdown-in-global-mean-temperature-trends/). The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
 
+#### Publications and Technical Reports
+
+**Radiative Forcing and Climate Change**
+
+- *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
 
 #### Research Assistant at Leibniz-Gemeinschaft 
 
@@ -66,10 +71,6 @@ My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust
 The central goal of the project I am working is related with a consolidation of the ESA satellite Sentinel-5 requirements. This means a detailed study of the different error sources like instrumental, spectroscopy, forward models errors derived of an effective description of the atmosphere aerosols and cirrus. To be able to conduct this research I use state of the art retrieval algorithms (inverse problem and radiative transfer solver) with trial ensembles of geophysical scenarios. Additional aspects of the research are: evaluate the cloud cover with Meteosat datasets, integrate satellite products of MODIS and CALIPSO with datasets obtained from offline chemical transport model.
 
 #### Publications and Technical Reports
-
-**Radiative Forcing and Climate Change**
-
-- *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
 
 **Remote Sensing of Trace Gases**
 
