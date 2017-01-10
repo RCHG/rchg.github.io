@@ -75,7 +75,7 @@ The central goal of the project I am working is related with a consolidation of 
 
 **Remote Sensing of Trace Gases**
 
-- *Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.'
+- *Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.*
 A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Bovensmann, O Hasekamp, J Landgraf, T Knigge, D Weise, O Sqalli-Houssini, D Kemper, 'Atmospheric Measurement Techniques' 8 (11), 4719-4734
 - *Mapping spectroscopic uncertainties into prospective methane retrieval errors from Sentinel-5 and its precursor*, **Ramiro Checa-Garcia**, Jochen Landgraf, Frank Hase, Ha Tran, Vincent Boudon, Frans Alkemade, Andre Butz. 'AMT Journal', submitted (Dec-2014)
 - *Consolidation of SWIR requirements for Sentinel-5 satellite*. *ESA Technical Note (2013)*
