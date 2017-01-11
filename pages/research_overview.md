@@ -38,9 +38,9 @@ My research background covers several fields and a broad set of methodologies wi
 an specialization on Statistical Theoretical Physics. In my PhD I investigated
 in field of Atmospheric Sciences and Remote Sensing, in particular in micro-physics
 and remote sensing of precipitation, which also involved Applied Statistics.
-Currently I am working at Karlsruhe Institute of Technology, and my research is about
+After, I was a researcher at Karlsruhe Institute of Technology on
 Remote Sensing of Trace Gases, with specific topics related with spectroscopy, radiative
-transfer theory, inverse problems and processing of satellite products.
+transfer theory, inverse problems and processing of satellite products. My experience was completed later with additional background on mineral dust aerosols due to my experience with COSMO and MUSCAT dust emission scheme. Currently, I am working at the University of Reading on the Forced response of climate system, in particular, in the evaluation of stratospherically adjusted radiative forcing. Additionaly, I participated on the creation of an state of the art database of Ozone and Stratospheric Water Vapor.
 
 
 [comment]: <> (My research background cover several fields and a broad set of methodologies both theoretical and experimental, with a strong focus on computational tools. My initial formation is Physics with an specialization on Theoretical Physics. This side was developed during my M.Sc. in Condensed Matter which was related with Statistical Physics in a theoretical field of Theory of Liquids. However my interest has been moved to the field of Atmospheric Sciences and Remote Sensing. Therefore the main scope of my PhD was related with Micro-physics of rainfall and remote sensing of precipitation, which also involves Applied Statistics. Actually I am working at the field of Remote Sensing of Trace Gases, this improves my knowledge on radiative transfer theory, inverse problem,satellite product, and spectroscopy)
