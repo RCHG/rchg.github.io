@@ -75,6 +75,12 @@ breadcrumb: true
 - [Workflow Tools](http://datapub.cdlib.org/2013/06/13/software-for-reproducibility-part-2-the-tools/)
 {:.smallquote}
 
+### About students (Hodgepodge)
+
+- [Students](https://www.jisc.ac.uk/blog/5-top-tips-to-enhance-your-students-experience-11-mar-2013?from=promo)
+{:.smallquote}
+
+
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
