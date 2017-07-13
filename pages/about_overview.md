@@ -33,12 +33,12 @@ breadcrumb: true
 
 ### General Overview
 
-My academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtain a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid. Also I was assistant professor of Physics (Laboratory Experiments) two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center. Currently, I am working as research assistant at Karlsruhe Institute of Technology (Germany). in Atmospheric Physics & Chemistry, specifically on Remote Sensing of Greenhouse Gases.
+My academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtain a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid. Also I was assistant professor of Physics (Laboratory Experiments) two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center. I have been research assistant at Karlsruhe Institute of Technology (Germany). in Atmospheric Physics & Chemistry, specifically on Remote Sensing of Greenhouse Gases. Currently, I hold a position as PDRA at the University of Reading where I study the radiative forcing of several agents on the atmosphere, in particular Ozone and Stratospheric Water Vapour.
 
 
 ### Scientific Interests
 
-My objectives are improve my knowledge of remote sensing applied on earth sciences. This comprises develop simulations of the actual measurement conditions to assert the uncertainty and new applications of remote sensing, but also in-situ measurement to calibrate, test and validate satellite products and improve retrieval algorithms. In particular, I am interested on carbon cycle and water cycle application of remote sensing science. This is complemented by my interest on numerical models of atmospheric processes at several scales.
+My objectives are improve my knowledge of remote sensing applied on earth sciences. This comprises develop simulations of the actual measurement conditions to assert the uncertainty and new applications of remote sensing, but also in-situ measurement to calibrate, test and validate satellite products and improve retrieval algorithms. I am interested on carbon cycle and water cycle application of remote sensing science. Currently, my research insterest is more focused on the climate variability and radiative forcing estimations together with the role of the Ozone on the climate system. This is complemented by my interest on numerical models of atmospheric processes at several scales.
 
 Due to my professional trajectory my interest is also related with mathematical methods, in particular those related with statistics and statistical physics. Together with scientific computing.
 
@@ -99,10 +99,11 @@ My daily research job is done with computers that I use for data analysis of exp
     - numpy
     - scipy
     - Pandas
+    - statmodels
 
 #### Visualization
 
-- Matplotlib 
+- Matplotlib, Basemap, Cartopy 
 - GNUplot
 
 #### File Formats
