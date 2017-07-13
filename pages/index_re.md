@@ -28,7 +28,8 @@ in field of Atmospheric Sciences and Remote Sensing, in particular in micro-phys
 and remote sensing of precipitation, which also involved Applied Statistics.
 Currently I am working at Karlsruhe Institute of Technology, and my research is about
 Remote Sensing of Trace Gases, with specific topics related with spectroscopy, radiative
-transfer theory, inverse problems and processing of satellite products.
+transfer theory, inverse problems and processing of satellite products. During my research experience on the
+University of Reading I investigate of the radiative forcing of GHGs, offline estimations of the temperature stratospheric adjustment and Ozone concentrations from models, satellites and ozone-sondes.
 
 
 <div class="row">
