@@ -37,7 +37,7 @@ It is one of the first, but still useful, theories developed with the objective 
    
 2. Destruction
    $$ O_{3}+h\nu \longarrow O_{2}+O$$ (with $$\lambda<850nm$$)
-   $$ O_{2}+h\nu \longarrow O_{2}+O(D)$$ $$\lambda<320nm$$)
+   $$ O_{2}+h\nu \longarrow O_{2}+O(D)$$ (with $$\lambda<320nm$$)
    
 3.
    $$ O_{3}+O \longarrow 2O_{2}$$ 
