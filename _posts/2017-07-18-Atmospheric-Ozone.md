@@ -40,9 +40,9 @@ It is one of the first, but still useful, theories developed with the objective 
    
 - Destruction
 
-   $$ O_{3}+h\nu\longrightarrow  O_{2}+O $$, with  l<850 nm
+   $$ O_{3}+h\nu\longrightarrow  O_{2}+O, \qquad \text{with} \qquad \lambda  \leq 850 nm $$
    
-   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D)$$,with  l<l<320 nm
+   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D)$$,with $$ \lambda \leq 320 nm $$
    
 - Producing Oxigen molecule O2
 
