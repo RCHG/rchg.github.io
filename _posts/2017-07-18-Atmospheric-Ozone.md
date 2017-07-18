@@ -36,7 +36,7 @@ It is one of the first, but still useful, theories developed with the objective 
    
    $$ O_{2}+O+M \longrightarrow  O_{3} + M$$
    
-   Here M is a kind of mediator/catalitic of the chemical reaction, for example $$N_{2}$$. And the light involved belongs to the UV $$ l < 242 $$ nm.
+   Here M is a kind of mediator/catalitic of the chemical reaction, for example $$N_{2}$$. And the light involved belongs to the UV should have a wavelenght $$ l \leq 242 $$ nm.
    
 - Destruction
 
