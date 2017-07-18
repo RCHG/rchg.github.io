@@ -69,6 +69,7 @@ and
 And we can realize that the previous theory of Chapman is now incomplete. Also similar reactions involving Br, $$NO_{x}$$ or $$HO_{x}$$ compounds are possible. Obviusly the process is more complex, and for example Cl can react with $$CH_{4}$$. Finally note that these chain-reactions are conditioned by the atmospheric transport on the trosposphere and stratosphere, and also scavening processes on the troposphere.
 
 
+
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
