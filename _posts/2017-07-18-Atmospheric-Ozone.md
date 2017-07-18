@@ -30,26 +30,29 @@ header:
 
 It is one of the first, but still useful, theories developed with the objective of explain the production and removing of Ozone on the atmosphere. It proposes a set of chemical reations: 
 
-1. Photochemical formation
+- Photochemical formation
 
    $$ O_{3}+h\nu \longrightarrow O+O$$
    
    $$ O_{2}+O+M \longrightarrow  O_{3} + M$$
    
-   Here M is a kind of mediator/catalitic of the chemical reaction, for example $$N_{2}$$. And the light involved belongs to the UV ($$\lambda<242nm$$)
+   Here M is a kind of mediator/catalitic of the chemical reaction, for example $$N_{2}$$. And the light involved belongs to the UV $$$\lambda<242$$nm)
    
-2. Destruction
+- Destruction
 
-   $$ O_{3}+h\nu\longrightarrow  O_{2}+O, \qquad \text{with}\qquad \lambda<850nm$$
+   $$ O_{3}+h\nu\longrightarrow  O_{2}+O, \quad \text{with}\quad \lambda<850nm$$
    
-   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D), \qquad \text{with}\qquad \lambda<320nm$$)
+   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D), \quad \text{with}\quad \lambda<320nm$$
    
-3.
+- Producing Oxigen molecule O2#
+
    $$ O_{3}+O \longrightarrow  2O_{2}$$ 
    
    $$ O+O+M   \longrightarrow  O_{2}+M$$ 
    
    Here M is also kind of mediator/catalitic of the chemical reaction, for example $$N_{2}$$.
+
+The balance between all these equations gives us the estimation of the concentrations.
 
 
 <small markdown="1">[Up to table of contents](#toc)</small>
