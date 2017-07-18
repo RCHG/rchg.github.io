@@ -54,7 +54,7 @@ It is one of the first, but still useful, theories developed with the objective 
 
 The balance between all these equations gives us the estimation of the concentrations.
 
-> According with this theory the formation on O3 is larger on those latitudes with higher incoming UV radiation from the sun, and also un the upper-half part of the atmosphere.
+> According with this theory the formation on O3 is larger on those latitudes with higher incoming UV radiation from the sun, and also un the upper-half part of the atmosphere. However also daily and seasonal variations of incoming radiance will have a direct impact on the formation of Ozone.
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
