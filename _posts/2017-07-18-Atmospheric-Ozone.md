@@ -40,11 +40,11 @@ It is one of the first, but still useful, theories developed with the objective 
    
 - Destruction
 
-   $$ O_{3}+h\nu\longrightarrow  O_{2}+O, \quad \text{with}\quad \lambda<850nm$$
+   $$ O_{3}+h\nu\longrightarrow  O_{2}+O$$ , with  $$\lambda<850nm$$
    
-   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D), \quad \text{with}\quad \lambda<320nm$$
+   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D)$$ , with  $$\lambda<320nm$$
    
-- Producing Oxigen molecule O2#
+- Producing Oxigen molecule O2
 
    $$ O_{3}+O \longrightarrow  2O_{2}$$ 
    
