@@ -36,13 +36,13 @@ It is one of the first, but still useful, theories developed with the objective 
    
    $$ O_{2}+O+M \longrightarrow  O_{3} + M$$
    
-   Here M is a kind of mediator/catalitic of the chemical reaction, for example $$N_{2}$$. And the light involved belongs to the UV $$ \lambda < 242 $$ nm.
+   Here M is a kind of mediator/catalitic of the chemical reaction, for example $$N_{2}$$. And the light involved belongs to the UV $$ l < 242 $$ nm.
    
 - Destruction
 
-   $$ O_{3}+h\nu\longrightarrow  O_{2}+O   \lambda<850$$
+   $$ O_{3}+h\nu\longrightarrow  O_{2}+O \,qquad   l<850\, nm$$ 
    
-   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D)$$ , with  $$\lambda<320nm$$
+   $$ O_{2}+h\nu \longrightarrow  O_{2}+O(D)$$ , \qquad \text{with{  $$l<320\, nm$$ 
    
 - Producing Oxigen molecule O2
 
