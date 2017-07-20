@@ -76,6 +76,17 @@ It is known as **Brewer-Dobson circulation**, and it consist on two cells, on ea
 
 A direct consquence of the large-scale circulation is a lower total concentration of Ozone in the tropics and higher on mid to high latitudes but with a strong seasonal component. As a consequence, on highlatitudes we expect higher concentrations on Spring on the Northern Hemisphere but the higher concentrations on Souther Hemisphere are found mostly in November to December. This lower total concentration of ozone on the tropics is due to transport as most of the production of Ozone by UV radiance incidence is happing on these regions.
 
+<figure class="half">
+<a
+href="http://www.centrometeolombardo.com/Files/Articoli/Analisi/AnalisiTeleconnettiva_1/11.jpg
+"><img src=http://www.centrometeolombardo.com/Files/Articoli/Analisi/AnalisiTeleconnettiva_1/11.jpg
+"></a>
+	<figcaption><a title="Illustration of Large-scale diabatic circulation">Illustration of Brewer-Dobson circulation. Credits: Darryn W. Waugh research group webpage).
+ </a></figcaption>
+</figure>
+
+
+
 #### Polar Vortex
 
 However, there is another large scale feature named Polar Vortex which can refers to the tropospheric polar vortex or to the stratospheric polar vortex. Here we are mainly focused on the stratospheric polar vortex which has less extension in terms of latitude. The presence of the stratospheric polar vortex has also a seasonal cycle being stronger in Summer-Autumn on the Southern Hemisphere, for example. In this situation the air masses from the tropics rich in ozone can not penetrate on the polar vortex and ozone depletion is larger.
@@ -83,7 +94,7 @@ However, there is another large scale feature named Polar Vortex which can refer
 <figure class="half">
 <a
 href="http://sites.krieger.jhu.edu/waugh/files/2016/03/vortex-schematic.png"><img src="http://sites.krieger.jhu.edu/waugh/files/2016/03/vortex-schematic.png"></a>
-	<figcaption><a title="Illustration of Polar Vortex">Illustration of Polar Vortex. Credits: Darryn W. Waugh research group webpage).
+	<figcaption><a title="Illustration of Polar Vortex">Illustration of Polar Vortex. from http://www.centrometeolombardo.com).
  </a></figcaption>
 </figure>
 
