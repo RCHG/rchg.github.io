@@ -68,6 +68,17 @@ and
 
 And we can realize that the previous theory of Chapman is now incomplete. Also similar reactions involving Br, $$NO_{x}$$ or $$HO_{x}$$ compounds are possible. Obviusly the process is more complex, and for example Cl can react with $$CH_{4}$$. Finally note that these chain-reactions are conditioned by the atmospheric transport on the trosposphere and stratosphere, and also scavening processes on the troposphere.
 
+### Transport of Ozone
+
+#### Large-scale diabatic circulation
+
+It is known as **Brewer-Dobson circulation**, and it consist on two cells, on each hemisphere ascendent on the tropics, descedent on highlatitudes, which a wave driven transport on the extratropics. Accelerations and decelerations of the Brewer-Dobson circulation is nowdays an active field of research.
+
+A direct consquence of the large-scale circulation is a lower total concentration of Ozone in the tropics and higher on mid to high latitudes but with a strong seasonal component. As a consequence, on highlatitudes we expect higher concentrations on Spring on the Northern Hemisphere but the higher concentrations on Souther Hemisphere are found mostly in November to December. This lower total concentration of ozone on the tropics is due to transport as most of the production of Ozone by UV radiance incidence is happing on these regions.
+
+
+
+
 
 
 <small markdown="1">[Up to table of contents](#toc)</small>
