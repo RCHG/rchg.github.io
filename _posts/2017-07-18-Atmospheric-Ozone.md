@@ -56,6 +56,15 @@ The balance between all these equations gives us the estimation of the concentra
 
 > According with this theory the formation on O3 is larger on those latitudes with higher incoming UV radiation from the sun, and also un the upper-half part of the atmosphere. However also daily and seasonal variations of incoming radiance will have a direct impact on the formation of Ozone.
 
+
+<figure class="half">
+<a
+href="http://www.periodni.com/gallery/life_cycle_of_an_oxygen_atom.png"><img src="http://www.periodni.com/gallery/life_cycle_of_an_oxygen_atom.png"></a>
+	<figcaption><a title="Illustration of then Theory of Chapman">Illustration of the Theory of Chapman, from E. Generalic, http://www.periodni.com/ozone_layer_is_not_a_shield.html).
+ </a></figcaption>
+</figure>
+
+
 ### Ozone Depletion
 
 The Theory of Chapman describes the production of Ozone on the stratosphere but it fails to full describe the ozone depletion that happened mainly during the 70's and 80's. Whence, the original proposal was complemented by chemical reactions involving the now commontly named: ozone depleting substances (ODS) in oposition to for example, ozone precursors. Two families of ODS are named chlorine and bromine compounds. In the case of the chlorine (for examples CFCs) it is possible to have now reactions like:
