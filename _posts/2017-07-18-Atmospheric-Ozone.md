@@ -78,10 +78,8 @@ A direct consquence of the large-scale circulation is a lower total concentratio
 
 <figure class="half">
 <a
-href="http://www.centrometeolombardo.com/Files/Articoli/Analisi/AnalisiTeleconnettiva_1/11.jpg
-"><img src=http://www.centrometeolombardo.com/Files/Articoli/Analisi/AnalisiTeleconnettiva_1/11.jpg
-"></a>
-	<figcaption><a title="Illustration of Large-scale diabatic circulation">Illustration of Brewer-Dobson circulation. Credits: Darryn W. Waugh research group webpage).
+href="http://www.centrometeolombardo.com/Files/Articoli/Analisi/AnalisiTeleconnettiva_1/11.jpg"><img src="http://www.centrometeolombardo.com/Files/Articoli/Analisi/AnalisiTeleconnettiva_1/11.jpg"></a>
+	<figcaption><a title="Illustration of Large-scale diabatic circulation">Illustration of Brewer-Dobson circulation, from http://www.centrometeolombardo.com).
  </a></figcaption>
 </figure>
 
@@ -94,7 +92,7 @@ However, there is another large scale feature named Polar Vortex which can refer
 <figure class="half">
 <a
 href="http://sites.krieger.jhu.edu/waugh/files/2016/03/vortex-schematic.png"><img src="http://sites.krieger.jhu.edu/waugh/files/2016/03/vortex-schematic.png"></a>
-	<figcaption><a title="Illustration of Polar Vortex">Illustration of Polar Vortex. from http://www.centrometeolombardo.com).
+	<figcaption><a title="Illustration of Polar Vortex">Illustration of Polar Vortex. Credits: Darryn W. Waugh research group webpage).
  </a></figcaption>
 </figure>
 
