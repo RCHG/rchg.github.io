@@ -80,6 +80,12 @@ A direct consquence of the large-scale circulation is a lower total concentratio
 
 However, there is another large scale feature named Polar Vortex which can refers to the tropospheric polar vortex or to the stratospheric polar vortex. Here we are mainly focused on the stratospheric polar vortex which has less extension in terms of latitude. The presence of the stratospheric polar vortex has also a seasonal cycle being stronger in Summer-Autumn on the Southern Hemisphere, for example. In this situation the air masses from the tropics rich in ozone can not penetrate on the polar vortex and ozone depletion is larger.
 
+<figure class="half">
+<a
+href="http://sites.krieger.jhu.edu/waugh/files/2016/03/vortex-schematic.png"><img src="http://sites.krieger.jhu.edu/waugh/files/2016/03/vortex-schematic.png"></a>
+	<figcaption><a title="Illustration of Polar Vortex">Illustration of Polar Vortex. Credits: Darryn W. Waugh research group webpage).
+ </a></figcaption>
+</figure>
 
 
 
