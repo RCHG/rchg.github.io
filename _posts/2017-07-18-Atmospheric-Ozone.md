@@ -96,7 +96,7 @@ href="http://www.centrometeolombardo.com/Files/Articoli/Analisi/AnalisiTeleconne
 
 #### Polar Vortex
 
-However, there is another large scale feature named Polar Vortex which can refers to the tropospheric polar vortex or to the stratospheric polar vortex. Here we are mainly focused on the stratospheric polar vortex which has less extension in terms of latitude. The presence of the stratospheric polar vortex has also a seasonal cycle being stronger in Summer-Autumn on the Southern Hemisphere, for example. In this situation the air masses from the tropics rich in ozone can not penetrate on the polar vortex and ozone depletion is larger.
+However, there is another large scale feature named Polar Vortex which can refers to the tropospheric polar vortex or to the stratospheric polar vortex. Here we are mainly focused on the stratospheric polar vortex which has less extension in terms of latitude. The presence of the stratospheric polar vortex has also a seasonal cycle being stronger in Summer-Autumn on the Southern Hemisphere, for example. In this situation the air masses from the tropics rich in ozone can not penetrate on the polar vortex and ozone depletion is larger with the contribution of the polar stratospheric clouds.
 
 <figure class="half">
 <a
