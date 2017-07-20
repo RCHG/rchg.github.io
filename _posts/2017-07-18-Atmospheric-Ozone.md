@@ -76,6 +76,10 @@ It is known as **Brewer-Dobson circulation**, and it consist on two cells, on ea
 
 A direct consquence of the large-scale circulation is a lower total concentration of Ozone in the tropics and higher on mid to high latitudes but with a strong seasonal component. As a consequence, on highlatitudes we expect higher concentrations on Spring on the Northern Hemisphere but the higher concentrations on Souther Hemisphere are found mostly in November to December. This lower total concentration of ozone on the tropics is due to transport as most of the production of Ozone by UV radiance incidence is happing on these regions.
 
+#### Polar Vortex
+
+However, there is another large scale feature named Polar Vortex which can refers to the tropospheric polar vortex or to the stratospheric polar vortex. Here we are mainly focused on the stratospheric polar vortex which has less extension in terms of latitude. The presence of the stratospheric polar vortex has also a seasonal cycle being stronger in Summer-Autumn on the Southern Hemisphere, for example. In this situation the air masses from the tropics rich in ozone can not penetrate on the polar vortex and ozone depletion is larger.
+
 
 
 
