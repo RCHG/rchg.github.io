@@ -9,8 +9,8 @@
 #
 # Resource › http://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/adding-authors-to-your-jekyll-site.html
 rchg: # replace this with your info
-  name: "rchg"
-  siterole: "webmaster, developer, copywriter, designer"
+  name: "R. Checa-Garcia (CC BY-NC-SA)"
+  siterole: "webmaster, developer, writter of all contents"
   uri: http://rchg.github.io/
   email:
 # you can add more authors here
