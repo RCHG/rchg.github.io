@@ -6,7 +6,7 @@ title:  "Introduction to Atmospheric Ozone"
 teaser: "Own notes about Ozone"
 breadcrumb: true
 tags:
-    - [Scientific-computing, Research]
+    - [Atmospheric Chemistry, Atmospheric Physics, Ozone, Stratosphere]
 categories:
     - science-blog
 header:
