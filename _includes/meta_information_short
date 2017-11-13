@@ -14,7 +14,7 @@
 
 				{% if page.categories %}<span class="icon-archive pr20"> {{ page.categories | join: ' · ' | upcase }}{% endif %}</span>
 				<br />
-				<span class="pr20">{% for tag in page.tags %}<span class="icon-price-tag pr10"><a href="/archive_tags/{{ tag }}">{{tag}}</a></span> {% endfor %}</span>
+				<span class="pr20">{% for tag in page.tags %}<span class="icon-price-tag pr10"><a href="/archive_tags/#{{ tag }}">{{tag}}</a></span> {% endfor %}</span>
 			</p>
 
 			</div><!--  /.page-meta -->
