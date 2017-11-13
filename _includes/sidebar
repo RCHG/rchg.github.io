@@ -10,7 +10,7 @@
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
     <span class="icon-price-tag pr10">
-      <a href="/blog/archive_tags/#{{ tag }}">{{t | downcase | replace:" ","-" }}</a> ({{ posts | size }})
+      <a href="/blog/archive_tags/#{{ t }}">{{t | downcase | replace:" ","-" }}</a> ({{ posts | size }})
     </span>
   {% endfor %}
  </span>
