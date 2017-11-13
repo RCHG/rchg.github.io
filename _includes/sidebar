@@ -6,10 +6,14 @@
 	<div class="panel radius">
 <h3>Tags</h3>
 <span class="pr20">
-{% for tag in site.tags %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
-<span class="icon-price-tag pr10"><a href="/blog/archive_tags/#{{ tag }}">{{t | downcase | replace:" ","-" }}</a> ({{ posts | size }})<br></span> {% endfor %}</span>
+  {% for tag in site.tags %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
+    <span class="icon-price-tag pr10">
+      <a href="/blog/archive_tags/#{{ tag }}">{{t | downcase | replace:" ","-" }}</a> ({{ posts | size }})
+    </span>
+  {% endfor %}
+ </span>
 
 </div>
 
