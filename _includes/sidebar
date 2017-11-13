@@ -9,7 +9,7 @@
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-<span class="icon-price-tag pr10">{{t | downcase | replace:" ","-" }} ({{ posts | size }})<br></span> {% endfor %}</span>
+<span class="icon-price-tag pr10">><a href="/blog/archive_tags/#{{ tag }}">{{t | downcase | replace:" ","-" }}</a> ({{ posts | size }})<br></span> {% endfor %}</span>
 
 </div>
 
