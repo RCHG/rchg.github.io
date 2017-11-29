@@ -1,13 +1,13 @@
-	<div class="panel radius">
-		<h4>R. Checa-Garcia</h4>
-        <h6>Atmospheric Physics Scientist</h5>
-            <ul class="no-bullet shadow-black">
-            {% for social_item in site.data.socialmedia %}
-              {% if social_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.baseurl %}{% endif %}
-                <li {% if social_item.class %}class="{{ social_item.class }}" {% endif %}>
-                  <a href="{{ domain }}{{ social_item.url }}" {% if social_item.url contains 'http' %}target="_blank" {% endif %} title="{{ social_item.title }}">{{ social_item.name }}</a>
-                </li>
-            {% endfor %}
-            </ul>
-	</div>
+<div class="panel radius">
+   <h4>R. Checa-Garcia</h4>
+   <h6>Atmospheric Physics Scientist</h6>
+   <ul class="no-bullet shadow-black">
+     {% for social_item in site.data.socialmedia %}
+      {% if social_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.baseurl %}{% endif %}
+      <li {% if social_item.class %}class="{{ social_item.class }}" {% endif %}>
+       <a href="{{ domain }}{{ social_item.url }}" {% if social_item.url contains 'http' %}target="_blank" {% endif %} title="{{ social_item.title }}">{{ social_item.name }}</a>
+      </li>
+     {% endfor %}
+   </ul>
+</div>
 
