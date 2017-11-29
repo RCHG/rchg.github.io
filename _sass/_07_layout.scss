@@ -115,10 +115,10 @@ body.video cite { color: #fff; }
 
 @media #{$medium-only} {
     #logo img {
-        margin-top: 60px;
+        margin-top: 30px;
     }
     #masthead {
-        height: 100px;
+        height: 60px;
     }
     #masthead-with-pattern {
         padding: 20px 0;
@@ -138,10 +138,10 @@ body.video cite { color: #fff; }
 
 @media #{$large-only} {
     #logo img {
-        margin-top: 80px;
+        margin-top: 30px;
     }
     #masthead {
-        height: 100px;
+        height: 60px;
     }
     #masthead-with-pattern {
         padding: 30px 0;
@@ -150,7 +150,7 @@ body.video cite { color: #fff; }
         padding: 30px 0;
     }
     #masthead-with-text {
-        height: 100px;
+        height: 60px;
         padding: 60px 0;
     }
 }
@@ -161,10 +161,10 @@ body.video cite { color: #fff; }
 
 @media #{$xlarge-up} {
     #logo img {
-        margin-top: 110px;
+        margin-top: 60px;
     }
     #masthead {
-        height: 100px;
+        height: 60px;
     }
     #masthead-with-pattern {
         padding: 45px 0;
@@ -174,22 +174,22 @@ body.video cite { color: #fff; }
     }
     #masthead-with-text {
         padding: 95px 0;
-        height: 100px;
+        height: 60px;
     }
 }
 
 
 #title-image-small {
-    height: 12px;
+    height: 120px;
 }
 #title-image-large {
-    height: 24px;
+    height: 204px;
 }
 #title-image-index-small {
-    height: 12px;
+    height: 120px;
 }
 #title-image-index-large {
-    height: 26px;
+    height: 260px;
 }
 
 
@@ -248,7 +248,7 @@ body.video cite { color: #fff; }
 #up-to-top a {
     font-size: 24px;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 1px;
 }
 #up-to-top a:hover {
     background: $grey-2;
