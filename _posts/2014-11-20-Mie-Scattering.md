@@ -9,7 +9,7 @@ tags: [Radiative-Theory, Atmospheric-Physics]
 categories:
     - science-blog
 header:
-    title: R. Checa-Garcia webpage | Mie Scattering
+    title: Mie Scattering
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
