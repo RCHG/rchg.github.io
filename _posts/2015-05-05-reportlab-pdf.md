@@ -9,7 +9,7 @@ tags: [Scientific-computing, Visualization, Python]
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage |  Reportlab library
+    title: Reportlab library
     pattern: pattern_jquery-dark-grey-tile.png
 author: ramiro_chg
 ---
