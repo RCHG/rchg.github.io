@@ -10,6 +10,7 @@ tags: [Scientific-computing, Visualization, Python]
 categories:
     - computing-blog
 header:
+    title: ""
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
