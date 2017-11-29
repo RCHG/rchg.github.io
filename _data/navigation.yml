@@ -50,10 +50,8 @@
     url: "blog/archive_opinion/"
   - title: Stories
     url: "blog/archive_stories/"
-
-- title: Open Letters
-  url: "blog/open_letters/"
-  side: left
+  - title: Open Letters
+    url: "blog/open_letters/"
 
 - title: "Search"
   url: "search/"
