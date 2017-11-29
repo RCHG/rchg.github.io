@@ -11,7 +11,7 @@ tags:
 categories:
     - science-blog
 header:
-    title: R. Checa-Garcia webpage | Book Review"
+    title: Book Review"
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
