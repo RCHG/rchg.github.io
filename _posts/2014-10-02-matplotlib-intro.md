@@ -10,7 +10,7 @@ tags: [Scientific-computing, Visualization, Python]
 categories:
     - computing-blog
 header:
-    title: ""
+    title: "Matplotlib"
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
