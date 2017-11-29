@@ -10,7 +10,7 @@ tags:
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage | Unix Tools
+    title: Unix Tools
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
