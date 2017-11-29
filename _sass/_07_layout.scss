@@ -71,7 +71,7 @@ body.video cite { color: #fff; }
 }
 #masthead-with-text {
     text-align: right;
-    font-size: rem-calc(24);
+    font-size: rem-calc(18);
     font-family: $header-font-family;
     color: #fff;
     text-shadow: 0 2px 3px rgba(0,0,0,.4);
@@ -102,7 +102,7 @@ body.video cite { color: #fff; }
     #masthead-with-text {
         height: 100px;
         padding: 30px 0;
-        font-size: rem-calc(36);
+        font-size: rem-calc(18);
     }
     #masthead-no-image-header {
         display: none;
@@ -180,10 +180,10 @@ body.video cite { color: #fff; }
 
 
 #title-image-small {
-    height: 240px;
+    height: 120px;
 }
 #title-image-large {
-    height: 520px;
+    height: 240px;
 }
 #title-image-index-small {
     height: 120px;
