@@ -10,7 +10,7 @@ tags:
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage | Performance and Python 
+    title: Performance and Python 
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
