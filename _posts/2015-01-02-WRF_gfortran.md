@@ -11,7 +11,7 @@ categories:
     - computing-blog
     - science-blog
 header:
-    title: R. Checa-Garcia webpage |  WRF Tips
+    title: WRF Tips
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 > Here I described a solution for a problem in the compilation of WRF with gfortran. The problem arrives because some comments are considered code. This was posted on the [WRF-Forum](http://forum.wrfforum.com/viewtopic.php?f=5&t=6086)
