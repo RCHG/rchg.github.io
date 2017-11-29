@@ -10,7 +10,6 @@ tags: [Scientific-computing, Visualization, Python]
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage |  Matplotlib Tips
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
