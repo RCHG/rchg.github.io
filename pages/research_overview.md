@@ -60,11 +60,8 @@ Currently I am working on [research projects](https://www.met.reading.ac.uk/user
 
 **Radiative Forcing and Climate Change**
 
-- *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
+- <div data-badge-type="donut" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>*The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
 {:.smallquote}
-
-<div data-badge-details="right" data-badge-type="donut" data-doi="10.1038/nature.2014.14583" data-hide-no-mentions="true" class="altmetric-embed"></div>
-
 
 #### Research Assistant at Leibniz-Gemeinschaft 
 
