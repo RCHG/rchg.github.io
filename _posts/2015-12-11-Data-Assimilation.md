@@ -76,44 +76,45 @@ imperfectly and irregularly in space and time.
 (Daley, 1991)[^1]
 
 
-In weather forecasting we would like to combine information from observations (past and new) with  the state predicted by model. The ideal situation includes: model errors (discretization, incomplete description, etc...) and observation errors (calibration, sparse etc..)
+In weather forecasting we would like to combine information from observations (past and new) with  the state predicted by model. The ideal situation includes:
+- *model errors* (discretization, incomplete description, etc...)
+- *observation errors* (calibration, sparse values, etc..)
 
 ### Most easy example:
 
-Given a set of N observations of two variables (x,y) and given a model y = f (x; m, n) where m and m are  parameters of the model (real numbers). The parameters are estimated from the measurements by optimizing a designed estimator.
+Given a set of N observations of two variables (x,y) and given a model y = f (x; m, n) where m and m are parameters of the model (real numbers). The parameters are estimated from the measurements by optimizing a designed *estimator*.
 
-But the conditions in atmospheric models are much more complex and first the dimension of the system is very large, the dynamics is not linear anymore, the system is undetermined as the dimension of x and y is very different. 
+But the conditions in atmospheric models are much more complex: first the dimension of the system is very large, the dynamics is not linear anymore, and even the system is undetermined as the dimension of x and y is very different. 
 
 ### Data Analysis: tasting the problem [^5]
 
-Data assimilation is derived from data analysis a very simple examples is when we have a scalar variable x and a single observation:
+A simple examples of data assimilation derived from data analysis is given when *we have a scalar variable x and a single observation*:
 
 $$x_{a} = x_{b} + W(x_{o}-x_{b}) $$
 
-where $$x_{a}$$ is the value after the analysis, $$x_{b}$$ is the value before the analysis (background), $$x_{o}$$ is the value of the single observation and $$W$$ is a weighting function to be calculated in the data analysis.
+where $$x_{a}$$ is the value after the analysis, $$x_{b}$$ is the value before the analysis (background), $$x_{o}$$ is the value of the single observation and $$W$$ is a weighting function to be calculated by the data analysis.
 
-If we define the error as the value minus the true value then from the equation above we can write,
+If we define the error as the value minus the true value, then from the equation above we could write,
 
 $$e_{a} = e_{b} + W(e_{o}-e_{b}) $$
 
-Still we have to propose a value for W, we can proceed by performing an ensemble average (we are trying to understand the statistical properties on our data analysis). If our background, analysis and observation are unbiased the average of their errors is zero. But it the equation,
+Still, we have to propose a value for $$W$$, we could proceed by performing an *ensemble average* (and then we are trying to understand the statistical properties in our data analysis). If our background, analysis and observation are unbiased the average of their errors is zero. If we will go back to the previous equation we can write,
 
 $$e_{a}^{2} = [e_{b} + W(e_{o}-e_{b})]^{2} $$
 
-is useful and we can evaluate it in a large set of possible measurements and our relationship will be,
+which is useful because we could evaluate it in a large set of possible measurements and our relationship will be,
 
 $$W = \frac{E(e_{b}^{2})}{E(e_{b})+E(e_{b}^{2})}$$
 
 when the cross-correlation $$E(e_{b}e{o})=0$$
 
-The situation on the case of atmospheric models is more complicated because we have a model-grid and the observations are not exactly in our grid or not necessarily and is possible that we have a kind of heterogeneous sources with different error properties. 
-
+The situation on the case of atmospheric models is more complicated because we have a model-grid and the observations are not exactly in our grid (or it is not necessary) and it is possible that we have a kind of heterogeneous sources with different error properties. This means that data assimilation in atmospheric sciences needs more sophisticated approaches.
 
 ### Optimal Interpolation [^3] 
 
-This point is important, we have now a situation with several fields defining the state of the system, for example the prognostic variables $$x=(\rho_{s},w,T,u,v)$$, so pressure, temperature, air moisture and wind fields. Our model has defined a grid. So we will have, let's say, n scalar variables in total (n=5m if m is the number of grid points).
+This point is important, we have now a situation with several fields defining the state of the system, for example the prognostic variables $$x=(\rho_{s}, w, T, u, v)$$, so pressure, temperature, air moisture and wind fields. Our model (the computational realisation of the model) has defined a grid, so we will have, let's say, n scalar variables in total ($$n=5m$$ if m is the number of grid points).
 
-We proceed as before but not we have to introduce a new concept, the **forward observational operator** which translates a given prognostic state vector into our measurements -not necessarily the variables $$x=(\rho_{s},w,T,u,v)$$-. 
+We proceed (almost) as before, but not we have to introduce a new concept, the **forward observational operator**, named in this notes $$H$$, which translates a given prognostic state vector into our measurements -which are not necessarily the variables in or prognostic vector $$x=(\rho_{s},w,T,u,v)$$-. 
 
 $$x_{t} - x_{b} =  W(y_{o}-H(x_{b}))-e_{a}$$
  
