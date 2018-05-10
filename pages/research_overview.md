@@ -60,13 +60,9 @@ Currently I am working on [research projects](https://www.met.reading.ac.uk/user
 
 **Radiative Forcing and Climate Change**
 
+- <div data-badge-type="1" data-doi="10.1002/2017GL076770" data-hide-no-mentions="true" class="altmetric-embed"></div>  *Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database *, **R Checa-Garcia**, MI Hegglin, D. Kinnison, D. Plummer, KP Shine 'Geophysical Research Letters' 45 (7), Pages 3264
+
 - <div data-badge-type="1" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>  *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
-
-
-|     |     |
-| --- | --- |
-| <div data-badge-type="1" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div> |*The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018 |
-| <div data-badge-type="1" data-doi="10.1038/nature.2014.14583" data-hide-no-mentions="true" class="altmetric-embed"></div> |*The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018 |
 
 
 #### Research Assistant at Leibniz-Gemeinschaft 
