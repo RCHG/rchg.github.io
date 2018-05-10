@@ -106,9 +106,13 @@ $$e_{a}^{2} = [e_{b} + W(e_{o}-e_{b})]^{2} $$
 
 which is useful because when we evaluate it in a large set of possible measurements, then our relationship will be,
 
-$$W = \frac{E(e_{b}^{2})}{E(e_{b})+E(e_{b}^{2})}$$
+$$W = \frac{E(e_{b}^{2})}{E(e_{o})^{2}+E(e_{b}^{2})}$$
 
-when the cross-correlation $$E(e_{b}e_{o})=0$$
+when the cross-correlation $$E(e_{b}e_{o})=0$$. The final expression will be,
+
+$$x_{a} = x_{b} + \frac{E(e_{b}^{2})}{E(e_{o})^{2}+E(e_{b}^{2})}(x_{o}-x_{b}) $$
+
+Often the difference $$x_{o}-x_{b}$$ is named as additional information or innovation over the background. 
 
 The situation on the case of atmospheric models is more complicated because we have a model-grid and the observations are not exactly in our grid (or it is not necessary) and it is possible that we have a kind of heterogeneous sources with different error properties. This means that data assimilation in atmospheric sciences needs more sophisticated approaches.
 
