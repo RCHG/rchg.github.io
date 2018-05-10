@@ -52,7 +52,7 @@ array of in situ and
 remote instruments which sample
 imperfectly and
 irregularly in space and
-time.  *H. Elbern, ESA Workshop*
+time.  (*H. Elbern, ESA Workshop*)
 
 Methodology to achieve that:
 
@@ -64,8 +64,8 @@ and finally reconstructs state
 variables that are not
 sampled by the
 observation network
-(completion).“ *Daley,
-1991*[^1]
+(completion).“ )*Daley,
+1991*)[^1]
 
 and also
 > To produce a regular, physically consistent,
@@ -73,7 +73,7 @@ four-dimensional representation of the state of
 the atmosphere from a heterogeneous array of
 in-situ and remote instruments which sample
 imperfectly and irregularly in space and time.
-*Daley, 1991*[^1]
+(*Daley, 1991*)[^1]
 
 
 Following these previous definitions or characteristics of the problem, we observe that in weather forecasting we would like to **combine information** from observations (past and new) with the state predicted by model (usually a dynamical computational model of the atmosphere). This situation needs to handle with two different kind of uncertainties/errors in the data asimilation process:
