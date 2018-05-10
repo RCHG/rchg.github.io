@@ -38,14 +38,21 @@ breadcrumb: true
 
 - sourceforge
 - github
+    - pyozone
 - bitbucket
 
 
 #### With Python 
 
+- pyozone
+- mie-scattering
+
 #### With Fortran
 
+- SOCRATES-RF
+
 #### Latex
+
 
 #### Other
 
