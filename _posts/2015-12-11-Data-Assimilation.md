@@ -106,7 +106,7 @@ which is useful because we could evaluate it in a large set of possible measurem
 
 $$W = \frac{E(e_{b}^{2})}{E(e_{b})+E(e_{b}^{2})}$$
 
-when the cross-correlation $$E(e_{b}e{o})=0$$
+when the cross-correlation $$E(e_{b}e_{o})=0$$
 
 The situation on the case of atmospheric models is more complicated because we have a model-grid and the observations are not exactly in our grid (or it is not necessary) and it is possible that we have a kind of heterogeneous sources with different error properties. This means that data assimilation in atmospheric sciences needs more sophisticated approaches.
 
