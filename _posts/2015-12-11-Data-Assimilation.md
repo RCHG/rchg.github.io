@@ -40,10 +40,10 @@ assimilation is to provide a dynamically
 consistent motion picture of the
 atmosphere and oceans, in three space
 dimensions, with known error bars.
-M. Ghil and P. Malanotte-Rizzoli (1991)
+*M. Ghil and P. Malanotte-Rizzoli (1991)*
 
 Data Assimilation goal in Atmospheric Sciences:
-> "is to produce a regular,
+> ...is to produce a regular,
 physically consistent
 four dimensional
 representation of the
@@ -52,7 +52,7 @@ array of in situ and
 remote instruments which sample
 imperfectly and
 irregularly in space and
-time.  (H. Elbern, ESA Workshop)
+time.  *H. Elbern, ESA Workshop*
 
 Methodology to achieve that:
 
@@ -64,8 +64,8 @@ and finally reconstructs state
 variables that are not
 sampled by the
 observation network
-(completion).“ (Daley,
-1991)[^1]
+(completion).“ *Daley,
+1991*[^1]
 
 and also
 > To produce a regular, physically consistent,
@@ -73,36 +73,38 @@ four-dimensional representation of the state of
 the atmosphere from a heterogeneous array of
 in-situ and remote instruments which sample
 imperfectly and irregularly in space and time.
-(Daley, 1991)[^1]
+*Daley, 1991*[^1]
 
 
-In weather forecasting we would like to combine information from observations (past and new) with  the state predicted by model. The ideal situation includes:
+Following these previous definitions or characteristics of the problem, we observe that in weather forecasting we would like to **combine information** from observations (past and new) with the state predicted by model (usually a dynamical computational model of the atmosphere). This situation needs to handle with two different kind of uncertainties/errors in the data asimilation process:
 - *model errors* (discretization, incomplete description, etc...)
 - *observation errors* (calibration, sparse values, etc..)
 
+But before try to formulate this more general problem it is useful to remember an typical example given in the statistical inference, in which experimental values are used to ascertain the model parameters.
+
 ### Most easy example:
 
-Given a set of N observations of two variables (x,y) and given a model y = f (x; m, n) where m and m are parameters of the model (real numbers). The parameters are estimated from the measurements by optimizing a designed *estimator*.
+Given a set of N observations of two variables (x,y) and given a model y = f (x; m, n) where m and m are parameters of the model (real numbers). The parameters could be estimated from the measurements by optimizing a designed *estimator*. Typical examples are the maximum likelihood methodologies, or the "minimum squares method" to estimate the parameters m,n in a lineal model of the relationship of two variables. 
 
-But the conditions in atmospheric models are much more complex: first the dimension of the system is very large, the dynamics is not linear anymore, and even the system is undetermined as the dimension of x and y is very different. 
+However, when we try to extend these ideas to atmospheric models we have to confront strong difficulties. The atmospheric models are much more complex: first the dimension of the system is very large, the dynamics is not linear anymore, and even the system is undetermined as the dimension of x and y is very different. So we could try again a simple example from data analysis before try to introduce a method that could be used sucessfully to data assimilation in for example weather forecasting.
 
 ### Data Analysis: tasting the problem [^5]
 
-A simple examples of data assimilation derived from data analysis is given when *we have a scalar variable x and a single observation*:
+A simple example of data assimilation derived from data analysis is given when *we have a scalar variable x and a single observation*. Now we could like to mix a background information with a given observation and estimate then a better value of a variable x. We introduce then the following expression;
 
 $$x_{a} = x_{b} + W(x_{o}-x_{b}) $$
 
-where $$x_{a}$$ is the value after the analysis, $$x_{b}$$ is the value before the analysis (background), $$x_{o}$$ is the value of the single observation and $$W$$ is a weighting function to be calculated by the data analysis.
+where $$x_{a}$$ is the value *after the analysis*, $$x_{b}$$ is the value *before the analysis* (background), $$x_{o}$$ is the value of the single observation and $$W$$ is a weighting function to be calculated by the data analysis.
 
-If we define the error as the value minus the true value, then from the equation above we could write,
+If we define the error as the value minus the true value, then from the equation above we could write a relationship between errors rather than values (and our objective is minimize the errors);
 
 $$e_{a} = e_{b} + W(e_{o}-e_{b}) $$
 
-Still, we have to propose a value for $$W$$, we could proceed by performing an *ensemble average* (and then we are trying to understand the statistical properties in our data analysis). If our background, analysis and observation are unbiased the average of their errors is zero. If we will go back to the previous equation we can write,
+Still, to resolve the problem, we have to propose a value for $$W$$, we could proceed by performing an *ensemble average* (and then we are trying to understand the statistical properties in our data analysis). If our background, analysis and observation are unbiased the average of their errors is zero. If we will go back to the previous equation we can write,
 
 $$e_{a}^{2} = [e_{b} + W(e_{o}-e_{b})]^{2} $$
 
-which is useful because we could evaluate it in a large set of possible measurements and our relationship will be,
+which is useful because when we evaluate it in a large set of possible measurements, then our relationship will be,
 
 $$W = \frac{E(e_{b}^{2})}{E(e_{b})+E(e_{b}^{2})}$$
 
