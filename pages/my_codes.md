@@ -12,7 +12,6 @@ breadcrumb: true
 <div class="medium-4 medium-push-8 columns" markdown="1">
 
 
-
 <div class="panel radius" markdown="1">
 
 ### Table of Contents
@@ -32,24 +31,25 @@ breadcrumb: true
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 ### Overview
----
+
+This is not an exhaustive description of the codes that I have developed but those that currently I am maintaing more often. 
 
 #### Open Source
 
 - sourceforge
 - github
-    - pyozone
+    - [pyozone](https://github.com/RCHG/pyozone): this piece It is a piece of code that allows some python calculations. More information is also avaiable at [zenodo-link](https://zenodo.org/record/1118950)
 - bitbucket
 
 
 #### With Python 
 
-- pyozone
+- [pyozone](https://github.com/RCHG/pyozone)
 - mie-scattering
 
 #### With Fortran
 
-- SOCRATES-RF
+- [SOCRATES-RF](http://www.met.reading.ac.uk/~vr912734/SOCRATESRF/index.html): it is a software suite based on SOCRATES but designed to have a different user interface and focused on the estimation of radiative forcing by offline methodologies. 
 
 #### Latex
 
