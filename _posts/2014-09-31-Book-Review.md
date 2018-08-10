@@ -12,7 +12,7 @@ categories:
     - science-blog
     - review
 header:
-    title: Book Review"
+    title: Book Review
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
