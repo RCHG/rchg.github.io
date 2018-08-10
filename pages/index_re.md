@@ -4,7 +4,7 @@ title: "Academic Info "
 subheadline: "My research background"
 permalink: "research/"
 header:
-    title: R. Checa-Garcia webpage | Research Info
+    title: Research Background Info
     pattern: pattern_jquery-dark-grey-tile.png
 breadcrumb: true
 ---
