@@ -6,7 +6,7 @@ subheadline: ""
 teaser: "Get in touch with me? Use the contact form."
 permalink: "/contact/"
 header:
-    title: R. Checa-Garcia webpage | Contact Form
+    title: Contact Form
     pattern: pattern_jquery-dark-grey-tile.png
 breadcrumb: true
 ---
