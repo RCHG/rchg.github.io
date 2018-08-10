@@ -4,7 +4,7 @@ title: "Academic Info "
 subheadline: "My teaching background"
 permalink: "teaching/"
 header:
-    title: R. Checa-Garcia webpage | Teaching Info
+    title: Teaching Info
     pattern: pattern_jquery-dark-grey-tile.png
 breadcrumb: true
 ---
@@ -27,7 +27,9 @@ breadcrumb: true
 ---
 
 
-My teaching background comprises experience as Teacher Assistant and Assistant Professor at the University Autonoma of Madrid (UAM) together with specific formation on Didactic of Physics and Chemistry by the University of Granada. At UAM I taught *Experimental Physics* on Laboratories to Bachelor students of Biology and Environmental Sciences, Computer Science and Physics. Concerning PhD Students, I was supporting doctorate candidates thorough discussions about the main topics of their PhD Thesis at Karlsruhe Institute of Technology, while in the field of my PhD Thesis I helped other students providing technicalsupport with Numerical and Computational problems.
+My teaching background comprises experience as Teacher Assistant and Assistant Professor at the University Autonoma of Madrid (UAM) together with specific formation on Didactic of Physics and Chemistry by the University of Granada. At UAM I taught *Experimental Physics* on Laboratories to Bachelor students of Biology and Environmental Sciences, Computer Science and Physics. Concerning PhD Students, I was supporting doctorate candidates thorough discussions about the main topics of their PhD Thesis at Karlsruhe Institute of Technology, while in the field of my PhD Thesis I helped other students providing technical support with Numerical and Computational problems.
+
+Regarding Atmospheric Science and Meterology, I have been lecturer at the University of Reading ofi **Statistics Methods applied to the Meteorology**, an example of the material prepared for the students is [Introduction of Statistics](https://www.researchgate.net/publication/312490308_Statistics_for_Weather_and_Climate_Introduction)
 
 ---
 
