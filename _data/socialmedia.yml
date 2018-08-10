@@ -5,17 +5,17 @@
   
 - name: GitHub
   url: http://github.com/rchg
-  class: icon-github
+  class: icon-network
   title: "My GitHub site..."
 
 - name: SourceForge
   url: http://sourceforge.net/u/rchecagarcia/profile/
-  class: icon-sourceforge
+  class: icon-edit
   title: "My SourceForge site..."
 
 - name: Bitbucket
   url: http://bitbucket.org/rchecagarcia
-  class: icon-bitbucket
+  class: icon-code
   title: "My bitbucket site..."
 
 - name: Scholar
@@ -25,7 +25,7 @@
 
 - name: ResearchGate
   url: http://www.researchgate.net/profile/Ramiro_Checa-Garcia
-  class: icon-paperclip
+  class: icon-globe
   title: "My ResearchGate..."
   
 
