@@ -4,7 +4,7 @@ title: "Research"
 subheadline: "Overview of my research background"
 permalink: "/research/overview/"
 header:
-    title: R. Checa-Garcia webpage | Research Overview
+    title: Research Overview
     pattern: pattern_jquery-dark-grey-tile.png
 breadcrumb: true
 ---
