@@ -4,7 +4,7 @@ title: "Research Resources Links"
 subheadline: ""
 permalink: "/research/resources/"
 header:
-    title: R. Checa-Garcia webpage | Research Resources
+    title: Research Resources
     pattern: pattern_jquery-dark-grey-tile.png
 breadcrumb: true
 ---
