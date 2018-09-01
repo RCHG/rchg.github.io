@@ -9,7 +9,7 @@ tags: [VCS, Scientific-computing, Hg, Mercurial]
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage | Mercurial
+    title: Mercurial
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
