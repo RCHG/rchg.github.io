@@ -10,7 +10,7 @@ tags: [Linux, Debian]
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage |  Meteorology Software
+    title: Meteorology related Software
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
