@@ -10,7 +10,7 @@ tags: [Linux, Debian]
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage |  Debian Tricks
+    title: Debian...
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
