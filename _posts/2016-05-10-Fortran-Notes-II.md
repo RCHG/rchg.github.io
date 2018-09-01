@@ -9,7 +9,7 @@ tags: [Scientific-computing, Fortran]
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage |  Fortran 90/95
+    title: Fortran 90/95
     pattern: pattern_jquery-dark-grey-tile.png
 author: ramiro_chg
 ---
