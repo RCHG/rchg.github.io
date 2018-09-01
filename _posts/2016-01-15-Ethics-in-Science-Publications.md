@@ -11,7 +11,7 @@ tags:
 categories:
     - personal-blog
 header:
-    title: "R. Checa-Garcia webpage |  Ethics in Science & Publications"
+    title:  Ethics in Science & Publications
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
