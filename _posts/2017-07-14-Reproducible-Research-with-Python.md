@@ -10,7 +10,7 @@ tags:
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage | Reproducible Research
+    title: Reproducible Research
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
