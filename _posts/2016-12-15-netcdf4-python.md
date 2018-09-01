@@ -10,7 +10,7 @@ tags: [Python]
 categories:
     - computing-blog
 header:
-    title: R. Checa-Garcia webpage |  Meteorology and Climatology
+    title: Meteorology and Climatology
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
