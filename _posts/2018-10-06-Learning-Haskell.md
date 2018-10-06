@@ -65,7 +65,32 @@ squares =  array (1,100) [(i, i*i) | i <- [1..100]]
 squares!7 => 49
 bounds squares => (1,100)
 ```
+A small piece of code [similar to](https://lotz84.github.io/haskellbyexample/ex/arrays),
 
+```
+import Data.Array
+
+main = do
+    -- now we define an array a
+    let a = array (0, 4) [(i, 0) | i <- [0..4]]
+    -- and a is array (0,4) [(0,0),(1,0),(2,0),(3,0),(4,0)] 
+    -- for example with:
+    putStrLn $ show a
+    -- now this is problematic...
+    let b = array (0, 4) [(i, 0) | i <- [0..2]]
+    -- but Haskell is lazy, so only when we use b then we see a problem
+    -- with show b the output is
+    -- "array (0,4) [(0,0),(1,1),(2,2),(3,*** Exception: (Array.!): undefined array element"
+
+    -- the construction array (0, 4) [(i, 0) | i <- [0..4]]
+    -- basically define the index from 0 to 4 (5 elements) and the second part is the one that
+    -- assign for each index i a value, in this case the constant zero.
+    let c = array (0, 4) [(i, i+1) | i <- [0..4]]
+    -- then show c!1 is 2, c!0 is 1 and c!4 is 5
+    let matrix = array ((0,0), (1, 2)) [((i, j), i + j) | i <- [0..1], j <- [0..2]]
+    -- defines a matrix with structure:
+    -- array ((0,0),(1,2)) [((0,0),0),((0,1),1),((0,2),2),((1,0),1),((1,1),2),((1,2),3)]
+```
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
