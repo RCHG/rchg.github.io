@@ -35,6 +35,7 @@ Second task is to understand the specific type of array (and more advanced defin
 - [Arrays](https://wiki.haskell.org/Arrays)
 - [Vectors](https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial)
 - [Repa](https://wiki.haskell.org/Numeric_Haskell:_A_Repa_Tutorial)
+- [General](https://guide.aelve.com/haskell/arrays-bpid18sd)
 
 First there are many kind of arrays, in a quite complex forest of options. It seems that the kind of array *Unboxed* is the one
 similar to C and more suited for numerical operations that require speed. *StorableArray* allows to interchange with C, which also is Unboxed.
