@@ -9,7 +9,7 @@ tags: [Atmospheric Chemistry, Atmospheric Physics, Ozone, Stratosphere]
 categories:
     - science-blog
 header:
-    title: Atmospheric Chemistry: Ozone
+    title: Atmospheric Chemistry of Ozone
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
