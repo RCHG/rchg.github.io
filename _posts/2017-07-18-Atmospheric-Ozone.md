@@ -5,8 +5,7 @@ subheadline: Notebook
 title:  "Introduction to Atmospheric Ozone"
 teaser: "Own notes about Ozone"
 breadcrumb: true
-tags:
-    - [Atmospheric Chemistry, Atmospheric Physics, Ozone, Stratosphere]
+tags: [Atmospheric Chemistry, Atmospheric Physics, Ozone, Stratosphere]
 categories:
     - science-blog
 header:
