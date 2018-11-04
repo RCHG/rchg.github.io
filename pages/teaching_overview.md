@@ -4,7 +4,7 @@ title: "Teaching"
 subheadline: "Overview of my teaching background"
 permalink: "teaching/overview/"
 header:
-    title: R. Checa-Garcia webpage | Teaching Overview
+    title: R. Checa-Garcia | Teaching Overview
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
@@ -32,7 +32,7 @@ header:
 ## Overview
 ---
 
-My teaching background comprises experience as Teacher Assistant and Assistant Professor at the University Autonoma of Madrid (UAM) together with specific formation on Didactic of Physics and Chemistry by the University of Granada. At UAM I taught *Experimental Physics* on Laboratories to Bachelor students of Biology and Environmental Sciences, Computer Science and Physics. Concerning PhD Students, I was supporting doctorate candidates thorough discussions about the main topics of their PhD Thesis at Karlsruhe Institute of Technology, while in the field of my PhD Thesis I helped other students providing technicalsupport with Numerical and Computational problems.
+My teaching background comprises lectures given on the Master of Meteorology at the University of Reading, and previous experience as Teacher Assistant and Assistant Professor at the University Autonoma of Madrid (UAM) together with specific formation on Didactic of Physics and Chemistry by the University of Granada. At UAM I taught *Experimental Physics* on Laboratories to Bachelor students of Biology and Environmental Sciences, Computer Science and Physics. Concerning PhD Students, I was supporting doctorate candidates thorough discussions about the main topics of their PhD Thesis at Karlsruhe Institute of Technology, while in the field of my PhD Thesis I helped other students providing technicalsupport with Numerical and Computational problems.
 
 ## Thinking about Teaching, my perspective
 
