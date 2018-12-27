@@ -33,10 +33,10 @@ breadcrumb: true
 
 ### General Overview
 
-Currently, my main field of research is the climate response to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid. Also I was assistant professor of Physics (Laboratory Experiments) two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
+Currently, my main field of research is the climate response to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid. Also I was teacher assistants of Physics (Laboratories of experimental physics) during two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
 - Karlsruhe Institute of Technology (Germany), where I worked on ESA-Sentinel-5 and G3E projects (remote sensing of greenhouse gases).
 - The University of Reading, in collaboration with Keith Shine and M. Hegglin, where I studed the radiative forcing of several agents on the atmosphere, in particular Ozone.
-- Laboratory for Sciences of Climate and Environment (LSCE) were I work for the CNRS on a aerosol related research project. 
+- Laboratory for Sciences of Climate and Environment (LSCE) were I work for the CNRS on a aerosol related research project, named CRESCENDO. 
 
 
 ### Scientific Interests
@@ -86,7 +86,7 @@ Due to my professional trajectory my interest is also related with mathematical 
 ### Overview
 ---
 
-My daily research job is done with computers that I use for data analysis of experimental data and for modelling or simulation of physical processes. Therefore an important part of my background rely on an area usually named: **scientific computing**. Traditionaly, for a Physicist, this implied to know how to program with Fortran but not much more (maybe a basic understanding of Linux/Unix). Nowdays, the situation is different and scientific computing means a long list of tools and skills that a researcher have to know, but even more between all the utilities or methodologies she/he has to be able to choose the best possible tool for an specific problem. As a consequence several academic programs include a kind of formation that has been named **software carpentry**.
+My daily research job is done with computers, that I use for data analysis of experimental data, and for modelling/simulation of physical processes. Therefore an important part of my background and skills rely on an area usually named: **scientific computing**. Traditionaly, for a Physicist, this implied to know how to program with Fortran but not much more (maybe complemented with basic understanding of Linux/Unix). Nowdays, the situation is different and scientific computing means a long list of tools and skills that a researcher should know, but even more she/he has to be able to choose the best possible tool for an specific problem between a large set of utilities and methodologies. As a consequence several academic programs include a kind of formation unofficially named **software carpentry**.
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
@@ -105,10 +105,13 @@ My daily research job is done with computers that I use for data analysis of exp
     - Pandas
     - statmodels
     - xarray
+    - iris (of scitools)
 
 #### Visualization
 
-- Matplotlib, Basemap, Cartopy 
+- Python
+    - Matplotlib, Basemap
+    - Cartopy 
 - GNUplot
 
 #### File Formats
@@ -117,7 +120,7 @@ My daily research job is done with computers that I use for data analysis of exp
 - HDF5
 - GRIB
 
-#### Automatization and Scription
+#### Automatization and scripting languages
 
 - make
 - bash
