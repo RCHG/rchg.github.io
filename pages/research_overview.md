@@ -34,7 +34,8 @@ breadcrumb: true
 ### Overview
 ---
 
-or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid. Also I was assistant professor of Physics (Laboratory Experiments) two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
+Currently, my main field of research is the climate response to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid. Also I was assistant professor of Physics (Laboratory Experiments) two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
+
 - Karlsruhe Institute of Technology (Germany), where I worked on ESA-Sentinel-5 and G3E projects (remote sensing of greenhouse gases).
 - The University of Reading, in collaboration with Keith Shine and M. Hegglin, where I studed the radiative forcing of several agents on the atmosphere, in particular Ozone. Additionaly, I participated on the creation and/or evaluation of an state of the art database of Ozone and Stratospheric Water Vapor, like the CMIP6 ozone forcing dataset.
 - Laboratory for Sciences of Climate and Environment (LSCE) were I work for the CNRS on a aerosol related research project. 
@@ -48,10 +49,14 @@ or aerosols. However, my academic career started with a B.A. in Spanish from the
 
 ---
 
-### Researcher at University of Reading
+### Researcher: LSCE-CNRS
 
 
-Currently I am working on [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) related with estimation of radiative forcing of greenhouse gases and their role in global warming, [for example](http://environmentalresearchweb.org/cws/article/news/67032
+
+### Researcher: University of Reading
+
+
+My work was related with the [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) related with estimation of radiative forcing of greenhouse gases and their role in global warming, [for example](http://environmentalresearchweb.org/cws/article/news/67032
 ) in the [recent slowdown](https://www.smurphs.leeds.ac.uk/new-publication-the-contribution-of-greenhouse-gases-to-the-recent-slowdown-in-global-mean-temperature-trends/). The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
 
 #### Publications and Technical Reports
@@ -63,11 +68,11 @@ Currently I am working on [research projects](https://www.met.reading.ac.uk/user
 {:.smallquote}
 
 
-### Research Assistant at Leibniz-Gemeinschaft 
+### Researchee: Leibniz-Gemeinschaft 
 
 My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust emissions and transport based on simulated remote sensing images (in particular evaluate the role of mineralogy). In the 2015-Leipzig [Mineral Dust Conference](https://www.researchgate.net/publication/282665817_Sensitivity_Studies_of_MSG_products_with_COSMO-MUSCAT_and_RRTOV) was presented an overview of the steps of this research, where the two key components are: RRTOV and COSMO-MUSCAT.
 
-### Research Assistant at KIT
+### Researcher: KIT
 
 The central goal of the project I am working is related with a consolidation of the ESA satellite Sentinel-5 requirements. This means a detailed study of the different error sources like instrumental, spectroscopy, forward models errors derived of an effective description of the atmosphere aerosols and cirrus. To be able to conduct this research I use state of the art retrieval algorithms (inverse problem and radiative transfer solver) with trial ensembles of geophysical scenarios. Additional aspects of the research are: evaluate the cloud cover with Meteosat datasets, integrate satellite products of MODIS and CALIPSO with datasets obtained from offline chemical transport model.
 
