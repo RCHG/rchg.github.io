@@ -14,7 +14,7 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
-Random Notes about Haskel
+Random Notes about Haskell
 ---------------------------
 
 **Types and Clases** 
@@ -41,8 +41,7 @@ First there are many kind of arrays, in a quite complex forest of options. It se
 similar to C and more suited for numerical operations that require speed. *StorableArray* allows to interchange with C, which also is Unboxed.
 
 It is important to think about what its an array: it is something that associate index to values. In basic arrays index has
-type Int (to undestand it [Ix Class](http://hackage.haskell.org/package/base-4.11.1.0/docs/Data-Ix.html) but I think that it 
-something complex also). The manual says for example that:
+type Int (to undestand it [Ix Class](http://hackage.haskell.org/package/base-4.11.1.0/docs/Data-Ix.html) but I think that it something complex also). The manual says for example that:
 
 *the bounds of a 10-element, zero-origin vector with Int indices would be (0,9), 
 while a 100 by 100 1-origin matrix might have the bounds ((1,1),(100,100)), In many other languages, such bounds would be
@@ -57,18 +56,23 @@ array index 1 corresponds to (1,1), the index 2 corresponds to (1,2) etc..., the
 """
 range ((0,0),(1,2)) => [(0,0), (0,1), (0,2), (1,0), (1,1), (1,2)] 
 """
+
 The definition of an array has type:
+
 {% highlight haskell %}
 """
 array  :: (Ix a) => (a,a) -> [(a,b)] -> Array a b
 """
+
 like,
+
 {% highlight haskell %}
 """
 squares =  array (1,100) [(i, i*i) | i <- [1..100]]
 squares!7 => 49
 bounds squares => (1,100)
 """
+
 A small piece of code [similar to](https://lotz84.github.io/haskellbyexample/ex/arrays),
 
 {% highlight haskell %}
