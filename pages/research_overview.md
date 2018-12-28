@@ -92,7 +92,7 @@ A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Boven
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
-#### Poster & Presentations (collaborative and contributions)
+#### Poster & Presentations
 
 **Remote Sensing of Trace Gases**
 
