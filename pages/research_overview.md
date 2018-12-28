@@ -63,7 +63,7 @@ Currently I am working on [research projects](https://www.met.reading.ac.uk/user
 {:.smallquote}
 
 
-#### Research Assistant at Leibniz-Gemeinschaft 
+### Research Assistant at Leibniz-Gemeinschaft 
 
 My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust emissions and transport based on simulated remote sensing images (in particular evaluate the role of mineralogy). In the 2015-Leipzig [Mineral Dust Conference](https://www.researchgate.net/publication/282665817_Sensitivity_Studies_of_MSG_products_with_COSMO-MUSCAT_and_RRTOV) was presented an overview of the steps of this research, where the two key components are: RRTOV and COSMO-MUSCAT.
 
@@ -122,7 +122,7 @@ The main challenges of measuring precipitation are related to the spatio-tempora
 **Intrinsic structure of liquid surface and capillary waves on the Density Functional Theory** (R Checa-Garcia) arXiv preprint arXiv:1307.6199 (2013)
 
 **Abstract:**
-Two different theories are used to understand the liquid-vapor interfaces: the Van der Waals theory and the capillary waves theory. But comparing both come up a problem of interpretation of the interface density profiles obtained, for example, with the Density Functional Theory (DFT). As a consequence emerge the question of how the surface fluctuations are included on traditional density profiles (usually named equilibrium density profiles). Last years, new insights on the role of capillary waves were possible by analyzing X-ray reflectivity experiments and performing computer simulations of liquids with low melting temperature. In particular, the density profile exhibits a layering structure which is considered a key property to elucidate a new interpretation of those profiles as intrinsic density profiles. This dissertation aims to investigate these questions within the DFT using simple fluids with a pairwise interactions that reproduce important phase-diagram properties of liquid metals. Two generics questions were explored: the relevance of Fisher-Widom line and the role of capillary waves on the nature of interface obtained with approximations WDA and FMT. It hypothesized the existence of a density profile with strong layering properties whose structure is reduced by capillary waves. Then the effect of surface fluctuations is described by introducing an effective transversal size which imposes a limitation of the spectrum of surface fluctuations incorporated on the DFT. However, an explicit methodology to unfreeze the capillary waves over a postulated intrinsic profile exempt of surface fluctuations was proven still a challenge. As a consequence it suggested that other previous results describing the liquid surface using the equilibrium DFT may conduct to unphysical properties.
+Two different theories are used to understand the liquid-vapor interfaces: the Van der Waals theory and the capillary waves theory. But when comparing both frameworks come up a problem of interpretation of the interface density profiles obtained, for example, with the Density Functional Theory (DFT). As a consequence emerge the question of how the surface fluctuations are included on traditional density profiles (usually named equilibrium density profiles). Last years, new insights on the role of capillary waves were possible by analyzing X-ray reflectivity experiments and performing computer simulations of liquids with low melting temperature. In particular, the density profile exhibits a layering structure which is considered a key property to elucidate a new interpretation of those profiles as intrinsic density profiles. This dissertation aims to investigate these questions within the DFT using simple fluids with a pairwise interactions that reproduce important phase-diagram properties of liquid metals. Two generics questions were explored: the relevance of Fisher-Widom line and the role of capillary waves on the nature of interface obtained with approximations WDA and FMT. It hypothesized the existence of a density profile with strong layering properties whose structure is reduced by capillary waves. Then the effect of surface fluctuations is described by introducing an effective transversal size which imposes a limitation of the spectrum of surface fluctuations incorporated on the DFT. However, an explicit methodology to unfreeze the capillary waves over a postulated intrinsic profile exempt of surface fluctuations was proven still a challenge. As a consequence it suggested that other previous results describing the liquid surface using the equilibrium DFT may conduct to unphysical properties.
 {:.smallblock}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
@@ -199,9 +199,10 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 ### Journal Reviewer
 ---
 
-- Indian Journal of Radio and Space Physics., (2011).
-- Hydrometeorology Water Resources Research (AGU journal), (2014).
-- Remote Sensing Remote Sensing (MPDI journal), (2014).
+- Remote Sensiing: Indian Journal of Radio and Space Physics., (2011).
+- Hydrometeorology: Water Resources Research (AGU journal), (2014).
+- Remote Sensing: Remote Sensing (MPDI journal), (2014-2018).
+- Remote Sensing: Sensors (MPDI journal), (2018)
 
 [^1]: My collaboration on this presentation was discussions about the topic with the main authors.
 
