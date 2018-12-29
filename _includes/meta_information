@@ -1,4 +1,5 @@
 			<div id="page-meta" class="t30">
+                               <div class="panel radius">
 				<p>
 					<!-- Look the author details up from the site config. -->
 					{% assign author = site.data.authors[page.author] %}
@@ -25,5 +26,6 @@
 				{% if page.next.url %}
 				<div class="small-5 columns text-right"><a class="button small radius next" href="{{ site.url }}{{page.next.url}}">{{page.next.title}} &raquo;</a></div><!-- /.small-4.columns -->
 				{% endif %}
+			</div>
 			</div>
 			</div><!--  /.page-meta -->
