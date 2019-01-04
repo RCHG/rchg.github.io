@@ -1,4 +1,5 @@
 			<div id="page-meta" class="t30b">
+			 <div class="panel panel-default">
 				<p>
 					<!-- Look the author details up from the site config. -->
 					{% assign author = site.data.authors[page.author] %}
@@ -16,5 +17,5 @@
 				<br />
 				<span class="pr20">{% for tag in page.tags %}<span class="icon-price-tag pr10"><a href="/blog/archive_tags/#{{ tag }}">{{tag}}</a></span> {% endfor %}</span>
 			</p>
-
+                        </div>
 			</div><!--  /.page-meta -->
