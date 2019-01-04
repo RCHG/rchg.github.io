@@ -56,6 +56,7 @@ array index 1 corresponds to (1,1), the index 2 corresponds to (1,2) etc..., the
 """
 range ((0,0),(1,2)) => [(0,0), (0,1), (0,2), (1,0), (1,1), (1,2)] 
 """
+{% endhighlight %}
 
 The definition of an array has type:
 
@@ -63,6 +64,7 @@ The definition of an array has type:
 """
 array  :: (Ix a) => (a,a) -> [(a,b)] -> Array a b
 """
+{% endhighlight %}
 
 like,
 
@@ -72,6 +74,7 @@ squares =  array (1,100) [(i, i*i) | i <- [1..100]]
 squares!7 => 49
 bounds squares => (1,100)
 """
+{% endhighlight %}
 
 A small piece of code [similar to](https://lotz84.github.io/haskellbyexample/ex/arrays),
 
@@ -99,6 +102,7 @@ main = do
     -- defines a matrix with structure:
     -- array ((0,0),(1,2)) [((0,0),0),((0,1),1),((0,2),2),((1,0),1),((1,1),2),((1,2),3)]
 """
+{% endhighlight %}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
