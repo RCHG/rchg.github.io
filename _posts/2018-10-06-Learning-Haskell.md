@@ -89,7 +89,7 @@ main = do
     let b = array (0, 4) [(i, 0) | i <- [0..2]]
     -- but Haskell is lazy, so only when we use b then we see a problem
     -- with show b the output is
-    -- 'array (0,4) [(0,0),(1,1),(2,2),(3,*** Exception: (Array.!): undefined array element'
+    -- 'array (0,4) [(0,0),(1,1),(2,2),(3,***Exception: (Array.!): undefined array element***'
     -- the construction array (0, 4) [(i, 0) | i <- [0..4]]
     -- basically define the index from 0 to 4 (5 elements) and the second part is the one that
     -- assign for each index i a value, in this case the constant zero.
