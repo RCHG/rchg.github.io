@@ -226,11 +226,11 @@ body.video cite { color: #fff; }
 }
 .meta-info p {
   font-size: rem-calc(13);
-  color: scale-color($grey-1, $lightness: 40%);
+  color: scale-color($grey-1, $lightness: 30%);
 }
   .meta-info a {
     text-decoration: underline;
-    color: scale-color($grey-1, $lightness: 40%);
+    color: scale-color($grey-1, $lightness: 30%);
   }
   .meta-info a:hover {
     text-decoration: none;
