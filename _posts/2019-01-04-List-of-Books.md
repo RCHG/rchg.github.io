@@ -17,7 +17,7 @@ header:
 List of Books
 ---------------------------
 
-- A user's guide to measure theoretic probability (David Pollard)
+- A user's guide to measure theoretic probability (David Pollard): This book has more text than usual in probability related books, but still is a quite serious book. It covers many aspects like fourier transforms, brownian motion or hilbert spaces from the point of view of measure theory.
 - Probability, an introduction (G. Grimmett and D. Welsh)
 
 
