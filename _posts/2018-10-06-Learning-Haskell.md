@@ -66,7 +66,7 @@ array  :: (Ix a) => (a,a) -> [(a,b)] -> Array a b
 
 like,
 
-{% highlight python %}
+{% highlight haskell %}
 """
 squares =  array (1,100) [(i, i*i) | i <- [1..100]]
 squares!7 => 49
