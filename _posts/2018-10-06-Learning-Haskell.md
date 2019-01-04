@@ -49,37 +49,29 @@ written in a form like 1:100, 1:100, but the present form fits the type system b
 type as a general index.*
 {:.smallblock}
 
-Finally, it seems that internally the ((1,1),(100,100)) are stored in a list of index [(1,1),...,(100,100)]. So internally, the
-array index 1 corresponds to (1,1), the index 2 corresponds to (1,2) etc..., there is a function named range that helps with it:
+Finally, it seems that internally the ((1,1),(100,100)) are stored in a list of index [(1,1),...,(100,100)]. So internally, the array index 1 corresponds to (1,1), the index 2 corresponds to (1,2) etc..., there is a function named range that helps with it:
 
 {% highlight haskell %}
-"""
 range ((0,0),(1,2)) => [(0,0), (0,1), (0,2), (1,0), (1,1), (1,2)] 
-"""
 {% endhighlight %}
 
 The definition of an array has type:
 
-{% highlight python %}
-"""
+{% highlight haskell %}
 array  :: (Ix a) => (a,a) -> [(a,b)] -> Array a b
-"""
 {% endhighlight %}
 
 like,
 
 {% highlight haskell %}
-"""
 squares =  array (1,100) [(i, i*i) | i <- [1..100]]
 squares!7 => 49
 bounds squares => (1,100)
-"""
 {% endhighlight %}
 
 A small piece of code [similar to](https://lotz84.github.io/haskellbyexample/ex/arrays),
 
 {% highlight haskell %}
-"""
 import Data.Array
 
 main = do
@@ -92,7 +84,7 @@ main = do
     let b = array (0, 4) [(i, 0) | i <- [0..2]]
     -- but Haskell is lazy, so only when we use b then we see a problem
     -- with show b the output is
-    -- 'array (0,4) [(0,0),(1,1),(2,2),(3,***Exception: (Array.!): undefined array element***'
+    -- "array (0,4) [(0,0),(1,1),(2,2),(3,*** Exception: (Array.!): undefined array element"
     -- the construction array (0, 4) [(i, 0) | i <- [0..4]]
     -- basically define the index from 0 to 4 (5 elements) and the second part is the one that
     -- assign for each index i a value, in this case the constant zero.
@@ -101,7 +93,6 @@ main = do
     let matrix = array ((0,0), (1, 2)) [((i, j), i + j) | i <- [0..1], j <- [0..2]]
     -- defines a matrix with structure:
     -- array ((0,0),(1,2)) [((0,0),0),((0,1),1),((0,2),2),((1,0),1),((1,1),2),((1,2),3)]
-"""
 {% endhighlight %}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
