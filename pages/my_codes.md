@@ -34,25 +34,26 @@ breadcrumb: true
 
 This is not an exhaustive description of the codes that I have developed but those that currently I am maintaing more often. 
 
-#### Open Source
+#### Open Source Sites:
 
-- sourceforge
-- github
-    - [pyozone](https://github.com/RCHG/pyozone): this piece It is a piece of code that allows some python calculations. More information is also avaiable at [zenodo-link](https://zenodo.org/record/1118950)
-- bitbucket
+- [sourceforge]
+- [github](https:/github.com/RCHG/)
+- [bitbucket](https://bitbucket.org/rchecagarcia/)
 
 
 #### With Python 
 
-- [pyozone](https://github.com/RCHG/pyozone)
+- [pyozone](https://github.com/RCHG/pyozone): this piece It is a piece of code that allows some python calculations. More information is also avaiable at [zenodo-link](https://zenodo.org/record/1118950)
 - mie-scattering
+- pyIPSLpack, it is a python software to prepate specific climate diagnostics for IPSL model. It also perform additional opertations to test the CF-compilant of the diagnostics (netcdf files) and typical test to ascertain the main properties of the climate simulations.
 
 #### With Fortran
 
-- [SOCRATES-RF](http://www.met.reading.ac.uk/~vr912734/SOCRATESRF/index.html): it is a software suite based on SOCRATES but designed to have a different user interface and focused on the estimation of radiative forcing by offline methodologies. 
+- [SOCRATES-RF](http://www.met.reading.ac.uk/~vr912734/SOCRATESRF/index.html): it is a software suite based on SOCRATES but designed to have a different user interface and focused on the estimation of radiative forcing by offline methodologies. Currently it is able to estimate the radiative forcing by fixed dynamical heating method by adjusting the temperatures on the stratosphere.
 
 #### Latex
 
+- I have prepared several templates, that I will upload soon to github or bitbucket 
 
 #### Other
 
