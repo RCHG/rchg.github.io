@@ -75,7 +75,7 @@ bounds squares => (1,100)
 
 A small piece of code [similar to](https://lotz84.github.io/haskellbyexample/ex/arrays),
 
-{% highlight python %}
+{% highlight haskell %}
 """
 import Data.Array
 
