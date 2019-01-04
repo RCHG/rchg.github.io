@@ -44,7 +44,7 @@ This is not an exhaustive description of the codes that I have developed but tho
 #### With Python 
 
 - [pyozone](https://github.com/RCHG/pyozone): this piece It is a piece of code that allows some python calculations. More information is also avaiable at [zenodo-link](https://zenodo.org/record/1118950)
-- mie-scattering
+- [mie-scattering](https://rchg.github.io//science-blog/Mie-Scattering/)
 - pyIPSLpack, it is a python software to prepate specific climate diagnostics for IPSL model. It also perform additional opertations to test the CF-compilant of the diagnostics (netcdf files) and typical test to ascertain the main properties of the climate simulations.
 
 #### With Fortran
