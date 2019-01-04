@@ -1,6 +1,5 @@
 			<div id="page-meta" class="t30">
-                             <div class="panel panel-default">
-				<p>
+			<!--<p>
 					<!-- Look the author details up from the site config. -->
 					{% assign author = site.data.authors[page.author] %}
 					<!-- Output author details if some exist. -->
@@ -16,8 +15,7 @@
 				{% if page.categories %}<span class="icon-archive pr20"> {{ page.categories | join: ' · ' | upcase }}{% endif %}</span>
 				<br />
 				<span class="pr20">{% for tag in page.tags %}<span class="icon-price-tag pr10"> {{tag}}</span> {% endfor %}</span>
-			        </p>
-
+			        </p>-->
 			        <div id="post-nav" class="row">
 				     {% if page.previous.url %}
 				     <div class="small-5 columns"><a class="button small radius prev" href="{{ site.url }}{{page.previous.url}}">&laquo; {{page.previous.title}}</a></div><!-- /.small-4.columns -->
