@@ -1,7 +1,7 @@
 ---
 layout: page
 sidebar: right
-subheadline: Notebook
+subheadline: Tips
 title:  "Notes on WRF-gfortran-compilation"
 teaser: "How to compile WRF with gfortran"
 breadcrumb: true
