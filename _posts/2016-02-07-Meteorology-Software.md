@@ -1,7 +1,7 @@
 ---
 layout: page
 sidebar: right
-subheadline: Tips
+subheadline: Notebook
 title: "Meteorology/Climatology related software"
 excerpt: "Software for Meteorology, Climate and Atmospheric Sciences..."
 teaser: "Computer Tools for Meteorology, Climate and Atmospheric Sciences..."
