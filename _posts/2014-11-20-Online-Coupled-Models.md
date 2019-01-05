@@ -1,7 +1,7 @@
 ---
 layout: page
 sidebar: right
-subheadline: Overview
+subheadline: Notebook
 title:  "Online Coupled Models"
 teaser: "Short introduction to Online Coupled Models."
 breadcrumb: true
