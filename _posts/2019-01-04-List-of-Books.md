@@ -2,9 +2,9 @@
 layout: page
 sidebar: right
 subheadline: Tips
-title: "List of Books"
+title: "Key references in Atmospheric Sciences"
 excerpt: "Step by Step "
-teaser: "List of books of mathematics, physics, climate sciences that are interenting to read"
+teaser: "List of references of mathematics, physics, climate sciences and meteoroligy that I found interesting to read and study. A small overview of each book is given. A subjective level of difficulty of each book is indicated from 1 (easy) to 5 (difficult)."
 breadcrumb: true
 tags: [books]
 categories:
@@ -19,12 +19,14 @@ List of Books
 
 ### Maths and Statistics
 
-- **A user's guide to measure theoretic probability** (*David Pollard*): This book has more text than usual in probability related books, but still is a quite serious book. It covers many aspects like fourier transforms, brownian motion or hilbert spaces from the point of view of measure theory.
-- **Probability, an introduction** (*G. Grimmett and D. Welsh*)
+- [****] **A user's guide to measure theoretic probability** (*David Pollard*): This book has more text than usual in probability related books, but still is a quite serious book. It covers many aspects like fourier transforms, brownian motion or hilbert spaces from the point of view of measure theory.
+- [****] **Probability, an introduction** (*G. Grimmett and D. Welsh*)
 
 ### Atmospheric Physics-Chemistry
 
-- ***Modeling of Atmospheric Chemistry*** (*Brasseur and Jacob*): Not yet a classical book on the field but close to be. It covers almost all the topics related with modeling chemistry in the atmosphere. Althoghh some topics are note treated deeply, the books has a very good balance between rigurosity, readability and details. It is avery good book to introduce (and more than introduce) the reader on this research field.
+- [***] ***Modeling of Atmospheric Chemistry*** (*Brasseur and Jacob*): Not yet a classical book on the field but close to be. It covers almost all the topics related with modeling chemistry in the atmosphere. Althoghh some topics are note treated deeply, the books has a very good balance between rigurosity, readability and details. It is avery good book to introduce (and more than introduce) the reader on this research field.
+
+
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
