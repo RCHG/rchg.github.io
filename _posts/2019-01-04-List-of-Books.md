@@ -4,7 +4,7 @@ sidebar: right
 subheadline: Tips
 title: "Key references in Atmospheric Sciences"
 excerpt: "Step by Step "
-teaser: "List of references of mathematics, physics, climate sciences and meteoroligy that I found interesting to read and study. A small overview of each book is given. A subjective level of difficulty of each book is indicated from 1 (easy) to 5 (difficult)."
+teaser: "List of references of mathematics, physics, climate sciences and meteoroligy that I found interesting to read and study. A small overview of each book is given. A subjective level of difficulty of each book is indicated from 1 (easy) to 5 (difficult) with+ symbol."
 breadcrumb: true
 tags: [books]
 categories:
