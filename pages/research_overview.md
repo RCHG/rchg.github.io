@@ -101,6 +101,7 @@ A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Boven
 - [EGU 2014](http://presentations.copernicus.org/EGU2014-12970_presentation.pdf): *Comparing Ensemble Kalman filter and 4DVar data assimilation systems for CO2 flux inversions*. Arne Babenhauserheide, P. Hahne, **R. Checa-Garcia**, F. Klappenbach, S. Dohe, S. Basu, S. Houweling, W. Peters, A. Butz. [^1]
 - [HITRAN 2014 Conference](http://www.cfa.harvard.edu/HITRAN/Download/Proceedings-2014.pdf):  *Remote Sensing of Greenhouse gases and their sources and sinks*. André Butz, Arne Babenhauserheide, Marco Bertleff , **Ramiro Checa-Garcia**, Philipp Hahne, Frank Hase, Friedrich Klappenbach, Julian Kostinek, Ilse Aben, Otto Hasekamp, Jochen Landgraf, Arno de Lange, André Galli, Sourish Basu.
 - [AGU-2014 Meeting](http://fallmeeting.agu.org/2014/files/2014/12/Friday-Daily-Newspaper.pdf): *Remote Sensing G3E–Geostationary Emission Explorer for Europe: mission concept*. T. Knigge, F. Schmuelling A. Butz, J. Orphal, H. Bovensmann, T. von Clarmann, F. Friedl-Vallon, F. Hase, **R Checa-Garcia**, G. Hechenblaikner
+{:.smallquote}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
@@ -139,7 +140,7 @@ Two different theories are used to understand the liquid-vapor interfaces: the V
 
 
 **Radiative Forcing and Climate Change**
-
+- Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database, *R Checa-Garcia*, MI Hegglin, D. Kinnison, D. Plummer, KP Shine **Geophysical Research Letters** 45 (7), Pages 3264
 - The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends, *R Checa-Garcia*, KP Shine, MI Hegglin, **Environmental Research Letters** 11 (9), 094018
 {:.smallquote}
 
@@ -181,6 +182,9 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 ---
 
 - **Atmospheric Sciences**
+	- *EGU Conference, April 2018*, Vienna (Austria). Talk.
+	- *CCMI Conference, April 2017*, Toulouse (France). Talk.
+	- *SMURPHS project Conference, May 2017*, SouthHampton (UK). Talk.
 	- *EGU Conference, April 2014*, Vienna (Austria). EGU2014-137. Additional author: Frank Hase.
 	- 13th. *Plinius Conference: Mediterranean Storms*, 7-9 Sep 2011 at CIMA, Savona (Italy),
 	- Workshop Water and Society, University of Grenoble, May 2011, *Summer Ecole of Physique, Les Houches (France)*.
