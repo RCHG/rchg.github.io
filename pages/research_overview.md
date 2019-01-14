@@ -185,7 +185,7 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 - **Atmospheric Sciences**
 	- *EGU Conference, April 2018*, Vienna (Austria). Talk.
 	- *CCMI Conference, April 2017*, Toulouse (France). Talk.
-	- *SMURPHS project Conference, May 2017*, SouthHampton (UK). Talk.
+	- *SMURPHS project Conference, May 2017*, Southampton (UK). Talk.
 	- *EGU Conference, April 2014*, Vienna (Austria). EGU2014-137. Additional author: Frank Hase.
 	- 13th. *Plinius Conference: Mediterranean Storms*, 7-9 Sep 2011 at CIMA, Savona (Italy),
 	- Workshop Water and Society, University of Grenoble, May 2011, *Summer Ecole of Physique, Les Houches (France)*.
