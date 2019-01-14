@@ -52,7 +52,7 @@ Currently, my main field of research is the climate response to several agents o
 ### Researcher: LSCE-CNRS
 
 
-
+---
 ### Researcher: University of Reading
 
 
@@ -66,12 +66,12 @@ The [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) ar
 - <div data-badge-type="1" data-doi="10.1002/2017GL076770" data-hide-no-mentions="true" class="altmetric-embed"></div>   *Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database*, **R Checa-Garcia**, MI Hegglin, D. Kinnison, D. Plummer, KP Shine 'Geophysical Research Letters' 45 (7), Pages 3264
 - <div data-badge-type="1" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>  *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
 {:.smallquote}
-
+---
 
 ### Researcher: Leibniz-Gemeinschaft 
 
 My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust emissions and transport based on simulated remote sensing images (in particular evaluate the role of mineralogy). In the 2015-Leipzig [Mineral Dust Conference](https://www.researchgate.net/publication/282665817_Sensitivity_Studies_of_MSG_products_with_COSMO-MUSCAT_and_RRTOV) was presented an overview of the steps of this research, where the two key components are: RRTOV and COSMO-MUSCAT.
-
+---
 ### Researcher: KIT
 
 The central goal of the project I am working is related with a consolidation of the ESA satellite Sentinel-5 requirements. This means a detailed study of the different error sources like instrumental, spectroscopy, forward models errors derived of an effective description of the atmosphere aerosols and cirrus. To be able to conduct this research I use state of the art retrieval algorithms (inverse problem and radiative transfer solver) with trial ensembles of geophysical scenarios. Additional aspects of the research are: evaluate the cloud cover with Meteosat datasets, integrate satellite products of MODIS and CALIPSO with datasets obtained from offline chemical transport model.
