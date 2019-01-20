@@ -72,4 +72,4 @@ The previous result can be also extended to cases in which the function $$f(x)$$
 
 $$C[x,f] = \int_{a}^{b}h(x,f,f')dx $$
 
-where the function $$h$$ and the value $C$ are both known. This problem can be resolved given the Theorem of Euler-Lagrange and the method of Lagrange Multipliers.
+where the function $$h$$ and the value $$C$$ are both known. This problem can be resolved given the Theorem of Euler-Lagrange and the method of Lagrange Multipliers.
