@@ -22,22 +22,12 @@ Pieces of Python code in Geosciences
 
 It is feasible to create a land-mask filter with Python based on the libraries:
 
-- [geopandas](https://wiki.haskell.org/Arrays)
-- [rasterio](https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial)
-- [affine](https://wiki.haskell.org/Numeric_Haskell:_A_Repa_Tutorial)
-- [xarray](https://guide.aelve.com/haskell/arrays-bpid18sd)
+- [geopandas](http://geopandas.org/)
+- [rasterio](https://rasterio.readthedocs.io/en/stable/)
+- [affine](https://github.com/sgillies/affine)
+- [xarray](http://xarray.pydata.org/en/stable/)
 
-import geopandas
-from rasterio import features
-from affine import Affine
-import numpy as np
-import xarray as xr
-
-**Arrays**
-
-Second task is to understand the specific type of array (and more advanced definitions like Repa)
-
-
+The library **geopandas** is need to read the shape-polygonal files downloaded from [naturalearthdata](http://www.naturalearthdata.com/downloads/). The combination of **rasterio** and **affine** allow us to translate that information to pre-defined grids, for which I use the library xarray. Xarray is also used to save the output as netcdf file. 
 
 {% highlight Python %}
 
@@ -98,6 +88,16 @@ ds.to_netcdf(name)
 ds.close()
 
 {% endhighlight %}
+
+## Wrap longitude of xarray from -180,180 to 0,360
+
+It is quite direct with the last versions of xarray library (>0.17 should work). If we have a data-array named **mydat** and if the longitude has is named as 'lon' then:
+
+{% highlight Python %}
+mydat = mydat.assign_coords(lon=(np.mod(mydat.lon, 360))).sortby('lon')
+{% endhighlight %}
+
+should be enough.
 
 
 <small markdown="1">[Up to table of contents](#toc)</small>
