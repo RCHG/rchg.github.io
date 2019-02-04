@@ -14,11 +14,20 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
+<section id="table-of-contents" class="toc">
+<div class="panel radius" markdown="1">
+#### Table of Contents
+{:.no_toc }
+*  TOC
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
 Pieces of Python code in Geosciences
 --------------------------------------
 
 
-## Create a Land and Ocean Masks Filters
+### Create a Land and Ocean Masks Filters
 
 It is feasible to create a land-mask filter with Python based on the libraries:
 
@@ -89,7 +98,7 @@ ds.close()
 
 {% endhighlight %}
 
-## Wrap longitude of xarray from -180,180 to 0,360
+### Wrap longitude of xarray from -180,180 to 0,360
 
 It is quite direct with the last versions of xarray library (>0.17 should work). If we have a data-array named **mydat** and if the longitude has is named as 'lon' then:
 
