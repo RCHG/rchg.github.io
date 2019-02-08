@@ -38,7 +38,7 @@ It is feasible to create a land-mask filter with Python based on the libraries:
 
 The library **geopandas** is need to read the shape-polygonal files downloaded from [naturalearthdata](http://www.naturalearthdata.com/downloads/). The combination of **rasterio** and **affine** allow us to translate that information to pre-defined grids, for which I use the library xarray. Xarray is also used to save the output as netcdf file. 
 
-{% highlight Python linenos=true %}
+{% highlight Python %}
 
 import geopandas
 from rasterio import features
