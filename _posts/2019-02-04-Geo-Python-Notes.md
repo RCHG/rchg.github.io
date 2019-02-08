@@ -116,17 +116,18 @@ Here we asume that we have an xarray DataArray with a time dimension and we aim 
 {% highlight Python %}
 
 # ncname is our initial netcdf-dataset
-# my_ini_yr, my_end_yr are initial and last year to include
+# ini_yr, end_yr are initial and last year to include as int values
 import pandas as pd
 import xarray as xr
 
 def is_within(year, syear1, syear2):
-    # This function will be used later to select a time interval between desired years.
+    # This function will be used later to select a time interval
+    # between desired years.
     return (year >= syear1) & (year <= syear2)
      
 # We open the dataset
 data_raw = xr.open_dataset(ncname)
-data_new = data_raw.sel(time=is_within(data_raw['time.year'], my_ini_yr, my_end_yr))
+data_new = data_raw.sel(time=is_within(data_raw['time.year'], ini_yr, end_yr))
 results = []
 labels = []
 for label, group in data.groupby('time.season'):
@@ -143,17 +144,18 @@ for a month by month dataset:
 {% highlight Python %}
 
 # ncname is our initial netcdf-dataset
-# my_ini_yr, my_end_yr are initial and last year to include
+# ini_yr, end_yr are initial and last year to include as int values
 import pandas as pd
 import xarray as xr
 
 def is_within(year, syear1, syear2):
-    # This function will be used later to select a time interval between desired years.
+    # This function will be used later to select a time 
+    # interval between desired years.
     return (year >= syear1) & (year <= syear2)
      
 # We open the dataset
 data_raw = xr.open_dataset(ncname)
-data_new = data_raw.sel(time=is_within(data_raw['time.year'], my_ini_yr, my_end_yr))
+data_new = data_raw.sel(time=is_within(data_raw['time.year'], ini_yr, end_yr))
 results = []
 labels = []
 for label, group in data.groupby('time.month'):
