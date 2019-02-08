@@ -38,7 +38,7 @@ It is feasible to create a land-mask filter with Python based on the libraries:
 
 The library **geopandas** is need to read the shape-polygonal files downloaded from [naturalearthdata](http://www.naturalearthdata.com/downloads/). The combination of **rasterio** and **affine** allow us to translate that information to pre-defined grids, for which I use the library xarray. Xarray is also used to save the output as netcdf file. 
 
-{% highlight Python %}
+{% highlight Python linenos=table %}
 
 import geopandas
 from rasterio import features
@@ -113,7 +113,7 @@ should be enough.
 
 Here we asume that we have an xarray DataArray with a time dimension and we aim to create a DataArray which is grouped by months or by seasons. 
 
-{% highlight Python %}
+{% highlight Python linenos=table %}
 
 # ncname is our initial netcdf-dataset
 # ini_yr, end_yr are initial and last year to include as int values
@@ -141,7 +141,7 @@ new_dataset.close()
 
 for a month by month dataset:
 
-{% highlight Python %}
+{% highlight Python linenos=table %}
 
 # ncname is our initial netcdf-dataset
 # ini_yr, end_yr are initial and last year to include as int values
