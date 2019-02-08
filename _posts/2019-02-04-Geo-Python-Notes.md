@@ -109,6 +109,63 @@ mydat = mydat.assign_coords(lon=(np.mod(mydat.lon, 360))).sortby('lon')
 should be enough.
 
 
+### Create a netcdf with monthly or seasonaly datasets
+
+Here we asume that we have an xarray DataArray with a time dimension and we aim to create a DataArray which is grouped by months or by seasons. 
+
+{% highlight Python %}
+
+# ncname is our initial netcdf-dataset
+# my_ini_yr, my_end_yr are initial and last year to include
+import pandas as pd
+import xarray as xr
+
+def is_within(year, syear1, syear2):
+    # This function will be used later to select a time interval between desired years.
+    return (year >= syear1) & (year <= syear2)
+     
+# We open the dataset
+data_raw = xr.open_dataset(ncname)
+data_new = data_raw.sel(time=is_within(data_raw['time.year'], my_ini_yr, my_end_yr))
+results = []
+labels = []
+for label, group in data.groupby('time.season'):
+    labels.append(label)
+    results.append(group.mean(dim='time'))
+
+new_dataset = xr.concat(results, pd.Index(labels, name='season'))
+new_dataset.to_netcdf(ncname.replace('.nc','_seasonal.nc'))
+new_dataset.close()
+{% endhighlight %}
+
+for a month by month dataset:
+
+{% highlight Python %}
+
+# ncname is our initial netcdf-dataset
+# my_ini_yr, my_end_yr are initial and last year to include
+import pandas as pd
+import xarray as xr
+
+def is_within(year, syear1, syear2):
+    # This function will be used later to select a time interval between desired years.
+    return (year >= syear1) & (year <= syear2)
+     
+# We open the dataset
+data_raw = xr.open_dataset(ncname)
+data_new = data_raw.sel(time=is_within(data_raw['time.year'], my_ini_yr, my_end_yr))
+results = []
+labels = []
+for label, group in data.groupby('time.month'):
+    labels.append(label)
+    results.append(group.mean(dim='time'))
+
+new_dataset = xr.concat(results, pd.Index(labels, name='month'))
+new_dataset.to_netcdf(ncname.replace('.nc','_seasonal.nc'))
+new_dataset.close()
+{% endhighlight %}
+
+
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
