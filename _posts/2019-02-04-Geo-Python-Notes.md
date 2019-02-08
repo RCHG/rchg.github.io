@@ -100,7 +100,7 @@ ds.close()
 
 ### Wrap longitude of xarray from -180,180 to 0,360
 
-It is quite direct with the last versions of xarray library (>0.17 should work). If we have a data-array named **mydat** and if the longitude has is named as 'lon' then:
+It is quite direct with the last versions of xarray library (>0.11 should work). If we have a data-array named **mydat** and if the longitude has is named as 'lon' then:
 
 {% highlight Python %}
 mydat = mydat.assign_coords(lon=(np.mod(mydat.lon, 360))).sortby('lon')
