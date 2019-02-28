@@ -36,7 +36,7 @@ University of Reading I investigate of the radiative forcing of GHGs, offline es
   <div class="small-4 columns">
   {% include alert info=' <a href="/research/overview/">Research Overview</a>' %}</div>
   <div class="small-4 columns">
-  {% include alert info=' <a href="/research/my-codes/">My own sofware codes</a>' %}</div>
+  {% include alert info=' <a href="/research/my-codes/">Software codes</a>' %}</div>
   <div class="small-4 columns">
   {% include alert info=' <a href="/research/resources/">Resources and Links</a>' %}</div>
 </div>
