@@ -360,7 +360,7 @@ function toggleSettings(){
 -->
 </script>
 <style type="text/css">
-body { background-color: white; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.2; padding: 1em; color: #2E2E2E; margin: auto 2em; }
+body { background-color: white; font-family: Arial, sans-serif; font-size: 10px; line-height: 1.1; padding: 1em; color: #2E2E2E; margin: auto 2em; }
 
 form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
 span#searchstat {padding-left: 1em;}
@@ -400,7 +400,6 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 	tr { page-break-inside: avoid; }
 }
 </style>
-</head>
 <body>
 
 <form action="" id="quicksearch">
