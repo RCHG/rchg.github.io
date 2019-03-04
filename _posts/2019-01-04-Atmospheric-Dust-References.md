@@ -14,7 +14,7 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
-
+<head>
 <script type="text/javascript">
 <!--
 // QuickSearch script for JabRef HTML export 
@@ -400,6 +400,7 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 	tr { page-break-inside: avoid; }
 }
 </style>
+</head>
 <body>
 
 <form action="" id="quicksearch">
