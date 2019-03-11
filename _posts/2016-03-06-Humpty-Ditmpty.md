@@ -44,8 +44,7 @@ en dinámicas asertivas, integradoras y con capacidad de auto-critica. Voy a int
 
 Eva es nueva en un grupo de trabajo sobre, por ejemplo, transporte urbano. Ella esta ilusionada por participar pero es insegura, tímida. Esto se une al hecho de que el resto de personas se conocen bien entre ellas y tienen sus propias dinámicas de trabajo y prioridades, que ella no conoce y sobre las que nadie la instruye. Nadie ha informado de manera nítida sobre que orientaciones son las mejores a la hora de definir tareas o realizar propuestas. Sin embargo, ella se decide a intervenir con alguna propuesta que inmediatamente es bloqueada por
 'estar totalmente fuera de lugar' en palabras de otro miembro del grupo (sin dar ademas la oportunidad de explicación adicional). Posteriormente, a ella le cuesta más intervenir, su voz es entrecortada y tiene dificultades para expresarse por miedo a otra censura similar. En un subgrupo, se la apoda 'la tartamuda' y empiezan los comentarios entre ellos:
-'has visto que nos ha retrasado la discusión', 'no aporta nada relevante', 'se la ve descentrada, no se porque se ha metido en este grupo'. Esto acaba como por osmosis trasladándose al resto del grupo. Las personas con más experiencia dicen que
-'mejor no darle comba' y mejor 'seguirle la corriente' pero no darle espacio claro y
+'has visto que nos ha retrasado la discusión', 'no aporta nada relevante', 'se la ve descentrada, no se porque se ha metido en este grupo'. Esto acaba como por osmosis trasladándose al resto del grupo. Las personas que se atribuyen más experiencia dicen que 'mejor no darle comba' y mejor 'seguirle la corriente' pero no darle espacio claro y
 funcional a sus propuestas: 'vaya a ser que se crezca y nos amarge el grupo'.
 {:.smallblock}
 
