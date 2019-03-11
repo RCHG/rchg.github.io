@@ -53,8 +53,8 @@ funcional a sus propuestas, 'vaya a ser que se crezca y nos amarge el grupo'.
 
 Aquí obviamente Eva no es una persona toxica para el grupo, solo tímida y puede que inexperta. Inicialmente yo evaluaria que
 más bien parece que el grupo está siendo toxico para Eva. En lugar de asertivamente comentar y hablar
-con ella, apoyar o tutorizar su colaboración, se crean una división entre el 'nosotros'
-y el 'ella', que al final se traslada al comportamiento interpersonal de exclusión y que afectara negativamente a Eva.
+con ella, apoyar o tutorizar su colaboración, se crea una división entre el *nosotros*
+y el *ella*[^2], que al final se traslada al comportamiento interpersonal de exclusión y que afectara negativamente a Eva.
 
 Acerca de si este proceso es accidental o inocente... Puede no serlo, diría que usualmente no lo es. Veamos un poco más de la experiencia de Eva.
 
@@ -78,4 +78,5 @@ Es viable que ante propuestas que no les gustan contestan con afirmaciones del t
 Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius Castoriadis en uno de sus trabajos y con la que empezaba este escrito. Creo que entender los elementos adecuados de trabajo en comun, y la experiencia previa positiva en grupos asertivos e integradores permite evitar y diagnosticar este tipo de comportamientos/practicas. Personalmente,  aunque existen multitud de materiales en la red, he visto util el libro [*Guia para realizar asambleas* de Ecologistas en Accion](https://tienda.ecologistasenaccion.org/editorial/1152-libro-guia-para-realizar-asambleas.html).
 
 
-[^1]:  La Racionalidad Del Capitalismo (La realidad efectiva de la economía capitalista).*Cornelius Castoriadis*.
+[^1]: La Racionalidad Del Capitalismo (La realidad efectiva de la economía capitalista). *Cornelius Castoriadis*.
+[^2]: La politica de la experiencia. *R.D. Laing*. En este libro Laing comenta de manera muy interesante, las características del nosotros y como se opone al ellos, además del conjunto de métodos de negación y mistificación de la experiencia que finalmente permiten y dan soporte a dicha división.
