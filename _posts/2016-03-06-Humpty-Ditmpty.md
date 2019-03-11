@@ -72,4 +72,4 @@ Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius 
 
 
 [^1]: La Racionalidad Del Capitalismo: La realidad efectiva de la economía capitalista, (*Cornelius Castoriadis*).
-[^2]: La politica de la experiencia, (*R.D. Laing*).. En este libro Laing comenta de manera muy interesante, las características del nosotros y como se opone al ellos, además del conjunto de métodos de negación y mistificación de la experiencia que finalmente permiten y dan soporte a dicha división.
+[^2]: La politica de la experiencia, (*R.D. Laing*). En este libro Laing comenta de manera muy interesante, las características del nosotros y como se opone al ellos, además del conjunto de métodos de negación y mistificación de la experiencia que finalmente permiten y dan soporte a dicha división.
