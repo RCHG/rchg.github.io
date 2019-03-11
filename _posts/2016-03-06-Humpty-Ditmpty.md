@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 subheadline: Essay
 title:  "Humpty Ditmpty"
-teaser: "...sobre la dinamica grupol"
+teaser: "...sobre dinamicas de grupo"
 breadcrumb: true
 tags:
     - Stories
@@ -16,7 +16,7 @@ header:
 ---
 
 > La cuestión es, dice Alicia, si pueden hacer que las palabras puedan significar tantas cosas diferentes.
-> La cuestión es, contestó Humpty  Ditmpty, quien va a ser el dueño, eso es todo.
+> La cuestión es, contestó Humpty  Ditmpty, quien va a ser el dueño, eso es todo [^1].
 
 
 
@@ -81,3 +81,4 @@ Ante propuestas que no les gustan contestan con afirmaciones del tipo (normalmen
 Esta forma de comportamiento grupal puede darse en personas que buscan dirigir grupos soterradamente,
 nos lo aclara... una cita retomada por Cornelius Castoriadis en uno de sus trabajos y con la que empezaba este escrito.
 
+[^1]:  La Racionalidad Del Capitalismo (La realidad efectiva de la economía capitalista).*Cornelius Castoriadis*.
