@@ -39,7 +39,7 @@ aquellas otras personas que, no fomentando el disenso, fomentan la desconfianza 
 personas concretas del grupo: motes, apodos, juicios de valor sin dialogo (prejuicios) que
 suelen dar lugar a mecanismos de exclusión explícitos o velados. Es la presencia de este
 tipo de mecanismos lo que es posible evitar mediante el desarrollo y la profundización
-en dinámicas asertivas, integradoras y con capacidad de auto-critica. Voy a intentar ilustrarlo con un ejemplo, imaginemos esta situación:
+en dinámicas asertivas, integradoras y con capacidad de auto-critica. Voy a intentar ilustrarlo con un ejemplo, imaginemos esta situación[^3]:
 
 
 Eva es nueva en un grupo de trabajo sobre, por ejemplo, transporte urbano. Ella esta ilusionada por participar pero es insegura, tímida. Esto se une al hecho de que el resto de personas se conocen bien entre ellas y tienen sus propias dinámicas de trabajo y prioridades, que ella no conoce y sobre las que nadie la instruye. Nadie ha informado de manera nítida sobre que orientaciones son las mejores a la hora de definir tareas o realizar propuestas. Sin embargo, ella se decide a intervenir con alguna propuesta que inmediatamente es bloqueada por
@@ -72,3 +72,4 @@ Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius 
 
 [^1]: La Racionalidad Del Capitalismo: La realidad efectiva de la economía capitalista, (*Cornelius Castoriadis*).
 [^2]: La politica de la experiencia, (*R.D. Laing*). En este libro Laing comenta de manera muy interesante, las características del nosotros y como se opone al ellos, además del conjunto de métodos de negación y mistificación de la experiencia que finalmente permiten y dan soporte a dicha división.
+[^3]: No es un caso real, pero si aglutina expresiones, actitudes y sucesos de casos reales.
