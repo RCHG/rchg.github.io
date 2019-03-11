@@ -41,20 +41,14 @@ tipo de mecanismos lo que es posible evitar mediante el desarrollo y la profundi
 en dinámicas asertivas, integradoras y con capacidad de auto-critica. Voy a intentar ilustrarlo con un ejemplo, imaginemos esta situación:
 
 
-Eva, es nueva en un grupo de trabajo sobre por ejemplo transporte urbano. Ella esta ilusionada por participar pero es insegura, tímida. Esto se une al hecho de que el resto de personas se conocen bien entre ellas y tienen sus propias dinámicas de trabajo y prioridades, que ella
-no conoce y sobre las que nadie la instruye. Nadie ha informado de manera nítida sobre que orientaciones son las mejores a la hora de
-definir tareas o realizar propuestas. Sin embargo, ella se decide a intervenir con alguna propuesta que inmediatamente es bloqueada por
-'estar totalmente fuera de lugar' en palabras de otro miembro del grupo (sin dar la oportunidad de explicación adicional). Posteriormente, a ella le cuesta más intervenir, su voz es entrecortada y tiene dificultades para expresarse por miedo
-a otra censura similar. En un subgrupo, se la apoda 'la tartamuda' y empiezan los comentarios
+Eva es nueva en un grupo de trabajo sobre, por ejemplo, transporte urbano. Ella esta ilusionada por participar pero es insegura, tímida. Esto se une al hecho de que el resto de personas se conocen bien entre ellas y tienen sus propias dinámicas de trabajo y prioridades, que ella no conoce y sobre las que nadie la instruye. Nadie ha informado de manera nítida sobre que orientaciones son las mejores a la hora de definir tareas o realizar propuestas. Sin embargo, ella se decide a intervenir con alguna propuesta que inmediatamente es bloqueada por
+'estar totalmente fuera de lugar' en palabras de otro miembro del grupo (sin dar ademas la oportunidad de explicación adicional). Posteriormente, a ella le cuesta más intervenir, su voz es entrecortada y tiene dificultades para expresarse por miedo a otra censura similar. En un subgrupo, se la apoda 'la tartamuda' y empiezan los comentarios entre ellos:
 'has visto que nos ha retrasado la discusión', 'no aporta nada relevante', 'se la ve descentrada, no se porque se ha metido en este grupo'. Esto acaba como por osmosis trasladándose al resto del grupo. Las personas con más experiencia dicen que
 'mejor no darle comba' y mejor 'seguirle la corriente' pero no darle espacio claro y
-funcional a sus propuestas, 'vaya a ser que se crezca y nos amarge el grupo'.
+funcional a sus propuestas: 'vaya a ser que se crezca y nos amarge el grupo'.
 {:.smallblock}
 
-Aquí obviamente Eva no es una persona toxica para el grupo, solo tímida y puede que inexperta. Inicialmente yo evaluaria que
-más bien parece que el grupo está siendo toxico para Eva. En lugar de asertivamente comentar y hablar
-con ella, apoyar o tutorizar su colaboración, se crea una división entre el *nosotros*
-y el *ella*[^2], que al final se traslada al comportamiento interpersonal de exclusión y que afectara negativamente a Eva. Acerca de si este proceso es accidental o inocente... Puede no serlo, diría que usualmente no lo es. Veamos un poco más de la experiencia de Eva.
+Aquí obviamente Eva no es una persona toxica para el grupo, solo tímida y puede que inexperta. Inicialmente yo evaluaria que más bien parece que el grupo está siendo toxico para Eva. En lugar de asertivamente comentar y hablar con ella, apoyar o tutorizar su colaboración, se crea una división entre el *nosotros* y el *ella*[^2], que al final se traslada al comportamiento interpersonal de exclusión y que afectara negativamente a Eva. Acerca de si este proceso es accidental o inocente... Puede no serlo, diría que usualmente no lo es. Veamos un poco más de la experiencia de Eva.
 
 Eva toma finalmente la decisión de dejar el grupo de trabajo. En la siguiente reunión,
 el subgrupo, que la apodaba 'la tartamuda', comenta 'inocentemente' cuan
@@ -62,18 +56,18 @@ agradable es ahora el grupo sin la presencia de Eva, que 'era un inconveniente m
 una ayuda'. Dentro del grupo general, este subgrupo ha ganado relevancia y peso.
 {:.smallblock}
 
-Me pregunto si es posible que determinados comportamientos sirvan para ganar control o dirigir de manera efectiva el trabajo de un grupo. E imagino que un individuo o un conjunto de ellos podría operar mediante comentarios de la forma (que personalmente he observado en bastantes ocasiones).
+Me pregunto si es posible que determinados comportamientos sirvan para ganar control o dirigir de manera efectiva el trabajo de un grupo por parte de determinados miembros. E imagino que un individuo o un conjunto de ellos podría operar mediante comentarios de la forma (que personalmente he observado en varias ocasiones):
 
 - Menos mal que cundió la cordura y no se aprobó la propuesta de 'menganita' que estaba muy claro que no tiene ni idea.
-- Al final parece que el grupo mostró cierta madurez con el consenso (el que este subgrupo proponía)
+- Al final parece que el grupo mostró cierta madurez con el consenso (*justamente el que este subgrupo proponía*)
 - No entiendo como el grupo hace caso a 'fulanito', que solo ha venido tres veces cuando yo vengo siempre.
 
 Es viable que ante propuestas que no les gustan contestan con afirmaciones del tipo (normalmente en conversaciones al margen del grupo general y sin discusion con la persona que presenta la propuesta):
 
-- Eso no tiene sentido, va a ser un trabajo para nada. No puede hacerse (no critica o aporta nada concreto)
+- Eso no tiene sentido, va a ser un trabajo para nada. No puede hacerse (*vemos que no critica o aporta nada concreto*)
 - Este grupo no esta para estas historias, no he puesto toda la energía en esto para que al final hagamos eso.
 
-Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius Castoriadis en uno de sus trabajos y con la que empezaba este escrito. Creo que entender los elementos adecuados de trabajo en comun, y la experiencia previa positiva en grupos asertivos e integradores permite evitar y diagnosticar este tipo de comportamientos/practicas. Personalmente,  aunque existen multitud de materiales en la red, he visto util el libro [*Guia para realizar asambleas* de Ecologistas en Accion](https://tienda.ecologistasenaccion.org/editorial/1152-libro-guia-para-realizar-asambleas.html).
+Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius Castoriadis en uno de sus trabajos y con la que empezaba este escrito (y como ante comportamientos confusos, afirmaciones sobre personas, conviene preguntarse quien gana con todo esto). Creo que entender los elementos adecuados de trabajo en comun, y la experiencia previa positiva en grupos asertivos e integradores permite evitar y diagnosticar este tipo de comportamientos/practicas. Personalmente,  aunque existen multitud de materiales en la red, he visto util el libro [*Guia para realizar asambleas* de Ecologistas en Accion](https://tienda.ecologistasenaccion.org/editorial/1152-libro-guia-para-realizar-asambleas.html).
 
 
 [^1]: La Racionalidad Del Capitalismo (La realidad efectiva de la economía capitalista). *Cornelius Castoriadis*.
