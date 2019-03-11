@@ -53,7 +53,7 @@ Aquí obviamente Eva no es una persona toxica para el grupo, solo tímida y pued
 Eva toma finalmente la decisión de dejar el grupo de trabajo. En la siguiente reunión,
 el subgrupo, que la apodaba 'la tartamuda', comenta 'inocentemente' cuan
 agradable es ahora el grupo sin la presencia de Eva, que 'era un inconveniente más que
-una ayuda'. Dentro del grupo general, este subgrupo ha ganado relevancia y peso.
+una ayuda'. Dentro del grupo general, este subgrupo ha ganado relevancia y peso[^4].
 {:.smallblock}
 
 Me pregunto si es posible que determinados comportamientos sirvan para ganar control o dirigir de manera efectiva el trabajo de un grupo por parte de determinados miembros. E imagino que un individuo o un conjunto de ellos podría operar mediante comentarios de la forma (que personalmente he observado en varias ocasiones):
@@ -73,3 +73,4 @@ Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius 
 [^1]: La Racionalidad Del Capitalismo: La realidad efectiva de la economía capitalista, (*Cornelius Castoriadis*).
 [^2]: La politica de la experiencia, (*R.D. Laing*). En este libro Laing comenta de manera muy interesante, las características del nosotros y como se opone al ellos, además del conjunto de métodos de negación y mistificación de la experiencia que finalmente permiten y dan soporte a dicha división.
 [^3]: No es un caso real, pero si aglutina expresiones, actitudes y sucesos de casos reales.
+[^4]: Esta situacion me recuerda el analisis etnografico del *chivo espiatorio*, que, por ejemplo, Iñaki Piñuel comenta en los cursos que imparte sobre acoso moral. Esta misma idea, de la constitucion de un grupo mediante el uso del *chivo espiatorio* tambien es comentada por Z. Baumann, en su libro *En busca de la politica*.
