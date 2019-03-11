@@ -54,9 +54,7 @@ funcional a sus propuestas, 'vaya a ser que se crezca y nos amarge el grupo'.
 Aquí obviamente Eva no es una persona toxica para el grupo, solo tímida y puede que inexperta. Inicialmente yo evaluaria que
 más bien parece que el grupo está siendo toxico para Eva. En lugar de asertivamente comentar y hablar
 con ella, apoyar o tutorizar su colaboración, se crea una división entre el *nosotros*
-y el *ella*[^2], que al final se traslada al comportamiento interpersonal de exclusión y que afectara negativamente a Eva.
-
-Acerca de si este proceso es accidental o inocente... Puede no serlo, diría que usualmente no lo es. Veamos un poco más de la experiencia de Eva.
+y el *ella*[^2], que al final se traslada al comportamiento interpersonal de exclusión y que afectara negativamente a Eva. Acerca de si este proceso es accidental o inocente... Puede no serlo, diría que usualmente no lo es. Veamos un poco más de la experiencia de Eva.
 
 Eva toma finalmente la decisión de dejar el grupo de trabajo. En la siguiente reunión,
 el subgrupo, que la apodaba 'la tartamuda', comenta 'inocentemente' cuan
