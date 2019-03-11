@@ -59,7 +59,7 @@ una ayuda'. Dentro del grupo general, este subgrupo ha ganado relevancia y peso.
 Me pregunto si es posible que determinados comportamientos sirvan para ganar control o dirigir de manera efectiva el trabajo de un grupo por parte de determinados miembros. E imagino que un individuo o un conjunto de ellos podría operar mediante comentarios de la forma (que personalmente he observado en varias ocasiones):
 
 - Menos mal que cundió la cordura y no se aprobó la propuesta de 'menganita' que estaba muy claro que no tiene ni idea.
-- Al final parece que el grupo mostró cierta madurez con el consenso (*justamente el que este subgrupo proponía*)
+- Al final parece que el grupo mostró cierta madurez con su decision (*justamente la decision que este subgrupo proponía, con lo que se identifica madurez con su propuesta*)
 - No entiendo como el grupo hace caso a 'fulanito', que solo ha venido tres veces cuando yo vengo siempre.
 
 Es viable que ante propuestas que no les gustan contestan con afirmaciones del tipo (normalmente en conversaciones al margen del grupo general y sin discusion con la persona que presenta la propuesta):
