@@ -64,7 +64,7 @@ Me pregunto si es posible que determinados comportamientos sirvan para ganar con
 
 Es viable que ante propuestas que no les gustan contestan con afirmaciones del tipo (normalmente en conversaciones al margen del grupo general y sin discusion con la persona que presenta la propuesta):
 
-- Eso no tiene sentido, va a ser un trabajo para nada. No puede hacerse (*vemos que no critica o aporta nada concreto*)
+- Eso no tiene sentido, va a ser un trabajo para nada. No puede hacerse (*vemos que solo critica acriticamente y aporta nada concreto*)
 - Este grupo no esta para estas historias, no he puesto toda la energía en esto para que al final hagamos eso.
 
 Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius Castoriadis en uno de sus trabajos y con la que empezaba este escrito (y como ante comportamientos confusos, afirmaciones sobre personas, conviene preguntarse quien gana con todo esto). Creo que entender los elementos adecuados de trabajo en comun, y la experiencia previa positiva en grupos asertivos e integradores permite evitar y diagnosticar este tipo de comportamientos/practicas. Personalmente,  aunque existen multitud de materiales en la red, he visto util el libro [*Guia para realizar asambleas* de Ecologistas en Accion](https://tienda.ecologistasenaccion.org/editorial/1152-libro-guia-para-realizar-asambleas.html).
