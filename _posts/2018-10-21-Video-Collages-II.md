@@ -16,8 +16,7 @@ header:
 ---
 
 Otros dos audio-collages que hice hace tiempo para una asamblea de barrio en Arganzuela. Giraban entorno a tematicas 
-discutidas en la asamblea e intentaban sintetizar contenidos y sensibilidades durante el 2011. En este caso coincidiendo con una charla
-del sociologo Z. Bauman con la ayuda de la locutora Noelia.
+discutidas en la asamblea e intentaban sintetizar contenidos y sensibilidades durante el 2011. En este caso coincidiendo con una charla del sociologo Z. Bauman con la ayuda de la locutora Noelia.
 
 <p align="center">
 <iframe width="425" height="325" src="https://www.youtube.com/embed/Vyb1BBScas4" frameborder="3" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
