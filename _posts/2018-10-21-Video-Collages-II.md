@@ -25,3 +25,4 @@ discutidas en la asamblea e intentaban sintetizar contenidos y sensibilidades du
 <p align="center">
 <iframe width="425" height="325" src="https://www.youtube.com/embed/DPtWNGAW7_M" frameborder="3" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
+
