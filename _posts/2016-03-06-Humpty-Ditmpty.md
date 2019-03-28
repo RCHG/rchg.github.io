@@ -71,9 +71,9 @@ Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius 
 
 ## Sobre la comunicación
 
-Me parece interesante el apartado sobre comunicación en las notas [^5]. Indica como 'comunicar' es participar en lo común, y me parece relevante como indica que se comunican dos aspectos: información y emociones, aunque el mensaje viene en un pack completo, es decir, los aspectos relacionados con las ideas u opiniones suelen tener una carga emocional y de afecto importante. Normalmente que se transmite lleva una carga afectiva, ideológica además de una intencionalidad. Dicha intencionalidad puede estar enfocada a promover una acción, generar un debate o intercambiar datos/afectos. Mi experiencia es que hay frecuentemente dificultades en la comunicación porque no se diferencian estos aspectos (o incuso se tiene noción de su existencia). De este modo una comunicación focalizada a generar afectos, digamos solidaridad, puede ser entendida como inútil, poco apropiada, errónea, en el contexto de generar acciones concretas. Muchos problemas concretos provienen de no entender que, como y con que objetivos se realiza una intervención en el contexto de una organización. Los autores[^5] indican que se debe considerar al mismo nivel de importancia la comunicación de sentimientos y la comunicación como ejercicio del poder colectivo. Me gustaría indicar aquí varios aspectos indicados por los autores, y definidos como *estrategias comunicativas de poder* que buscan cierta imposición de ideas u objetivos individuales al grupo. Tomo algunas frases literales de esta referencia:
+Me parece interesante el apartado sobre comunicación en las notas [^5]. Indica como 'comunicar' es participar en lo común, y me parece relevante como indica que se comunican dos aspectos: información y emociones, aunque el mensaje viene en un pack completo, es decir, los aspectos relacionados con las ideas u opiniones suelen tener una carga emocional y de afecto importante. Normalmente que se transmite lleva una carga afectiva, ideológica además de una intencionalidad. Dicha intencionalidad puede estar enfocada a promover una acción, generar un debate o intercambiar datos/afectos. Mi experiencia es que hay frecuentemente dificultades en la comunicación porque no se diferencian estos aspectos (o incuso se tiene noción de su existencia). De este modo una comunicación focalizada a generar afectos, digamos solidaridad, puede ser entendida como inútil, poco apropiada, errónea, en el contexto de generar acciones concretas. Muchos problemas concretos provienen de no entender que, como y con que objetivos se realiza una intervención en el contexto de una organización. Los autores[^5] indican que se debe considerar al mismo nivel de importancia la comunicación de sentimientos y la comunicación como ejercicio del poder colectivo. Me gustaría indicar aquí varios aspectos indicados por los autores, y definidos como *estrategias comunicativas de poder* que buscan cierta imposición de ideas u objetivos individuales al grupo. Tomo algunas frases literales de esta referencia[^5]:
 
-- *Violencia simbolica*: Puede definirse como aquel proceso comunicativo
+*Violencia simbolica*: Puede definirse como aquel proceso comunicativo
 donde alguien con autoridad logra imponer significados e imponerlos
 como legítimos, ocultando las relaciones de fuerza que permiten esa
 imposición. Por ejemplo, cuando se usa el modo colectivo (nosotros, todos,
@@ -85,10 +85,10 @@ estigmatiza y estereotipa a individuos y sus caracteres (como estrategia de
 desvalorizar sus ideas, por ejemplo, diciendo «las nenas»); cuando se
 dirigen burlas, insultos, desvalorizaciones, acusaciones y agresiones
 simbólicas de todo tipo; o cuando no se permite hablar o conversar a otras
-personas mediante interrupciones, cortes, ruídos o prohibiciones.
+personas mediante interrupciones, cortes, ruídos o prohibiciones[^5].
 {:.smallblock}
 
-- *Argumentos de autoridad*: Pueden definirse como aquellas
+*Argumentos de autoridad*: Pueden definirse como aquellas
 afirmaciones que surgen en un proceso de argumentación, discusión y
 persuasión, con la característica de reforzar la autoridad de quien habla
 por medio de referirla a una autoridad superior pero indiscutible, de la
@@ -97,10 +97,10 @@ es muy frecuente con el uso de referencias y apoyos en la ciencia, en la ley,
 en la costumbre o en cualquier afirmación que se presente como
 indiscutible y dogmática («estoy totalmente seguro...»). Otro ejercicio de
 autoridad por medio de expresiones comunicativas es la insistencia en
-tener la última palabra.
+tener la última palabra[^5].
 {:.smallblock}
 
-- *Contradicciones y paradojas*. Las contradicciones pueden revelar
+*Contradicciones y paradojas*. Las contradicciones pueden revelar
 estrategias de adaptación a cualquier situación adversa (afirmando una
 cosa primero y la contraria después, con la misma intensidad y sin rubor
 ni mención de la mudanza) o ser síntomas de la capacidad de imponer una
@@ -115,10 +115,10 @@ tipo del mentiroso que dice «yo miento» (o, por ejemplo, «todo esto que
 digo no tiene sentido, no me hagais caso»). Las paradojas pragmáticas son
 las más violentas: «sé espontáneo», «te ordeno que no me obedezas»,
 «debes actuar por ti misma», «si hablas no hay quien te aguante y si no
-hablas no sé lo que piensas», etc.
+hablas no sé lo que piensas», etc.[^5]
 {:.smallblock}
 
-- *Comunicación no verbal*. La incomunicación puede tanto
+*Comunicación no verbal*. La incomunicación puede tanto
 mantener situaciones de dominación como crearlas, según en qué
 momentos y cómo sea manejada. El secreto, guardarse información y
 monopolizarla, son las formas genéricas que se pueden producir
@@ -132,7 +132,7 @@ posiciones dirigistas o privilegiadas (visibles y desde las que se puede
 ver), facilitando su probabilidad de ser impuesta por encima de otras. El
 uso del cuerpo, los gestos y la vestimenta también pueden ser controlados
 en vistas a reforzar expresivamente las argumentaciones enfrentadas (con
-puñetazos en la mesa, por ejemplo).
+puñetazos en la mesa, por ejemplo)[^5].
 {:.smallblock}
 
 ## Técnicas de evaluación
