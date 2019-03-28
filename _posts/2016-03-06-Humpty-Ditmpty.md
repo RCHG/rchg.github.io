@@ -145,7 +145,7 @@ De entre las muchas técnicas que ha para evaluar la marcha de una reunión, una
 [^3]: No es un caso real, pero si aglutina expresiones, actitudes y sucesos de casos reales.
 [^4]: Esta situacion me recuerda el analisis etnografico del *chivo expiatorio*, que, por ejemplo, Iñaki Piñuel comenta en los cursos que imparte sobre acoso moral. Esta misma idea, de la constitucion de un grupo mediante el uso del *chivo espiatorio* tambien es comentada por Z. Baumann, en su libro *En busca de la politica*.
 [^5]: Asambleas y Reuniones: Metodologias de autoorganizacion, Ana Rosa Lorenzo y Miguel Martinez Lopez (Traficantes de Suenos).
-[^6]: [educarueca](http://www.educarueca.org/IMG/pdf/Funcionamiento_de_grupo.pdf)
+[^6]: Este es un material didactico que aun no pude evaluar: [educarueca](http://www.educarueca.org/IMG/pdf/Funcionamiento_de_grupo.pdf)
 
 
 
