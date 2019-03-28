@@ -19,7 +19,7 @@ header:
 > - La cuestión es, contestó Humpty  Ditmpty, quien va a ser el dueño, eso es todo [^1].
 >
 
-## Algunos problemas relacionados con la 'toxicidad'
+## Sobre la 'toxicidad'
 
 Los procesos de trabajo en grupo suelen requerir ciertas habilidades que no
 necesariamente han sido convenientemente desarrolladas, integradas o implementadas.
