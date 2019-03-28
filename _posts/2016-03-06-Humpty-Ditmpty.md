@@ -135,6 +135,9 @@ en vistas a reforzar expresivamente las argumentaciones enfrentadas (con
 puñetazos en la mesa, por ejemplo).
 {:.smallblock}
 
+## Tecnicas de evaluacion
+
+De entre las muchas tecnicas que ha para evaluar la marcha de una reunion, una asamblea o un grupo de trabajo, la *cronica periodistica* es una de mis favoritas (vease, [^5] pagina 90), ya que permite de un modo ameno y divertido comunicar tanto hechos concretos de la dinamica de dicha reunion, como aspectos relacionados con la creacion de afectos, complicidades y solidaridad. Existe otras dinamicas de auto-evaluacion desde las mas intelectuales *rueda de evaluaciones*, *juego del espejo* hasta otras que implican el movimiento y la expresion corporal (que tambien forma parte de las formas de comunicacion dentro de una organizacion).
 
 [^1]: La Racionalidad Del Capitalismo: La realidad efectiva de la economía capitalista, (*Cornelius Castoriadis*).
 [^2]: La politica de la experiencia, (*R.D. Laing*). En este libro Laing comenta de manera muy interesante, las características del nosotros y como se opone al ellos, además del conjunto de métodos de negación y mistificación de la experiencia que finalmente permiten y dan soporte a dicha división.
