@@ -85,7 +85,7 @@ estigmatiza y estereotipa a individuos y sus caracteres (como estrategia de
 desvalorizar sus ideas, por ejemplo, diciendo «las nenas»); cuando se
 dirigen burlas, insultos, desvalorizaciones, acusaciones y agresiones
 simbólicas de todo tipo; o cuando no se permite hablar o conversar a otras
-personas mediante interrupciones, cortes, ruídos o prohibiciones[^5].
+personas mediante interrupciones, cortes, ruídos o prohibiciones.
 {:.smallblock}
 
 *Argumentos de autoridad*: Pueden definirse como aquellas
@@ -97,7 +97,7 @@ es muy frecuente con el uso de referencias y apoyos en la ciencia, en la ley,
 en la costumbre o en cualquier afirmación que se presente como
 indiscutible y dogmática («estoy totalmente seguro...»). Otro ejercicio de
 autoridad por medio de expresiones comunicativas es la insistencia en
-tener la última palabra[^5].
+tener la última palabra.
 {:.smallblock}
 
 *Contradicciones y paradojas*. Las contradicciones pueden revelar
@@ -115,7 +115,7 @@ tipo del mentiroso que dice «yo miento» (o, por ejemplo, «todo esto que
 digo no tiene sentido, no me hagais caso»). Las paradojas pragmáticas son
 las más violentas: «sé espontáneo», «te ordeno que no me obedezas»,
 «debes actuar por ti misma», «si hablas no hay quien te aguante y si no
-hablas no sé lo que piensas», etc.[^5]
+hablas no sé lo que piensas», etc.
 {:.smallblock}
 
 *Comunicación no verbal*. La incomunicación puede tanto
@@ -132,7 +132,7 @@ posiciones dirigistas o privilegiadas (visibles y desde las que se puede
 ver), facilitando su probabilidad de ser impuesta por encima de otras. El
 uso del cuerpo, los gestos y la vestimenta también pueden ser controlados
 en vistas a reforzar expresivamente las argumentaciones enfrentadas (con
-puñetazos en la mesa, por ejemplo)[^5].
+puñetazos en la mesa, por ejemplo).
 {:.smallblock}
 
 ## Técnicas de evaluación
