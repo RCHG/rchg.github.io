@@ -67,7 +67,7 @@ Es viable que ante propuestas que no les gustan contestan con afirmaciones del t
 - Eso no tiene sentido, va a ser un trabajo para nada. No puede hacerse (*vemos que solo critica acriticamente y aporta nada concreto*)
 - Este grupo no esta para estas historias, no he puesto toda la energía en esto para que al final hagamos eso.
 
-Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius Castoriadis en uno de sus trabajos y con la que empezaba este escrito (y como ante comportamientos confusos, afirmaciones sobre personas sin dialogo con ellas, y situaciones similares conviene preguntarse quien gana con todo esto). Creo que entender los elementos adecuados de trabajo en comun, y la experiencia previa positiva en grupos asertivos e integradores permite evitar y diagnosticar este tipo de comportamientos y de practicas. Personalmente,  aunque existen multitud de materiales en la red[^6], he visto util el libro [*Guia para realizar asambleas* de Ecologistas en Accion](https://tienda.ecologistasenaccion.org/editorial/1152-libro-guia-para-realizar-asambleas.html). Existe tambien un libro gratuito en [traficantes de suenos](https://www.traficantes.net/sites/default/files/pdfs/Asambleas%20y%20reuniones-TdS.pdf)
+Esta forma de comportamiento grupal me recuerda una cita retomada por Cornelius Castoriadis en uno de sus trabajos y con la que empezaba este escrito (y como ante comportamientos confusos, afirmaciones sobre personas sin dialogo con ellas, y situaciones similares conviene preguntarse quien gana con todo esto). Creo que entender los elementos adecuados de trabajo en comun, y la experiencia previa positiva en grupos asertivos e integradores permite evitar y diagnosticar este tipo de comportamientos y de practicas. Personalmente,  aunque existen multitud de materiales en la red[^6], he visto util el libro [*Guia para realizar asambleas* de Ecologistas en Accion](https://tienda.ecologistasenaccion.org/editorial/1152-libro-guia-para-realizar-asambleas.html). Existe tambien un libro publicado por Traficantes de Suenos[^5].
 
 ## Sobre la comunicación
 
@@ -144,7 +144,7 @@ De entre las muchas técnicas que ha para evaluar la marcha de una reunión, una
 [^2]: La politica de la experiencia, (*R.D. Laing*). En este libro Laing comenta de manera muy interesante, las características del nosotros y como se opone al ellos, además del conjunto de métodos de negación y mistificación de la experiencia que finalmente permiten y dan soporte a dicha división.
 [^3]: No es un caso real, pero si aglutina expresiones, actitudes y sucesos de casos reales.
 [^4]: Esta situacion me recuerda el analisis etnografico del *chivo expiatorio*, que, por ejemplo, Iñaki Piñuel comenta en los cursos que imparte sobre acoso moral. Esta misma idea, de la constitucion de un grupo mediante el uso del *chivo espiatorio* tambien es comentada por Z. Baumann, en su libro *En busca de la politica*.
-[^5]: Asambleas y Reuniones: Metodologias de autoorganizacion, Ana Rosa Lorenzo y Miguel Martinez Lopez (Traficantes de Suenos).
+[^5]: Asambleas y Reuniones: Metodologias de autoorganizacion, Ana Rosa Lorenzo y Miguel Martinez Lopez (Traficantes de Suenos). Actualizacion (2019-04): Esta online gratuito [en este link](https://www.traficantes.net/sites/default/files/pdfs/Asambleas%20y%20reuniones-TdS.pdf)
 [^6]: Este es un material didactico que aun no pude evaluar: [educarueca](http://www.educarueca.org/IMG/pdf/Funcionamiento_de_grupo.pdf)
 
 
