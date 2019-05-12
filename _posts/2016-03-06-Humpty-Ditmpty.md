@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 subheadline: Essay
 title:  "Humpty Ditmpty"
-teaser: "...sobre dinamicas de grupo"
+teaser: "...sobre dinámicas de grupo"
 breadcrumb: true
 tags:
     - Stories
