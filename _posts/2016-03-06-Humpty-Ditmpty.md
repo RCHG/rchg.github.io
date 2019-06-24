@@ -15,9 +15,9 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
->  - La cuestión es, dice Alicia, si pueden hacer que las palabras puedan significar tantas cosas diferentes.
->  - La cuestión es, contestó Humpty  Ditmpty, quien va a ser el dueño, eso es todo [^1].
->
+La cuestión es, dice *Alicia*, si pueden hacer que las palabras puedan significar tantas cosas diferentes.
+La cuestión es, contestó *Humpty  Ditmpty*, **quien va a ser el dueño**, eso es todo [^1].
+{:.smallblock}
 
 ## Sobre la 'toxicidad'
 
