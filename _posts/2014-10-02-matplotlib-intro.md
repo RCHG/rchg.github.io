@@ -16,7 +16,7 @@ header:
 
 
 
-> This post has a list of tiny matplotlib tips. There is a lot of indications on internet discussing about *how to do things with matplotlib*. Here, are written few cases to don't forget about them!
+> This post has a list of tiny matplotlib tips. There is a lot of indications on internet discussing about *how to do things with matplotlib*. Here, are written few cases to don't forget about them! Some implementations might be changes for new versions of matplotlib (after v3 ahead).
 
 ### How to Change the fonts
 
