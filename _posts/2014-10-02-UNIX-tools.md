@@ -22,11 +22,11 @@ header:
 </div>
 
 
-> This post just collects a list of shorts tips related with UNIX terminal tools. To extract information of a file, to find specific archives, etc ...
+> This post collects a list of shorts tips related with UNIX terminal tools. To extract information of a file, to find specific archives, etc ...
 
 ### awk and pr
 
-**AWK** (or **gawk**) is a quite powerful line command, here I will just comment an example of how to combine it with **pr**. The **pr** command is useful to, for example, create a file with two columns from two previous one column files (or more complex operations).
+**AWK** (or **gawk**) is a quite powerful line command. This is an example of how to combine it with **pr**. The **pr** command is useful to, for example, create a file with two columns from two previous one column files (or more complex operations).
 
 The next example is based on a very simple file **test-file.dat**
 
@@ -56,6 +56,19 @@ pr -m -t -s\ COL2_last COL3_last
 {% highlight bash %}
 cut -f 
 cut -c 129 file.txt > new_file.txt
+{% endhighlight %}
+
+### Soft filelinks
+
+{% highlight bash %}
+ln -s orginal_filename  newsoftlink_filename
+{% endhighlight %}
+
+### jobs
+
+Gives a list of those processes in background in the current shell session
+{% highlight bash %}
+jobs
 {% endhighlight %}
 
 
