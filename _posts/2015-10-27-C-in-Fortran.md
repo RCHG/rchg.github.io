@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Using C procedures in a Fortran code"
 teaser: "C and Fortran together"
 breadcrumb: true
-tags: [Scientific-computing, Fortran, C/C++]
+tags: [scientific-computing, fortran, C/C++]
 categories:
     - computing-blog
 header:
@@ -15,7 +15,12 @@ author: ramiro_chg
 ---
 
 
-> Here I described the inter-operability between C and Fortran
+> Here I described the inter-operability between C and Fortran.
+
+**Common terminology**
+The global framework to call methods/functions from one language in other is named: *foreign function interface (FFI)*, and the process *binding*.
+{:.smallblock}
+
 
 The interoperability is possible in Fortran 2003 as it incorporates an specific module called ISO_C_BINDING that ensures a correct use of the C intrinsic types.
 
