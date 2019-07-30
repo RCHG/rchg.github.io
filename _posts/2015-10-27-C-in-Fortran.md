@@ -18,13 +18,12 @@ author: ramiro_chg
 > Here I described the inter-operability between C and Fortran.
 
 **Common terminology**
-The global framework to call methods/functions from one language in other is named: *foreign function interface (FFI)*, and the process *binding*.
+The global framework to call methods/functions from one language in other is named: *foreign function interface (FFI)*, and the process *binding*. Nowadays, this is a commom procedure to use libraries that we need but are not yet developed for our prefered language. 
 {:.smallblock}
 
+The interoperability is possible in Fortran 2003 as it incorporates an specific module called **ISO_C_BINDING** that ensures a correct use of the C intrinsic types.
 
-The interoperability is possible in Fortran 2003 as it incorporates an specific module called ISO_C_BINDING that ensures a correct use of the C intrinsic types.
-
-Also we can have a interoperability of derived types:
+Also we can have a interoperability of *derived types*:
 
 {% highlight fortran %}
 use iso_c_binding
@@ -45,7 +44,7 @@ with the above code we can inter-operate with a typical C code:
   } my_c_type;
 {% endhighlight %}
 
-However we can also have a procedure inter-operations. For example in Fortran we can make,
+However, we can also have a procedure inter-operations. For example in Fortran we can make,
 
 {% highlight fortran %}
 use iso_c_binding
