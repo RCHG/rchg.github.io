@@ -6,7 +6,7 @@ title: "Matplotlib Tips"
 excerpt: "Matplotlib intro and tips"
 teaser: "Matplotlib intro and tips"
 breadcrumb: true
-tags: [Scientific-computing, Visualization, Python]
+tags: [scientific-computing, visualization, python]
 categories:
     - computing-blog
 header:
