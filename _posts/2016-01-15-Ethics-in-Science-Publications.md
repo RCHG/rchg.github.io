@@ -15,6 +15,8 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
+List resources about *Ethics in Scientific Publications*:
+
 ### Resources
 
 - [Publishing Ethics Pack of Elsevier](https://www.elsevier.com/editors/publishing-ethics/perk)
