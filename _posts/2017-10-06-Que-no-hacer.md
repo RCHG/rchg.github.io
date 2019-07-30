@@ -2,8 +2,8 @@
 layout: page
 sidebar: right
 subheadline: Essay
-title:  "Intimidacion... que no hacer"
-teaser: "Un caso paradigmatico"
+title:  "Intimidación... qué no hacer"
+teaser: "Un caso paradigmático"
 breadcrumb: true
 tags:
     - Stories
@@ -11,7 +11,7 @@ tags:
 categories:
     - personal-blog
 header:
-    title: "R. Checa-Garcia webpage |  Un caso... paradigmatico"
+    title: "R. Checa-Garcia webpage |  Un caso... paradigmático"
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
@@ -22,7 +22,7 @@ a las alumnas y a los alumnos durante unas practicas y son atendidos individualm
 hace una serie de comentarios 'poco apropiados' a la estudiante, que inmediatamente se siente mal e
 intimidada. Los siguientes días aparece decaída e incluso un día una compañera la ve
 llorando en el baño. Esta información llega a la tutora que decide tener una reunión con
-la estudiante. Ella le relata lo sucedido, y la tutora fija una reunión, ella como tutora
+la estudiante. Ella le relata lo sucedido, y la tutora fija una reunión, ella, como tutora,
 estará presente. Así el asistente y la alumna aclararan de forma distendida el
 'malentendido'.
 
