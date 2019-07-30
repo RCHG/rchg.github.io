@@ -5,7 +5,7 @@ subheadline: Tips
 title: "Python PDF: reportlab"
 teaser: "An example of how to use reportlab library"
 breadcrumb: true
-tags: [Scientific-computing, Visualization, Python]
+tags: [scientific-computing, visualization, python]
 categories:
     - computing-blog
 header:
