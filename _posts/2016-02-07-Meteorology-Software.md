@@ -44,7 +44,7 @@ header:
 - [IRIS](http://scitools.org.uk/iris/) A python library for Meteorology and Climatology. Iris provides a community-driven Python library for analysing and visualising meteorological and oceanographic data sets. It reads and writes (CF-)netCDF, GRIB, and PP files. It can be used to create graphs and maps via integration with matplotlib and cartopy. This library relies on the idea of a cube that represents the climate variables under analysis, it is a concept similar to named-arrays used by xarray but with xarray aimes to apply to a broader context. 
 - [matplotlib](http://matplotlib.org) Althought it is not specific of atmospheric sciences, it is broadly used due to its versatily.
 - [cartopy](https://scitools.org.uk/cartopy/docs/latest/) Based on matplotlib, it is a library to plot geographical maps, and it is close related with IRIS (it is created also by MetOffice of UK) although it is not dependent on IRIS library.
-- [ESMValTool](https://www.esmvaltool.org/) A tool whose focus is to perform standard cross-comparisions between models and also with observations. Althought based on Python it has an interface to use methods from ncl and R language.
+- [ESMValTool](https://www.esmvaltool.org/) A tool whose focus is to perform standard cross-comparisions between models and also with observations. Althought based on Python it has an interface to use methods from ncl and R language. Relies in IRIS library.
 {:.smallquote}
 
 #### Libraries
