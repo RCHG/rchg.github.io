@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Linear Algebra and Computing"
 teaser:  "Scientific Computing and Linear Algebra"
 breadcrumb: true
-tags: [Math, Programming]
+tags: [math, programming]
 categories:
     - computing-blog
 header:
@@ -27,7 +27,7 @@ author: ramiro_chg
 
 ### Introduction
 
-This post is dedicated to several linear algebra properties that are relevant for scientific programming. 
+This post just remember several linear algebra properties that are relevant for scientific programming. 
 
 ### Reducible Matrix
 
