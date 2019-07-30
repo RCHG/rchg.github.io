@@ -6,7 +6,7 @@ title: "Meteorology/Climatology related software"
 excerpt: "Software for Meteorology, Climate and Atmospheric Sciences..."
 teaser: "Computer Tools for Meteorology, Climate and Atmospheric Sciences..."
 breadcrumb: true
-tags: [Linux, Debian]
+tags: [linux, debian, software, meteorology]
 categories:
     - computing-blog
 header:
@@ -41,12 +41,15 @@ header:
 - [Ferret](http://www.ferret.noaa.gov/Ferret/) It is also a widely used tool for plotting and visualizing climate datasets. It also has a python wrapper. More information can be found in their NOAA webpage. 
 - [ncview](http://meteora.ucsd.edu/~pierce/ncview_home_page.html) Traditional simple, fast and easy viewer of netcdf files. While is not suited for high quality plots still is very useful for quick analysis.
 - [ncl](http://www.ncl.ucar.edu/overview.shtml) It is a script language specifically designed by NCAR/UCAR for plotting climate and meteorological datasets. It has also additional libraries to interacts with python. 
-- [IRIS](http://scitools.org.uk/iris/) A python library for Meteorology and Climatology. Iris provides a community-driven Python library for analysing and visualising meteorological and oceanographic data sets. It reads and writes (CF-)netCDF, GRIB, and PP files. It can be used to create graphs and maps via integration with matplotlib and cartopy.
+- [IRIS](http://scitools.org.uk/iris/) A python library for Meteorology and Climatology. Iris provides a community-driven Python library for analysing and visualising meteorological and oceanographic data sets. It reads and writes (CF-)netCDF, GRIB, and PP files. It can be used to create graphs and maps via integration with matplotlib and cartopy. This library relies on the idea of a cube that represents the climate variables under analysis, it is a concept similar to named-arrays used by xarray but with xarray aimes to apply to a broader context. 
 - [matplotlib](http://matplotlib.org) Althought it is not specific of atmospheric sciences, it is broadly used due to its versatily.
+- [cartopy](https://scitools.org.uk/cartopy/docs/latest/) Based on matplotlib, it is a library to plot geographical maps, and it is close related with IRIS (it is created also by MetOffice of UK) although it is not dependent on IRIS library.
+- [ESMValTool](https://www.esmvaltool.org/) A tool whose focus is to perform standard cross-comparisions between models and also with observations. Althought based on Python it has an interface to use methods from ncl and R language.
 {:.smallquote}
 
 #### Libraries
 
+- [xarray](http://xarray.pydata.org/en/stable/) Very useful library to process the netcdf files commonly used on climate sciences. It is a library under development but currently it is very usable. Relies in the idea of create *named-arrays* directly derived from the netcdf files in such way that the data-analysis is much more easy. Shared ideas with Pandas.
 - [Magics++](https://software.ecmwf.int/wiki/display/MAGP/Magics)
 - [Libgrib-api-tools ](https://software.ecmwf.int/wiki/display/GRIB/Home) Library to encode and decode GRIB files.
 - [Zygrib](http://www.zygrib.org/)
