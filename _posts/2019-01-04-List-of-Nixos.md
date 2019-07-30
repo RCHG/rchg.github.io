@@ -6,7 +6,7 @@ title: "Key references of Nixos"
 excerpt: "Step by Step "
 teaser: "List of references to understand NixOS, Nix and nixpkgs, that I found interesting to read and study."
 breadcrumb: true
-tags: [books]
+tags: [nixos, linux, functional-languages]
 categories:
     - computing-blog
 header:
