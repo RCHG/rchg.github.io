@@ -6,7 +6,7 @@ title:  "Data Assimilation Notebook"
 teaser: "Introduction to Data Assimilation in NWPM"
 breadcrumb: true
 tags:
-    - [Data Assimilation, NWPM]
+    - [data-assimilation, NWPM]
 categories:
     - science-blog
 header:
@@ -88,7 +88,7 @@ Given a set of N observations of two variables (x,y) and given a model y = f (x;
 
 However, when we try to extend these ideas to atmospheric models we have to confront strong difficulties. The atmospheric models are much more complex: first the dimension of the system is very large, the dynamics is not linear anymore, and even the system is undetermined as the dimension of x and y is very different. So we could try again a simple example from data analysis before try to introduce a method that could be used sucessfully to data assimilation in for example weather forecasting.
 
-### Data Analysis: tasting the problem [^5]
+### Data Analysis: teasting the problem [^5]
 
 A simple example of data assimilation derived from data analysis is given when *we have a scalar variable x and a single observation*. Now we could like to mix a background information with a given observation and estimate then a better value of a variable x. We introduce then the following expression;
 
@@ -96,11 +96,11 @@ $$x_{a} = x_{b} + W(x_{o}-x_{b}) $$
 
 where $$x_{a}$$ is the value *after the analysis*, $$x_{b}$$ is the value *before the analysis* (background), $$x_{o}$$ is the value of the single observation and $$W$$ is a weighting function to be calculated by the data analysis.
 
-If we define the error as the value minus the true value, then from the equation above we could write a relationship between errors rather than values (and our objective is minimize the errors);
+If we define the error as the estimated value minus the true value, then from the equation above we could write a relationship between errors rather than values (and our objective is minimize the errors);
 
 $$e_{a} = e_{b} + W(e_{o}-e_{b}) $$
 
-Still, to resolve the problem, we have to propose a value for $$W$$, we could proceed by performing an *ensemble average* (and then we are trying to understand the statistical properties in our data analysis). If our background, analysis and observation are unbiased the average of their errors is zero. If we will go back to the previous equation we can write,
+Still, to resolve the problem, we have to propose a value for $$W$$, we could proceed by performing an *ensemble average* (and then we are trying to understand the statistical properties in our data analysis). If our background, analysis and observation are unbiased then the average of their errors is zero. So, if we will go back to the previous equation we can write,
 
 $$e_{a}^{2} = [e_{b} + W(e_{o}-e_{b})]^{2} $$
 
@@ -114,7 +114,7 @@ $$x_{a} = x_{b} + \frac{E(e_{b}^{2})}{E(e_{o})^{2}+E(e_{b}^{2})}(x_{o}-x_{b}) $$
 
 Often the difference $$x_{o}-x_{b}$$ is named as additional information or innovation over the background. 
 
-The situation on the case of atmospheric models is more complicated because we have a model-grid and the observations are not exactly in our grid (or it is not necessary) and it is possible that we have a kind of heterogeneous sources with different error properties. This means that data assimilation in atmospheric sciences needs more sophisticated approaches.
+The situation on the case of atmospheric models is more complicated because we have a model-grid, and the observations are not exactly in our grid (or it is not necessary). Also it is possible that we have a kind of heterogeneous sources with different error properties. This means that data assimilation in atmospheric sciences needs sustancially more sophisticated approaches.
 
 ### Optimal Interpolation [^3] 
 
