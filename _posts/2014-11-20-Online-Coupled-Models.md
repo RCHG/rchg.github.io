@@ -6,7 +6,7 @@ title:  "Online Coupled Models"
 teaser: "Short introduction to Online Coupled Models."
 breadcrumb: true
 tags:
-    - [NWPM, Earth-Modeling, Atmospheric-Physics, ESM]
+    - [earth-modeling, atmospheric-physics, ESM]
 categories:
     - science-blog
 header:
