@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Centralized Version Control"
 teaser: "Version Control Notes: SVN"
 breadcrumb: true
-tags: [VCS, Scientific-computing, SVN]
+tags: [VCS, scientific-computing, SVN]
 categories:
     - computing-blog
 header:
