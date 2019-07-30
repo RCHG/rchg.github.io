@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Fortran 90 Notebook"
 teaser: "Overview"
 breadcrumb: true
-tags: [Scientific-computing, Fortran]
+tags: [scientific-computing, fortran]
 categories:
     - computing-blog
 header:
@@ -24,7 +24,7 @@ author: ramiro_chg
 </div>
 </section><!-- /#table-of-contents -->
 
-> This notes were possible by reading from several sources, but the book *Introduction to Programming with Fortran* [^1] was specifically useful because its large set of examples and progressive definitions. My first approach to Fortran 90 relies on the manual Physique Numérique[^2] that I recommend to those people interested in an introduction to Computational Physics based in Fortran.
+> This notes were possible by reading from several sources, but the book *Introduction to Programming with Fortran* [^1] was specifically useful because it has a large set of examples and progressive definitions. My first approach to Fortran 90 relies on the manual Physique Numérique[^2] that I recommend to those people interested in an introduction to Computational Physics based in Fortran.
 
 [^1]: Introduction to Programming with Fortran, *Ian Chivers and Jane Sleightholme*, Springer 2006.
 [^2]: Physique Numérique, Ph. Depondt, INSP and CNRS Université Pierre et Marie Curie, 2006.
@@ -37,6 +37,9 @@ author: ramiro_chg
 - **assumed-shape array**: it is a non-pointer(!) dummy argument array that takes its shape from the associated actual argument array (by actual I mean the array that is introduced or demanded by the main program when it is called the subprogram or procedure). It is interesting to combine this approach with the size() instrinc procedure that gives the actual size of an array. We then can obtain within the procedure the size of the array and use this integer value inside the subprogram. For example to allocate an intent(out) array with the correct dimensions.
 - **deferred-shape array**: is an allocatable array (it has the ALLOCATABLE attribute and a specified rank but their bounds are set by allocation or argument association) or array pointer.
 - **automatic array**: it is explicit-shape and *local*. It is usually in subprograms and the bounds are set when the subprogram is called
+
+*Note* here that how the arrays are implemented and defined in a specific programming language is crucial, as it is the main basic piece used to build all the scientific computations. It is illustrative to compare the evolution of the several arrays on the different languages: Fortran, Python, C. In particular, the several libraries on Haskell due to the central role that the type system has in this functional programming language.
+{.smallblock}
 
 #### Examples
 
