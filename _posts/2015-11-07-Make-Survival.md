@@ -5,7 +5,7 @@ subheadline: Notebook
 title:  "Introduction to make"
 teaser: "Survival guide to make"
 breadcrumb: true
-tags: [Scientific-computing, Make]
+tags: [scientific-computing, make]
 categories:
     - computing-blog
 header:
