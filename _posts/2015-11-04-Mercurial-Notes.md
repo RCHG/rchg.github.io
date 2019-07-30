@@ -3,9 +3,9 @@ layout: page
 sidebar: right
 subheadline: Notebook
 title: "Descentralized Version Control Notes"
-teaser: "Version Control Notes: Hg"
+teaser: "Version Control Notes: Mercurial"
 breadcrumb: true
-tags: [VCS, Scientific-computing, Hg, Mercurial]
+tags: [VCS, scientific-computing, mercurial]
 categories:
     - computing-blog
 header:
@@ -23,7 +23,7 @@ header:
 
 ### Introduction to Mercurial
 
-Here I will introduce a very basic use of Mercurial version control system (named Hg). Let's say that we are working on a document in LaTeX (a PhD dissertation, and article/paper, a report etc). First it is based on a local directory but we want to be able to track all the changes on the text (the evolution of the document). I recommend a this point to read the previous post about version control where is explained the basic terminology. So we are going to create a **repository** of Hg.
+Here I introduce a very basic use of Mercurial version control system (named Hg). Let's say that we are working on a document in LaTeX (a PhD dissertation, and article/paper, a report etc). First it is based on a local directory but we want to be able to track all the changes on the text (the evolution of the document). I recommend a this point to read the previous post about version control where is explained the basic terminology. So we are going to create a **repository** of Hg.
 
 {% highlight bash %}
 > mkdir /home/mrmagguu/my_document
