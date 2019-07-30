@@ -5,7 +5,7 @@ subheadline: Notebook
 title:  "Mie Scattering"
 teaser: "Introduction to Mie-Scattering applied to cloud droplets and aerosols"
 breadcrumb: true
-tags: [Radiative-Theory, Atmospheric-Physics]
+tags: [radiative-theory, atmospheric-physics]
 categories:
     - science-blog
 header:
