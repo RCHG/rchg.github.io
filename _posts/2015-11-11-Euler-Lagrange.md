@@ -5,7 +5,7 @@ subheadline: Notebook
 title:  "Euler-Lagrange Equation"
 teaser: "Introduction to Variational Calculus"
 breadcrumb: true
-tags: [radiative-Theory, atmospheric-physics]
+tags: [calculus-of-variations]
 categories:
     - science-blog
 header:
