@@ -21,6 +21,8 @@ collections:
         output: true
     personal-blog:
         output: true
+    Julia-blog:
+        output: true
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
 description: "Academic and personal webpage build with Jekyll on Github."
@@ -149,6 +151,15 @@ defaults:
       comments: false
       author: rchg     # Default author for posts
 
+  -
+    scope:
+      path: ""
+      type: Julia-blog
+    values:
+      show_meta: true   # Show metadata for all posts
+      # sidebar:        # Possible values › left, right › by default there will be no sidebar
+      comments: true
+      author: rchg     # Default author for posts
 
 
 #       _   __            _             __  _
