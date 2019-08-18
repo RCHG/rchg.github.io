@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: Notebook
-title:  "Julia Blog"
+title:  "Blog sobre programacion con Julia"
 teaser: "Experiencias programando con Julia"
 breadcrumb: true
 tags:
@@ -10,7 +10,7 @@ tags:
 categories:
     - Julia-blog
 header:
-    title: Julia Blog
+    title: Blog sobre programacion con Julia
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
@@ -64,6 +64,7 @@ representacion de mapas (geograficos).
 - Es posible usar representacion Unicode en el codigo, para variables, functiones etc, lo que
 agiliza y simplifica notablemente la notacion.
 - El codigo compilado es notablemente rapido, cercano a C/Fortran.
+
 
 
 
