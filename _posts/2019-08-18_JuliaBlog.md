@@ -8,7 +8,7 @@ breadcrumb: true
 tags:
     - [scientific-computing, Julia]
 categories:
-    - Julia-blog
+    - julia-blog
 header:
     title: Blog sobre programacion con Julia
     pattern: pattern_jquery-dark-grey-tile.png
