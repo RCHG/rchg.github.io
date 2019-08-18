@@ -1,0 +1,72 @@
+---
+layout: page
+sidebar: right
+subheadline: Notebook
+title:  "Julia Blog"
+teaser: "Experiencias programando con Julia"
+breadcrumb: true
+tags:
+    - [scientific-computing, Julia]
+categories:
+    - Julia-blog
+header:
+    title: Julia Blog
+    pattern: pattern_jquery-dark-grey-tile.png
+---
+
+**Resumen**
+Con este post, comienza un blog sobre Julia, un lenguaje de programacion relativamente reciente que 
+intenta dar una respuesta al llamado *problema de los dos lenguajes.*
+{:.smallblock}
+
+Mis dos herramientas hasta el momento para programar en entornos cientificos han sido Fortran 
+y Python, en principio ninguno me ha servido por si solo para resolver los problemas de calculo
+cientifico de mi dia a dia (aparte del uso de la shell, como bash, y programas puntuales en C).
+Mas alla de que los programas de climatologia y transferencia radiativa que uso estan en Fortran,
+la realidad es que parte de las librerias de Python en ultima instancia se basan en metodos en 
+Fortran o C para las partes de calculo intensivo: basta ver que parte de los metodos en scipy
+son wrappers a programas en Fortran/C. Con todo Python ha mejorado en los ultimos tiempos, y hay
+aproximaciones como PyPy, numba etc que intentan soslayar el *problema de los dos lenguajes*.
+
+De todos modos en mi experiencia programando en Python, desearia en multiples ocasiones tener varias
+de las siguientes posibilidades:
+
+- Compilar el codigo en lugar de ser *interpretado*
+- Poder definir los tipos asociados a las variables en lugar del tipado dinamico de Python.
+- Conservar, si es posible, una version interpretada que es util en situaciones particulares.
+- Seguir conservando la posibilidad de interactuar con codigo C o Fortran.
+- Forzar o posibilitar una programacion mas proxima a como se formulan las funciones en matematicas y dar la posibilidad de componer funciones/codigo de modo similar a como se hace en matematicas.
+
+Mi decision inicial fue Haskell, sobretodo por el ultimo punto, que aun considero la mejor opcion formal:
+es posible invocar **ghci** que permite una version interactiva, el sistema de tipos me parece ejemplar aunque
+requiere bastante esfuerzo habituarse. Permite usar functiones C/Fortran aunque no es particularmente sencillo,
+Sin embargo ha habido dos aspectos que han hecho que busque otras opciones:
+
+- Falta de un sistema amplio de paquetes para las tareas basicas: lectura de NetCDFs por ejemplo.
+- Muchas librerias para arrays, que poseen una curva de aprendizaje nada suave, ademas de no saber cual es la mejor opcion.
+- El sistema de paquetes: Cabal es en primera instancia un poco confuso (como lo fue en los inicios de python pypi)
+- Las librerias de representacion grafica no estan muy desarrolladas.
+
+En funcion de estas tres circustancias he buscado otras alternativas: rust, nim entre otros. Sin embargo,
+he optado por Julia:
+
+- Su sistema de paquetes es muy sencillo
+- Su documentacion es aun poco amplia pero con un rapido crecimiento y buena organizacion.
+- La curva de aprendizaje es rapida debido a una sintaxis sencilla.
+
+Ademas,
+
+- Es posible definir/fijar el tipo de las variables con notable flexibilidad (multiple dispach)
+- Las librerias de arrays y algebra lineal parecen bastante consolidadas 
+- La curva de aprendizaje es rapida debido a una sintaxis sencilla.
+- Hay bastantes opciones para la visualizacion aunque aun no hay una libreria consolidad para la
+representacion de mapas (geograficos).
+- Es posible usar representacion Unicode en el codigo, para variables, functiones etc, lo que
+agiliza y simplifica notablemente la notacion.
+- El codigo compilado es notablemente rapido, cercano a C/Fortran.
+
+
+
+
+
+
