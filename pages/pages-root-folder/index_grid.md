@@ -20,6 +20,9 @@ permalink: /noindex.html
 <div class="small-4 columns"><div style="background: #A1D044; height: 100px;"><a href="#" class="button">Codes</a>
 {% include list-posts entries='3' offset='1' category='computing-blog' %}
 </div></div>
+<div class="small-4 columns"><div style="background: #A1D044; height: 100px;"><a href="#" class="button">Julia</a>
+{% include list-posts entries='3' offset='1' category='Julia-blog' %}
+</div></div>
 <div class="small-4 columns"><div style="background: #EFC94C; height: 100px;"><a href="#" class="button">Reviews</a>
 {% include list-posts entries='3' offset='1' category='open letters' %}
 </div></div>
