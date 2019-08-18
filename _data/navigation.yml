@@ -36,12 +36,13 @@
     url: "blog/archive_science/"
   - title: Computing Blog
     url: "blog/archive_computing/"
+  - title: Julia Blog
+    url: "blog/archive_julia/"
   - title: "Blog Archive"
     url: "blog/archive/"
   - title: "Blog Tags"
     url: "blog/archive_tags/"
 
-    
 - title: Personal blog
   url: "blog/archive_personal/"
   side: left
