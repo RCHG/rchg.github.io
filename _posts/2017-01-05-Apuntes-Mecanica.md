@@ -39,6 +39,11 @@ y si consideramos que la masa de la particula no varia en el tiempo,
 
 $$\mathbf{F}=\frac{d\mathbf{p}}{dt}$$
 
+Hasta aqui no se ha hecho explicito que el vector de posicion se define respecto de un sistema de referencia, de esta manera el vector de posicion parte del origen de este sistema de coordenadas y termina en la posicion de la particula en el espacio (esto es, en esencia, lo que hacemos en la vida diaria para describir el movimiento de un objeto). 
 
+La siguiente definicion tipica es la del momento angular, que se define por el producto vectorial entre el vector de posicion y el momento cinetico.
 
+$$\mathbf{L}=\mathbf{r}x\mathbf{p}$$
+
+El momento angular depende del sistema de referencia tomado, de hecho, se nombra como momento 
 
