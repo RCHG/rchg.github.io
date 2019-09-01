@@ -35,7 +35,7 @@ posible aparicion de dinámicas grupales entorno
 a individuos o subgrupos concretos basadas en lo que un determinado conjunto
 de miembros ha predefinido como normativo, adecuado
 o conveniente (muy amenudo configurado en dinámicas internas que no son
-no explicitas). Es decir, una persona es calificada con miembros del grupo
+explicitas). Es decir, una persona es calificada con miembros del grupo
 como *toxica*. Cierto es, que dentro de las dinámicas de grupo, existen individuos que
 por sus características pueden ser tóxicos para trabajo efectivo del resto del grupo:
 aquellos que copan las discusiones, suman ruido y confusión a las decisiones y, en
