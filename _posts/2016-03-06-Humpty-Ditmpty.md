@@ -40,7 +40,7 @@ como *toxica*. Cierto es, que dentro de las dinámicas de grupo, existen individ
 por sus características pueden ser tóxicos para trabajo efectivo del resto del grupo:
 aquellos que copan las discusiones, suman ruido y confusión a las decisiones y, en
 consecuencia, retrasan los consensos. Otros factor de toxicidad puede ser
-volver reiterativamente sobre cuestiones ya debatidas impidiendo consolidad nuevas
+volver reiterativamente sobre cuestiones ya debatidas impidiendo consolidar nuevas
 propuestas.
 
 Igualmente, podríamos pensar si resultan tóxicas
