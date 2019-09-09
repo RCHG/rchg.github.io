@@ -33,11 +33,17 @@ breadcrumb: true
 
 ### General Overview
 
-Currently, my main field of research is the climate response to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid. Also I was teacher assistants of Physics (Laboratories of experimental physics) during two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
+My main field of research is the climate response to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid, wehere also I was teacher assistant on Laboraties of Experimental Physics during two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
 - Karlsruhe Institute of Technology (Germany), where I worked on ESA-Sentinel-5 and G3E projects (remote sensing of greenhouse gases).
 - The University of Reading, in collaboration with Keith Shine and M. Hegglin, where I studed the radiative forcing of several agents on the atmosphere, in particular Ozone.
-- Laboratory for Sciences of Climate and Environment (LSCE) were I work for the CNRS on a aerosol related research project, named CRESCENDO. 
+- Laboratory for Sciences of Climate and Environment (LSCE) were I work for the CNRS on the climate modelling of Earth System with a focus on natural aerosols.
 
+#### Participation in Projects
+
+- CRESCENDO: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
+- AerChemMIP: Aerosols and Chemistry Model Intercomparison Project 
+- AeroCOM Phase III: Aerosol Comparisons between Observations and Models
+- CCMI: Chemistry-Climate Model Initiative
 
 ### Scientific Interests
 
