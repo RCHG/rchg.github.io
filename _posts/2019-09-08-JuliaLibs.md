@@ -19,10 +19,9 @@ Lista con Librerias para Julia para computacion cientifica.
 {:.smallblock}
 
 
-|Name 		| Stars 	| Contributors 	| Downloads 	|	License  |	Docs | Repository |
-| --------| ------- | ------------- | ----------- | -------- | ----- | ---------- |
-|Name 		| Stars 	| Contributors 	| Downloads 	|	License  |	http://docs.juliaplots.org/latest/ | https://github.com/JuliaPlots/Plots.jl |
-|Name 		| Stars 	| Contributors 	| Downloads 	|	License  |	Docs |
+| Name 		| Purpose            |             | License      |	Docs | Repository |
+| ----------| ------------------ | ----------- | ------------ | -----| ---------- |
+|Plots.jl 	| Visualization     |              | Open-Source  | [docs](http://docs.juliaplots.org/latest/) | [github](https://github.com/JuliaPlots/Plots.jl) |
 
 
 
