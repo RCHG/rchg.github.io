@@ -23,7 +23,9 @@ localizaciones. Esto lleva a que los paquetes que instala esten contenidos en un
 especial llamado **/nix/store/**
 
 Dado que cada paquete en este directorio aparece con un *hash-name* del tipo:
+
 /nix/store/s4zia7hhqkin1di0f187b79sa2srhv6k-bash-4.2-p45/
+
 entonces es posible tener multiples versiones del mismo paquete en este directorio en teoria
 sin interferencias.
 
