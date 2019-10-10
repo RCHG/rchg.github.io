@@ -37,12 +37,30 @@ nueva que no se re-construyan seguirian functionando. Es reproducible, porque si
 volver al estado anterior del sistema si los paquetes previos no han sido eliminados por 
 el usuario.
 
-```
+El manejo basico de paquetes:
+
+{% highlight bash %}
 >  nix-env -i name             # instala un paquete
 >  nix-env --list-generations  # ve a lista de estados del sistema (generaciones)
 >  nix-env -q                  # lista los paquetes instalados que se llaman **derivations**
 >  nix-env --rollback          # vuelve al estado de una generacion atras
->  nix-env -G 3                # vuelve al estado de la generacion numero 3
-```
+>  nix-env -G 3                # vuelve al estado de la generacion numero 3> 
+{% endhighlight %}
+
+Para entender como se estructuran las dependencias en */nix/store* existe un comando:
+
+{% highlight bash %}
+>  nix-store -q --references `which hello`  # this will show the depedences of hello **on runtime**
+>  nix-store -q --referrers `which hello`   # this will show the paquetes que dependen de hello **on runtime**
+>  nix-store -q --tree `which hello`        # esto es todo el arbol de dependencias para crear hello
+{% endhighlight %}
+
+Lenguaje Nix
+------------
+
+Hasta el momento hemos visto solo nix como un comando shell que instala paquetes. En realidad, Nix es bastante mas,
+es un lenguaje de programacion para gestionar todos los aspectos de la creacion y uso de derivaciones.
+
+
 
 
