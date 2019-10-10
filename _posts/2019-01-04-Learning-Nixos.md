@@ -37,11 +37,12 @@ nueva que no se re-construyan seguirian functionando. Es reproducible, porque si
 volver al estado anterior del sistema si los paquetes previos no han sido eliminados por 
 el usuario.
 
+```
 >  nix-env -i name             # instala un paquete
 >  nix-env --list-generations  # ve a lista de estados del sistema (generaciones)
 >  nix-env -q                  # lista los paquetes instalados que se llaman **derivations**
->  nix-env -i name  # instala un paquete
->  nix-env -i name  # instala un paquete
-
+>  nix-env --rollback          # vuelve al estado de una generacion atras
+>  nix-env -G 3                # vuelve al estado de la generacion numero 3
+```
 
 
