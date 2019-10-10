@@ -33,6 +33,8 @@ Number of [+] indicate the difficulty on a scale of 1-5.
 ### Atmospheric Radiation
 - [+++] **A first course in Atmospheric Radiation** (*Grant W. Petty*): *Self-contained*.
 
+### Wind erosion and mineral dust aerosol
+- [+++] **Physics and modelling of wind erosion** (*Yaping Shao*): *Self-contained*.
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
