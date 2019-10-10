@@ -61,6 +61,65 @@ Lenguaje Nix
 Hasta el momento hemos visto solo nix como un comando shell que instala paquetes. En realidad, Nix es bastante mas,
 es un lenguaje de programacion para gestionar todos los aspectos de la creacion y uso de derivaciones.
 
+Asi el lenguaje nix es un leguaje de tipo funcional (solo posee expresiones, no statements), y sus variables son inmutables. 
+En ingles Nix es: a pure, lazy, functional language, strongly typed, but it's not statically typed.
+Esencialmente, escribimos expresiones que crean una derivacion que luego se construye con **nix-build** (un comando que lee
+el codigo de la derivacion y lo interpreta para crear luego el paquete).
+
+Podemos abrir en nuestra shell un entorno repl (como hay en Python, Haskell o Julia) que nos permite aprender a entender
+la sintaxis de Nix.
+
+Tipos basicos en Nix:
+- integer
+- floating point
+- string
+- path
+- boolean
+- null
+- lists
+- sets
+- functions
+
+Existen operadores basicos artimeticos con la sintaxis habitual para +, - etc . Division como existe el tipo path se usa '/ ' o bien la version functiona: 'builtins.div x y' que equivale a x/y (no son necesarios los parentesis). Tambien notar que 1-2 posee sentido (es -1) pero a-b seria el nombre de una variable. Si a y b son variables numericas a menos b seria 'a - b' con espacios.
+
+
+ - Strings o cadenas:
+   se especifican entre dos " (una de inicio otra de fin) o dos '' 
+ - Lists o listas:
+   pueden ser multi-tipo pero son inmutables
+ - Sets o diccionarios:
+   s = { foo = "bar"; a-b = "baz"; "123" = "num"; }
+   asi que: > s."123" devuelve "num"
+   Es posible definir sets de modo recursivo (al modo de suponer que un elemento es una funcion de una variable que
+   esta dada en un elemento previo):
+   { a = 3; b = a+4; }  esto da error (a no definido)
+   rec { a = 3; b = a+4; } esto da { a = 3; b = 7; }
+   
+If-then
+
+> if a > b then "yes" else "no"
+
+los operadores de comparacion son:  ||, && and ! (para booleans), y !=, ==, <, >, <=, >= para otros tipos con identidad y/o relacion de orden.
+
+Let define una variable de modo local 
+
+> let a = "foo"; in a
+ 
+
+Lazyness:
+
+> let a = builtins.div 4 0; b = 6; in b
+
+esto no da error ya que a nunca es evaluado (no se necesita en la expresion)
+
+
+
+
+
+
+
+
+
 
 
 
