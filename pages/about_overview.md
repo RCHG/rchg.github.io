@@ -88,7 +88,8 @@ Due to my professional trajectory my interest is also related with mathematical 
 </div>
   <div class="small-6 columns">
     {% include alert info=' <a href="/blog/archive_computing/">Computing Blog</a>' %}</div>
-
+  <div class="small-6 columns">
+  {% include alert info=' <a href="/blog/archive_julia/">Julia Blog</a>' %}</div>
 </div>
 
 
