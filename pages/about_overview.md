@@ -89,7 +89,7 @@ Due to my professional trajectory my interest is also related with mathematical 
 
 <div class="row">
 
-<div class="small-2 columns">
+<div class="small-6 columns">
 *Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (2018). **Geophysical Research Letters**, 45, 3264–3273.	
 </div>
 
