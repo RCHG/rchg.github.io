@@ -74,10 +74,10 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <div class="small-6 columns">
 
-	<div data-badge-type="donut" data-doi="10.1002/2017gl076770" data-hide-no-mentions="true" class="altmetric-embed"></div>
 
-	<div  data-badge-type="donut" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<div data-badge-popover="top" data-badge-type="donut" data-doi="10.1002/2017gl076770" data-hide-no-mentions="true" class="altmetric-embed"></div>
 
+<div data-badge-popover="top" data-badge-type="donut" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>
 </div>
 	
 <div class="small-6 columns">
