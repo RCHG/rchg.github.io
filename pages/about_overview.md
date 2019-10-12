@@ -73,7 +73,7 @@ Due to my professional trajectory my interest is also related with mathematical 
 <div class="row">
 	
 <div class="small-8 columns">	
-*Checa-Garcia, R., Hegglin, M. I. & Shine, K. P.* 2016 **Environ. Res. Lett.** 11 094018
+{*Checa-Garcia, R., Hegglin, M. I. & Shine, K. P.* 2016 **Environ. Res. Lett.** 11 094018}
 </div>
 
 <div class="small-2 columns">
@@ -88,7 +88,7 @@ Due to my professional trajectory my interest is also related with mathematical 
 <div class="row">
 
 <div class="small-8 columns">
-*Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (2018). **Geophysical Research Letters**, 45, 3264–3273.	
+{*Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (2018). **Geophysical Research Letters**, 45, 3264–3273.}	
 </div>
 
 <div class="small-2 columns">
