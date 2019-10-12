@@ -61,11 +61,9 @@ Due to my professional trajectory my interest is also related with mathematical 
 * American Meteorological Society
 * American Geophysical Union
 
-### Conceptual app of my research experience
-
 <figure>
 <a href="/images/SCIENCE_MINDmap.png"><img src="/images/SCIENCE_MINDmap.png"></a>
-	<figcaption><a title="Conceptual Mind-Map of my Research Background">Conceptual Mind-Map of my Research Background</a>.</figcaption>
+	<figcaption><a title="Conceptual Mind-Map of my Research Background">Conceptual Mind-Map of my Research Experience</a>.</figcaption>
 </figure>
 
 ### Links to relevant publications
