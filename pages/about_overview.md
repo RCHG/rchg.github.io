@@ -61,12 +61,20 @@ Due to my professional trajectory my interest is also related with mathematical 
 * American Meteorological Society
 * American Geophysical Union
 
-### Conceptual Map of my research background and experience
+### Conceptual app of my research experience
 
 <figure>
 <a href="/images/SCIENCE_MINDmap.png"><img src="/images/SCIENCE_MINDmap.png"></a>
 	<figcaption><a title="Conceptual Mind-Map of my Research Background">Conceptual Mind-Map of my Research Background</a>.</figcaption>
 </figure>
+
+### Links to few reviews
+
+[The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends ](https://rchg.github.io//science-blog/GRL-paper/)
+[Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database ](https://rchg.github.io//science-blog/ERL-Paper/)
+
+
+
 
 
 
