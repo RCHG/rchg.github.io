@@ -84,11 +84,11 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <span class="__dimensions_badge_embed__" data-id="pub.1014752738" data-legend="hover-bottom"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-[The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends ](https://rchg.github.io//science-blog/GRL-paper/)
+[The contribution of greenhouse gases...](https://rchg.github.io//science-blog/GRL-paper/)
 
 <span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>	
 
-[Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database ](https://rchg.github.io//science-blog/ERL-Paper/)
+[Historical Tropospheric and Stratospheric...](https://rchg.github.io//science-blog/ERL-Paper/)
 
 </div>
 
