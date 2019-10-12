@@ -14,8 +14,8 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
-Nix
-====
+# Nix
+
 
 Nix es un *package manager* que no asume informacion externa  sobre el estado del sistema.
 Es decir, que no asume que determinados recursos, ficheros etc van a estar en determinadas
@@ -57,8 +57,8 @@ Para entender como se estructuran las dependencias en */nix/store* existe un com
 >  nix-store -q --tree `which hello`        # esto es todo el arbol de dependencias para crear hello
 {% endhighlight %}
 
-Lenguaje Nix
-------------
+## Lenguaje Nix
+
 
 Hasta el momento hemos visto solo nix como un comando shell que instala paquetes. En realidad, Nix es bastante mas,
 es un lenguaje de programacion para gestionar todos los aspectos de la creacion y uso de derivaciones.
@@ -71,7 +71,8 @@ el codigo de la derivacion y lo interpreta para crear luego el paquete).
 Podemos abrir en nuestra shell un entorno repl (como hay en Python, Haskell o Julia) que nos permite aprender a entender
 la sintaxis de Nix.
 
-Tipos basicos en Nix:
+### Tipos basicos en Nix:
+
 - integer
 - floating point
 - string
@@ -83,7 +84,6 @@ Tipos basicos en Nix:
 - functions
 
 Existen operadores basicos artimeticos con la sintaxis habitual para +, - etc . Division como existe el tipo path se usa '/ ' o bien la version functiona: 'builtins.div x y' que equivale a x/y (no son necesarios los parentesis). Tambien notar que 1-2 posee sentido (es -1) pero a-b seria el nombre de una variable. Si a y b son variables numericas a menos b seria 'a - b' con espacios.
-
 
  - Strings o cadenas:
    se especifican entre dos " (una de inicio otra de fin) o dos '' 
@@ -97,23 +97,32 @@ Existen operadores basicos artimeticos con la sintaxis habitual para +, - etc . 
    { a = 3; b = a+4; }  esto da error (a no definido)
    rec { a = 3; b = a+4; } esto da { a = 3; b = 7; }
    
-If-then
-
-> if a > b then "yes" else "no"
-
+### If-then y let
+```
+$> if a > b then "yes" else "no"
+```
 los operadores de comparacion son:  ||, && and ! (para booleans), y !=, ==, <, >, <=, >= para otros tipos con identidad y/o relacion de orden.
 
 Let define una variable de modo local 
 
-> let a = "foo"; in a
- 
+```
+$> let a = "foo"; in a
+``` 
 
 Lazyness:
-
-> let a = builtins.div 4 0; b = 6; in b
-
+```
+$> let a = builtins.div 4 0; b = 6; in b
+```
 esto no da error ya que a nunca es evaluado (no se necesita en la expresion)
 
+### Funciones
+```
+$> x: x*2
+$> cuadrado x: x*2
+$> suma = a: b: a + b
+$> suma = a: (b: a + b)
+$> suma = { a, b }: a*b
+```
 
 
 
