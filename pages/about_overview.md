@@ -74,7 +74,8 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <div class="small-8 columns">
 	
-[GRL, 45, 3264–3273](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2017GL076770)
+[Ozone Radiative Forcing](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2017GL076770)
+
 [Environ. Res. Lett. 11 094018](https://iopscience.iop.org/article/10.1088/1748-9326/11/9/094018/pdf)
 	
 
@@ -91,7 +92,7 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <span class="__dimensions_badge_embed__" data-id="pub.1014752738" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
-<span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>	
+<span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 </div>
 
