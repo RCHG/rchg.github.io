@@ -74,8 +74,8 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <div class="small-8 columns">
 	
-[GRL, 45, 3264–3273](https://rchg.github.io//science-blog/ERL-Paper/)
-[Environ. Res. Lett. 11 094018](https://rchg.github.io//science-blog/GRL-paper/)
+[GRL, 45, 3264–3273](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2017GL076770)
+[Environ. Res. Lett. 11 094018](https://iopscience.iop.org/article/10.1088/1748-9326/11/9/094018/pdf)
 	
 
 
