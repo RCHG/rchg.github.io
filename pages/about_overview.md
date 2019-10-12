@@ -74,9 +74,9 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <div class="small-6 columns">
 
-<div data-badge-details="right" data-badge-type="donut" data-doi="10.1002/2017gl076770" data-hide-no-mentions="true" class="altmetric-embed"></div>
-	
-<div data-badge-details="right" data-badge-type="donut" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>
+	<div data-badge-details="right" data-badge-type="donut" data-doi="10.1002/2017gl076770" data-hide-no-mentions="true" class="altmetric-embed"></div>
+
+	<div data-badge-details="right" data-badge-type="donut" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>
 
 </div>
 	
@@ -89,9 +89,11 @@ Due to my professional trajectory my interest is also related with mathematical 
 <span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>	
 
 [Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database ](https://rchg.github.io//science-blog/ERL-Paper/)
-</div>
 
 </div>
+
+
+
 
 <div class="medium-6 columns" markdown="1">
 
