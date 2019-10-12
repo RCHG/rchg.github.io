@@ -70,8 +70,24 @@ Due to my professional trajectory my interest is also related with mathematical 
 
 ### Links to few reviews
 
+<div class="row">
+	
+<div class="small-4 columns">
+<div data-badge-details="right" data-badge-type="medium-donut" data-doi="10.1002/2017gl076770" class="altmetric-embed"></div>
+<div data-badge-details="right" data-badge-type="medium-donut" data-doi="10.1088/1748-9326/11/9/094018" class="altmetric-embed"></div>
+</div>
+	
+<div class="small-4 columns">
+<span class="__dimensions_badge_embed__" data-id="pub.1014752738" data-legend="hover-bottom"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<span class="__dimensions_badge_embed__" data-id="pub.110126618" data-legend="hover-bottom"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>	
+</div>
+
+<div class="small-4 columns">
 [The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends ](https://rchg.github.io//science-blog/GRL-paper/)
 [Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database ](https://rchg.github.io//science-blog/ERL-Paper/)
+</div>
+
+
 
 
 
