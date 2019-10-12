@@ -74,9 +74,9 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <div class="small-6 columns">
 
-	<div data-badge-details="right" data-badge-type="donut" data-doi="10.1002/2017gl076770" data-hide-no-mentions="true" class="altmetric-embed"></div>
+	<div data-badge-type="donut" data-doi="10.1002/2017gl076770" data-hide-no-mentions="true" class="altmetric-embed"></div>
 
-	<div data-badge-details="right" data-badge-type="donut" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>
+	<div  data-badge-type="donut" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>
 
 </div>
 	
@@ -87,7 +87,6 @@ Due to my professional trajectory my interest is also related with mathematical 
 [The contribution of greenhouse gases...](https://rchg.github.io//science-blog/GRL-paper/)
 
 <span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>	
-
 [Historical Tropospheric and Stratospheric...](https://rchg.github.io//science-blog/ERL-Paper/)
 
 </div>
