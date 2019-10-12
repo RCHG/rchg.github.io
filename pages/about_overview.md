@@ -82,11 +82,11 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <div class="small-6 columns">
 	
-<span class="__dimensions_badge_embed__" data-id="pub.1014752738" data-legend="hover-bottom"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<span class="__dimensions_badge_embed__" data-id="pub.1014752738" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
 [The contribution of greenhouse gases...](https://rchg.github.io//science-blog/GRL-paper/)
 
-<span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>	
+<span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>	
 
 [Historical Tropospheric and Stratospheric...](https://rchg.github.io//science-blog/ERL-Paper/)
 
