@@ -68,7 +68,7 @@ Due to my professional trajectory my interest is also related with mathematical 
 	<figcaption><a title="Conceptual Mind-Map of my Research Background">Conceptual Mind-Map of my Research Background</a>.</figcaption>
 </figure>
 
-### Links to few reviews
+### Links to relevant publications
 
 <div class="row">
 	
