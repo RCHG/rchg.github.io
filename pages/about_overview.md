@@ -74,10 +74,9 @@ Due to my professional trajectory my interest is also related with mathematical 
 	
 <div class="small-8 columns">
 	
-[Ozone Radiative Forcing](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2017GL076770)
+*Checa-Garcia, R., Hegglin, M. I. & Shine, K. P.* 2016 **Environ. Res. Lett.** 11 094018
 
-[Environ. Res. Lett. 11 094018](https://iopscience.iop.org/article/10.1088/1748-9326/11/9/094018/pdf)
-	
+*Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (2018). **Geophysical Research Letters**, 45, 3264–3273.	
 
 
 </div>
