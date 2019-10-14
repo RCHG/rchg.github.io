@@ -28,12 +28,13 @@ breadcrumb: true
 
 ## By Topic
 
-**Radiative Forcing and Climate Change**
+
+#### Radiative Forcing and Climate Change
 - Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database, *R Checa-Garcia*, MI Hegglin, D. Kinnison, D. Plummer, KP Shine **Geophysical Research Letters** 45 (7), Pages 3264
 - The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends, *R Checa-Garcia*, KP Shine, MI Hegglin, **Environmental Research Letters** 11 (9), 094018
 {:.smallquote}
 
-**Remote Sensing of Trace Gases**
+#### Remote Sensing of Trace Gases
 
 - Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.
 A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensmann, O Hasekamp, J Landgraf, T Knigge, D Weise, O Sqalli-Houssini, D Kemper, **Atmospheric Measurement Techniques** 8 (11), 4719-4734
@@ -44,14 +45,14 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 - Remote Sensing Simulated retrievals of methane total columns in support of future satellite missions: an error sources analysis, **EGU - Geophysical Research Abstracts**, *Ramiro Checa-Garcia*, Frans Alkemade, Vicent Boudon, Constanze Fischerkeller, Philipp Hahne, Frank Hase, Ha Tran, Jochen Landgraf, Andre Butz, April 2014.
 {:.smallquote}
 
-**Statistical Physics**
+#### Statistical Physics
 
 - Critical analysis of the density functional theory prediction of enhanced capillary waves. P Tarazona, *R.Checa-Garcia*, E Chacón, **Physical Review Letters** 99 (19), 196101 (2007)
 - Density functional study of layering at liquid surfaces. *R.Checa-Garcia*, E Chacón, P Tarazona. **Physical Review E** 70 (6), 061601 (2004)
 - Intrinsic structure of liquid surface and capillary waves on the Density Functional Theory, *R.Checa-Garcia*. **arXiv preprint arXiv:1307.6199** (2013)
 {:.smallquote}
 
-**Hydrometeorology**
+#### Hydrometeorology
 
 - An experiment to measure the spatial variability of rain drop size distribution using sixteen laser disdrometers. FJ Tapiador, *R. Checa-Garcia*, M De Castro **Geophysical Research Letters** 37 (16) (2010)
 - Precipitation estimates for hydroelectricity, FJ Tapiador, AY Hou, M de Castro, *R. Checa-Garcia*, F Cuartero, AP Barros, **Energy & Environmental Science** 4 (11), 4435-4448 (2011)
@@ -61,7 +62,7 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 - Supplement: Binning effects on in-situ raindrop size distribution measurements, *R.Checa-Garcia* **Atmos. Meas. Tech. Discuss** 7, (2014).
 {:.smallquote}
 
-**Dynamical Systems**
+#### Dynamical Systems
 
 - *Toy Models of dynamical systems to understand topics of atmospheric dynamics*. **R. Checa-Garcia** *NWP Applications for Meteorology*.
 {:.smallquote}
