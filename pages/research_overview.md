@@ -48,6 +48,7 @@ My main field of research is the climate response to several agents on the atmos
 
 ### Participation in Projects
 
+
 - **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
 - **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
 - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
