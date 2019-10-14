@@ -1,6 +1,6 @@
 ---
 layout: page-fullwidth
-title: "Research"
+title: "Research Experience"
 subheadline: "Overview of my research background"
 permalink: "/research/overview/"
 header:
