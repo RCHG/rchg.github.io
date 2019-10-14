@@ -10,9 +10,11 @@
   url: "research/"
   side: left
   dropdown:
-  - title: "Overview"
+  - title: "Experience Overview"
     url: "research/overview"
-  - title: "My codes"
+  - title: "Research Interests"
+    url: "research/topics"
+  - title: "Scientific Codes"
     url: "research/my-codes/"
   - title: "Reviews"
     url: "research/reviews/"
