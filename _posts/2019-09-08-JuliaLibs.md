@@ -22,6 +22,8 @@ Lista con Librerias para Julia para computacion cientifica.
 | Name 		| Purpose            |             | License      |	Docs | Repository |
 | ----------| ------------------ | ----------- | ------------ | -----| ---------- |
 |Plots.jl 	| Visualization     |              | Open-Source  | [docs](http://docs.juliaplots.org/latest/) | [github](https://github.com/JuliaPlots/Plots.jl) |
+|Distributions.jl 	| Distributions Probab.     |              | Open-Source  | [docs]https://juliastats.github.io/Distributions.jl/stable/) | [github](https://github.com/JuliaStats/Distributions.jl) |
+
 
 
 
