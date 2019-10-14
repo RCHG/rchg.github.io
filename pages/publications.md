@@ -26,6 +26,7 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
+## By Topic
 
 **Radiative Forcing and Climate Change**
 - Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database, *R Checa-Garcia*, MI Hegglin, D. Kinnison, D. Plummer, KP Shine **Geophysical Research Letters** 45 (7), Pages 3264
@@ -42,7 +43,6 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 - Remote Sensing G3E–Geostationary Emission Explorer for Europe: mission concept, **AGU - Geophysical Research Abstracts**, T. Knigge, F. Schmuelling A. Butz, J. Orphal, H. Bovensmann, T. von Clarmann, F. Friedl-Vallon, F. Hase, *R Checa-Garcia*, G. Hechenblaikner, October 2014.
 - Remote Sensing Simulated retrievals of methane total columns in support of future satellite missions: an error sources analysis, **EGU - Geophysical Research Abstracts**, *Ramiro Checa-Garcia*, Frans Alkemade, Vicent Boudon, Constanze Fischerkeller, Philipp Hahne, Frank Hase, Ha Tran, Jochen Landgraf, Andre Butz, April 2014.
 {:.smallquote}
-
 
 **Statistical Physics**
 
@@ -88,6 +88,9 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
   - Proceedings of 6th Liquid Matter Conference., Published in J. Phys.: Condens. Matter 17.
   - Proceedings of 22th Statistical Physics Confer., Published in Pramana - Journal of Physics.
 {:.smallquote}
+
+
+## Cronological
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
