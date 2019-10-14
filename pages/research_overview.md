@@ -52,6 +52,7 @@ My main field of research is the climate response to several agents on the atmos
 - **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
 - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
 - **CCMI**: Chemistry-Climate Model Initiative
+{:.smallquote}
 
 ---
 
