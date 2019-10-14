@@ -85,7 +85,7 @@ My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust
 ---
 ### Researcher: KIT
 
-The central goal of the project I am working is related with a consolidation of the ESA satellite Sentinel-5 requirements. This means a detailed study of the different error sources like instrumental, spectroscopy, forward models errors derived of an effective description of the atmosphere aerosols and cirrus. To be able to conduct this research I use state of the art retrieval algorithms (inverse problem and radiative transfer solver) with trial ensembles of geophysical scenarios. Additional aspects of the research are: evaluate the cloud cover with Meteosat datasets, integrate satellite products of MODIS and CALIPSO with datasets obtained from offline chemical transport model.
+The central goal of the project I was working is related with a consolidation of the [ESA satellite Sentinel-5](https://sentinel.esa.int/web/sentinel/missions/sentinel-5) requirements but also involved ESA satellite Sentinel-5p as well as the Geostationary Emission Explorer for Europe (G3E). This means a detailed study of the different error sources like instrumental, spectroscopy, forward models errors derived of an effective description of the atmosphere aerosols and cirrus. To be able to conduct this research I use state of the art retrieval algorithms (inverse problem and radiative transfer solver) with trial ensembles of geophysical scenarios. Additional aspects of the research are: evaluate the cloud cover with Meteosat datasets, integrate satellite products of MODIS and CALIPSO with datasets obtained from offline chemical transport model.
 {:.smallblock}
 
 #### Publications and Technical Reports
