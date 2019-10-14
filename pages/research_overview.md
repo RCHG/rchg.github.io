@@ -66,7 +66,12 @@ My current main participation is at CRESCENDO project, a joint project of severa
 
 - **CRESCENDO-2019-GA**: *CRESCENDO-ESMs intercomparison: mineral dust aerosols*, **R. Checa-Garcia**, Yves Balkanski, B. Marticorena , P. Nabat , T. Bergman , T. van Noije , D. Olivié , M. Schulz , F. O’Connor , M. Dalvi , C. Dearden, M. Michou , C. Scott and K. Carslaw.
 - **EGU-2019 conference**: *Evaluation of natural marine aerosol in five Earth System Models*. Dirk Olivié, Michael Schulz, Øyvind Seland, Alf Kirkevåg, Twan van Noije, Tommi Bergman, Declan O’Donnell (3), Martine Michou (4), Pierre Nabat, Ken Carslaw, Chris Dearden, MohitDalvi, Fiona O’Connor, **Ramiro Checa-Garcia** and Yves Balkanski.
-- **CRESCENDO-2018-GA**: *Observational constraints to improve Dust natural cycle in ESMs*, *Ramiro Checa-Garcia* , Yves Balkanski, Beatrice Marticorena, Samuel Albani, Tommi Bergman, Twan van Noije, Dirk Olivie, Martine Michou, Catherine Scott and Ken Carslaw
+- **CRESCENDO-2018-GA**: *Observational constraints to improve Dust natural cycle in ESMs*, *Ramiro Checa-Garcia* , Yves Balkanski, Beatrice Marticorena, Samuel Albani, Tommi Bergman, Twan van Noije, Dirk Olivie, Martine Michou, Catherine Scott and Ken Carslaw.
+
+<small markdown="1">[Up to table of contents](#toc)</small>
+{: .text-right }
+
+
 ---
 ### Researcher: University of Reading
 
@@ -75,14 +80,15 @@ The [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) ar
 ) in the [recent slowdown](https://www.smurphs.leeds.ac.uk/new-publication-the-contribution-of-greenhouse-gases-to-the-recent-slowdown-in-global-mean-temperature-trends/). The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
 {:.smallblock}
 
-#### Publications, Conferences, Reports
-
-**Radiative Forcing and Climate Change**
+**Publications, Conferences, Reports**
 
 - <div data-badge-type="1" data-doi="10.1002/2017GL076770" data-hide-no-mentions="true" class="altmetric-embed"></div>   *Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database*, **R Checa-Garcia**, MI Hegglin, D. Kinnison, D. Plummer, KP Shine 'Geophysical Research Letters' 45 (7), Pages 3264
 - <div data-badge-type="1" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>  *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
 - **EGU 2018 conference** *Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database*, **R Checa-Garcia**, MI Hegglin, D. Kinnison, D. Plummer, KP Shine.
 {:.smallquote}
+
+<small markdown="1">[Up to table of contents](#toc)</small>
+{: .text-right }
 
 ---
 
@@ -97,9 +103,7 @@ My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust
 The central goal of the project I was working is related with a consolidation of the [ESA satellite Sentinel-5](https://sentinel.esa.int/web/sentinel/missions/sentinel-5) requirements but also involved ESA satellite Sentinel-5p as well as the Geostationary Emission Explorer for Europe (G3E). This means a detailed study of the different error sources like instrumental, spectroscopy, forward models errors derived of an effective description of the atmosphere aerosols and cirrus. To be able to conduct this research I use state of the art retrieval algorithms (inverse problem and radiative transfer solver) with trial ensembles of geophysical scenarios. Additional aspects of the research are: evaluate the cloud cover with Meteosat datasets, integrate satellite products of MODIS and CALIPSO with datasets obtained from offline chemical transport model.
 {:.smallblock}
 
-#### Publications and Technical Reports
-
-**Remote Sensing of Trace Gases**
+**Publications, Reports and conferences**
 
 - *Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.*
 A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Bovensmann, O Hasekamp, J Landgraf, T Knigge, D Weise, O Sqalli-Houssini, D Kemper, 'Atmospheric Measurement Techniques' 8 (11), 4719-4734
@@ -108,21 +112,13 @@ A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Boven
 - *Spectroscopy relevance on SWIR requirements for S5 satellite*. *ESA Technical report (2013)*
 - *Remote Sensing G3E–Geostationary Emission Explorer for Europe: mission concept*, *AGU - Geophysical Research Abstracts*, T. Knigge, F. Schmuelling A. Butz, J. Orphal, H. Bovensmann, T. von Clarmann, F. Friedl-Vallon, F. Hase, **R Checa-Garcia**, G. Hechenblaikner, October 2014.
 - *Remote Sensing Simulated retrievals of methane total columns in support of future satellite missions: an error sources analysis*, *EGU - Geophysical Research Abstracts*, **Ramiro Checa-Garcia**, Frans Alkemade, Vicent Boudon, Constanze Fischerkeller, Philipp Hahne, Frank Hase, Ha Tran, Jochen Landgraf, Andre Butz, April 2014.
-{:.smallquote}
-
-<small markdown="1">[Up to table of contents](#toc)</small>
-{: .text-right }
-
-#### Poster & Presentations
-
-**Remote Sensing of Trace Gases**
-
 - [IWGGMS-9 conference](http://zenodo.org/record/11105/files/I_4_2014-06-23_HITRAN_SAO_Butz.pdf): *Seasonal carbon uptake as seen from an improved version of RemoTeC*. A. Butz, A. Babenhauserheide , M. Bertleff, **R. Checa-Garcia**, K. Fischerkeller, P. Hahne, F. Klappenbach, J.Kostinek, K. Stammberger, S.Basu, S.Guerlet, R.Detmers, O.Hasekamp, J. Landgraf, S. Houweling
 - [IWGGMS-10 conference](http://iwggms.azurewebsites.net/0530%5Cpm%5C20_AndreButz.pdf): *Remote Sensing of Greenhouse Gases for Carbon Cycle Modelling (RemoteC): Algorithm Developments, Ground‐Based Instrumentation, and Modelling Aspects*. A.Butz, I.Aben, A.Babenhauserheide, S.Basu, M.Bertleff, **R. Checa‐Garcia**, C.Frankenberg, P.Hahne, F.Hase, O.Hasekamp, S.Houweling, F.Klappenbach, J.Kostinek, J.Landgraf, W.Peters
 - [EGU 2014](http://presentations.copernicus.org/EGU2014-12970_presentation.pdf): *Comparing Ensemble Kalman filter and 4DVar data assimilation systems for CO2 flux inversions*. Arne Babenhauserheide, P. Hahne, **R. Checa-Garcia**, F. Klappenbach, S. Dohe, S. Basu, S. Houweling, W. Peters, A. Butz. [^1]
 - [HITRAN 2014 Conference](http://www.cfa.harvard.edu/HITRAN/Download/Proceedings-2014.pdf):  *Remote Sensing of Greenhouse gases and their sources and sinks*. André Butz, Arne Babenhauserheide, Marco Bertleff , **Ramiro Checa-Garcia**, Philipp Hahne, Frank Hase, Friedrich Klappenbach, Julian Kostinek, Ilse Aben, Otto Hasekamp, Jochen Landgraf, Arno de Lange, André Galli, Sourish Basu.
 - [AGU-2014 Meeting](http://fallmeeting.agu.org/2014/files/2014/12/Friday-Daily-Newspaper.pdf): *Remote Sensing G3E–Geostationary Emission Explorer for Europe: mission concept*. T. Knigge, F. Schmuelling A. Butz, J. Orphal, H. Bovensmann, T. von Clarmann, F. Friedl-Vallon, F. Hase, **R Checa-Garcia**, G. Hechenblaikner
 {:.smallquote}
+
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
