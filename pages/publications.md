@@ -29,15 +29,15 @@ breadcrumb: true
 
 ## By Topic
 
-### Radiative Forcing, Climate Change and Climate Modelling
+### Radiative Forcing and Climate Change
 
-#### Articles and Reports
+**Articles and Reports**
 
 - Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database, *R Checa-Garcia*, MI Hegglin, D. Kinnison, D. Plummer, KP Shine **Geophysical Research Letters** 45 (7), Pages 3264
 - The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends, *R Checa-Garcia*, KP Shine, MI Hegglin, **Environmental Research Letters** 11 (9), 094018
 {:.smallquote}
 
-#### Conferences
+**Conferences**
 
 - *EGU Conference, April 2018*, Vienna (Austria). Talk.
 - *CCMI Conference, April 2017*, Toulouse (France). Talk.
@@ -47,7 +47,7 @@ breadcrumb: true
 
 ### Remote Sensing of Trace Gases
 
-#### Articles and Reports
+**Articles and Reports**
 
 - Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.
 A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensmann, O Hasekamp, J Landgraf, T Knigge, D Weise, O Sqalli-Houssini, D Kemper, **Atmospheric Measurement Techniques** 8 (11), 4719-4734
@@ -56,7 +56,7 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 - Spectroscopy relevance on SWIR requirements for S5 satellite. **ESA Technical report (2013)**
 {:.smallquote}
 
-#### Conferences
+**Conferences**
 
 - Remote Sensing G3E–Geostationary Emission Explorer for Europe: mission concept, **AGU - Geophysical Research Abstracts**, T. Knigge, F. Schmuelling A. Butz, J. Orphal, H. Bovensmann, T. von Clarmann, F. Friedl-Vallon, F. Hase, *R Checa-Garcia*, G. Hechenblaikner, October 2014.
 - Remote Sensing Simulated retrievals of methane total columns in support of future satellite missions: an error sources analysis, **EGU - Geophysical Research Abstracts**, *Ramiro Checa-Garcia*, Frans Alkemade, Vicent Boudon, Constanze Fischerkeller, Philipp Hahne, Frank Hase, Ha Tran, Jochen Landgraf, Andre Butz, April 2014.
@@ -64,13 +64,14 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 
 ### Statistical Physics
 
-#### Articles and Reports
+**Articles and Reports**
+
 - Critical analysis of the density functional theory prediction of enhanced capillary waves. P Tarazona, *R.Checa-Garcia*, E Chacón, **Physical Review Letters** 99 (19), 196101 (2007)
 - Density functional study of layering at liquid surfaces. *R.Checa-Garcia*, E Chacón, P Tarazona. **Physical Review E** 70 (6), 061601 (2004)
 - Intrinsic structure of liquid surface and capillary waves on the Density Functional Theory, *R.Checa-Garcia*. **arXiv preprint arXiv:1307.6199** (2013)
 {:.smallquote}
 
-#### Conferences
+**Conferences**
 
   - FISES. Física Estadística Conferences: Navarra 2003, Madrid 2004, Granada 2007, Salamanca 2008.
   - *6th Liquid Matter Conference*, Utrecht - Netherlands (2005).
@@ -81,7 +82,7 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 
 ### Hydrometeorology
 
-#### Articles and Reports
+**Articles and Reports**
 
 - An experiment to measure the spatial variability of rain drop size distribution using sixteen laser disdrometers. FJ Tapiador, *R. Checa-Garcia*, M De Castro **Geophysical Research Letters** 37 (16) (2010)
 - Precipitation estimates for hydroelectricity, FJ Tapiador, AY Hou, M de Castro, *R. Checa-Garcia*, F Cuartero, AP Barros, **Energy & Environmental Science** 4 (11), 4435-4448 (2011)
@@ -91,7 +92,7 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 - Supplement: Binning effects on in-situ raindrop size distribution measurements, *R.Checa-Garcia* **Atmos. Meas. Tech. Discuss** 7, (2014).
 {:.smallquote}
 
-#### Conferences
+**Conferences**
 
 - 13th. *Plinius Conference: Mediterranean Storms*, 7-9 Sep 2011 at CIMA, Savona (Italy),
 - Workshop Water and Society, University of Grenoble, May 2011, *Summer Ecole of Physique, Les Houches (France)*.
@@ -104,10 +105,10 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 
 ### Scientific Computing
 
-#### Articles and Reports
+**Articles and Reports**
 
 
-#### Conferences
+**Conferences**
 
   - *Python ECWMF*, Conference and Workshop, ECWMF, Reading, UK.
   - *Euro Sci-Python*, Course and Conference, July 2010, Ecole Normale Superior, Paris(France).
