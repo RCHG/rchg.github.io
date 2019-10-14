@@ -46,15 +46,19 @@ My main field of research is the climate response to several agents on the atmos
 
 ---
 
+### Participation in Projects
+
+- **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
+- **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
+- **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
+- **CCMI**: Chemistry-Climate Model Initiative
+
+---
+
 ### Researcher: LSCE-CNRS
 
-#### Participation in Projects
-
-- CRESCENDO: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
-- AerChemMIP: Aerosols and Chemistry Model Intercomparison Project 
-- AeroCOM Phase III: Aerosol Comparisons between Observations and Models
-- CCMI: Chemistry-Climate Model Initiative
-
+My current main participation is at CRESCENDO project, a joint project of several european universities and research insitutions to improve the Earth system models. Related with this project I collaborate with AerChemMIP and AeroCOM beyond a collaboration about Mineral Dust my the UCLA at USA.
+{:.smallblock}
 
 ---
 ### Researcher: University of Reading
