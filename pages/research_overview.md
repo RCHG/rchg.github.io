@@ -37,11 +37,6 @@ breadcrumb: true
 
 [comment]: <> (My research background cover several fields and a broad set of methodologies both theoretical and experimental, with a strong focus on computational tools. My initial formation is Physics with an specialization on Theoretical Physics. This side was developed during my M.Sc. in Condensed Matter which was related with Statistical Physics in a theoretical field of Theory of Liquids. However my interest has been moved to the field of Atmospheric Sciences and Remote Sensing. Therefore the main scope of my PhD was related with Micro-physics of rainfall and remote sensing of precipitation, which also involves Applied Statistics. Actually I am working at the field of Remote Sensing of Trace Gases, this improves my knowledge on radiative transfer theory, inverse problem,satellite product, and spectroscopy)
 
-<small markdown="1">[Up to table of contents](#toc)</small>
-{: .text-right }
-
----
-
 ### Participation in Projects
 
 
@@ -50,6 +45,10 @@ breadcrumb: true
  - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
  - **CCMI**: Chemistry-Climate Model Initiative
 {:.smallquote}
+
+
+<small markdown="1">[Up to table of contents](#toc)</small>
+{: .text-right }
 
 ---
 
