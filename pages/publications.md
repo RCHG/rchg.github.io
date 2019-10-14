@@ -1,6 +1,5 @@
 ---
 layout: page-fullwidth
-title: "Publications"
 subheadline: "Scientific Publications"
 permalink: "/research/publications/"
 header:
