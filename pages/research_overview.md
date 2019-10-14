@@ -62,6 +62,11 @@ My main field of research is the climate response to several agents on the atmos
 My current main participation is at CRESCENDO project, a joint project of several european universities and research insitutions to improve the Earth system models. Related with this project I collaborate with AerChemMIP and AeroCOM beyond a collaboration about Mineral Dust my the UCLA at USA.
 {:.smallblock}
 
+**Publications, conferences and reports**
+
+- **CRESCENDO-2019-GA**: *CRESCENDO-ESMs intercomparison: mineral dust aerosols*, **R. Checa-Garcia**, Yves Balkanski, B. Marticorena , P. Nabat , T. Bergman , T. van Noije , D. Olivié , M. Schulz , F. O’Connor , M. Dalvi , C. Dearden, M. Michou , C. Scott and K. Carslaw.
+- **EGU-2019 conference**: *Evaluation of natural marine aerosol in five Earth System Models*. Dirk Olivié, Michael Schulz, Øyvind Seland, Alf Kirkevåg, Twan van Noije, Tommi Bergman, Declan O’Donnell (3), Martine Michou (4), Pierre Nabat, Ken Carslaw, Chris Dearden, MohitDalvi, Fiona O’Connor, **Ramiro Checa-Garcia** and Yves Balkanski.
+- **CRESCENDO-2018-GA**: *Observational constraints to improve Dust natural cycle in ESMs*, *Ramiro Checa-Garcia* , Yves Balkanski, Beatrice Marticorena, Samuel Albani, Tommi Bergman, Twan van Noije, Dirk Olivie, Martine Michou, Catherine Scott and Ken Carslaw
 ---
 ### Researcher: University of Reading
 
@@ -70,13 +75,15 @@ The [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) ar
 ) in the [recent slowdown](https://www.smurphs.leeds.ac.uk/new-publication-the-contribution-of-greenhouse-gases-to-the-recent-slowdown-in-global-mean-temperature-trends/). The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
 {:.smallblock}
 
-#### Publications and Technical Reports
+#### Publications, Conferences, Reports
 
 **Radiative Forcing and Climate Change**
 
 - <div data-badge-type="1" data-doi="10.1002/2017GL076770" data-hide-no-mentions="true" class="altmetric-embed"></div>   *Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database*, **R Checa-Garcia**, MI Hegglin, D. Kinnison, D. Plummer, KP Shine 'Geophysical Research Letters' 45 (7), Pages 3264
 - <div data-badge-type="1" data-doi="10.1088/1748-9326/11/9/094018" data-hide-no-mentions="true" class="altmetric-embed"></div>  *The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends*, **R Checa-Garcia**, KP Shine, MI Hegglin, 'Environmental Research Letters' 11 (9), 094018
+- **EGU 2018 conference** *Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database*, **R Checa-Garcia**, MI Hegglin, D. Kinnison, D. Plummer, KP Shine.
 {:.smallquote}
+
 ---
 
 ### Researcher: Leibniz-Gemeinschaft 
