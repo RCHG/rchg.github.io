@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: "Research"
 subheadline: "Overview of my research inteerests"
-permalink: "/research/interests/"
+permalink: "/research/topics/"
 header:
     title: Research Interests
     pattern: pattern_jquery-dark-grey-tile.png
