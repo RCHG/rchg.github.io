@@ -38,6 +38,7 @@ My main field of research is the climate response to several agents on the atmos
 - Karlsruhe Institute of Technology (Germany), where I worked on ESA-Sentinel-5 and G3E projects (remote sensing of greenhouse gases).
 - The University of Reading, in collaboration with Keith Shine and M. Hegglin, where I studed the radiative forcing of several agents on the atmosphere, in particular Ozone.
 - Laboratory for Sciences of Climate and Environment (LSCE) were I work for the CNRS on the climate modelling of Earth System with a focus on natural aerosols.
+{:.smallblock}
 
 #### Participation in Projects
 
