@@ -31,13 +31,9 @@ breadcrumb: true
 
 > One thing I have learned in a long life: that all our science, measured against reality, is primitive and childlike -- and yet it is the most precious thing we have. ― **Albert Einstein**
 
-### Overview
----
 
-My main field of research is the climate response to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid, wehere also I was teacher assistant on Laboraties of Experimental Physics during two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions: *Karlsruhe Institute of Technology (Germany)*, where I worked on ESA-Sentinel-5 and G3E projects (remote sensing of greenhouse gases), The *University of Reading*, in collaboration with Keith Shine and M. Hegglin, where I studed the radiative forcing of several agents on the atmosphere, in particular Ozone. And *Laboratory for Sciences of Climate and Environment (LSCE)* were I work for the CNRS on the climate modelling of Earth System with a focus on natural aerosols.
+**Overview**: My main field of research is the climate response to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about Theory of Liquids (Statistical Physics of Fluids) at the University Autónoma of Madrid, wehere also I was teacher assistant on Laboraties of Experimental Physics during two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions: *Karlsruhe Institute of Technology (Germany)*, where I worked on ESA-Sentinel-5 and G3E projects (remote sensing of greenhouse gases), The *University of Reading*, in collaboration with Keith Shine and M. Hegglin, where I studed the radiative forcing of several agents on the atmosphere, in particular Ozone. And *Laboratory for Sciences of Climate and Environment (LSCE)* were I work for the CNRS on the climate modelling of Earth System with a focus on natural aerosols.
 {:.smallblock}
-
-
 
 [comment]: <> (My research background cover several fields and a broad set of methodologies both theoretical and experimental, with a strong focus on computational tools. My initial formation is Physics with an specialization on Theoretical Physics. This side was developed during my M.Sc. in Condensed Matter which was related with Statistical Physics in a theoretical field of Theory of Liquids. However my interest has been moved to the field of Atmospheric Sciences and Remote Sensing. Therefore the main scope of my PhD was related with Micro-physics of rainfall and remote sensing of precipitation, which also involves Applied Statistics. Actually I am working at the field of Remote Sensing of Trace Gases, this improves my knowledge on radiative transfer theory, inverse problem,satellite product, and spectroscopy)
 
@@ -49,10 +45,10 @@ My main field of research is the climate response to several agents on the atmos
 ### Participation in Projects
 
 
-- **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
-- **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
-- **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
-- **CCMI**: Chemistry-Climate Model Initiative
+ - **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
+ - **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
+ - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
+ - **CCMI**: Chemistry-Climate Model Initiative
 {:.smallquote}
 
 ---
@@ -67,6 +63,7 @@ My current main participation is at CRESCENDO project, a joint project of severa
 - **CRESCENDO-2019-GA**: *CRESCENDO-ESMs intercomparison: mineral dust aerosols*, **R. Checa-Garcia**, Yves Balkanski, B. Marticorena , P. Nabat , T. Bergman , T. van Noije , D. Olivié , M. Schulz , F. O’Connor , M. Dalvi , C. Dearden, M. Michou , C. Scott and K. Carslaw.
 - **EGU-2019 conference**: *Evaluation of natural marine aerosol in five Earth System Models*. Dirk Olivié, Michael Schulz, Øyvind Seland, Alf Kirkevåg, Twan van Noije, Tommi Bergman, Declan O’Donnell (3), Martine Michou (4), Pierre Nabat, Ken Carslaw, Chris Dearden, MohitDalvi, Fiona O’Connor, **Ramiro Checa-Garcia** and Yves Balkanski.
 - **CRESCENDO-2018-GA**: *Observational constraints to improve Dust natural cycle in ESMs*, *Ramiro Checa-Garcia* , Yves Balkanski, Beatrice Marticorena, Samuel Albani, Tommi Bergman, Twan van Noije, Dirk Olivie, Martine Michou, Catherine Scott and Ken Carslaw.
+{:.smallquote}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
