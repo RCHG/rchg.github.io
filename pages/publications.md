@@ -18,7 +18,7 @@ breadcrumb: true
 
 <div class="panel radius" markdown="1">
 
-  {% include alert info=' <a href="/research/my-codes/">My own sofware codes</a>' %}
+  {% include alert info=' <a href="/research/my-codes/">Software codes</a>' %}
   {% include alert info=' <a href="/research/resources/">Resources and Links</a>' %}
 
 </div>
