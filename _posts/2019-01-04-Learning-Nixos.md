@@ -131,17 +131,21 @@ $> suma = { a, b }: a*b
 
 ## Configuración en NixOS
 
-Se localiza en `/etc/nixos/configuration.nix` y este archivo es una expresión en el lenguaje Nix.
+Se localiza en `/etc/nixos/configuration.nix` y este archivo es una expresión en el lenguaje Nix. Entender este archivo y saber como configurar con el el sistema necesita a su vez conocer dos aspectos:
+
+- Como se construye la sintaxis de esta expresión en Nix
+- Como funciona la configuración de un sistema Linux (nos olvidamos aquí de MacOS/Darwin)
 
 ### configuration.nix
 ```
-{ con fig, pkgs, ... }:  # define una funcion que toma al menos dos argumentos 
+{ config, pkgs, ... }:  # define una funcion que toma al menos dos argumentos 
                          # Y cuyo cuerpo posee una serie de expressiones
     { 
     option definitions   # expresiones que definen la configuracion.
     }
   
 ```
+
 
 
 
