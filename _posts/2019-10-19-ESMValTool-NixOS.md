@@ -10,7 +10,7 @@ tags: [nixos, linux, functional-languages]
 categories:
     - computing-blog
 header:
-    title: NixOS: installing ESMValTool
+    title: NixOS, installing ESMValTool
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
