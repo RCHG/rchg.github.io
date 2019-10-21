@@ -25,7 +25,7 @@ Check typography variables › _3_typography_settings.scss
 
 a,
 a:link {    
-        font-size: rem-calc(11);
+        font-size: rem-calc(12);
 }
 
 a:visited {
@@ -237,13 +237,16 @@ article dl dd   { line-height: 1.6; margin-bottom: rem-calc(12); margin-left: re
 	margin-left: 28px;
 	padding-left: 30px;
 	padding-right: 10px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
 	text-indent: -12px;
-    font-size: rem-calc(10);
+        font-size: rem-calc(11);
 	background-color: lighten($ci-3,30);
 	border-left: 2px solid lighten($ci-4,30);
 	border-right: 2px solid lighten($ci-5,30);
+	a {    
+        font-size: rem-calc(11);
+        }
 }
 
 
@@ -251,7 +254,7 @@ article dl dd   { line-height: 1.6; margin-bottom: rem-calc(12); margin-left: re
 	margin-left: 38px;
 	padding-left: 40px;
 	border-left: 4px solid darken($grey-10,30);
-    font-size: rem-calc(12);
+        font-size: rem-calc(12);
 }
 
 .smalltoc::before { 
@@ -266,9 +269,9 @@ article dl dd   { line-height: 1.6; margin-bottom: rem-calc(12); margin-left: re
 	padding-left: 40px;
 	background-color: lighten($grey-6,30);
 	border: 1px solid darken($grey-5,10);
-    font-size: rem-calc(12);
-    ul {list-style: none;
-    }
+        font-size: rem-calc(12);
+        ul {list-style: none;
+        }
     
 }
 
@@ -276,7 +279,7 @@ article dl dd   { line-height: 1.6; margin-bottom: rem-calc(12); margin-left: re
 	margin-top: 1.5em;
 	padding: .5em 1em;
 	text-indent: 0;
-    font-size: rem-calc(12);
+        font-size: rem-calc(12);
 	background-color: lighten($alert-color,30);
 	border: 1px solid $alert-color;
 }
