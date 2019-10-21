@@ -173,12 +173,12 @@ td {
 pre {
     overflow: auto;
     margin-bottom: rem-calc(12);
-    padding: 1px;
+    padding: 2px;
     background-color: $code-background-color;
     border-radius: $global-radius;
 }
 pre code {
-    padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(0);
+    padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(1);
     border: 0px;
 }
 
