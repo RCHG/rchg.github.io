@@ -49,9 +49,9 @@ Here I indicate how to install the **synda** that is used to download datasets f
 
 {% highlight bash %}
 bash$ conda-shell
-conda-shell> conda create --name synda python=2.7 # say yes to the question they asked you.
+conda-shell> conda create --name synda python=2.7 
 conda-shell> source activate synda
-conda-shell> conda install -c IPSL synda          # say yes to the questions the asked you.
+conda-shell> conda install -c IPSL synda          
 {% endhighlight %}
 
 now we have to set few things outside of conda-shell. They are related with indication of the path where our synda configuation will be stored. For that we have to add to our shell (I will suppose it is the bash shell something like `export ST_HOME=my-synda-directory-full-path`. For this step I have added to the `/etc/nixos/configuration.nix` the new piece of code (where the path I indicated is a particular choice):
