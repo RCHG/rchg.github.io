@@ -17,7 +17,11 @@ header:
 
 ## Vim copy-paste
 
-### From askubuntu web:
+### From askubuntu web
+
+One of the users gave us a nice detailed description of the typical options. Note that the
+author was focused mostly on Ubuntu, so few recommendations are related with that, but the
+vim properties remain the same.
 
 1.    If you want to **copy paste contents within the same file**, use yank and paste.
 
@@ -51,5 +55,4 @@ header:
     your text into system clipboard via Ctrl+C, then in vim editor insert mode, click 
     the mouse middle button (usually the wheel) or press Ctrl+Shift+V to paste.
 
-    These are 4 basic copy & paste conditions related to vim. I hope this helps.
-
+    These are 4 basic copy & paste conditions related to vim. 
