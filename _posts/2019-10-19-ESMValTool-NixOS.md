@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: Tips
-title: "NixOS: installing ESMValTool"
+title: "NixOS and Synda"
 excerpt: "Step by Step "
 teaser: "Notes to understand NixOS, Nix and nixpkgs."
 breadcrumb: true
@@ -10,7 +10,7 @@ tags: [nixos, linux, functional-languages]
 categories:
     - computing-blog
 header:
-    title: NixOS, installing ESMValTool
+    title: NixOS and synda
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
@@ -100,7 +100,7 @@ new  CMIP6.CMIP.CNRM-CERFACS.CNRM-CM6-1.historical.r5i1p1f2.AERmon.ptp.gr.v20190
 
 you can download with install or get options of synda commandline tool. 
 
-## 
+
 
 
 
