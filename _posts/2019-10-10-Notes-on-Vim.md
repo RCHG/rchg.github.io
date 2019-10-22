@@ -25,7 +25,7 @@ header:
       yanking the text you want, then open your second file within vim 
       (e.g. :tabnew /path/to/second/file) and press p to paste it.
 
-3.    If you want to** copy paste contents from vim to an external program**, you need 
+3.    If you want to **copy paste contents from vim to an external program**, you need 
       to access the system clipboard. The GUI version of vim always has clipboard 
       support, however, if you like to use Vim from a terminal, you will have to 
       check for X11-clipboard support.
