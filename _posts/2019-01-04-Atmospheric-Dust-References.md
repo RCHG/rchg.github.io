@@ -4,13 +4,13 @@ sidebar: right
 subheadline: Tips
 title: "Key references of Atmospheric Mineral Dust"
 excerpt: "Step by Step "
-teaser: "List of bibtex references about Atmospheric Dust."
+teaser: "List of bibtex references about Atmospheric mineral dust."
 breadcrumb: true
 tags: [references, mineral-dust]
 categories:
     - science-blog
 header:
-    title: List of Atmospheric Dust References
+    title: Atmospheric Mineral Dust References
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
