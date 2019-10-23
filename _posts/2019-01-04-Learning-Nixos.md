@@ -24,8 +24,9 @@ especial llamado **/nix/store/**
 
 Dado que cada paquete en este directorio aparece con un *hash-name* del tipo:
 
+```
 /nix/store/s4zia7hhqkin1di0f187b79sa2srhv6k-bash-4.2-p45/
-
+```
 entonces es posible tener multiples versiones del mismo paquete en este directorio en teoria
 sin interferencias.
 
@@ -57,6 +58,9 @@ Para entender como se estructuran las dependencias en */nix/store* existe un com
 >  nix-store -q --tree `which hello`        # esto es todo el arbol de dependencias para crear hello
 {% endhighlight %}
 
+Podemos tambien usar ```nix-store``` haciendo refererencia a un paquete en */nix/store* para ver
+su arbol de dependencias. 
+
 ## Lenguaje Nix
 
 
@@ -85,11 +89,11 @@ la sintaxis de Nix.
 
 Existen operadores basicos artimeticos con la sintaxis habitual para +, - etc . Division como existe el tipo path se usa '/ ' o bien la version functiona: 'builtins.div x y' que equivale a x/y (no son necesarios los parentesis). Tambien notar que 1-2 posee sentido (es -1) pero a-b seria el nombre de una variable. Si a y b son variables numericas a menos b seria 'a - b' con espacios.
 
- - Strings o cadenas:
+ - *Strings o cadenas*:
    se especifican entre dos " (una de inicio otra de fin) o dos '' 
- - Lists o listas:
+ - *Lists o listas*:
    pueden ser multi-tipo pero son inmutables
- - Sets o diccionarios:
+ - *Sets o diccionarios*:
    s = { foo = "bar"; a-b = "baz"; "123" = "num"; }
    asi que: > s."123" devuelve "num"
    Es posible definir sets de modo recursivo (al modo de suponer que un elemento es una funcion de una variable que
@@ -98,31 +102,34 @@ Existen operadores basicos artimeticos con la sintaxis habitual para +, - etc . 
    rec { a = 3; b = a+4; } esto da { a = 3; b = 7; }
    
 ### If-then y let
-```
+{% highlight bash %}
 $> if a > b then "yes" else "no"
-```
+{% endhighlight %}
+
 los operadores de comparacion son:  ||, && and ! (para booleans), y !=, ==, <, >, <=, >= para otros tipos con identidad y/o relacion de orden.
 
-Let define una variable de modo local 
+*Let* define una variable de modo local 
 
-```
+{% highlight bash %}
 $> let a = "foo"; in a
-``` 
+{% endhighlight %}
+ 
 
-Lazyness:
-```
+**Lazyness**:
+{% highlight bash %}
 $> let a = builtins.div 4 0; b = 6; in b
-```
+{% endhighlight %}
 esto no da error ya que a nunca es evaluado (no se necesita en la expresion)
 
 ### Funciones
-```
+{% highlight bash %}
 $> x: x*2
 $> cuadrado x: x*2
 $> suma = a: b: a + b
 $> suma = a: (b: a + b)
 $> suma = { a, b }: a*b
-```
+{% endhighlight %}
+
 
 
 
@@ -137,14 +144,15 @@ Se localiza en `/etc/nixos/configuration.nix` y este archivo es una expresión e
 - Como funciona la configuración de un sistema Linux (nos olvidamos aquí de MacOS/Darwin)
 
 ### configuration.nix
-```
+
+{% highlight nix %}
 { config, pkgs, ... }:  # define una funcion que toma al menos dos argumentos 
                          # Y cuyo cuerpo posee una serie de expressiones
     { 
     option definitions   # expresiones que definen la configuracion.
     }
   
-```
+{% endhighlight %}
 
 
 
