@@ -6,7 +6,7 @@ title: "Key references of Atmospheric Mineral Dust"
 excerpt: "Step by Step "
 teaser: "List of bibtex references about Atmospheric Dust."
 breadcrumb: true
-tags: [books]
+tags: [references, mineral-dust]
 categories:
     - science-blog
 header:
