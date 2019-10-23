@@ -417,7 +417,7 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 </div>
 </form>
 <table id="qs_table" border="1">
-<thead><tr><th width="20%" font-size: 7px;> Author</th><th width="30%">Title</th><th width="5%">Year</th><th width="25%">Journal </th><th width="7%">Reftype</th><th width="5%">DOI/URL</th></tr></thead>
+<thead><tr><th width="20%" font-size: 7px> Author</th><th width="30%">Title</th><th width="5%">Year</th><th width="25%">Journal </th><th width="7%">Reftype</th><th width="5%">DOI/URL</th></tr></thead>
 <tbody><tr id="Baddock_etal__2016a" class="entry">
 	<td>Baddock, M.C., Ginoux, P., Bullard, J.E. and Gill, T.E.</td>
 	<td>Do MODIS-defined dust sources have a geomorphological signature? <p class="infolinks">[<a href="javascript:toggleInfo('Baddock_etal__2016a','abstract')">Abstract</a>] [<a href="javascript:toggleInfo('Baddock_etal__2016a','bibtex')">BibTeX</a>]</p></td>
