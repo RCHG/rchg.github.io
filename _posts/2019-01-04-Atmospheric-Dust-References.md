@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: Tips
-title: "Key references of Atmospheric Dust"
+title: "Key references of Atmospheric Mineral Dust"
 excerpt: "Step by Step "
 teaser: "List of bibtex references about Atmospheric Dust."
 breadcrumb: true
@@ -379,7 +379,7 @@ div#settings.hidden {display:none;}
 .invalidsearch { background-color: red; }
 input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
 
-table { width: 95%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none;  font-size: 8px; font-family: Arial, sans-serif;}
+table { width: 95%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none;  font-size: 8px; font-family: Arial Narrow, sans-serif;}
 th, td { border: 1px gray solid; border-width: 1px 1px; padding: 0.5em; vertical-align: top; text-align: left; }
 th { background-color: #efefef; }
 td + td, th + th { border-left: none; }
@@ -392,7 +392,7 @@ tr.highlight td { background-color: #EFEFEF; border-top: 2px #2E2E2E solid; font
 tr.abstract td, tr.comment td, tr.bibtex td { background-color: #EFEFEF; text-align: justify; border-bottom: 2px #2E2E2E solid; }
 tr.nextshow td { border-bottom: 1px gray solid; }
 
-tr.bibtex pre { width: 100%; overflow: auto; white-space: pre-wrap;}
+tr.bibtex pre { width: 95%; overflow: auto; white-space: pre-wrap;}
 p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 
 @media print {
