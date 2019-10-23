@@ -379,7 +379,7 @@ div#settings.hidden {display:none;}
 .invalidsearch { background-color: red; }
 input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
 
-table { width: 100%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none;  font-size: 8px;}
+table { width: 95%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none;  font-size: 8px; font-family: Arial, sans-serif;}
 th, td { border: 1px gray solid; border-width: 1px 1px; padding: 0.5em; vertical-align: top; text-align: left; }
 th { background-color: #efefef; }
 td + td, th + th { border-left: none; }
