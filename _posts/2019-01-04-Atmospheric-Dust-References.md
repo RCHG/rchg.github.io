@@ -360,7 +360,7 @@ function toggleSettings(){
 -->
 </script>
 <style type="text/css">
-body { background-color: white; font-family: Arial, sans-serif; font-size: 9px; line-height: 1.0; padding: 1em; color: #2E2E2E; margin: auto 2em; }
+body { background-color: white; font-family: Arial, sans-serif; font-size: 10px; line-height: 1.1; padding: 1em; color: #2E2E2E; margin: auto 2em; }
 
 form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
 span#searchstat {padding-left: 1em;}
@@ -379,7 +379,7 @@ div#settings.hidden {display:none;}
 .invalidsearch { background-color: red; }
 input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
 
-table { width: 100%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none; }
+table { width: 100%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none;  font-size: 8px;}
 th, td { border: 1px gray solid; border-width: 1px 1px; padding: 0.5em; vertical-align: top; text-align: left; }
 th { background-color: #efefef; }
 td + td, th + th { border-left: none; }
