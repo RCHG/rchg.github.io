@@ -101,9 +101,9 @@ The central goal of the project I was working is related with a consolidation of
 
 **Publications, Reports and conferences**
 
-- *Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.*
+- <div data-badge-type="1" data-doi="10.5194/amt-8-4719-2015" data-hide-no-mentions="true" class="altmetric-embed"></div>  *Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.*
 A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Bovensmann, O Hasekamp, J Landgraf, T Knigge, D Weise, O Sqalli-Houssini, D Kemper, 'Atmospheric Measurement Techniques' 8 (11), 4719-4734
-- *Mapping spectroscopic uncertainties into prospective methane retrieval errors from Sentinel-5 and its precursor*, **Ramiro Checa-Garcia**, Jochen Landgraf, Frank Hase, Ha Tran, Vincent Boudon, Frans Alkemade, Andre Butz. 'AMT Journal', submitted (Dec-2014)
+- <div data-badge-type="1" data-doi="10.5194/amt-8-3617-2015" data-hide-no-mentions="true" class="altmetric-embed"></div> *Mapping spectroscopic uncertainties into prospective methane retrieval errors from Sentinel-5 and its precursor*, **Ramiro Checa-Garcia**, Jochen Landgraf, Frank Hase, Ha Tran, Vincent Boudon, Frans Alkemade, Andre Butz. 'AMT Journal', submitted (Dec-2014)
 - *Consolidation of SWIR requirements for Sentinel-5 satellite*. *ESA Technical Note (2013)*
 - *Spectroscopy relevance on SWIR requirements for S5 satellite*. *ESA Technical report (2013)*
 - *Remote Sensing G3E–Geostationary Emission Explorer for Europe: mission concept*, *AGU - Geophysical Research Abstracts*, T. Knigge, F. Schmuelling A. Butz, J. Orphal, H. Bovensmann, T. von Clarmann, F. Friedl-Vallon, F. Hase, **R Checa-Garcia**, G. Hechenblaikner, October 2014.
