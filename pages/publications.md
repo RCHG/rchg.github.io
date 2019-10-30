@@ -66,8 +66,8 @@ A Butz, J Orphal, *R Checa-Garcia*, F Friedl-Vallon, T von Clarmann, , H Bovensm
 
 **Articles and Reports**
 
-- Critical analysis of the density functional theory prediction of enhanced capillary waves. P Tarazona, *R.Checa-Garcia*, E Chacón, **Physical Review Letters** 99 (19), 196101 (2007)
-- Density functional study of layering at liquid surfaces. *R.Checa-Garcia*, E Chacón, P Tarazona. **Physical Review E** 70 (6), 061601 (2004)
+- <div data-badge-type="1" data-doi="10.1103/PHYSREVLETT.99.196101" data-hide-no-mentions="true" class="altmetric-embed"></div> Critical analysis of the density functional theory prediction of enhanced capillary waves. P Tarazona, *R.Checa-Garcia*, E Chacón, **Physical Review Letters** 99 (19), 196101 (2007)
+- <div data-badge-type="1" data-doi="10.1103/PHYSREVE.70.061601" data-hide-no-mentions="true" class="altmetric-embed"></div> Density functional study of layering at liquid surfaces. *R.Checa-Garcia*, E Chacón, P Tarazona. **Physical Review E** 70 (6), 061601 (2004)
 - Intrinsic structure of liquid surface and capillary waves on the Density Functional Theory, *R.Checa-Garcia*. **arXiv preprint arXiv:1307.6199** (2013)
 {:.smallquote}
 
