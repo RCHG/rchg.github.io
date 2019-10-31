@@ -1,3 +1,3 @@
-Pieces of codes I programed and mentioned on the blog 
+Pieces of code I programed and mentioned on the blog 
 
 Ramiro Checa-Garcia, 2018
