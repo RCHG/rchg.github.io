@@ -1,6 +1,6 @@
 ##############################################################################
 # Purpose: Conda-Shell designed to install and run ESMValTool and ESMValCore #
-#          in the develop mode.                                              #
+#          in the developer mode.                                            #
 # Contact: Ramiro Checa-Garcia                                               #
 #          contact: r.checagarcia@posteo.net                                 #
 # Info:    This kind of script is a function in the language Nix that is     #
