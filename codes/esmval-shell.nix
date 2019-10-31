@@ -109,18 +109,6 @@ let
         --add-flags "-b"
     '';
 
-  # ldconfigWrapper = with super; stdenv.mkDerivation {
-  #  name = "ldconfig-env";
-  #
-  #   nativeBuildInputs = [ makeWrapper ];
-  #
-  #    phases = [ "installPhase" "fixupPhase" ];
-  #
-  #   installPhase = ''
-  #      makeWrapper ${glibc.bin}/bin/ldconfig $out/sbin/ldconfig \
-  #        --add-flags "-C /usr/ld.so.cache"
-  #    '';
-  #    };
 in
   buildFHSUserEnv {
     name = "esmval-shell";
@@ -138,6 +126,9 @@ in
       # Nice bash shell prompt --------------------------------------
       export PS1="\[\033[38;5;172m\]$(tput bold)\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;34m\]$(tput bold)\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;6m\][\[$(tput sgr0)\]\[\033[38;5;120m\]\w\[$(tput sgr0)\]\[\033[38;5;6m\]]:\[$(tput sgr0)\]\[\033[38;5;15m\]> \[$(tput sgr0)\]"
     '';
+
+# Here it is kept as maintainers the authors of the general conda-shell
+# that here has been adapted to work for ESMValCore/Tool.
 
     meta = {
       description = "Conda is a package manager for Python";
