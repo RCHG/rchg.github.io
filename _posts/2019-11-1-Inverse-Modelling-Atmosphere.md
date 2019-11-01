@@ -17,7 +17,7 @@ header:
 ### Initial concepts
 
 We consider that a physical system is described by a set of variables named state variables and grouped 
-in a state vector, **x* however those variables are not directly observables or are difficult to measure 
+in a state vector, **x** however those variables are not directly observables or are difficult to measure 
 and indirect methods are used to assess the state of the system. These other variables are grouped in 
 the observation vector **y**. The relation between both is given by the forward model **F** by
 
