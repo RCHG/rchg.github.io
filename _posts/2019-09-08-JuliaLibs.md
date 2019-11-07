@@ -36,8 +36,7 @@ Notes:
 |Distributions.jl 	| Distributions Probab.  |  Open-Source  | [docs](https://juliastats.github.io/Distributions.jl/stable/) , [paper](https://arxiv.org/abs/1907.08611) | [github](https://github.com/JuliaStats/Distributions.jl) |
 |SpecialFunctions.jl| Special Functions Math | Open-Source  | [docs](https://juliamath.github.io/SpecialFunctions.jl/stable/)  | [github](https://github.com/JuliaMath/SpecialFunctions.jl) |
 |GSL.jl 	        | Interface to GSL Math-Lib |  Open-Source  | [docs-gsl](https://www.gnu.org/software/gsl/doc/html/index.html)  | [github](https://github.com/JuliaMath/GSL.jl) |
-| Convex.jl         |Mathematical Optimization | Open-Source  | [docs](https://www.juliaopt.org/Convex.jl/stable/) , [paper](https://web.stanford.edu/~boyd/papers/pdf/convexjl.pdf)  | [github](https://github.com/JuliaOpt/Convex.jl
-) |
+| Convex.jl         |Mathematical Optimization | Open-Source  | [docs](https://www.juliaopt.org/Convex.jl/stable/) , [paper](https://web.stanford.edu/~boyd/papers/pdf/convexjl.pdf)  | [github](https://github.com/JuliaOpt/Convex.jl) |
 
 ## Machine Learning
 
