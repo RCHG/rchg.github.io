@@ -43,7 +43,7 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
 <details> 
 <summary></summary>
-custom_mark10
+custom_mark2
   digraph G {
     size ="4,4";
     esmvaltool [shape=box];
@@ -58,7 +58,7 @@ custom_mark10
     read_config_file -> load_cmor_table [style=dotted, label="returns object 'cfg'"];
     _main_main -> sanity_checks_recipe [style=dotted];
   }
-custom_mark10
+custom_mark2
 </details>
 
 The main dependency that we will use is to install the **conda-shell** for NixOS. There are several ways in my
