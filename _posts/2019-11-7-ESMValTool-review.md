@@ -38,10 +38,10 @@ how I could help/collaborate with the project.
 
 After navigate in the code, and try to add few things, here are few remarks about how the code was created:
 
-- Programed in Python (although add modules in R, NCL or Julia is possible for specific part of the workflow)
-- It follows the Object Oriented Programming style
-- The core of the code relies on Iris Cubes, a library from Met-Office.
-- The configuration files are yamale files (.yml) so easy to read and visually understand.
+- Programed in **Python** (although add modules in R, NCL or Julia is possible for specific part of the workflow)
+- It follows the **Object Oriented Programming style**
+- The core of the code relies on **Iris Cubes**, a library from Met-Office.
+- The configuration files are **YAML files** (.yml) so easy to read and visually understand.
 
 
 #### Programmed in Python
