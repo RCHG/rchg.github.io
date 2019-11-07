@@ -63,14 +63,14 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
     read_config_file -> create_work_dir [color=red, label="workflow"];
     create_work_dir -> process_recipe [color=red, label="workflow"];
     process_recipe -> read_recipe [color=red, label="workflow"];
-    node [shape=box,style=filled,color=".7 .3 1.0"];
     read_recipe -> run_the_recipe [color=red, label="returns object 'recipe'"];
+    read_config_file -> load_cmor_table [style=dotted, label="returns object 'cfg'"];
+    main_main -> sanity_checks_recipe [style=dotted];
  }
 '/>
 
 
-    read_config_file -> load_cmor_table [style=dotted, label="returns object 'cfg'"];
-    main_main -> sanity_checks_recipe [style=dotted];
+
 
 
 The main dependency that we will use is to install the **conda-shell** for NixOS. There are several ways in my
