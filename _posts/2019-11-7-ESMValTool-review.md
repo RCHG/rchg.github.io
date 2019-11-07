@@ -59,10 +59,11 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
     esmvaltool -> main_run -> main_main -> read_config_file -> create_work_dir -> process_recipe -> read_recipe;
     main_main -> sanity_checks_recipe;
     read_config_file -> load_cmor_table;
+    read_recipe -> run_the_recipe [label="returns object 'recipe'"];
+
  }
 '/>
 
-    read_recipe -> run_the_recipe [color=red, label="returns object 'recipe'"];
      [style=dotted];
 
 
