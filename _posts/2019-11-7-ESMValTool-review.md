@@ -24,12 +24,22 @@ how I could help/collaborate with the project.
 
 ### Design principles
 
-After navigate in the code, and try to add few things, here are two remarks about how the code was created:
+After navigate in the code, and try to add few things, here are few remarks about how the code was created:
 
-- It is programed in Python
+- Programed in Python (although add modules in R, NCL or Julia is possible for specific part of the workflow)
 - It follows the Object Oriented Programming style
+- The core of the code relies on Iris Cubes, a library from Met-Office.
+- The configuration files are yamale files (.yml) so easy to read and visually understand.
 
-The first point 
+
+#### Programmed in Python
+
+By inspecting the core ESMValCore here is the very schematic intial workflow of the code once you execute an example
+
+{% highlight bash %}
+> esmvalcode myrecipe.yml
+{% endhighlight %}
+
 
 ![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
 <details> 
@@ -37,18 +47,17 @@ The first point
 custom_mark10
   digraph G {
     size ="4,4";
-    main [shape=box];
-    main -> parse [weight=8];
-    parse -> execute;
-    main -> init [style=dotted];
-    main -> cleanup;
-    execute -> { make_string; printf};
-    init -> make_string;
-    edge [color=red];
-    main -> printf [style=bold,label="100 times"];
-    make_string [label="make a string"];
-    node [shape=box,style=filled,color=".7 .3 1.0"];
-    execute -> compare;
+    esmvaltool [shape=box];
+    esmvaltool -> _main.py:run [weight=8];
+    _main.py:run -> _main.py:main;
+    _main.py:main -> sanity-check-recipe [style=dotted];
+    sanity-check-recipe -> read_config_file;
+    read_config_file -> create_work_dir;
+    read_config_file -> process_recipe;
+    process_recipe -> read_recipe [color=red];
+    read_recipe -> recipe-run;
+    read_config_file -> load_cmor_table;
+    load_cmor_table -> load_cmor_table;
   }
 custom_mark10
 </details>
