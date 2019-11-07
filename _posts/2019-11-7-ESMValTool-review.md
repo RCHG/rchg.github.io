@@ -24,11 +24,11 @@ how I could help/collaborate with the project.
 <img src='https://g.gravizo.com/svg?
  digraph G {
    main -> parse -> execute;
-   main -> init;
+   main -> initio;
    main -> cleanup;
    execute -> make_string;
    execute -> printf
-   init -> make_string;
+   initio -> make_string;
    main -> printf;
    execute -> compare;
  }
@@ -54,7 +54,7 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
 
 
 <img src='https://g.gravizo.com/svg?
-  digraph G {
+ digraph G {
     size ="4,4";
     esmvaltool [shape=box];
     esmvaltool -> _main_run [color=red, label="workflow"];
@@ -67,7 +67,7 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
     read_recipe -> run_the_recipe [color=red, label="returns object 'recipe'"];
     read_config_file -> load_cmor_table [style=dotted, label="returns object 'cfg'"];
     _main_main -> sanity_checks_recipe [style=dotted];
-  }
+ }
 '/>
 
 The main dependency that we will use is to install the **conda-shell** for NixOS. There are several ways in my
