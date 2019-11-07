@@ -40,7 +40,6 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
 > esmvalcode myrecipe.yml
 {% endhighlight %}
 
-
 <img src='https://g.gravizo.com/svg?
  digraph G {
     size ="4,8";
@@ -50,6 +49,7 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
  }
 '/>
 
+The actual calculations begin after *run-the-recipe* that is `recipe.run()` as run is a method of recipe. The other preliminary steps are just preparing the scenario. I have indicated that read-config-file, that actually creates an object named `cfg`, is loading the cmor-table (that is another object part of the `cfg` object). This step is relevant as much of the initial steps are related with ensure that the datasets used follows the CMOR and CF conventions (something also hightligthed by Iris Cube phylosophy) 
 
 
 The main dependency that we will use is to install the **conda-shell** for NixOS. There are several ways in my
