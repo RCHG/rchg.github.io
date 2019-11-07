@@ -19,20 +19,9 @@ header:
 This post have just notes about ESMValTool a little bit technical that I kept to understand it, and analyze
 how I could help/collaborate with the project.
 
-## Structure of the code
+## Understading the code
 
-<img src='https://g.gravizo.com/svg?
- digraph G {
-   main -> parse -> execute;
-   main -> initio;
-   main -> cleanup;
-   execute -> make_string;
-   execute -> printf
-   initio -> make_string;
-   main -> printf;
-   execute -> compare;
- }
-'/>
+
 
 ### Design principles
 
@@ -42,7 +31,6 @@ After navigate in the code, and try to add few things, here are few remarks abou
 - It follows the **Object Oriented Programming style**
 - The core of the code relies on **Iris Cubes**, a library from Met-Office.
 - The configuration files are **YAML files** (.yml) so easy to read and visually understand.
-
 
 #### Programmed in Python
 
@@ -56,15 +44,11 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
 <img src='https://g.gravizo.com/svg?
  digraph G {
     size ="4,8";
-    esmvaltool -> main_run -> main_main -> read_config_file -> create_work_dir -> process_recipe -> read_recipe;
+    esmvaltool -> main_run -> main_main -> read_config_file -> create_work_dir -> process_recipe -> read_recipe -> run_the_recipe;
     main_main -> sanity_checks_recipe;
     read_config_file -> load_cmor_table;
-    read_recipe -> run_the_recipe [label="returns object 'recipe'"];
-
  }
 '/>
-
-     [style=dotted];
 
 
 
