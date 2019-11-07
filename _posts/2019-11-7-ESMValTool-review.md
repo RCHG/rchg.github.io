@@ -51,10 +51,41 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
 
 The actual calculations begin after *run-the-recipe* that is `recipe.run()` as run is a method of recipe. The other preliminary steps are just preparing the scenario. I have indicated that read-config-file, that actually creates an object named `cfg`, is loading the cmor-table (that is another object part of the `cfg` object). This step is relevant as much of the initial steps are related with ensure that the datasets used follows the CMOR and CF conventions (something also hightligthed by Iris Cube phylosophy) 
 
+#### Recipe class
 
+{% highlight python %}
+class Recipe:
+    """Recipe object."""
 
+    info_keys = ('project', 'dataset', 'exp', 'ensemble', 'version')
+    """List of keys to be used to compose the alias, ordered by priority."""
 
+    def __init__(self,
+                 raw_recipe,
+                 config_user,
+                 initialize_tasks=True,
+                 recipe_file=None):
+        """Parse a recipe file into an object."""
+        self._cfg = deepcopy(config_user)
+        self._cfg['write_ncl_interface'] = self._need_ncl(
+            raw_recipe['diagnostics'])
+        self._filename = os.path.basename(recipe_file)
+        self._preprocessors = raw_recipe.get('preprocessors', {})
+        if 'default' not in self._preprocessors:
+            self._preprocessors['default'] = {}
+        self.diagnostics = self._initialize_diagnostics(
+            raw_recipe['diagnostics'], raw_recipe.get('datasets', []))
+        self.entity = self._initalize_provenance(
+            raw_recipe.get('documentation', {}))
+        self.tasks = self.initialize_tasks() if initialize_tasks else None
+        
+{% endhighlight %}
 
+The recipe file is then an object created from the YAML file that define it and the config-user.yml file. And then by a set of methods:
+
+- self.diagnostics
+- self.entity
+- self.tasks
 
 
 
