@@ -57,16 +57,16 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
  digraph G {
     size ="4,4";
     esmvaltool [shape=box];
-    esmvaltool -> _main_run [color=red, label="workflow"];
-    _main_run -> _main_main [color=red, label="workflow"];
-    _main_main -> read_config_file [color=red, label="workflow"];
+    esmvaltool -> main_run [color=red, label="workflow"];
+    main_run -> main_main [color=red, label="workflow"];
+    main_main -> read_config_file [color=red, label="workflow"];
     read_config_file -> create_work_dir [color=red, label="workflow"];
     create_work_dir -> process_recipe [color=red, label="workflow"];
     process_recipe -> read_recipe [color=red, label="workflow"];
     node [shape=box,style=filled,color=".7 .3 1.0"];
     read_recipe -> run_the_recipe [color=red, label="returns object 'recipe'"];
     read_config_file -> load_cmor_table [style=dotted, label="returns object 'cfg'"];
-    _main_main -> sanity_checks_recipe [style=dotted];
+    main_main -> sanity_checks_recipe [style=dotted];
  }
 '/>
 
