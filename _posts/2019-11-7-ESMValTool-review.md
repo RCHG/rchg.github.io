@@ -52,7 +52,8 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
 > esmvalcode myrecipe.yml
 {% endhighlight %}
 
-![Alt text](https://g.gravizo.com/svg?
+
+<img src='https://g.gravizo.com/svg?
   digraph G {
     size ="4,4";
     esmvaltool [shape=box];
@@ -67,7 +68,7 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
     read_config_file -> load_cmor_table [style=dotted, label="returns object 'cfg'"];
     _main_main -> sanity_checks_recipe [style=dotted];
   }
-)
+'/>
 
 The main dependency that we will use is to install the **conda-shell** for NixOS. There are several ways in my
 case I have chosen to install it as part of the systemPackages so I have a line in `/etc/nixos/configuration.nix` that is:
