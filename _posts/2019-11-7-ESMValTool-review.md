@@ -87,6 +87,8 @@ The recipe file is then an object created from the YAML file that define it and 
 - self.entity
 - self.tasks
 
+and they are executed in this order above.
+
 
 
 
