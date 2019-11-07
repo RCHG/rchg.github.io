@@ -48,16 +48,17 @@ custom_mark10
   digraph G {
     size ="4,4";
     esmvaltool [shape=box];
-    esmvaltool -> _main.py:run [weight=8];
-    _main.py:run -> _main.py:main;
-    _main.py:main -> sanity-check-recipe [style=dotted];
-    sanity-check-recipe -> read_config_file;
-    read_config_file -> create_work_dir;
-    read_config_file -> process_recipe;
-    process_recipe -> read_recipe [color=red];
-    read_recipe -> recipe-run;
-    read_config_file -> load_cmor_table;
+    esmvaltool -> _main_run [color=red, label="workflow"];
+    _main_run -> _main_main [color=red, label="workflow"];
+    _main_main -> read_config_file [color=red, label="workflow"];
+    read_config_file -> create_work_dir [color=red, label="workflow"];
+    create_work_dir -> process_recipe [color=red, label="workflow"];
+    process_recipe -> read_recipe [color=red, label="workflow"];
+    read_recipe -> run_the_recipe [color=red, label="returns object 'recipe'"];
+    read_config_file -> load_cmor_table [style=dotted, label="returns object 'cfg'"];
+    _main_main -> sanity_checks_recipe [style=dotted];
   }
+
 custom_mark10
 </details>
 
