@@ -55,7 +55,7 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
 
 <img src='https://g.gravizo.com/svg?
  digraph G {
-    size ="8,2";
+    size ="4,8";
     esmvaltool -> main_run -> main_main -> read_config_file -> create_work_dir -> process_recipe -> read_recipe;
     main_main -> sanity_checks_recipe;
     read_config_file -> load_cmor_table;
