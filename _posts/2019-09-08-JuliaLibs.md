@@ -38,3 +38,11 @@ Notes:
 |GSL.jl 	        | Interface to GSL Math-Lib |  Open-Source  | [docs-gsl](https://www.gnu.org/software/gsl/doc/html/index.html)  | [github](https://github.com/JuliaMath/GSL.jl) |
 
 
+## Machine Learning
+
+| Name 		        | Purpose                | License      |	Docs | Repository |
+| ----------------- | ---------------------- | ------------ | -----| ---------- |
+| Flux.jl       	| Machine Learning       |  Open-Source  | [docs](https://fluxml.ai/Flux.jl/stable/) , [paper](https://joss.theoj.org/papers/10.21105/joss.00602) | [github](https://github.com/FluxML/Flux.jl) |
+
+
+
