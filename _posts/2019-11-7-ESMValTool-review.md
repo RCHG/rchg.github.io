@@ -57,7 +57,6 @@ custom_mark10
     process_recipe -> read_recipe [color=red];
     read_recipe -> recipe-run;
     read_config_file -> load_cmor_table;
-    load_cmor_table -> load_cmor_table;
   }
 custom_mark10
 </details>
