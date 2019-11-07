@@ -60,10 +60,10 @@ By inspecting the core ESMValCore here is the very schematic intial workflow of 
     esmvaltool -> main_run [color=red, label="workflow"];
     main_run -> main_main [color=red, label="workflow"];
     main_main -> read_config_file [color=red, label="workflow"];
+    read_config_file -> create_work_dir [color=red, label="workflow"];
  }
 '/>
 
-    read_config_file -> create_work_dir [color=red, label="workflow"];
     create_work_dir -> process_recipe [color=red, label="workflow"];
     process_recipe -> read_recipe [color=red, label="workflow"];
     node [shape=box,style=filled,color=".7 .3 1.0"];
