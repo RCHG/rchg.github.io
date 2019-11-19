@@ -35,7 +35,22 @@ main = do
 
 {% highlight haskell %}
 --
--- Count file lines in Haskell
+-- Copy a file in Haskell by read it and write it again
+--
+
+import System.Environment
+
+main = do
+      [f,g] <- getArgs
+      s     <- readFile f
+      writeFile g s
+
+{% endhighlight %}
+
+
+{% highlight haskell %}
+--
+-- Count file lenght string in Haskell
 --
 -- We use interact
 -- interact    ::  (String -> String) -> IO ()
@@ -44,9 +59,17 @@ main = do
 
 main    = interact count
 count s = show (length s) ++ "\n"
-    
 {% endhighlight %}
 
+{% highlight haskell %}
+--
+-- Count lines in file in Haskell
+--
+-- We use interact and lines functions
+--
+
+main = interact (count . lines)
+{% endhighlight %}
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
