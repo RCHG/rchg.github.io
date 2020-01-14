@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: Tips
-title:  "CLI commandos y applicaciones"
+title:  "Aplicaciones y utilidades CLI"
 teaser: "Terminal CLI"
 breadcrumb: true
 tags:
