@@ -22,13 +22,25 @@ header:
 </div>
 
 
-> Se recogen applicaciones para la consola/terminal que he encontrado utiles en mi trabajo diario, y tambien en mi uso personal
+> Se recogen aplicaciones para la consola/terminal que he encontrado útiles en mi trabajo diario, y también en mi uso personal
 
-## Motivacion
+## Motivación
 
-En mi uso diario trabajo fundamentalmente en la terminal, tanto localmente como remotamente. 
+En mi uso diario trabajo fundamentalmente en la terminal, tanto localmente como remotamente. Aunque lo usual es usar la terminal para scripts, poco a poco he ido desechando las típicas aplicaciones GUI y me es más cómodo el uso de aplicaciones CLI.
 
+## Manejo de referencias bibliográficas
+La aplicación más completa GNU sobre Linux/Unix es Jabref, sin embargo de cara al manejo únicamente bajo la terminal me he decantado por la utilidad pubs (https://github.com/pubs/pubs), que me parece mas practica que papis para sencillamente trabajar con referencias en bibtex y archivos pdf.
 
+Si ya posees una colección de archivos pdf correspondientes a artículos científicos, pubs combina muy bien con papers (https://github.com/perrette/papers) con el siguiente esquema:
+
+> papers extract mypaper.pdf
+Da como salida un archivo bibtex donde por ejemplo tienes el DOI, digamos myDOI
+
+> pubs add -D myDOI -d mypaper.pdf
+
+La utilidad cli papers podría ser una buena alternativa a pubs por si sola pero no ha tenido actualizaciones del código desde hace tiempo mientas que pubs es bastante activa.
+
+Pueden existir alternativas para extraer el DOI de un pdf, tal como pdfx (que es una applicacion un poco mas general que no intenta generar un archivo bibtext del pdf, sino que busca metadata, enlaces etc). 
 
 <small markdown="1">[Voler a la tabla de contenidos](#toc)</small>
 {: .text-right }
