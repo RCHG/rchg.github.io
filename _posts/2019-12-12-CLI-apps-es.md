@@ -42,6 +42,38 @@ La utilidad cli papers podría ser una buena alternativa a pubs por si sola pero
 
 Pueden existir alternativas para extraer el DOI de un pdf, tal como pdfx (que es una applicacion un poco mas general que no intenta generar un archivo bibtext del pdf, sino que busca metadata, enlaces etc). 
 
+Si tienes instalados *pubs* y *papers*, el siguiente script en python te permitira incluir tus pdfs de articulos directamente en pubs.
+
+{% highlight python %}
+# ===============================================
+# Code to add a set of pdf files from articles
+# to a given pubs based library
+#
+# RCHG, Jan-2020.
+# ===============================================
+
+import glob
+import os
+
+list_pdfs = glob.glob('*.pdf')
+
+for fpdf in list_pdfs:
+    commands = 'papers extract '+fpdf + ' > temp.out'
+    os.system(commands)
+    with open('temp.out') as fout:
+        out_lines = fout.readlines()
+        for lin in out_lines:
+            if 'doi = ' in lin:
+                pdoi = lin.split('=')[1].replace('{','').replace('}','').replace(',','').replace(' ','').replace('\n','')
+                print(fpdf, pdoi)
+                if len(pdoi)>10:
+                    pubsadd = 'pubs add -D '+pdoi+' -d '+fpdf
+                    print(pubsadd)
+                    os.system(pubsadd)
+                    
+{% endhighlight %}
+
+
 <small markdown="1">[Voler a la tabla de contenidos](#toc)</small>
 {: .text-right }
 
