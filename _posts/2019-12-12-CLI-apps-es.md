@@ -33,10 +33,11 @@ La aplicación más completa GNU sobre Linux/Unix es Jabref, sin embargo de cara
 
 Si ya posees una colección de archivos pdf correspondientes a artículos científicos, pubs combina muy bien con papers (https://github.com/perrette/papers) con el siguiente esquema:
 
-> papers extract mypaper.pdf
+` > papers extract mypaper.pdf`
+
 Da como salida un archivo bibtex donde por ejemplo tienes el DOI, digamos myDOI
 
-> pubs add -D myDOI -d mypaper.pdf
+` > pubs add -D myDOI -d mypaper.pdf`
 
 La utilidad cli papers podría ser una buena alternativa a pubs por si sola pero no ha tenido actualizaciones del código desde hace tiempo mientas que pubs es bastante activa.
 
