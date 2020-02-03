@@ -74,6 +74,20 @@ for fpdf in list_pdfs:
                     
 {% endhighlight %}
 
+## TimeWarrior y Taskwarrior
+
+Son dos aplicaciones para gestionar el tiempo y las tareas. 
+
+- **timew** permite crear una base de datos con el tiempo que utilias en determinadas tareas. Te permite utilizar *tags* (etiquetas) sobre las cuales puedes buscar y crear summarios. Por mi parte utilizo dos: una en maycusculas para el projecto, y una en minusculas para la tarea concreta. No se si es la mejor manera pero me es util. Una alternativa es **watson** pero no la conozco en detalle.
+
+- **taskwarrior** es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse tambien en casos multiusuario.
+
+
+## pass
+
+Esta es una aplicacion para almacenar claves encriptadas desde la terminal, dado que se basa en un desencriptado seguro, en teoria es posible compartir la base de datos entre ordenadores mediante entornos como dropbox or similares. Para estos casos con varios ordenadores hay alternativas especificas, tambien basadas en open-source, como **bitwarden**, pero no es una aplicacion CLI.
+
+
 
 <small markdown="1">[Voler a la tabla de contenidos](#toc)</small>
 {: .text-right }
