@@ -76,10 +76,8 @@ for fpdf in list_pdfs:
 
 Una vez instalado pubs y dado un repositorio (hay modos de tener varios independientes tal y como aparece en la web del programa). Podemos de manera sencilla acceder a lo que necesitemos:
 
-- Para guardar la referencia en bibtex bastaria
-  `> pubs export Monks_2009 > reference.bib`
-- Para copiar el pdf del paper en el directorio actual:
-  `> pubs doc export Monks_2009 ./`
+- Para guardar la referencia en bibtex en un archivo: `> pubs export Monks_2009 > reference.bib`
+- Para copiar el pdf del paper en el directorio actual: `> pubs doc export Monks_2009 ./`
 
 
 ## Gestión del tiempo y de tareas
