@@ -83,7 +83,7 @@ Para esto personalmente uso dos aplicaciones relacionadas: una para gestionar el
 
 ## Manejo de claves
 
-Esta es una aplicación para almacenar claves encriptadas desde la terminal, dado que se basa en un des-encriptado seguro, en teoría es posible compartir la base de datos entre ordenadores mediante entornos como dropbox or similares. Para estos casos con varios ordenadores hay alternativas especificas, también basadas en open-source, como **bitwarden**, pero no es una aplicación CLI.
+La aplicación **pass** permite almacenar claves encriptadas desde la terminal, dado que se basa en un des-encriptado seguro, en teoría es posible compartir la base de datos entre ordenadores mediante entornos como dropbox or similares. Hay documentacion extensa, muchas extensiones y utilidades [pass](https://www.passwordstore.org). Para casos con varios ordenadores hay alternativas especificas, también basadas en open-source, como **bitwarden**, pero no es una aplicación CLI.
 
 ## Como llevar los gastos/ingresos: accounting
 
