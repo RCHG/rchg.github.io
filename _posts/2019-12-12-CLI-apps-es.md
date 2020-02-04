@@ -77,9 +77,9 @@ for fpdf in list_pdfs:
 
 Para esto personalmente uso dos aplicaciones relacionadas: una para gestionar el tiempo y las tareas.
 
-- **timewarrior** permite crear una base de datos con el tiempo que utilizas en determinadas tareas. Te permite utilizar *tags* (etiquetas) sobre las cuales puedes buscar y crear sumarios. Por mi parte utilizo dos: una en mayúsculas para el proyecto, y una en minúsculas para la tarea concreta. No se si es la mejor manera pero me es útil. Una alternativa es **watson** pero no la conozco en detalle.
+- [Timewarrior](https://timewarrior.net/) permite crear una base de datos con el tiempo que utilizas en determinadas tareas. Te permite utilizar *tags* (etiquetas) sobre las cuales puedes buscar y crear sumarios. Por mi parte utilizo dos: una en mayúsculas para el proyecto, y una en minúsculas para la tarea concreta. No se si es la mejor manera pero me es útil. Una alternativa es **watson** pero no la conozco en detalle.
 
-- **taskwarrior** es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse también en casos multiusuario.
+- ([Taskwarrior](https://taskwarrior.org/)es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse también en casos multiusuario.
 
 ## Manejo de claves
 
