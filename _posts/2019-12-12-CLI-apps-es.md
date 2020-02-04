@@ -87,9 +87,9 @@ La aplicación **pass** permite almacenar claves encriptadas desde la terminal, 
 
 ## Como llevar los gastos/ingresos: accounting
 
-Hay varias aplicaciones que permiten tener un historial de gastos/ingresos en la terminal. Una página de referencia podría ser [cli-accounts](https://plaintextaccounting.org/), donde se hace referencia a una familia de aplicaciones que comienzan con ledger pero que tienen muchas otras derivadas de la misma filosofía. Mi elección personal ha sido **hledger**. Cuya documentación podéis encontrar en [hledger](https://hledger.org/).
+Hay varias aplicaciones que permiten tener un historial de gastos/ingresos en la terminal. Una página de referencia podría ser [cli-accounts](https://plaintextaccounting.org/), donde se hace referencia a una familia de aplicaciones que comienzan con ledger pero que tienen muchas otras derivadas de la misma filosofía. Mi elección personal ha sido **hledger**, cuya documentación podéis encontrar en [hledger](https://hledger.org/).
 
-<small markdown="1">[Voler a la tabla de contenidos](#toc)</small>
+<small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
 {: .text-right }
 
 
