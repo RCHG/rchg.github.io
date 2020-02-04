@@ -93,7 +93,3 @@ Hay varias aplicaciones que permiten tener un historial de gastos/ingresos en la
 {: .text-right }
 
 
-
-</div><!-- /.medium-8.columns -->
-</div><!-- /.row -->
-
