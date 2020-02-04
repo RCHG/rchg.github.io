@@ -29,9 +29,9 @@ header:
 En mi uso diario trabajo fundamentalmente en la terminal, tanto localmente como remotamente. Aunque lo usual es usar la terminal para scripts, poco a poco he ido desechando las típicas aplicaciones GUI y me es más cómodo el uso de aplicaciones CLI.
 
 ## Manejo de referencias bibliográficas
-La aplicación más completa GNU sobre Linux/Unix es Jabref, sin embargo de cara al manejo únicamente bajo la terminal me he decantado por la utilidad pubs (https://github.com/pubs/pubs), que me parece mas practica que papis para sencillamente trabajar con referencias en bibtex y archivos pdf.
+La aplicación más completa GNU sobre Linux/Unix es Jabref, sin embargo de cara al manejo únicamente bajo la terminal me he decantado por la utilidad pubs [pubs](https://github.com/pubs/pubs), que me parece mas practica que papis para sencillamente trabajar con referencias en bibtex y archivos pdf.
 
-Si ya posees una colección de archivos pdf correspondientes a artículos científicos, pubs combina muy bien con papers (https://github.com/perrette/papers) con el siguiente esquema:
+Si ya posees una colección de archivos pdf correspondientes a artículos científicos, pubs combina muy bien con papers [cli-papers](https://github.com/perrette/papers) con el siguiente esquema:
 
 ` > papers extract mypaper.pdf`
 
@@ -73,21 +73,21 @@ for fpdf in list_pdfs:
                     os.system(pubsadd)
                     
 {% endhighlight %}
+## Gestión del tiempo y de tareas
 
-## TimeWarrior y Taskwarrior
+Para esto personalmente uso dos aplicaciones relacionadas: una para gestionar el tiempo y las tareas.
 
-Son dos aplicaciones para gestionar el tiempo y las tareas. 
+- **timewarrior** permite crear una base de datos con el tiempo que utilizas en determinadas tareas. Te permite utilizar *tags* (etiquetas) sobre las cuales puedes buscar y crear sumarios. Por mi parte utilizo dos: una en mayúsculas para el proyecto, y una en minúsculas para la tarea concreta. No se si es la mejor manera pero me es útil. Una alternativa es **watson** pero no la conozco en detalle.
 
-- **timew** permite crear una base de datos con el tiempo que utilias en determinadas tareas. Te permite utilizar *tags* (etiquetas) sobre las cuales puedes buscar y crear summarios. Por mi parte utilizo dos: una en maycusculas para el projecto, y una en minusculas para la tarea concreta. No se si es la mejor manera pero me es util. Una alternativa es **watson** pero no la conozco en detalle.
+- **taskwarrior** es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse también en casos multiusuario.
 
-- **taskwarrior** es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse tambien en casos multiusuario.
+## Manejo de claves
 
+Esta es una aplicación para almacenar claves encriptadas desde la terminal, dado que se basa en un des-encriptado seguro, en teoría es posible compartir la base de datos entre ordenadores mediante entornos como dropbox or similares. Para estos casos con varios ordenadores hay alternativas especificas, también basadas en open-source, como **bitwarden**, pero no es una aplicación CLI.
 
-## pass
+## Como llevar los gastos/ingresos: accounting
 
-Esta es una aplicacion para almacenar claves encriptadas desde la terminal, dado que se basa en un desencriptado seguro, en teoria es posible compartir la base de datos entre ordenadores mediante entornos como dropbox or similares. Para estos casos con varios ordenadores hay alternativas especificas, tambien basadas en open-source, como **bitwarden**, pero no es una aplicacion CLI.
-
-
+Hay varias aplicaciones que permiten tener un historial de gastos/ingresos en la terminal. Una página de referencia podría ser [cli-accounts](https://plaintextaccounting.org/), donde se hace referencia a una familia de aplicaciones que comienzan con ledger pero que tienen muchas otras derivadas de la misma filosofía. Mi elección personal ha sido **hledger**. Cuya documentación podéis encontrar en [hledger](https://hledger.org/).
 
 <small markdown="1">[Voler a la tabla de contenidos](#toc)</small>
 {: .text-right }
