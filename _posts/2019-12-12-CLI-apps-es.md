@@ -94,6 +94,39 @@ Ya que nos pedirá confirmación para cada ejecución que haga *xargs* del coman
 
 `> pubs tag Checa_Garcia_2018 +ozone ?...` y nos pide confirmación (y/n).
 
+### Uso de pubs para buscar referencias
+
+En principio no hay un motor de busqueda propio e independiente dentro de pubs, pero permite busquedas dentro de google scholar mediante el comando `websearch`. Doy aqui algunos ejemplos:
+
+- Busqueda por autor y palabras clave:
+`> pubs websearch author:Shine climate feedbacks radiation`
+- Busqueda por revista y palabras clave:
+`> pubs websearch radiative forcing  source:Nature`
+- Busqueda por palabras en titulo:
+`> pubs websearch allintitle: radiative forcing source:Nature`
+
+En todos los casos se abre la web de google scholar en nuestro navegador pre-determinado con los parametros indicados. Notar que se pueden combinar todos ellos: author, source, allintitle.
+
+### Uso de pubs para abrir webs de enlace
+
+Si en nuestra entrada de pubs, poseemos un enlace *url* o el doi, esto permite abrir directamente la web con la referencia:
+
+{% highlight bash %}
+> pubs url Checa_Garcia_2018
+info: opening url https://doi.org/10.1002%2F2017gl076770
+{% endhighlight %}
+
+### Otras herramientas de pubs
+
+Podemos importar previous archivos bibtex mediante
+
+`> pubs import bibpath`  que admite varias opciones extra y bibpath puede ser bibtex u otros formatos soportados
+
+El manejo de varias bibliotecas aparece descrito en [multiple-repositories](https://github.com/pubs/pubs#multiple-pubs-repository) posibilidad muy util si queremos tener diferentes biblotecas por temas, proyectos etc.
+
+
+
+
 ## Gestión del tiempo y de tareas
 
 Para esto personalmente uso dos aplicaciones relacionadas: una para gestionar el tiempo y las tareas.
