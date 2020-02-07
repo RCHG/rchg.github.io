@@ -6,7 +6,7 @@ title:  "Aplicaciones y utilidades CLI"
 teaser: "Terminal CLI"
 breadcrumb: true
 tags:
-    - [scientific-computing, linux]
+    - [scientific-computing, linux, cli, pubs, timewarrior]
 categories:
     - computing-blog
 header:
@@ -91,6 +91,7 @@ Si sabemos algo del manejo de nuestra shell, podemos manejar de modo ágil nuest
 Ya que nos pedirá confirmación para cada ejecución que haga *xargs* del comando deseado (pubs en este caso). En mi caso, por ejemplo, aparece:
 
 `> pubs list "title:ozone" -k | xargs -l -p -I $  pubs tag $ +ozone`
+
 `> pubs tag Checa_Garcia_2018 +ozone ?...` y nos pide confirmación (y/n).
 
 ## Gestión del tiempo y de tareas
