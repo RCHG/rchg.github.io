@@ -30,19 +30,20 @@ En mi uso diario trabajo fundamentalmente en la terminal, tanto localmente como 
 
 
 ## Manejo de referencias bibliográficas
-La aplicación más completa GNU sobre Linux/Unix es Jabref, sin embargo de cara al manejo únicamente bajo la terminal me he decantado por la utilidad pubs [pubs](https://github.com/pubs/pubs), que me parece mas practica que papis para sencillamente trabajar con referencias en bibtex y archivos pdf.
 
-Si ya posees una colección de archivos pdf correspondientes a artículos científicos, pubs combina muy bien con papers [cli-papers](https://github.com/perrette/papers) con el siguiente esquema:
+La aplicación más completa GNU sobre Linux/Unix es **Jabref**, sin embargo de cara al manejo únicamente bajo la terminal me he decantado por la utilidad [pubs](https://github.com/pubs/pubs), que me parece más practica que *papis* (otra utilidad que esta ganando popularidad) para sencillamente trabajar con referencias en *bibtex* y archivos *pdf*.
+
+Si ya posees una colección de archivos en *pdf* correspondientes a artículos científicos, pubs combina muy bien con otra utilidad llamada papers para la terminal: [cli-papers](https://github.com/perrette/papers) con el siguiente esquema:
 
 ` > papers extract mypaper.pdf`
 
-Da como salida un archivo bibtex donde por ejemplo tienes el DOI, digamos myDOI
+Da como salida un archivo *bibtex* donde por ejemplo tienes el DOI, digamos myDOI
 
 ` > pubs add -D myDOI -d mypaper.pdf`
 
-La utilidad cli papers podría ser una buena alternativa a pubs por si sola pero no ha tenido actualizaciones del código desde hace tiempo mientas que pubs es bastante activa.
+La utilidad cli *papers* podría ser una buena alternativa a pubs por si sola, pero no ha tenido actualizaciones del código desde hace tiempo mientas que pubs es bastante activa.
 
-Pueden existir alternativas para extraer el DOI de un pdf, tal como pdfx (que es una applicacion un poco mas general que no intenta generar un archivo bibtext del pdf, sino que busca metadata, enlaces etc). 
+Pueden existir alternativas para extraer el DOI de un pdf, tal como pdfx (que es una applicacion un poco más general que no intenta generar un archivo bibtext del pdf, sino que busca metadata, enlaces etc). 
 
 Si tienes instalados *pubs* y *papers*, el siguiente script en python te permitira incluir tus pdfs de articulos directamente en pubs.
 
@@ -75,12 +76,12 @@ for fpdf in list_pdfs:
                     
 {% endhighlight %}
 
-Una vez instalado pubs y dado un repositorio (hay modos de tener varios independientes tal y como aparece en la web del programa). Podemos de manera sencilla acceder a lo que necesitemos:
+Una vez instalado pubs y dado un repositorio (hay modos de tener varios independientes). Podemos de manera sencilla acceder a lo que necesitemos:
 
 - Para guardar la referencia en bibtex en un archivo: `> pubs export Monks_2009 > reference.bib`
 - Para copiar el pdf del paper en el directorio actual: `> pubs doc export Monks_2009 ./`
 
-Si sabemos algo del manejo de nuestra shell, podemos manejar de modo ágil nuestra base de datos de referencias bibliográficas. Por ejemplo, si queremos buscar todos los artículos con *ozone* en el título y adjudicarle un *tag* llamado ozone que nos puede ser útil más adelante, haríamos:
+Si sabemos algo del manejo de nuestra shell, podemos manejar de modo ágil nuestra base de datos de referencias bibliográficas. Por ejemplo, si queremos buscar todos los artículos con *ozone* en el título y adjudicarle un *tag* llamado ozone, que juzgamos nos puede ser útil más adelante, haríamos:
 
 `> pubs list "title:ozone" -k | xargs -l -I $  pubs tag $ +ozone`
  
@@ -97,16 +98,16 @@ Ya que nos pedirá confirmación para cada ejecución que haga *xargs* del coman
 
 ### Uso de pubs para buscar referencias
 
-En principio no hay un motor de busqueda propio e independiente dentro de pubs, pero permite busquedas dentro de google scholar mediante el comando `websearch`. Doy aqui algunos ejemplos:
+En principio no hay un motor de busqueda propio e independiente dentro de pubs, pero permite busquedas dentro de google scholar mediante el comando `websearch`. Doy algunos ejemplos:
 
 - Busqueda por autor y palabras clave:
-`> pubs websearch author:Shine climate feedbacks radiation`
+`> pubs websearch author:Shine climate feedbacks`
 - Busqueda por revista y palabras clave:
 `> pubs websearch radiative forcing  source:Nature`
 - Busqueda por palabras en titulo:
 `> pubs websearch allintitle: radiative forcing source:Nature`
 
-En todos los casos se abre la web de google scholar en nuestro navegador pre-determinado con los parametros indicados. Notar que se pueden combinar todos ellos: author, source, allintitle.
+En todos los casos se abre la web de google scholar en nuestro navegador pre-determinado con los parametros indicados. Notar que se pueden combinar todos ellos: *author*, *source*, *allintitle*.
 
 ### Uso de pubs para abrir webs de enlace
 
