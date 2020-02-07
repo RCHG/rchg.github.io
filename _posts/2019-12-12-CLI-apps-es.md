@@ -26,7 +26,8 @@ header:
 
 ## Motivación
 
-En mi uso diario trabajo fundamentalmente en la terminal, tanto localmente como remotamente. Aunque lo usual es usar la terminal para scripts, poco a poco he ido desechando las típicas aplicaciones GUI y me es más cómodo el uso de aplicaciones CLI.
+En mi uso diario trabajo fundamentalmente en la terminal, tanto localmente como remotamente. Aunque lo usual es usar la terminal para scripts, poco a poco he ido desechando las típicas aplicaciones GUI y me es más cómodo el uso de aplicaciones CLI. Por una parte me resulta más rápido para muchas tareas, por ejemplo, dado que uso LaTex para escribir y la mayoría de las veces bajo un editor vim/nvim, la posibilidad de sumar a la terminal un programa para las referencias me hace tener un flujo de trabajo fluido, además lo usual es que requieran menos recursos y sean fáciles de instalar en cualquier computadora Unix/Linux. Dado que estoy trabajando la mayoría del tiempo en una terminal para programar, revisar simulaciones o similar, es conveniente gestionar varios aspectos desde la propia shell/terminal de comandos: gestión del tiempo, claves, incluso algunos también gestionan el correo electrónico. Incluso si uno usa un entorno de escritorio tipo 'tiling windows' que se maneja esencialmente desde el teclado se incrementa nuestra productividad. En mi caso uso *i3* aunque tambien he usado *xmonad*. 
+
 
 ## Manejo de referencias bibliográficas
 La aplicación más completa GNU sobre Linux/Unix es Jabref, sin embargo de cara al manejo únicamente bajo la terminal me he decantado por la utilidad pubs [pubs](https://github.com/pubs/pubs), que me parece mas practica que papis para sencillamente trabajar con referencias en bibtex y archivos pdf.
