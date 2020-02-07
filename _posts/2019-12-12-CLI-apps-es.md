@@ -79,6 +79,19 @@ Una vez instalado pubs y dado un repositorio (hay modos de tener varios independ
 - Para guardar la referencia en bibtex en un archivo: `> pubs export Monks_2009 > reference.bib`
 - Para copiar el pdf del paper en el directorio actual: `> pubs doc export Monks_2009 ./`
 
+Si sabemos algo del manejo de nuestra shell, podemos manejar de modo ágil nuestra base de datos de referencias bibliográficas. Por ejemplo, si queremos buscar todos los artículos con *ozone* en el título y adjudicarle un *tag* llamado ozone que nos puede ser útil más adelante, haríamos:
+
+`> pubs list "title:ozone" -k | xargs -l -I $  pubs tag $ +ozone`
+ 
+- Con `> pubs list "title:ozone" -k` pedimos la lista de *citekeys* (por eso -k) que contienen en el título la palabra *ozone*. 
+- Luego pasamos esta lista a [xargs](https://en.wikipedia.org/wiki/Xargs) usando los argumentos `-l -I $` que tratan la entrada como una lista y dice que cada item sea colocado donde apareza el simbolo `$`. Luego indicamos `pubs tag $ +ozone`. Podemos usar la opcion `-p` la primera vece para verificar que estamos haciendo lo que deseamos.
+
+`> pubs list "title:ozone" -k | xargs -l -p -I $  pubs tag $ +ozone`
+
+Ya que nos pedirá confirmación para cada ejecución que haga *xargs* del comando deseado (pubs en este caso). En mi caso, por ejemplo, aparece:
+
+`> pubs list "title:ozone" -k | xargs -l -p -I $  pubs tag $ +ozone`
+`> pubs tag Checa_Garcia_2018 +ozone ?...` y nos pide confirmación (y/n).
 
 ## Gestión del tiempo y de tareas
 
@@ -86,7 +99,33 @@ Para esto personalmente uso dos aplicaciones relacionadas: una para gestionar el
 
 - [Timewarrior](https://timewarrior.net/) permite crear una base de datos con el tiempo que utilizas en determinadas tareas. Te permite utilizar *tags* (etiquetas) sobre las cuales puedes buscar y crear sumarios. Por mi parte utilizo dos: una en mayúsculas para el proyecto, y una en minúsculas para la tarea concreta. No se si es la mejor manera pero me es útil. Una alternativa es **watson** pero no la conozco en detalle.
 
-- (Taskwarrior](https://taskwarrior.org/) es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse también en casos multiusuario.
+El modo de uso es sencillo (en este caso nos damos cuenta de haber trabajado ya 15 min antes del registro en nuestro projecto Ciencia (estamos introduciendo dos *tags*: *Mi-Projecto* y *Ciencia*).
+
+{% highlight bash %}
+> timew start 15min ago Mi-Projecto Ciencia
+> Tracking Mi-Projecto Ciencia
+  Started 2020-02-07T12:01:06
+  Current               15:06
+  Total               0:15:00
+{% endhighlight %}
+
+En caso de que estemos ya registrando una actividad nos notificara el cambio:
+
+{% highlight bash %}
+> timew start Nuevo-Projecto 
+ Recorded Mi-Projecto Ciencia
+  Started 2020-02-07T08:55:56
+  Ended              12:01:06
+  Total               3:05:10
+Tracking Nuevo-Projecto
+  Started 2020-02-07T12:01:06
+  Current                  06
+  Total               0:00:00
+
+{% endhighlight %}
+
+
+- [Taskwarrior](https://taskwarrior.org/) es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse también en casos multiusuario.
 
 ## Manejo de claves
 
