@@ -104,7 +104,7 @@ en este entorno podemos usar una serie de comandos para el manejo de *packages* 
 (v1.1) pkg> add https://github.com/JuliaLang/Example.jl
 {% endhighlight %}
 
-Sin embargo desde la version 3, Pkg.jl, posee otras funcionalidades y diseno:
+Sin embargo desde la version 1.3, Pkg.jl, posee otras funcionalidades y diseno:
 
 - Pkg está diseñado en torno a "entornos/enviroments": conjuntos independientes de paquetes que pueden ser locales para un proyecto individual o compartidos y seleccionados por nombre. 
 
