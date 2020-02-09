@@ -175,8 +175,7 @@ Es decir se ha creado un directorio con *mientorno* donde he invocado julia, y p
 
 La motivacion de todo esto la podemos ver en el propio manual de Pkg.jl
 
-```
-El conjunto exacto de paquetes y versiones en un *enviroment* se describe en un archivo de Manifest.toml que se puede registrar en un repositorio de proyectos y rastrear en el control de versiones, lo que mejora significativamente la reproducibilidad de los proyectos. Si alguna vez ha intentado ejecutar código que no ha utilizado durante un tiempo solo para descubrir que no puede hacer que nada funcione porque ha actualizado o desinstalado algunos de los paquetes que estaba usando su proyecto, comprenderá el motivación para este enfoque. En Pkg, dado que cada proyecto mantiene su propio conjunto independiente de versiones de paquetes, nunca más tendrá este problema. Además, si revisa un proyecto en un nuevo sistema, simplemente puede materializar el entorno descrito por su archivo de manifiesto e inmediatamente estará en funcionamiento con un conjunto de dependencias bien conocido.
 
-(Manual Pkg.jl)
-```
+> El conjunto exacto de paquetes y versiones en un *enviroment* se describe en un archivo de Manifest.toml que se puede registrar en un repositorio de proyectos y rastrear en el control de versiones, lo que mejora significativamente la reproducibilidad de los proyectos. Si alguna vez ha intentado ejecutar código que no ha utilizado durante un tiempo solo para descubrir que no puede hacer que nada funcione porque ha actualizado o desinstalado algunos de los paquetes que estaba usando su proyecto, comprenderá el motivación para este enfoque. En Pkg, dado que cada proyecto mantiene su propio conjunto independiente de versiones de paquetes, nunca más tendrá este problema. Además, si revisa un proyecto en un nuevo sistema, simplemente puede materializar el entorno descrito por su archivo de manifiesto e inmediatamente estará en funcionamiento con un conjunto de dependencias bien conocido.
+> (Manual Pkg.jl)
+
