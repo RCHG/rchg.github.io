@@ -160,9 +160,14 @@ La motivacion de todo esto la podemos ver en el propio manual de Pkg.jl
 
 ## Paquetes de Julia
 
+La lista de librerias y paquetes en julia comienza a ser amplia, pueden encontrarse muchos de ellos en [Julia Observer](https://juliaobserver.com/). De todos modos, en el caso de Julia, la libreria estandar que viene con el propio compilador al contrario que otros compliadores/lenguages posee modulos para muchas de la tareas de modo que no nos require installar paquetes externos. Por dar algunos ejemplos: la parte de algebra lineal, unit-test, distributed comnputing, markdown, profiling, etc. 
+
+
+
+
 ### Paquetes de Visualización 
 
-| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
+| Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | --------- | ------------------------ | ------------ | ------ | ---------- |
 | Plots.jl	| Visualization wrapper    | Open-Source  | [docs](http://docs.juliaplots.org/latest/) | [github](https://github.com/JuliaPlots/Plots.jl) |
 
@@ -173,7 +178,7 @@ Notes:
 
 ## Matemáticas y estadística
 
-| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
+| Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 |Distributions.jl 	| Distributions Probab.  |  Open-Source  | [docs](https://juliastats.github.io/Distributions.jl/stable/) , [paper](https://arxiv.org/abs/1907.08611) | [github](https://github.com/JuliaStats/Distributions.jl) |
 |SpecialFunctions.jl| Special Functions Math | Open-Source  | [docs](https://juliamath.github.io/SpecialFunctions.jl/stable/)  | [github](https://github.com/JuliaMath/SpecialFunctions.jl) |
@@ -182,20 +187,16 @@ Notes:
 
 ## Machine Learning
 
-| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
+| Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 | Flux.jl       	| [Machine Learning approach](https://julialang.org/blog/2017/12/ml&pl)       |  Open-Source  | [docs](https://fluxml.ai/Flux.jl/stable/) , [paper](https://joss.theoj.org/papers/10.21105/joss.00602) | [github](https://github.com/FluxML/Flux.jl) |
 | MLJ.jl       	| [Machine Learning methods](https://github.com/alan-turing-institute/MLJModels.jl/blob/master/src/registry/Models.toml)      |  Open-Source  | [docs](hhttps://alan-turing-institute.github.io/MLJ.jl/stable/) | [github](https://github.com/alan-turing-institute/MLJ.jl) |
 
-## Documentacion
+## Documentación
 
-| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
+| Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 | Documenter.jl     | Documentar codigo paquetes       |  Open-Source  | [docs](https://juliadocs.github.io/Documenter.jl/stable/)  | [github](https://github.com/JuliaDocs/Documenter.jl) |
-
-<small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
-{: .text-right }
-
 
 
 
