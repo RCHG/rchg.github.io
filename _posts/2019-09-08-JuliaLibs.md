@@ -27,7 +27,7 @@ Lista con Librerias para Julia para computacion cientifica.
 
 ## Entiendiendo Pkgs.jl 
 
-Tenemos una lista de paquetes para Julia que esta creciendo continuamente, y se manejan gracias a Pkgs.jl
+Existe una lista de paquetes para Julia que esta creciendo continuamente, y se manejan de modo sencillo gracias a Pkgs.jl
 La manera basica de uso se centra en su uso en REPL, es decir, entramos en `> Julia` y escribimos `]`:
 
 {% highlight bash %}
@@ -71,7 +71,7 @@ en este entorno podemos usar una serie de comandos para el manejo de *packages* 
 (v1.1) pkg> add https://github.com/JuliaLang/Example.jl
 {% endhighlight %}
 
-Sin embargo desde la version 1.3, Pkg.jl, posee otras funcionalidades y diseno:
+Sin embargo desde la version 1.3, Pkg.jl, posee otras funcionalidades y diseño:
 
 - Pkg está diseñado en torno a "entornos/enviroments": conjuntos independientes de paquetes que pueden ser locales para un proyecto individual o compartidos y seleccionados por nombre. 
 
@@ -154,25 +154,26 @@ Es decir se ha creado un directorio con *mientorno* donde he invocado julia, y p
 
 La motivacion de todo esto la podemos ver en el propio manual de Pkg.jl
 
-
 > El conjunto exacto de paquetes y versiones en un *enviroment* se describe en un archivo de Manifest.toml que se puede registrar en un repositorio de proyectos y rastrear en el control de versiones, lo que mejora significativamente la reproducibilidad de los proyectos. Si alguna vez ha intentado ejecutar código que no ha utilizado durante un tiempo solo para descubrir que no puede hacer que nada funcione porque ha actualizado o desinstalado algunos de los paquetes que estaba usando su proyecto, comprenderá el motivación para este enfoque. En Pkg, dado que cada proyecto mantiene su propio conjunto independiente de versiones de paquetes, nunca más tendrá este problema. Además, si revisa un proyecto en un nuevo sistema, simplemente puede materializar el entorno descrito por su archivo de manifiesto e inmediatamente estará en funcionamiento con un conjunto de dependencias bien conocido.
 > (Manual Pkg.jl)
 
 
-## Paquetes de Visualizacion 
+## Paquetes de Julia
 
-| Name 		| Purpose                  | License      |	Docs | Repository |
+### Paquetes de Visualización 
+
+| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
 | --------- | ------------------------ | ------------ | ------ | ---------- |
 | Plots.jl	| Visualization wrapper    | Open-Source  | [docs](http://docs.juliaplots.org/latest/) | [github](https://github.com/JuliaPlots/Plots.jl) |
 
 Notes:
 
-**Plots.jl** can use several backends like GR or pyplots (that uses matplotlib) between others.
+**Plots.jl** puede usar diferentes motores (backends) para la creación de figuras como pueden ser GR or pyplots (que utiliza en última instancia matplotlib) entre otros.
 
 
-## Matematicas y estadistica
+## Matemáticas y estadística
 
-| Name 		        | Purpose                | License      |	Docs | Repository |
+| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 |Distributions.jl 	| Distributions Probab.  |  Open-Source  | [docs](https://juliastats.github.io/Distributions.jl/stable/) , [paper](https://arxiv.org/abs/1907.08611) | [github](https://github.com/JuliaStats/Distributions.jl) |
 |SpecialFunctions.jl| Special Functions Math | Open-Source  | [docs](https://juliamath.github.io/SpecialFunctions.jl/stable/)  | [github](https://github.com/JuliaMath/SpecialFunctions.jl) |
@@ -181,11 +182,16 @@ Notes:
 
 ## Machine Learning
 
-| Name 		        | Purpose                | License      |	Docs | Repository |
+| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 | Flux.jl       	| [Machine Learning approach](https://julialang.org/blog/2017/12/ml&pl)       |  Open-Source  | [docs](https://fluxml.ai/Flux.jl/stable/) , [paper](https://joss.theoj.org/papers/10.21105/joss.00602) | [github](https://github.com/FluxML/Flux.jl) |
 | MLJ.jl       	| [Machine Learning methods](https://github.com/alan-turing-institute/MLJModels.jl/blob/master/src/registry/Models.toml)      |  Open-Source  | [docs](hhttps://alan-turing-institute.github.io/MLJ.jl/stable/) | [github](https://github.com/alan-turing-institute/MLJ.jl) |
 
+## Documentacion
+
+| Nombre 	| Proposito                | Licencia     |	Docs   | Repositorio|
+| ----------------- | ---------------------- | ------------ | -----| ---------- |
+| Documenter.jl     | Documentar codigo paquetes       |  Open-Source  | [docs](https://juliadocs.github.io/Documenter.jl/stable/)  | [github](https://github.com/JuliaDocs/Documenter.jl) |
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
 {: .text-right }
