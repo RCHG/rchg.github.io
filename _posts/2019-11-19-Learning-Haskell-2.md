@@ -71,6 +71,16 @@ count s = show (length s) ++ "\n"
 main = interact (count . lines)
 {% endhighlight %}
 
+
+## Useful packages in Haskell
+
+
+- [Parse Config-Files](https://hackage.haskell.org/package/ConfigFile-1.1.4/docs/Data-ConfigFile.html)
+- [Manage directories](https://hackage.haskell.org/package/directory-1.3.6.0/docs/System-Directory.html)
+- [Manage paths](https://github.com/hasufell/hpath)
+- [Kind of glob](https://hackage.haskell.org/package/filepattern)
+
+
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
