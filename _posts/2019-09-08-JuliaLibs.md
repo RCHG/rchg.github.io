@@ -170,7 +170,8 @@ Os indico algunos modulos dentro de la libreria estandar (que es distribuida con
 - **Delimited Files**: Esta libreria es esencial si trabajas con archivos de texto organizados/separados por columnas con un caracter o conjunto de ellos conocido. 
 - **Pkg**: Ya lo hemos comentado antes, y es parte de la libreria estandar.
 - **Random**: Implementa el metodo de `Mersenne Twister` para generar numeros aleatorios. `rand(Float64, (n, m, p))` por ejemplo genera un array tridimensional con dimensiones (n, m, p) con valores aleatorios entre `[0,1[` es decir numeros positivos entre 0 y 1. Cuando leas la documentacion ten encuenta que aunque el modulo de numeros aleatorios es Random.Random, las funciones rand, rand!, randn, randexp estan en Base (es decir Base.rand, Base.rand! etc). 
-
+- **Statistics**: Hay algunas functiones detro de la libreria estandar, pero en este caso es bastante limitada ya que unicamente ofrece estadisticos basicos (media, mediana, etc). Recomiendo revisar **Distributions.jl** si quieres trabajas con estadistica en Julia.
+- **Unit Testing**: Creo que esta es otra libreria muy util y recomiendo aprenderla desde el principio cuando aprendas Julia.
 
 
 ### Paquetes de Visualización 
