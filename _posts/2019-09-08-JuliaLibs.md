@@ -181,6 +181,7 @@ Os indico algunos modulos dentro de la libreria estandar (que es distribuida con
 | Plots.jl	| Visualization wrapper    | Open-Source  | [docs](http://docs.juliaplots.org/latest/) | [github](https://github.com/JuliaPlots/Plots.jl) |
 | VegaLite.jl	| Visualizacion con VegaLite    | Open-Source  | [docs](https://www.queryverse.org/VegaLite.jl/stable/) | [github](https://github.com/queryverse/VegaLite.jl) |
 | Gadfly.jl	| Visualization focuses on Stats Plots    | Open-Source  | [docs](http://gadflyjl.org/stable/),  , [paper](https://doi.org/10.5281/zenodo.593105) | [github](https://github.com/GiovineItalia/Gadfly.jl) |
+| Makie.jl	| Visualizacion basada en GPU   | Open-Source  | [docs](http://makie.juliaplots.org/stable/) | [github](https://github.com/JuliaPlots/Makie.jl) |
 
 Notes:
 
