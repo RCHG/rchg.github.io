@@ -162,6 +162,14 @@ La motivacion de todo esto la podemos ver en el propio manual de Pkg.jl
 
 La lista de librerias y paquetes en julia comienza a ser amplia, pueden encontrarse muchos de ellos en [Julia Observer](https://juliaobserver.com/). De todos modos, en el caso de Julia, la libreria estandar que viene con el propio compilador al contrario que otros compliadores/lenguages posee modulos para muchas de la tareas de modo que no nos require installar paquetes externos. Por dar algunos ejemplos: la parte de algebra lineal, unit-test, distributed comnputing, markdown, profiling, etc. 
 
+### Libreria Estandar
+
+Os indico algunos modulos dentro de la libreria estandar (que es distribuida con Julia junto a Base que como el nombre indica es el conjunto de funciones que constituyen el nucleo de Julia) que yo personamente he usado:
+
+- **Dates**: Proporciona dos tipos llamados `Date` y `DateTime` que se diferencian esencialmente en la resolucion que proporciona. De modo formal estos tipos cumplen con *ISO 8601* de modo que el calendario usado es proleptic Gregorian.
+- **Delimited Files**: Esta libreria es esencial si trabajas con archivos de texto organizados/separados por columnas con un caracter o conjunto de ellos conocido. 
+- **Pkg**: Ya lo hemos comentado antes, y es parte de la libreria estandar.
+- **Random**: Implementa el metodo de `Mersenne Twister` para generar numeros aleatorios. `rand(Float64, (n, m, p))` por ejemplo genera un array tridimensional con dimensiones (n, m, p) con valores aleatorios entre `[0,1[` es decir numeros positivos entre 0 y 1. Cuando leas la documentacion ten encuenta que aunque el modulo de numeros aleatorios es Random.Random, las funciones rand, rand!, randn, randexp estan en Base (es decir Base.rand, Base.rand! etc). 
 
 
 
