@@ -197,6 +197,8 @@ Notes:
 |GSL.jl 	        | Interface to GSL Math-Lib |  Open-Source  | [docs-gsl](https://www.gnu.org/software/gsl/doc/html/index.html)  | [github](https://github.com/JuliaMath/GSL.jl) |
 | Convex.jl         |Mathematical Optimization | Open-Source  | [docs](https://www.juliaopt.org/Convex.jl/stable/) , [paper](https://web.stanford.edu/~boyd/papers/pdf/convexjl.pdf)  | [github](https://github.com/JuliaOpt/Convex.jl) |
 
+El paquete Distributions.jl tiene bastantes posibilidades aunque hay en este momento (Abril 2020) discussion acerca de una nueva API que llevaria a cambios drasticos. El programador tiene otra libreria llamada `Measures.jl` interesante de evaluar.
+
 ## Machine Learning
 
 | Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
@@ -211,6 +213,11 @@ Notes:
 | Documenter.jl     | Documentar codigo paquetes       |  Open-Source  | [docs](https://juliadocs.github.io/Documenter.jl/stable/)  | [github](https://github.com/JuliaDocs/Documenter.jl) |
 
 El paquete Documenter.jl es bastante interesante, y combina bien con la forma de crear docstrings del propio lenguaje. Este paquete es similar a Sphinx desarrollado en Python con una visualizacion por defecto parecida a *ReadTheDocs*. 
+
+## Librerias equivalentes a xarray
+
+No existe aun una libreria consolida que sea equivalente al xarray de Python, y dentro del ecosistema existen muchas opciones diferentes, habra que espera un poco para ver la evolucion y la posible integracion de varias de ellas en otra mas madura. Las opciones son: AxisArrays.jl, NamedArrays.jl, CirculasArrays, NamedDimensions.jl, GeoArrays.jl etc
+
 
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
