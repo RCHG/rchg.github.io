@@ -210,7 +210,7 @@ Notes:
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 | Documenter.jl     | Documentar codigo paquetes       |  Open-Source  | [docs](https://juliadocs.github.io/Documenter.jl/stable/)  | [github](https://github.com/JuliaDocs/Documenter.jl) |
 
-
+El paquete Documenter.jl es bastante interesante, y combina bien con la forma de crear docstrings del propio lenguaje. Este paquete es similar a Sphinx desarrollado en Python con una visualizacion por defecto parecida a *ReadTheDocs*. 
 
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
