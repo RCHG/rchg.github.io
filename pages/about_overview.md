@@ -185,6 +185,7 @@ My daily research job is done with computers, that I use for data analysis of ex
     - numpy, scipy, statmodels
     - xarray, pandas
     - iris (of scitools from MetOffice)
+    - ESMValTool
 - Julia
 
 #### Visualization
@@ -212,6 +213,7 @@ My daily research job is done with computers, that I use for data analysis of ex
 
 - Doxygen
 - Sphinx
+- Documenter (for Julia code)
 
 #### Project Software Managment
 
@@ -222,6 +224,8 @@ My daily research job is done with computers, that I use for data analysis of ex
 - Subversion (svn)
 - git
 - Mercurial (Hg) 
+
+#### LaTeX and TeX
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
