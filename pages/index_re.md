@@ -22,11 +22,12 @@ breadcrumb: true
 ### About my academic background
 ---
 
-My research background covers several fields and a broad set of methodologies with a focus on computational skills and statistical methods. My initial formation is Physics, with
+My research experience covers several fields and a broad set of methodologies with a focus on computational skills and statistical methods. My initial formation is Physics, with
 an specialization on Statistical Theoretical Physics. In my PhD I investigated
 in field of Atmospheric Sciences and Remote Sensing, in particular in micro-physics
 and remote sensing of precipitation, which also involved Applied Statistics.
-Currently I am working at Karlsruhe Institute of Technology, and my research is about
+
+Currently I researcher at the Centre of Centre national de la recherche scientifique in Paris. Karlsruhe Institute of Technology, and my research is about
 Remote Sensing of Trace Gases, with specific topics related with spectroscopy, radiative
 transfer theory, inverse problems and processing of satellite products. During my research experience on the
 University of Reading I investigate of the radiative forcing of GHGs, offline estimations of the temperature stratospheric adjustment and Ozone concentrations from models, satellites and ozone-sondes.
