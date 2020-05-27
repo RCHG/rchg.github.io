@@ -87,7 +87,7 @@ Checa-Garcia, R., Hegglin, M. I. & Shine, K. P. 2016 Environ. Res. Lett. 11 0940
 <div class="row">
 
 <div class="small-8 columns">
-Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (2018). Geophysical Research Letters, 45.	
+Checa-Garcia, R., Hegglin, MI., Kinnison, D., Plummer, DA., & Shine, KP. (2018). GRL.	
 </div>
 
 <div class="small-2 columns">
