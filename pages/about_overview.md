@@ -100,10 +100,11 @@ Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (
 
 </div>
 
+
 <div class="row">
 
 <div class="small-8 columns">
-Keeble, J., Hassler, B., Banerjee, A., Checa-Garcia, R., et al. (2020). Atmospheric Chemistry and Physics,	
+Keeble, J., Hassler, B., Banerjee, A., Checa-Garcia, R., et al. (2020). Atmospheric Chemistry and Physics,  	
 </div>
 
 <div class="small-2 columns">
@@ -115,6 +116,24 @@ Keeble, J., Hassler, B., Banerjee, A., Checa-Garcia, R., et al. (2020). Atmosphe
 </div>
 
 </div>
+
+<div class="row">
+
+<div class="small-8 columns">
+Thornhill, G., Collins, W., Archibald, A., Bauer, S., Checa-Garcia, R. et al., (2020). Atmospheric Chemistry and Physics,  	
+</div>
+
+<div class="small-2 columns">
+<div data-badge-popover="right" data-badge-type="donut" data-doi="10.5194/acp-2019-1207" data-hide-no-mentions="true" class="altmetric-embed"></div>
+</div>
+	
+<div class="small-2 columns">
+<span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</div>
+
+</div>
+
+
 </div>
 </div>
 
