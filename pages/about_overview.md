@@ -87,7 +87,7 @@ Checa-Garcia, R., Hegglin, M. I. & Shine, K. P. 2016 Environ. Res. Lett. 11 0940
 <div class="row">
 
 <div class="small-8 columns">
-Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (2018). Geophysical Research Letters, 45, 3264–3273.	
+Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (2018). Geophysical Research Letters, 45.	
 </div>
 
 <div class="small-2 columns">
@@ -104,7 +104,7 @@ Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (
 <div class="row">
 
 <div class="small-8 columns">
-Keeble, J., Hassler, B., Banerjee, A., Checa-Garcia, R., et al. (2020). Atmospheric Chemistry and Physics,  	
+Keeble, J., Hassler, B., Banerjee, A., Checa-Garcia, R., et al. (2020). Atmospheric Chemistry and Physics.  	
 </div>
 
 <div class="small-2 columns">
@@ -120,7 +120,7 @@ Keeble, J., Hassler, B., Banerjee, A., Checa-Garcia, R., et al. (2020). Atmosphe
 <div class="row">
 
 <div class="small-8 columns">
-Thornhill, G., Collins, W., Archibald, A., Bauer, S., Checa-Garcia, R. et al., (2020). Atmospheric Chemistry and Physics,  	
+Thornhill, G., Collins, W., Archibald, A., Bauer, S., Checa-Garcia, R. et al., (2020). Atmospheric Chemistry and Physics.  	
 </div>
 
 <div class="small-2 columns">
