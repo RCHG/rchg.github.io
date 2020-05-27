@@ -39,6 +39,10 @@ breadcrumb: true
 
 **Conferences**
 
+- *EGU Conference, May 2020*, Vienna (Austria). Talk.
+- *CRESCENDO General Assembly, 2019*, Paris (France). Poster.
+- *CRESCENDO General Assembly, 2018*, Toulouse (France). Poster.
+- *EGU Conference, May 2020*, Vienna (Austria). Talk.
 - *EGU Conference, April 2018*, Vienna (Austria). Talk.
 - *CCMI Conference, April 2017*, Toulouse (France). Talk.
 - *SMURPHS project Conference, May 2017*, Southampton (UK). Talk.
