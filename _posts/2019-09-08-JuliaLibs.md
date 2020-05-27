@@ -183,9 +183,7 @@ Os indico algunos modulos dentro de la libreria estandar (que es distribuida con
 | Gadfly.jl	| Visualization focuses on Stats Plots    | Open-Source  | [docs](http://gadflyjl.org/stable/),  , [paper](https://doi.org/10.5281/zenodo.593105) | [github](https://github.com/GiovineItalia/Gadfly.jl) |
 | Makie.jl	| Visualizacion basada en GPU   | Open-Source  | [docs](http://makie.juliaplots.org/stable/) | [github](https://github.com/JuliaPlots/Makie.jl) |
 
-Notes:
-
-**Plots.jl** puede usar diferentes motores (backends) para la creación de figuras como pueden ser GR or pyplots (que utiliza en última instancia matplotlib) entre otros.
+Notes: **Plots.jl** puede usar diferentes motores (backends) para la creación de figuras como pueden ser GR or pyplots (que utiliza en última instancia matplotlib) entre otros.
 
 
 ## Matemáticas y estadística
@@ -216,8 +214,7 @@ El paquete Documenter.jl es bastante interesante, y combina bien con la forma de
 
 ## Librerias equivalentes a xarray
 
-No existe aun una libreria consolida que sea equivalente al xarray de Python, y dentro del ecosistema existen muchas opciones diferentes, habra que espera un poco para ver la evolucion y la posible integracion de varias de ellas en otra mas madura. Las opciones son: AxisArrays.jl, NamedArrays.jl, CirculasArrays, NamedDimensions.jl, GeoArrays.jl etc
-
+No existe aun una libreria consolidada que sea equivalente al xarray de Python, y dentro del ecosistema existen muchas opciones diferentes, habra que espera un poco para ver la evolucion y la posible integracion de varias de ellas en otra mas madura. Las opciones son: AxisArrays.jl, NamedArrays.jl, CirculasArrays, NamedDimensions.jl, GeoArrays.jl etc. En principio AxisArrays.jl ha tenido bastante exito, pero el consenso general es que es necesario re-evaluar la implementación actual.
 
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
