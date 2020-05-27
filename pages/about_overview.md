@@ -57,10 +57,9 @@ Due to my professional trajectory my interest is also related with mathematical 
 
 ### Membership of Professional bodies
 
-* Royal Meteorological Office
-* European Geosciences Union
-* American Meteorological Society
-* American Geophysical Union
+* [Royal Meteorological Society](https://www.rmets.org/)
+* [European Geosciences Union](https://www.egu.eu/)
+* [American Geophysical Union](https://www.agu.org/) 
 
 <figure>
 <a href="/images/SCIENCE_MINDmap.png"><img src="/images/SCIENCE_MINDmap.png"></a>
@@ -82,6 +81,7 @@ Checa-Garcia, R., Hegglin, M. I. & Shine, K. P. 2016 Environ. Res. Lett. 11 0940
 <div class="small-2 columns">
 <span class="__dimensions_badge_embed__" data-id="pub.1014752738" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 </div>
+
 </div>
 
 <div class="row">
@@ -92,6 +92,22 @@ Checa-Garcia, R., Hegglin, M. I., Kinnison, D., Plummer, D. A., & Shine, K. P. (
 
 <div class="small-2 columns">
 <div data-badge-popover="right" data-badge-type="donut" data-doi="10.1002/2017gl076770" data-hide-no-mentions="true" class="altmetric-embed"></div>
+</div>
+	
+<div class="small-2 columns">
+<span class="__dimensions_badge_embed__" data-id="pub.1101266186" data-legend="hover-bottom" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="small-8 columns">
+Keeble, J., Hassler, B., Banerjee, A., Checa-Garcia, R., et al. (2020). Atmospheric Chemistry and Physics,	
+</div>
+
+<div class="small-2 columns">
+<div data-badge-popover="right" data-badge-type="donut" data-doi="10.5194/acp-2019-1202" data-hide-no-mentions="true" class="altmetric-embed"></div>
 </div>
 	
 <div class="small-2 columns">
