@@ -53,7 +53,10 @@ The first list refers to those open international initiatives in which I collabo
  - **SMURPHS**  : Securing Multidisciplinary UndeRstanding and Prediction of Hiatus and Surge events
 {:.smallquote}
 
-
+---
+  {% include alert info=' <a href="/research/publications/">Publications</a>' %}
+  {% include alert info=' <a href="/research/my-codes/">Software codes</a>' %}
+  
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
