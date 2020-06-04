@@ -54,8 +54,8 @@ The first list refers to those open international initiatives in which I collabo
 {:.smallquote}
 
 ---
-  {% include alert info=' <a href="/research/publications/">Publications</a>' %}
-  {% include alert info=' <a href="/research/my-codes/">Software codes</a>' %}
+
+  {% include alert info=' <a href="/research/publications/">Publications</a>' %} {% include alert info=' <a href="/research/my-codes/">Software codes</a>' %}
   
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
