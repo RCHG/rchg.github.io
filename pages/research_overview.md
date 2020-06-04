@@ -39,20 +39,19 @@ breadcrumb: true
 
 ### Projects 
 
- **Collaborations**
+The first list of projects refers to those open international initiatives in which I collaborate. The second block are specific project where I am or I have been working.
  
  - **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
  - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
- - **CCMI**: Chemistry-Climate Model Initiative
-
- **Researcher**
+ - **CCMI/SPARC**: Chemistry-Climate Model Initiative
  
+ {:.smallquote}
+
  - **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
  - **CLIMDO**   : CLImate relevant processing of Mineral Dust by volatile Organic compounds
  - **ESA**      : Project of Consolidation of SWIR of Sentinel-5 (related with ESA-Sentinel-5p)
  - **G3E**      : Geostationary Mission for Europe
  - **SMURPHS**  : Securing Multidisciplinary UndeRstanding and Prediction of Hiatus and Surge events
-
 {:.smallquote}
 
 
