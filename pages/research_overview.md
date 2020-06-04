@@ -37,14 +37,22 @@ breadcrumb: true
 
 [comment]: <> (My research background cover several fields and a broad set of methodologies both theoretical and experimental, with a strong focus on computational tools. My initial formation is Physics with an specialization on Theoretical Physics. This side was developed during my M.Sc. in Condensed Matter which was related with Statistical Physics in a theoretical field of Theory of Liquids. However my interest has been moved to the field of Atmospheric Sciences and Remote Sensing. Therefore the main scope of my PhD was related with Micro-physics of rainfall and remote sensing of precipitation, which also involves Applied Statistics. Actually I am working at the field of Remote Sensing of Trace Gases, this improves my knowledge on radiative transfer theory, inverse problem,satellite product, and spectroscopy)
 
-**Projects**
+### Projects 
 
-
-
- - **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
+ **Collaborations**
+ 
  - **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
  - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
  - **CCMI**: Chemistry-Climate Model Initiative
+
+ **Researcher**
+ 
+ - **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
+ - **CLIMDO**   : CLImate relevant processing of Mineral Dust by volatile Organic compounds
+ - **ESA**      : Project of Consolidation of SWIR of Sentinel-5 (related with ESA-Sentinel-5p)
+ - **G3E**      : Geostationary Mission for Europe
+ - **SMURPHS**  : Securing Multidisciplinary UndeRstanding and Prediction of Hiatus and Surge events
+
 {:.smallquote}
 
 
