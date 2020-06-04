@@ -29,10 +29,11 @@ Uno de los aspectos que intentan estar más cuidados en Julia son los arrays ya 
 
 Por otra parte, si bien es cierto que los arrays son centrales para lenguajes como Julia, en su caso no deja por ello de integrarse bien en el sistema de tipos del lenguaje a traves de [AbtractArrays](https://docs.julialang.org/en/v1/base/arrays/#Core.AbstractArray). 
 
-# Definición
+## Definición
 
 Un array es una colleción de elementos en una estructura multidimensional. Formalmente, esta estructura tiene forma de *grid*, lo que permite acceder a los elementos por indices que refieren a cada una de las dimensiones del array. En Julia estos elementos pueden tener formalmente cualquier tipo (o tipo `any`). Para propositos de calculo computacional lo normal es tipo float, pero estructuralmente la forma es similar. De hecho si definimos en Julia un tipo mediante `struct`, podemos construir un array de este tipo si lo deseasemos.
 
+## Como construir arrays
 ```
 A = ones(Float64, (2,2))
 ```
