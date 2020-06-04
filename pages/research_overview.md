@@ -58,12 +58,15 @@ breadcrumb: true
 The research at LSCE is close related with the CRESCENDO project, a joint project of several european universities and research insitutions to improve the Earth System Models. Related with this project I collaborate with [AerChemMIP](https://wiki.met.no/aerocom/aerchemmip/start) and [AeroCOM](https://aerocom.met.no/) beyond a collaboration about Mineral Dust with the [UCLA](https://jasperfkok.com/) at USA.
 {:.smallblock}
 
+<!--
 **Publications, conferences and reports**
 
 - **CRESCENDO-2019-GA**: *CRESCENDO-ESMs intercomparison: mineral dust aerosols*, **R. Checa-Garcia**, Yves Balkanski, B. Marticorena , P. Nabat , T. Bergman , T. van Noije , D. Olivié , M. Schulz , F. O’Connor , M. Dalvi , C. Dearden, M. Michou , C. Scott and K. Carslaw.
 - **EGU-2019 conference**: *Evaluation of natural marine aerosol in five Earth System Models*. Dirk Olivié, Michael Schulz, Øyvind Seland, Alf Kirkevåg, Twan van Noije, Tommi Bergman, Declan O’Donnell (3), Martine Michou (4), Pierre Nabat, Ken Carslaw, Chris Dearden, MohitDalvi, Fiona O’Connor, **Ramiro Checa-Garcia** and Yves Balkanski.
 - **CRESCENDO-2018-GA**: *Observational constraints to improve Dust natural cycle in ESMs*, *Ramiro Checa-Garcia* , Yves Balkanski, Beatrice Marticorena, Samuel Albani, Tommi Bergman, Twan van Noije, Dirk Olivie, Martine Michou, Catherine Scott and Ken Carslaw.
 {:.smallquote}
+
+-->
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
@@ -77,6 +80,7 @@ The [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) ar
 ) in the [recent slowdown](https://www.smurphs.leeds.ac.uk/new-publication-the-contribution-of-greenhouse-gases-to-the-recent-slowdown-in-global-mean-temperature-trends/). The main project is the [SMURPHS project](https://www.smurphs.leeds.ac.uk/) in which several universities of United Kingdom are collaborating. Other projects in which I participate are CAMS and SPARC iniciative. 
 {:.smallblock}
 
+<!--
 **Publications, Conferences, Reports**
 
 - <div data-badge-type="1" data-doi="10.1002/2017GL076770" data-hide-no-mentions="true" class="altmetric-embed"></div>   *Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database*, **R Checa-Garcia**, MI Hegglin, D. Kinnison, D. Plummer, KP Shine 'Geophysical Research Letters' 45 (7), Pages 3264
@@ -86,6 +90,8 @@ The [research projects](https://www.met.reading.ac.uk/userpages/vr912734.php) ar
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
+
+-->
 
 ---
 
@@ -99,7 +105,7 @@ My participation on Leibniz-Gemeinschaft was related with ascertain mineral dust
 
 The central goal of the project I was working is related with a consolidation of the [ESA satellite Sentinel-5](https://sentinel.esa.int/web/sentinel/missions/sentinel-5) requirements but also involved ESA satellite Sentinel-5p as well as the Geostationary Emission Explorer for Europe (G3E). This means a detailed study of the different error sources like instrumental, spectroscopy, forward models errors derived of an effective description of the atmosphere aerosols and cirrus. To be able to conduct this research I use state of the art retrieval algorithms (inverse problem and radiative transfer solver) with trial ensembles of geophysical scenarios. Additional aspects of the research are: evaluate the cloud cover with Meteosat datasets, integrate satellite products of MODIS and CALIPSO with datasets obtained from offline chemical transport model.
 {:.smallblock}
-
+<!--
 **Publications, Reports and conferences**
 
 - <div data-badge-type="1" data-doi="10.5194/amt-8-4719-2015" data-hide-no-mentions="true" class="altmetric-embed"></div>  *Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment.*
@@ -115,7 +121,7 @@ A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Boven
 - [HITRAN 2014 Conference](http://www.cfa.harvard.edu/HITRAN/Download/Proceedings-2014.pdf):  *Remote Sensing of Greenhouse gases and their sources and sinks*. André Butz, Arne Babenhauserheide, Marco Bertleff , **Ramiro Checa-Garcia**, Philipp Hahne, Frank Hase, Friedrich Klappenbach, Julian Kostinek, Ilse Aben, Otto Hasekamp, Jochen Landgraf, Arno de Lange, André Galli, Sourish Basu.
 - [AGU-2014 Meeting](http://fallmeeting.agu.org/2014/files/2014/12/Friday-Daily-Newspaper.pdf): *Remote Sensing G3E–Geostationary Emission Explorer for Europe: mission concept*. T. Knigge, F. Schmuelling A. Butz, J. Orphal, H. Bovensmann, T. von Clarmann, F. Friedl-Vallon, F. Hase, **R Checa-Garcia**, G. Hechenblaikner
 {:.smallquote}
-
+-->
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
