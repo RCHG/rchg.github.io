@@ -39,7 +39,7 @@ breadcrumb: true
 
 ### Projects 
 
-The first list of projects refers to those open international initiatives in which I collaborate. The second block are specific project where I am or I have been working.
+The first list refers to those open international initiatives in which I collaborate. The second block are specific projects.
  
  - **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
  - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
@@ -61,7 +61,7 @@ The first list of projects refers to those open international initiatives in whi
 
 ### Researcher: LSCE-CNRS
 
-The research at LSCE is close related with the CRESCENDO project, a joint project of several european universities and research insitutions to improve the Earth System Models. Related with this project I collaborate with [AerChemMIP](https://wiki.met.no/aerocom/aerchemmip/start) and [AeroCOM](https://aerocom.met.no/) beyond a collaboration about Mineral Dust with the [UCLA](https://jasperfkok.com/) at USA.
+The research at LSCE is close related with the CRESCENDO project, a joint project of several european universities and research insitutions to improve the Earth System Models. Related with this project I collaborate with [AerChemMIP](https://wiki.met.no/aerocom/aerchemmip/start) and [AeroCOM](https://aerocom.met.no/) beyond a collaboration about Mineral Dust with the [UCLA](https://jasperfkok.com/) at USA. The second part of my experience at LSCE-CNRS is related with [CLIMDO project](http://www.lisa.u-pec.fr/fr/projets?id=1238)
 {:.smallblock}
 
 <!--
