@@ -44,7 +44,6 @@ The first list of projects refers to those open international initiatives in whi
  - **AerChemMIP**: Aerosols and Chemistry Model Intercomparison Project 
  - **AeroCOM Phase III**: Aerosol Comparisons between Observations and Models
  - **CCMI/SPARC**: Chemistry-Climate Model Initiative
- 
  {:.smallquote}
 
  - **CRESCENDO**: Coordinated Research on Earth Systems aand Climate: Experimentes, kNowledge, Dissemination and Outreach
@@ -144,6 +143,7 @@ A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Boven
 - *Hydrology*:        **Water** (MPDI journal), (2018-2020)
 - *Hydrometeorology*: **Water Resources Research** (AGU journal), (2014).
 - *Remote Sensing*:   **Indian Journal of Radio and Space Physics.**, (2011).
+{:.smallquote}
 
 ---
 
