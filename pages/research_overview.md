@@ -20,8 +20,8 @@ breadcrumb: true
 <div class="panel radius" markdown="1">
 
   {% include alert info=' <a href="/research/my-codes/">Software codes</a>' %}
-  {% include alert info=' <a href="/research/publications/">Publications</a>' %}
-  {% include alert info=' <a href="/research/resources/">Resources and Links</a>' %}
+  {% include alert terminal=' <a href="/research/publications/">Publications</a>' %}
+  {% include alert success=' <a href="/research/resources/">Resources and Links</a>' %}
 
 </div>
 
@@ -55,7 +55,7 @@ The first list refers to those open international initiatives in which I collabo
 
 ---
 
-  {% include alert info=' <a href="/research/publications/">Publications</a>' %} {% include alert info=' <a href="/research/my-codes/">Software codes</a>' %}
+  {% include alert info=' <a href="/research/publications/">Publications</a>' %} {% include alert terminal=' <a href="/research/my-codes/">Software codes</a>' %}
   
 ---
 <small markdown="1">[Up to table of contents](#toc)</small>
