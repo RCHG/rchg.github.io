@@ -118,7 +118,7 @@ Si en nuestra entrada de pubs, poseemos un enlace *url* o el doi, esto permite a
 info: opening url https://doi.org/10.1002%2F2017gl076770
 {% endhighlight %}
 
-### Otras herramientas de pubs
+### Otras herramientas dentro de pubs
 
 Podemos importar previous archivos bibtex mediante
 
