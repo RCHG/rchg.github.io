@@ -128,6 +128,18 @@ A Butz, J Orphal, **R Checa-Garcia**, F Friedl-Vallon, T von Clarmann, , H Boven
 
 ---
 
+### Journal Reviewer
+
+- *Climatology*:      **Nature Geosciences** (Nature), (2019-2020)
+- *Meteorology*:      **Atmospheres** (MPDI journal), (2018-2020)
+- *Remote Sensing*:   **Remote Sensing** (MPDI journal), (2014-2020).
+- *Remote Sensing*:   **Sensors** (MPDI journal), (2018-2020)
+- *Hydrology*:        **Water** (MPDI journal), (2018-2020)
+- *Hydrometeorology*: **Water Resources Research** (AGU journal), (2014).
+- *Remote Sensing*:   **Indian Journal of Radio and Space Physics.**, (2011).
+
+---
+
 ### PhD. Dissertation
 
 **Important Note:**  I would recommend check [link](https://spideroak.com/browse/share/checagarcia/phddissertation) to download a PDF file with the Dissertation. However, please note that this version (and the version I uploaded to the arXiv repository) are not equal the official filled version at my university. More specifically: I finished my PhD Dissertation on November 2011. However because it was not filled until June-2012, I included additional research that I did by myself (alone) on the filled version. But also after finish my PhD (on September-2012) still I worked on several the same topics and I have included several improvements on the PDF on the version uploaded to arXiv (and on the first pdf linked above).
@@ -156,17 +168,7 @@ Two different theories are used to understand the liquid-vapor interfaces: the V
 
 
 
-### Journal Reviewer
----
-
-- *Remote Sensing*: **Indian Journal of Radio and Space Physics.**, (2011).
-- *Hydrometeorology*: **Water Resources Research** (AGU journal), (2014).
-- *Remote Sensing*: **Remote Sensing** (MPDI journal), (2014-2018).
-- *Remote Sensing*: **Sensors** (MPDI journal), (2018)
-- *Meteorology*: **Atmospheres** (MPDI journal), (2018)
-
-
-[^1]: My collaboration on this presentation was discussions about the topic with the main authors.
+<!-- [^1]: My collaboration on this presentation was discussions about the topic with the main authors. -->
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
