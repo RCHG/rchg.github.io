@@ -51,8 +51,8 @@ Donde `Array{Float64,2}` significa 2 dimensiones (dos indices) y 2x2 es el tamaÃ
 {% highlight Julia %}
 > ones(Int64, (2,3))
 2Ã—3 Array{Int64,2}
-1.0   1.0   1.0
-1.0   1.0   1.0
+1   1   1
+1   1   1
 {% endhighlight %}
 
 Es posible definir tambien arrays con la sintaxis [ ... ],
