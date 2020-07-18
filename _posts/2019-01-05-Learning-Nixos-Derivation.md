@@ -21,7 +21,7 @@ en NixOS
 Esta seria la derivación para el paquete Python **regionmask**, que hemos guardado
 en un archivo *regionmask.nix*
 
-{% highlight %}
+{% highlight nix %}
 { lib, buildPythonPackage, fetchFromGitHub
 , numpy, matplotlib, shapely, six, rasterio, cartopy
 , geopandas, affine, xarray
@@ -57,7 +57,7 @@ en un archivo *regionmask.nix*
 En mi caso tengo un archivo con los paquetes python llamado **python.nix*, que ahora será:
 pkgs: with pkgs; 
 
-{% highlight %}
+{% highlight nix %}
 let     
   regionmask      = pkgs.callPackage ./regionmask.nix {
     buildPythonPackage = python3Packages.buildPythonPackage;
@@ -84,7 +84,7 @@ in
 
 Mientras que configuration.nix tiene:
 
-{% highlight %}
+{% highlight nix %}
 
 { config, pkgs, lib, ... }:
 
