@@ -14,12 +14,19 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
+NixOS es un sistema operativo construido alrededor del *package manager* Nix. Su principal
+caracteristica es crear un método nuevo de definir el sistema operativo, del mismo modo que Nix hace 
+con el conjunto de paquetes y programas que usamos. Esto difiere notablemente de la aproximación 
+usual donde vamos añadiendo paquetes y configuraciones sobre la marcha, en lugar de generar un 
+sistema a partir de una declaración completa de que queremos que tenga y como queremos que opere. Veamos paso
+a paso que significa y como usarlo.
+
 # Nix
 
 Nix es un *package manager* que no asume información externa sobre el estado del sistema.
 Es decir, que no asume que determinados recursos, ficheros etc van a estar en determinadas
 localizaciones. Esto lleva a que los paquetes que instala estén contenidos en un directorio
-especial llamado **/nix/store/**
+especial llamado **/nix/store/** (y sea el propio Nix quien determine donde esta cada recurso).
 
 Dado que cada paquete en este directorio aparece con un *hash-name* del tipo:
 
@@ -59,9 +66,24 @@ Para entender como se estructuran las dependencias en */nix/store* existe un com
 
 Podemos también usar '''nix-store''' haciendo referencia a un paquete en */nix/store* para ver su árbol de dependencias.
 
+Hay que notar que no existe una cache ldconfig al uso (tradicional) con lo que la compilación tendrá que hacerse mediante programas en el lenguaje nix que se encargaran de la compilación e instalación de estos. Por ejemplo,
+
+```
+ldd `which sh`
+	linux-vdso.so.1 (0x00007ffdd0db5000)
+	libreadline.so.7 => /nix/store/8f6a83gmna7n0h0lasqzwzs3hzq2sl3x-readline-7.0p5/lib/libreadline.so.7 (0x00007feb45392000)
+	libhistory.so.7 => /nix/store/8f6a83gmna7n0h0lasqzwzs3hzq2sl3x-readline-7.0p5/lib/libhistory.so.7 (0x00007feb45385000)
+	libncursesw.so.6 => /nix/store/xhhkr936b9q5sz88jp4l29wljbbcg39k-ncurses-6.1-20190112/lib/libncursesw.so.6 (0x00007feb45314000)
+	libdl.so.2 => /nix/store/xg6ilb9g9zhi2zg1dpi4zcp288rhnvns-glibc-2.30/lib/libdl.so.2 (0x00007feb4530f000)
+	libc.so.6 => /nix/store/xg6ilb9g9zhi2zg1dpi4zcp288rhnvns-glibc-2.30/lib/libc.so.6 (0x00007feb45150000)
+	/nix/store/xg6ilb9g9zhi2zg1dpi4zcp288rhnvns-glibc-2.30/lib/ld-linux-x86-64.so.2 => /nix/store/xg6ilb9g9zhi2zg1dpi4zcp288rhnvns-glibc-2.30/lib64/ld-linux-x86-64.so.2 (0x00007feb453e2000)
+```
+nos muestra como son las referencias a librerias de la *shell sh*, como vemos no estan en los directorios habituales.
+
+
 ## Lenguaje Nix
 
-Hasta el momento hemos visto solo nix como un comando shell que instala paquetes. En realidad, Nix es bastante más, es un lenguaje de programación para gestionar todos los aspectos de la creación y uso de derivaciones.
+Hasta el momento hemos visto solo nix como un *comando shell* que instala paquetes. En realidad, Nix es bastante más, es un lenguaje de programación para gestionar todos los aspectos de la creación y uso de derivaciones.
 
 Así el lenguaje nix es un lenguaje de tipo funcional (solo posee expresiones, no statements), y sus variables son inmutables. En ingles Nix es: a pure, lazy, functional language, strongly typed, but it's not statically typed. Esencialmente, escribimos expresiones que crean una derivación que luego se construye con **nix-build** (un comando que lee el código de la derivación y lo interpreta para crear luego el paquete).
 
@@ -69,9 +91,9 @@ Podemos abrir en nuestra shell un entorno repl (como hay en Python, Haskell o Ju
 
 ### Tipos basicos en Nix:
 
-- integer
-- floating point
-- string
+- Entero (integer)
+- Coma flotante (floating point)
+- Cadena de caracteres (string)
 - path
 - boolean
 - null
