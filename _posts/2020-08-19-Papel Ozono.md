@@ -6,23 +6,15 @@ subheadline: Article
 author: ramiro_chg
 breadcrumb: true
 tags:
-    - [atmospheric-physics]
+    - [atmospheric-physics,theconversation, divulgation]
 categories:
-    - science-blog, theconversation, divulgation
+    - science-blog
 header:
     title: "El creciente papel del ozono en el cambio climático"
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
 <script type="text/javascript" src="https://theconversation.com/javascripts/lib/content_tracker_hook.js" id="theconversation_tracker_hook" data-counter="https://counter.theconversation.com/content/141002/count?distributor=republish-lightbox-advanced" async="async"></script>
-
-  <figure>
-    <img src="https://images.theconversation.com/files/351964/original/file-20200810-14-1h36cor.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C4000%2C2664&q=45&auto=format&w=754&fit=clip" />
-      <figcaption>
-        Los motores de combustión y las emisiones industriales producen compuestos precursores del ozono.
-        <span class="attribution"><a class="source" href="https://www.shutterstock.com/es/image-photo/high-pollution-coal-power-plant-133957013">Kodda/Shutterstock</a></span>
-      </figcaption>
-  </figure>
 
 <span><a href="https://theconversation.com/profiles/ramiro-checa-garcia-1126023">Ramiro Checa-Garcia</a>, <em><a href="https://theconversation.com/institutions/sorbonne-universite-2467">Sorbonne Université</a></em></span>
 
