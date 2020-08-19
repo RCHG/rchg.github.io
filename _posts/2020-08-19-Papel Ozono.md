@@ -13,6 +13,7 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
+<img src="https://counter.theconversation.com/content/141002/count.gif?distributor=republish-lightbox-advanced" alt="The Conversation" width="1" height="1" style="border: none !important; box-shadow: none !important; margin: 0 !important; max-height: 1px !important; max-width: 1px !important; min-height: 1px !important; min-width: 1px !important; opacity: 0 !important; outline: none !important; padding: 0 !important; text-shadow: none !important" />
 <h1 class="legacy">El creciente papel del ozono en el cambio climático</h1>
 
   <figure>
