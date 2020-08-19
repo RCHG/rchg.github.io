@@ -13,7 +13,7 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
-<img src="https://counter.theconversation.com/content/141002/count.gif?distributor=republish-lightbox-advanced" alt="The Conversation" width="1" height="1" style="border: none !important; box-shadow: none !important; margin: 0 !important; max-height: 1px !important; max-width: 1px !important; min-height: 1px !important; min-width: 1px !important; opacity: 0 !important; outline: none !important; padding: 0 !important; text-shadow: none !important" />
+<script type="text/javascript" src="https://theconversation.com/javascripts/lib/content_tracker_hook.js" id="theconversation_tracker_hook" data-counter="https://counter.theconversation.com/content/141002/count?distributor=republish-lightbox-advanced" async="async"></script>
 
   <figure>
     <img src="https://images.theconversation.com/files/351964/original/file-20200810-14-1h36cor.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C4000%2C2664&q=45&auto=format&w=754&fit=clip" />
