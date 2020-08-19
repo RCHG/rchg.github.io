@@ -2,11 +2,11 @@
 layout: page
 sidebar: right
 title: "El creciente papel del ozono en el cambio climático"
-subheadline: Article
+subheadline: Article (Publicado en "The Conversation)"
 author: ramiro_chg
 breadcrumb: true
 tags:
-    - [atmospheric-physics,theconversation, divulgation]
+    - [atmospheric-physics, theconversation, divulgation]
 categories:
     - science-blog
 header:
