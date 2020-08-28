@@ -40,7 +40,7 @@ header:
 
 <p>Estos modelos son el resultado de la evolución de los modelos de clima globales durante las últimas décadas. Reúnen el conocimiento interdisciplinar necesario para  diagnosticar los impactos del cambio climático. Y, por tanto diseñar, medidas que mitiguen la situación de emergencia medioambiental global que vivimos.</p>
 
-<h2>Evolución de los modelos de clima globales</h2>
+<h1>Evolución de los modelos de clima globales</h1>
 
 <p>Los lectores de más edad recordarán aquellos programas del tiempo en los que aparecían líneas de presión y unas letras: <em>A</em>, de anticiclón y <em>B</em>, de borrasca. Los meteorólogos codificaban así las medidas de presión disponibles en modelos conceptuales que permitían elaborar un diagnóstico y un pronóstico del estado de la atmósfera. </p>
 
@@ -56,7 +56,7 @@ header:
             </figcaption>
           </figure>
 
-<h1>Modelos de la atmósfera y del océano</h1>
+<h2>Modelos de la atmósfera y del océano</h2>
 
 <p>Nuestra percepción cotidiana del tiempo meteorológico se centra esencialmente en tres aspectos: temperatura, lluvia y nubosidad. Estos tres aspectos suceden y se miden en la capa de la atmósfera más cercana a la superficie terrestre, la troposfera. </p>
 
@@ -66,7 +66,7 @@ header:
 
 <p>Por estas razones, la primera etapa en la construcción de modelos de clima globales consistió en incluir tanto el sistema atmósfera como el sistema océano y sus capas de hielo (la criosfera). Este tipo de modelo de clima, denominado <em>modelo de clima acoplado global</em> ya se utilizaba en la década de los 80 y fue un elemento clave en el primer informe del IPCC de 1990. En él ya se documentaba y alertaba del cambio climático y varias de sus consecuencias, como el calentamiento global y la subida del nivel del mar.</p>
 
-<h1>Describiendo la química atmosférica</h1>
+<h2>Describiendo la química atmosférica</h2>
 
 <p>A principios de la década de 1980 varios científicos constataron que la industria y sus emisiones de <a href="https://es.wikipedia.org/wiki/CFC">clorofluorocarbonos (CFC)</a> habían provocado un descenso notable de la cantidad de ozono en la estratosfera. El conocido como agujero en la capa de ozono afectaba gravemente al Polo Sur.</p>
 
@@ -82,7 +82,7 @@ header:
 
 <p>Por ejemplo, la presencia de partículas atmosféricas es necesaria para la formación de las nubes. Las emisiones de dichas partículas y su producción en la atmósfera por la emisión de determinados gases conllevan la alteración antropogénica de los sistemas nubosos.</p>
 
-<h1>Cambios en la superficie terrestre</h1>
+<h2>Cambios en la superficie terrestre</h2>
 
 <p>Si también incluimos los cambios en la superficie (deforestación y cambios en el uso del terreno) tenemos un modelo que integra <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2003GB002199">otro elemento del sistema terrestre</a>. </p>
 
@@ -92,7 +92,7 @@ header:
 
 <p>Se ha descubierto, por ejemplo, que el transporte en la atmósfera de partículas minerales emitidas en el Sahara está fertilizando tanto <a href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1002/2013GB004802">los ecosistemas marinos del Atlántico</a> <a href="https://iopscience.iop.org/article/10.1088/1748-9326/1/1/014005/meta">como la Amazonia</a>. Estos nuevos elementos incorporados a los modelos pueden ayudar a la cuantificación de estos procesos.</p>
 
-<h1>Modelos del sistema terrestre</h1>
+<h2>Modelos del sistema terrestre</h2>
 
 <p>Los modelos actuales de clima que incorporan todos estos subsistemas se denominan modelos del sistema terrestre. Permiten describir con creciente detalle los diferentes ciclos que existen en la naturaleza y que la actividad humana está cambiando, como el ciclo hidrológico, al ciclo del carbono y el del nitrógeno. </p>
 
