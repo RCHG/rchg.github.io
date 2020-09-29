@@ -210,11 +210,17 @@ El paquete Distributions.jl tiene bastantes posibilidades aunque hay en este mom
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 | Documenter.jl     | Documentar codigo paquetes       |  Open-Source  | [docs](https://juliadocs.github.io/Documenter.jl/stable/)  | [github](https://github.com/JuliaDocs/Documenter.jl) |
 
-El paquete Documenter.jl es bastante interesante, y combina bien con la forma de crear docstrings del propio lenguaje. Este paquete es similar a Sphinx desarrollado en Python con una visualizacion por defecto parecida a *ReadTheDocs*. 
+El paquete Documenter.jl es bastante interesante, y combina bien con la forma de crear docstrings del propio lenguaje. Este paquete es similar a Sphinx desarrollado en Python con una visualizacion por defecto parecida a *ReadTheDocs*. Ha surgido recientemente una alternativa a Documenter llamada *Publish.jl* pero no es tan usada.
+
+## Paginas Web
+
+| Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
+| ----------------- | ---------------------- | ------------ | -----| ---------- |
+| Franklin.jl   | Crear paginas web       |  Open-Source  | [docs](https://franklinjl.org/)  | [github](https://github.com/tlienart/Franklin.jl) |
 
 ## Librerias equivalentes a xarray
 
-No existe aun una libreria consolidada que sea equivalente al xarray de Python, y dentro del ecosistema existen muchas opciones diferentes, habra que espera un poco para ver la evolucion y la posible integracion de varias de ellas en otra mas madura. Las opciones son: AxisArrays.jl, NamedArrays.jl, CirculasArrays, NamedDimensions.jl, GeoArrays.jl etc. En principio AxisArrays.jl ha tenido bastante exito, pero el consenso general es que es necesario re-evaluar la implementación actual.
+No existe aun una única libreria consolidada que sea equivalente al xarray de Python, y dentro del ecosistema existen muchas opciones diferentes, habrá que esperar un poco para ver la evolución y la posible integración de varias de ellas en otra más madura. Las opciones son: AxisArrays.jl, NamedArrays.jl, CircularArrays, NamedDimensions.jl, GeoArrays.jl etc. En principio AxisArrays.jl ha tenido bastante exito, pero el consenso general es que es necesario re-evaluar la implementación actual. 
 
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
