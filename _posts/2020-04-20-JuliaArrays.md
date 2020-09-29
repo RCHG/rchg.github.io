@@ -70,7 +70,25 @@ Donde Julia ha inferido el tipo como Int64. Notar que en Python una lista (cuya 
 
 
 
+## De archivos de texto a arrays
 
+Esto es sencillo gracias a parte de la libreria standard llamada DelimitedFiles. Si por ejemplo tengo un archivo de datos llamado datos.txt
+
+{% highlight Julia %}
+1.0 2.0 2.1
+1.1 2.0 2.6
+1.5 3.0 0.0
+110 0.1 9.9
+{% endhighlight %}
+
+Podemos tener un array directamente con:
+{% highlight Julia %}
+
+using DelimitedFiles
+
+data = DelimitedFiles.readdlm("datos.txt")
+
+{% endhighlight %}
 
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
