@@ -186,7 +186,7 @@ Os indico algunos modulos dentro de la libreria estandar (que es distribuida con
 Notes: **Plots.jl** puede usar diferentes motores (backends) para la creación de figuras como pueden ser GR or pyplots (que utiliza en última instancia matplotlib) entre otros.
 
 
-## Matemáticas y estadística
+### Matemáticas y estadística
 
 | Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
@@ -197,14 +197,14 @@ Notes: **Plots.jl** puede usar diferentes motores (backends) para la creación d
 
 El paquete Distributions.jl tiene bastantes posibilidades aunque hay en este momento (Abril 2020) discussion acerca de una nueva API que llevaria a cambios drasticos. El programador tiene otra libreria llamada `Measures.jl` interesante de evaluar.
 
-## Machine Learning
+### Machine Learning
 
 | Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
 | Flux.jl       	| [Machine Learning approach](https://julialang.org/blog/2017/12/ml&pl)       |  Open-Source  | [docs](https://fluxml.ai/Flux.jl/stable/) , [paper](https://joss.theoj.org/papers/10.21105/joss.00602) | [github](https://github.com/FluxML/Flux.jl) |
 | MLJ.jl       	| [Machine Learning methods](https://github.com/alan-turing-institute/MLJModels.jl/blob/master/src/registry/Models.toml)      |  Open-Source  | [docs](hhttps://alan-turing-institute.github.io/MLJ.jl/stable/) | [github](https://github.com/alan-turing-institute/MLJ.jl) |
 
-## Documentación
+### Documentación
 
 | Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
@@ -212,7 +212,7 @@ El paquete Distributions.jl tiene bastantes posibilidades aunque hay en este mom
 
 El paquete Documenter.jl es bastante interesante, y combina bien con la forma de crear docstrings del propio lenguaje. Este paquete es similar a Sphinx desarrollado en Python con una visualizacion por defecto parecida a *ReadTheDocs*. Ha surgido recientemente una alternativa a Documenter llamada *Publish.jl* pero no es tan usada.
 
-## Paginas Web
+### Paginas Web
 
 | Nombre 	| Propósito                | Licencia     |	Docs   | Repositorio|
 | ----------------- | ---------------------- | ------------ | -----| ---------- |
