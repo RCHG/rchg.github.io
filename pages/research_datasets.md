@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: "Research"
 subheadline: "Datasets"
-permalink: "/research/topics/"
+permalink: "/research/datasets/"
 header:
     title: Datasets prepared/contributed
     pattern: pattern_jquery-dark-grey-tile.png
