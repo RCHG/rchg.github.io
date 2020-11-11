@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: "Teaching Resources Links"
 subheadline: ""
-permalink: "teaching/resources/"
+permalink: "teaching/courses/"
 header:
     title: R. Checa-Garcia webpage | Teaching Resources
     pattern: pattern_jquery-dark-grey-tile.png
