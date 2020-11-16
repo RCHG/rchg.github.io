@@ -26,6 +26,37 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
+<ul>
+</ul>
+<h2 style="text-align:center; background-color:powderblue;">2020</h2>
+<ul>
+<li style="margin: 8px 0"><b>Direct Radiative Effect by Mineral Dust Aerosols Constrained by New Microphysical and Spectral Optical Data</b>.  <span style="color:#900">C. Di Biagio, Y. Balkanski, S. Albani, O. Boucher, and P. Formenti</span>.  <span style="color:#666666">Geophysical Research Letters</span>, <span style="color:#666666">Jan 2020</span>.  [<a href=https://doi.org/10.1029%2F2019gl086186 style="color:#1772d0">Paper</a>]</li>
+</ul>
+<h2 style="text-align:center; background-color:powderblue;">2019</h2>
+<ul>
+<li style="margin: 8px 0"><b>Impact of Multiscale Variability on Last 6,000 Years Indian and West African Monsoon Rain</b>.  <span style="color:#900">P. Braconnot, J. Crétat, O. Marti, Y. Balkanski, A. Caubel, A. Cozic, M. -A. Foujols, and S. Sanogo</span>.  <span style="color:#666666">Geophysical Research Letters</span>, <span style="color:#666666">Dec 2019</span>.  [<a href=https://doi.org/10.1029%2F2019gl084797 style="color:#1772d0">Paper</a>]</li>
+</ul>
+<h2 style="text-align:center; background-color:powderblue;">2014</h2>
+<ul>
+<li style="margin: 8px 0"><b>A global model simulation of present and future nitrate aerosols and their direct radiative forcing of climate</b>.  <span style="color:#900">D. A. Hauglustaine, Y. Balkanski, and M. Schulz</span>.  <span style="color:#666666">Atmospheric Chemistry & Physics</span>, <span style="color:#666666">2014</span>.  [<a href=www.atmos-chem-phys.net/14/11031/2014/ style="color:#1772d0">Paper</a>]</li>
+</ul>
+<h2 style="text-align:center; background-color:powderblue;">2013</h2>
+<ul>
+<li style="margin: 8px 0"><b>Aerosol and ozone changes as forcing for climate evolution between 1850 and 2100</b>.  <span style="color:#900">S. Szopa, Y. Balkanski, M. Schulz, S. Bekki, D. Cugnet, A. Fortems-Cheiney, S. Turquety, A. Cozic, C. Déandreis, D. Hauglustaine, A. Idelkadi, J. Lathière, F. Lefevre, M. Marchand, R. Vuolo, N. Yan, and J.-L. Dufresne</span>.  <span style="color:#666666">Climate Dynamics</span>, <span style="color:#666666">2013</span>.  [<a href=http://adsabs.harvard.edu/abs/2013ClDy...40.2223S style="color:#1772d0">Paper</a>]</li>
+</ul>
+<h2 style="text-align:center; background-color:powderblue;">2010</h2>
+<ul>
+<li style="margin: 8px 0"><b>Sensitivity of isoprene emissions from the terrestrial biosphere to 20th century changes in atmospheric CO2 concentration, climate, and land use</b>.  <span style="color:#900">J. Lathière, C. N. Hewitt, and D. J. Beerling</span>.  <span style="color:#666666">Global Biogeochemical Cycles</span>, <span style="color:#666666">2010</span>.  [<a href=https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2009GB003548 style="color:#1772d0">Paper</a>]</li>
+</ul>
+<h2 style="text-align:center; background-color:powderblue;">2009</h2>
+<ul>
+<li style="margin: 8px 0"><b>LMDzT-INCA dust forecast model developments and associated validation efforts</b>.  <span style="color:#900">M Schulz, A Cozic, and S Szopa</span>.  <span style="color:#666666">IOP Conference Series: Earth and Environmental Science</span>, <span style="color:#666666">2009</span></li>
+</ul>
+<h2 style="text-align:center; background-color:powderblue;">1998</h2>
+<ul>
+<li style="margin: 8px 0"><b>Uncertainties in assessing radiative forcing by mineral dust</b>.  <span style="color:#900">T. Claquin, M. Schulz, Y. Balkanski, and O. Boucher</span>.  <span style="color:#666666">Tellus Series B Chemical and Physical Meteorology B</span>, <span style="color:#666666">1998</span>.  [<a href=http://adsabs.harvard.edu/abs/1998TellB..50..491C style="color:#1772d0">Paper</a>]</li>
+</ul>
+
 <script type="text/javascript">
 <!--
 // QuickSearch script for JabRef HTML export 
@@ -410,8 +441,6 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 	tr { page-break-inside: avoid; }
 }
 </style>
-</head>
-<body>
 
 <form action="" id="quicksearch">
 <input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..." /> <input type="button" onclick="clearQS()" value="clear" />
