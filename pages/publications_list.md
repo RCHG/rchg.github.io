@@ -1,7 +1,6 @@
 ---
 layout: page-fullwidth
 subheadline: "Scientific Publications"
-permalink: "/research/publications/"
 header:
     title: Scientific Publications
     pattern: pattern_jquery-dark-grey-tile.png
