@@ -35,30 +35,18 @@ format: blog-index
     </div>-->  
 </div>
 
-    <div class="row t30 b20 homepage">
-        <div class="small-12 columns">
+
+{% unless site.posts == empty %}
+    <div class="row">
+        <div class="medium-6 columns">
+        
         {% include alert info=' <a href="/research/overview">Research</a>' %}
         {% include alert info=' <a href="/research/publications/">Publications</a>' %}
         {% include alert info=' <a href="/research/my-codes/">Software</a>' %}
         {% include alert info=' <a href="/research/datasets/">Datasets</a>' %}
         {% include alert info=' <a href="/teaching/overview/">Teaching</a>' %}
-
-        </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
-
-{% unless site.posts == empty %}
-    <div class="row">
-        <div class="medium-6 columns">
-            {% for post in site.posts limit:3 %}
-            <!-- {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %} -->
-            <h3><a class="button tiny info" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-            <p>
-                {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
-                <!-- <a  href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a> -->
-            </p>
-            {% endfor %}
-        </div><!-- /.medium-5.columns -->
-
+            
+        </div><!-- /.small-6.columns -->
 
         <div class="medium-6 columns">
             <p><strong>{{ site.data.language.recent_articles }}</strong></p>
