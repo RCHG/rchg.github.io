@@ -36,7 +36,6 @@ format: blog-index
 </div>
 
 
-{% unless site.posts == empty %}
     <div class="row">
         <div class="medium-6 columns">
         
@@ -47,13 +46,14 @@ format: blog-index
         {% include alert info=' <a href="/teaching/overview/">Teaching</a>' %}
             
         </div><!-- /.small-6.columns -->
-
         <div class="medium-6 columns">
+            {% unless site.posts == empty %}
             <p><strong>{{ site.data.language.recent_articles }}</strong></p>
             {% include list-posts entries='15' offset='0' %}
+            {% endunless %}
         </div><!-- /.medium-7.columns -->
+
     </div><!-- /.row -->
-{% endunless %}
 
 <div class="row">
     {{ content }}
