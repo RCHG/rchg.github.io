@@ -40,8 +40,15 @@ format: blog-index
 
 
     <div class="row">
-        <div class="medium-6 columns">
-        
+            <div class="row">
+  <div class="small-4 columns">
+        {% include alert info=' <a href="/research/overview">Research</a>' %}
+  <div class="small-4 columns">
+        {% include alert warning=' <a href="/research/publications/">Publications</a>' %}
+  <div class="small-4 columns">
+        {% include alert warning=' <a href="/research/datasets/">Datasets</a>' %}
+</div>
+            
         {% include alert info=' <a href="/research/overview">Research</a>' %}
            <div class="small-3 columns">
         {% include alert warning=' <a href="/research/publications/">Publications</a>' %}
