@@ -27,6 +27,8 @@ breadcrumb: true
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
+    		        {% bibliography --query @article %}
+			
 > An expert is a person who has made all the mistakes that can be made in a very narrow field. ― **Niels Bohr**
 
 ### Earth Sciences General
