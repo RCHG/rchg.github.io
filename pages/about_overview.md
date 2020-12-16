@@ -170,14 +170,14 @@ My daily research job is done with computers, that I use for data analysis of ex
 
 ### Tools in Atmospheric Sciences
 
-My recomendations to work in modelling/simulation in Atmospheric Sciences rely on open-source software. Regarding the operating system I use nowadays only *Linux*, in particular Debian and NixOS (although I have used many distributions I have choosen these two). To program I think that still *Fortran* 90 (sadly also 77) is a necessary language to learn because of the large number of projects using it and its great performance for numerical calculations. But my recommendation is to learn other language for data analysis, visualization and other tasks. For this probably the clever option now is *Python*, although I dislike some aspects and I prefer for example *Julia*, the number of libraries and the general use of it in Atmospheric Sciences indicate that it is a mainstream language. You need also to be familar with the file formats typically used in our field: *netCDF*, *HDF5* and GRIB. Sometimes BURF and often plain and csv formated text files. If you want to advance more in complex project learn *make* and *bash* is also a must. Learn a version control tool like git or svn is probably another must. For publications I use *LaTeX* and *inkscape* for diagrams
+My recommendations to work in modelling/simulation in Atmospheric Sciences rely on open-source software. Regarding the operating system I use nowadays only *Linux*, in particular Debian and NixOS (although I have used many distributions I have chosen these two). For programming,  I think that still *Fortran 90* (sadly also 77) is a necessary language to learn because of the large number of projects using it and its great performance for numerical calculations. But my recommendation is to learn other language for data analysis, visualization and other tasks. For this probably the clever option now is *Python*, although I dislike some aspects and I prefer for example Julia, the number of libraries and the general use of it in Atmospheric Sciences indicate that it is a mainstream language. You need also to be familiar with the file formats typically used in our field: *netCDF*, HDF5 and GRIB. Sometimes BURF and often plain and csv formatted text files. If you want to advance more in complex projects, then to learn *make* and *bash* is also a must. Learn a version control tool like *git* or *svn* is probably another must. For publications, I use *LaTeX* and *inkscape* for diagrams.
 
 #### Key basic libraries
 
 - *Fortran 90*: LAPACK / BLAS
 - *Python*: numpy, scipy, xarray, pandas, iris (of scitools from MetOffice), ESMValTool, Matplotlib, Cartopy
 - *Docummeting*: Doxygen (for Fortran), Sphinx (for python), Documenter (for Julia code)
-- *Version control*: Subversion (svn), git, Mercurial (Hg) 
+- *Version control*: Subversion (svn), gihttps://languagetool.org/t, Mercurial (Hg) 
 - *Publications*: LaTeX/Tex and Inkscape
 
 #### My scientific codes
