@@ -19,11 +19,11 @@ format: blog-index
         **scientific computing** (my notes about the topic) and finally more personal like *comments or opinions*. 
         Below you have the most recent entries.' 
         %}        
-            <div class="small-8 columns">
+            <div class="small-6 columns">
                 {% include alert info=' <a href="/research/overview">Research</a>' %}
                 {% include alert info=' <a href="/teaching/overview/">Teaching</a>' %}
             </div>    
-            <div class="small-8 columns">
+            <div class="small-6 columns">
                 {% include alert warning=' <a href="/blog/archive_science/">Science Blog</a>' %}
                 {% include alert warning=' <a href="/blog/archive_computing/">Computing Blog</a>' %}
             </div>    
@@ -53,7 +53,7 @@ format: blog-index
         {% include alert info=' <a href="/blog/open_letters/">Open Letters</a>' %}
     </div>-->  
         <div class="row">
-        <div class="small-8 columns">
+        <div class="small-6 columns">
  <figure>
     <a href="https://commons.wikimedia.org/wiki/File:Components_of_Radiative_Forcing.jpg">
     <img width="565" alt="Components of Radiative Forcing" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Components_of_Radiative_Forcing.jpg/565px-Components_of_Radiative_Forcing.jpg">
@@ -73,7 +73,7 @@ format: blog-index
             
         </div><!-- /.medium-4.columns -->
 
-        <div class="small-8 columns">
+        <div class="small-6 columns">
             {% unless site.posts == empty %}
             <p><strong>{{ site.data.language.recent_articles }}</strong></p>
             {% include list-posts entries='30' offset='0' %}
