@@ -1,7 +1,7 @@
 ---
 layout: page
 sidebar: right
-title: "La ciencia del clima que explicamos a los políticos europeos para cumplir con el Acuerdo de París "
+title: "La ciencia del clima que explicamos a los políticos para cumplir el Acuerdo de París "
 subheadline: Article (en "The Conversation")
 author: ramiro_chg
 breadcrumb: true
