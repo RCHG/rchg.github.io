@@ -61,11 +61,6 @@ Due to my professional trajectory my interest is also related with mathematical 
 * [European Geosciences Union](https://www.egu.eu/)
 * [American Geophysical Union](https://www.agu.org/) 
 
-<figure>
-<a href="/images/SCIENCE_MINDmap.png"><img src="/images/SCIENCE_MINDmap.png"></a>
-	<figcaption><a title="Conceptual Mind-Map of my Research Background">Conceptual Mind-Map of my Research Experience</a>.</figcaption>
-</figure>
-
 ### Links to recent publications
 
 <div class="row">
@@ -183,6 +178,11 @@ My recommendations to work in modelling/simulation in Atmospheric Sciences rely 
 #### My scientific codes
 
 You can check them at <a href="/research/my-codes/">Software Codes</a>
+
+<figure>
+<a href="/images/SCIENCE_MINDmap.png"><img src="/images/SCIENCE_MINDmap.png"></a>
+	<figcaption><a title="Conceptual Mind-Map of my Research Background">Conceptual Mind-Map of my Research Experience</a>.</figcaption>
+</figure>
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
