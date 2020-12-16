@@ -7,7 +7,7 @@
   side: left
 
 - title: "Research"
-  url: "research/"
+  url: "research/overview"
   side: left
   dropdown:
   - title: "Experience"
@@ -22,7 +22,7 @@
     url: "research/resources/"
 
 - title: "Teaching"
-  url: "teaching/"
+  url: "teaching/overview"
   side: left
   dropdown:
   - title: "Approach"
