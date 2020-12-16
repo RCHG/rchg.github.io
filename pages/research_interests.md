@@ -22,7 +22,6 @@ breadcrumb: true
   {% include alert info=' <a href="/research/my-codes/">My own sofware codes</a>' %}
   {% include alert info=' <a href="/research/resources/">Resources and Links</a>' %}
 
-    		        {% bibliography --query @article %}
 </div>
 
 </div><!-- /.medium-4.columns -->
