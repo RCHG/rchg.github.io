@@ -14,7 +14,7 @@ breadcrumb: true
 
 <div class="panel radius" markdown="1">
 
-## Academic
+## Research Overview
 
 
 > One thing I have learned in a long life: that all our science, measured against reality, is primitive and childlike -- and yet it is the most precious thing we have. ― **Albert Einstein**
@@ -33,7 +33,7 @@ breadcrumb: true
 
 ### General Overview
 
-My main field of research is, currently, the *climate response* to several agents on the atmosphere, either greenhouse gases or aerosols. However, my academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about theory of liquids (statistical physics of fluids) at the University Autónoma of Madrid, where I was also teacher assistant on Laboraties of Experimental Physics during two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
+My main field of research is, currently, the *climate response* to several agents on the atmosphere, either greenhouse gases or aerosols. My academic career started with a B.A. in Spanish from the University of Granada, where I graduated on Physics with an specialization on Theoretical Physics. Awarded with a scholarship, I obtained a M.Sc. on Condensed Matter with an dissertation about theory of liquids (statistical physics of fluids) at the University Autónoma of Madrid, where I was also teacher assistant on Laboraties of Experimental Physics during two years. In the field of Atmospheric Sciences, I have a PhD on Remote Sensing and Micro-physics of Precipitation at Spain with an stage at NASA Goddard Space Center (sponsored by University of Maryland-Baltimore County). My experience as Postdoctoral research assistant includes the institutions:
 
 - *Laboratory for Sciences of Climate and Environment (LSCE)* were I work for the CNRS on the climate modelling of Earth System with a focus on *natural aerosols*.
 - The *University of Reading*, in collaboration with Keith Shine and M. Hegglin, where I studed the *radiative forcing* of several agents on the atmosphere, in particular Ozone.
@@ -51,7 +51,7 @@ My main field of research is, currently, the *climate response* to several agent
 
 ### Scientific Interests
 
-My objective is a better understanding of the climate response to greenhouse gases and aerosols (with an additinal focus on mineral dust), but also improve my knowledge of remote sensing applied on earth sciences. For the first question, I investigates the climate variability and radiative forcing estimations together with the role of the Ozone on the climate system (which is complemented by my interest on numerical models of atmospheric processes at several scales). My interest on remote sensing comprises develop simulations of the actual measurement conditions to assert the uncertainty and new applications of remote sensing, but also in-situ measurement to calibrate, test and validate satellite products and improve retrieval algorithms. I am interested on carbon cycle and water cycle application of remote sensing science.
+My objective is a better understanding of the climate response to greenhouse gases (in particular ozone) and aerosols (with an additinal focus on mineral dust), but also improve my knowledge of remote sensing applied on earth sciences. For the first question, I investigates the climate variability and radiative forcing estimations together with the role of the Ozone on the climate system (which is complemented by my interest on numerical models of atmospheric processes at several scales). My interest on remote sensing comprises develop simulations of the actual measurement conditions to assert the uncertainty and new applications of remote sensing, but also in-situ measurement to calibrate, test and validate satellite products and improve retrieval algorithms. I am interested on carbon cycle and water cycle application of remote sensing science.
 
 Due to my professional trajectory my interest is also related with mathematical methods, in particular those related with statistics and statistical physics, together with scientific computing.
 
@@ -66,7 +66,7 @@ Due to my professional trajectory my interest is also related with mathematical 
 	<figcaption><a title="Conceptual Mind-Map of my Research Background">Conceptual Mind-Map of my Research Experience</a>.</figcaption>
 </figure>
 
-### Links to relevant publications
+### Links to recent publications
 
 <div class="row">
 	
@@ -143,7 +143,7 @@ Thornhill, G., Collins, W., Archibald, A., Bauer, S., Checa-Garcia, R. et al., (
 
 <div class="panel radius" markdown="1">
 
-## Computing
+## Scientific Computing
 
 > Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. ― **Marie Curie**
 
@@ -168,64 +168,21 @@ My daily research job is done with computers, that I use for data analysis of ex
 
 ---
 
-### My scientific computing carpentry
+### Tools in Atmospheric Sciences
 
-#### Operating Systems
+My recomendations to work in modelling/simulation in Atmospheric Sciences rely on open-source software. Regarding the operating system I use nowadays only *Linux*, in particular Debian and NixOS (although I have used many distributions I have choosen these two). To program I think that still *Fortran* 90 (sadly also 77) is a necessary language to learn because of the large number of projects using it and its great performance for numerical calculations. But my recommendation is to learn other language for data analysis, visualization and other tasks. For this probably the clever option now is *Python*, although I dislike some aspects and I prefer for example *Julia*, the number of libraries and the general use of it in Atmospheric Sciences indicate that it is a mainstream language. You need also to be familar with the file formats typically used in our field: *netCDF*, *HDF5* and GRIB. Sometimes BURF and often plain and csv formated text files. If you want to advance more in complex project learn *make* and *bash* is also a must. Learn a version control tool like git or svn is probably another must. For publications I use *LaTeX* and *inkscape* for diagrams
 
-- Linux
-    - Debian, Ubuntu
-    - Nixos
-- Additional experience with MacOS and Windows but I prefer Linux by far.
+#### Key basic libraries
 
-#### Programming
+- *Fortran 90*: LAPACK / BLAS
+- *Python*: numpy, scipy, xarray, pandas, iris (of scitools from MetOffice), ESMValTool, Matplotlib, Cartopy
+- *Docummeting*: Doxygen (for Fortran), Sphinx (for python), Documenter (for Julia code)
+- *Version control*: Subversion (svn), git, Mercurial (Hg) 
+- *Publications*: LaTeX/Tex and Inkscape
 
-- Fortran 90 (also 77 but I try to avoid)
-    - LAPACK / BLAS
-- Python
-    - numpy, scipy, statmodels
-    - xarray, pandas
-    - iris (of scitools from MetOffice)
-    - ESMValTool
-- Julia
+#### My scientific codes
 
-#### Visualization
-
-- Python
-    - Matplotlib, Basemap
-    - Cartopy 
-- GNUplot
-- Julia
-    - Plots.jl
-
-#### File Formats (mostly for structured datasets)
-
-- netCDF
-- HDF5
-- GRIB
-
-#### Automatization and scripting languages
-
-- make
-- bash
-- Pure Python
-
-#### Documenting code
-
-- Doxygen
-- Sphinx
-- Documenter (for Julia code)
-
-#### Project Software Managment
-
-- Trac
-
-#### Version Control
-
-- Subversion (svn)
-- git
-- Mercurial (Hg) 
-
-#### LaTeX and TeX
+You can check them at <a href="/research/my-codes/">Software Codes</a>
 
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
