@@ -60,12 +60,12 @@ format: blog-index
 </div>
 
         
-        <div class="medium-8 columns">
+        <div class="medium-4 columns">
             {% unless site.posts == empty %}
             <p><strong>{{ site.data.language.recent_articles }}</strong></p>
             {% include list-posts entries='25' offset='0' %}
             {% endunless %}
-        </div><!-- /.medium-8.columns -->
+        </div><!-- /.medium-4.columns -->
 
     </div><!-- /.row -->
 
