@@ -53,14 +53,22 @@ format: blog-index
         {% include alert warning=' <a href="/research/my-codes//">Software</a>' %}
          </div><!-- /.medium-4.columns -->
 
-      <a title="Intergovernmental Panel on Climate Change, Working Group 1, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Components_of_Radiative_Forcing.jpg"><img width="442" alt="Components of Radiative Forcing" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Components_of_Radiative_Forcing.jpg/442px-Components_of_Radiative_Forcing.jpg"></a>
-  </div>
+<figure>
+
+    <a href="https://commons.wikimedia.org/wiki/File:Components_of_Radiative_Forcing.jpg">
+    <img width="442" alt="Components of Radiative Forcing" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Components_of_Radiative_Forcing.jpg/442px-Components_of_Radiative_Forcing.jpg">
+    </a>
+    <figcaption><a title="From: Intergovernmental Panel on Climate Change, Working Group 1, 
+                CC BY-SA 4.0 ">Components of Radiative Forcing (From IPCC report, CC BY-SA 4.0)</a>.</figcaption>
+</figure>
+      
+</div>
 
         
         <div class="medium-6 columns">
             {% unless site.posts == empty %}
             <p><strong>{{ site.data.language.recent_articles }}</strong></p>
-            {% include list-posts entries='15' offset='0' %}
+            {% include list-posts entries='25' offset='0' %}
             {% endunless %}
         </div><!-- /.medium-6.columns -->
 
