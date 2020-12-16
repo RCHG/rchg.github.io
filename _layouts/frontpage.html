@@ -1,0 +1,51 @@
+---
+layout: default
+format: blog-index
+---
+<div id="header-home">
+    <div class="row">
+        <div class="small-16 columns">
+        </div><!-- /.medium-4.columns -->
+    </div><!-- /.row -->
+</div><!-- /#header-home -->
+
+    <div class="row t60">
+        {% include alert text='**Where are you?** You arrived to my academic webpage describing my **research** and 
+        **teaching** profile. There is also blog with three main parts: *science blog* (earth science related entries), 
+        **scientific computing** (my notes about the topic) and finally more personal like *comments or opinions*.' %}
+        </div>
+
+<!--
+    <div class="small-3 columns">
+        {% include alert info=' <a href="/research/overview">Research</a>' %}
+        {% include alert info=' <a href="/teaching/overview/">Teaching</a>' %}
+        {% include alert text='**Where are you?** You arrived to my academic and personal describing my **research** and **teaching** experience. My blog is also here and it has three main parts: earth science related entries, *scientific computing* information and finally more personal *comments or opinions*. Also, there is an Open Letters section to show comunications or notifications.' %}
+    </div> -->        
+<!--    <div class="small-3 columns">
+        <img src="{{ site.urlimg }}{{ 'research_clipart.jpg' }}" width="100%" alt="" />
+        <br></br>
+        {% include alert info=' <a href="/blog/archive_science/">Science Blog</a>' %}
+        {% include alert info=' <a href="/blog/archive_computing/">Computing Blog</a>' %}
+    </div> -->
+<!--    <div class="small-3 columns">
+        <img src="{{ site.urlimg }}{{ 'review.jpg' }}" width="100%" alt="" />
+        <br></br>
+        {% include alert info=' <a href="/blog/archive_personal/">Personal Blog</a>' %}
+    </div> -->
+<!--    <div class="small-3 columns">
+        <img src="{{ site.urlimg }}{{ 'buho.png' }}" width="100%" alt="" />
+        <br></br>
+        {% include alert info=' <a href="/blog/open_letters/">Open Letters</a>' %}
+    </div>-->  
+        
+        <div class="small-6 columns">
+            {% unless site.posts == empty %}
+            <p><strong>{{ site.data.language.recent_articles }}</strong></p>
+            {% include list-posts entries='25' offset='0' %}
+            {% endunless %}
+        </div><!-- /.medium-4.columns -->
+
+
+<div class="row">
+    {{ content }}
+</div><!-- /.row -->
