@@ -27,106 +27,181 @@ breadcrumb: true
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 ## Peer-Review Publications 
-<table id="qs_table" border="1">
-<tbody>
-<tr id="ChecaGarciaRetal_ACP_2020a" class="entry">
-	<td>Checa-Garcia R, Balkanski Y, Albani S, Bergman T, Van Noije T, Cozic A, Marticorena B, Olivié D, O'Connor F, Michou M, Nabat P and Schulz M (2020), <b style="color:MediumSeaGreen;">"Evaluation of natural aerosols in CRESCENDO-ESMs: Mineral Dust"</b>, Atmospheric Chemistry and Physics. 
-	 [<a href="https://doi.org/10.5194/acp-2020-1147" target="_blank">DOI</a>]
-	</td>
-</tr>
+<ul>
+R. Checa-Garcia, Y. Balkanski, S. Albani, T. Bergman, T. Van Noije, A. Cozic, B. Marticorena, D. Olivié, F. O'Connor, M. Michou, P. Nabat &amp; M. Schulz,
+<b style="color:MediumSeaGreen;">"Evaluation of natural aerosols in CRESCENDO-ESMs: Mineral Dust"</b>,
+<i>Atmospheric Chemistry and Physics</i>
+,
 
-<tr id="Gli2020" class="entry">
-	<td>Gliss J, Mortier A, Schulz M, Andrews E, Balkanski Y, Bauer SE, Benedictow AMK, Bian H, Checa-Garcia R, Chin M, Ginoux P, Griesfeller JJ, Heckel A, Kipling Z, Kirkevaag A, Kokkola H, Laj P, Sager PL, Lund MT, Myhre CL, Matsui H, Myhre G, Neubauer D, van Noije T, North P, Olivie DJL, Sogacheva L, Takemura T, Tsigaridis K and Tsyro SG (2020), <b style="color:MediumSeaGreen;">"Multi-model evaluation of aerosol optical properties in the AeroCom phase III Control experiment, using ground and space based columnar observations from AERONET, MODIS, AATSR and a merged satellite product as well as surface in-situ observations from GAW sites"</b>, Atmospheric Chemistry and Physics., March, 2020.  Copernicus.
-	[<a href="https://doi.org/10.5194/acp-2019-1214" target="_blank">DOI</a>] [<a href="https://doi.org/10.5194/acp-2019-1214" target="_blank">URL</a>]
-	</td>
-</tr>
+(<b>2020</b>)
+&nbsp;<a href="10.5194/acp-2020-1147">[DOI]</a>
 
-<tr id="Keeble2020" class="entry">
-	<td>Keeble J, Hassler B, Banerjee A, Checa-Garcia R, Chiodo G, Davis S, Eyring V, Griffiths PT, Morgenstern O, Nowack P, Zeng G, Zhang J, Bodeker G, Cugnet D, Danabasoglu G, Deushi M, Horowitz LW, Li L, Michou M, Mills MJ, Nabat P, Park S and Wu T (2020), <b style="color:MediumSeaGreen;">"Evaluating stratospheric ozone and water vapor changes in CMIP6 models from 1850-2100"</b>, Atmospheric Chemistry and Physics., February, 2020.  Copernicus.
-	[<a href="https://doi.org/10.5194/acp-2019-1202" target="_blank">DOI</a>] [<a href="https://doi.org/10.5194/acp-2019-1202" target="_blank">URL</a>]
-	</td>
-</tr>
+</ul>
+<br>
+<ul>
+J. Gliss, A. Mortier, M. Schulz, E. Andrews, Y. Balkanski, S. E. Bauer, A. M. K. Benedictow, H. Bian, R. Checa-Garcia, M. Chin, P. Ginoux, J. J. Griesfeller, A. Heckel, Z. Kipling, A. Kirkevaag, H. Kokkola, P. Laj, P. L. Sager, M. T. Lund, C. L. Myhre, H. Matsui, G. Myhre, D. Neubauer, T. van Noije, P. North, D. J. L. Olivie, L. Sogacheva, T. Takemura, K. Tsigaridis &amp; S. G. Tsyro,
+<b style="color:MediumSeaGreen;">"Multi-model evaluation of aerosol optical properties in the AeroCom phase III Control experiment, using ground and space based columnar observations from AERONET, MODIS, AATSR and a merged satellite product as well as surface in-situ observations from GAW sites"</b>,
+<i>Atmospheric Chemistry and Physics</i>
+,
 
-<tr id="Kok_ACP_2020a" class="entry">
-	<td>Kok J, Adebiyi A, Albani S, Balkanski Y and Checa-Garcia Rea (2020), <b style="color:MediumSeaGreen;">"Improved representation of the global dust cycle using observational constraints on dust properties and abundance"</b>, Atmospheric Chemistry and Physics. 
-	[<a href="https://doi.org/10.5194/acp-2020-1131" target="_blank">DOI</a>]
-	</td>
-</tr>
+(<b>2020</b>)
+&nbsp;<a href="10.5194/acp-2019-1214">[DOI]</a>
+&nbsp;<a href="https://doi.org/10.5194/acp-2019-1214">[URL]</a>
+</ul>
+<br>
+<ul>
+J. Keeble, B. Hassler, A. Banerjee, R. Checa-Garcia, G. Chiodo, S. Davis, V. Eyring, P. T. Griffiths, O. Morgenstern, P. Nowack, G. Zeng, J. Zhang, G. Bodeker, D. Cugnet, G. Danabasoglu, M. Deushi, L. W. Horowitz, L. Li, M. Michou, M. J. Mills, P. Nabat, S. Park &amp; T. Wu,
+<b style="color:MediumSeaGreen;">"Evaluating stratospheric ozone and water vapor changes in CMIP6 models from 1850-2100"</b>,
+<i>Atmospheric Chemistry and Physics</i>
+,
 
-<tr id="Thornhill2020" class="entry">
-	<td>Thornhill G, Collins W, Olivie D, Archibald A, Bauer S, Checa-Garcia R, Fiedler S, Folberth G, Gjermundsen A, Horowitz L, Lamarque J-F, Michou M, Mulcahy J, Nabat P, Naik V, O'Connor FM, Paulot F, Schulz M, Scott CE, Seferian R, Smith C, Takemura T, Tilmes S and Weber J (2020), <b style="color:MediumSeaGreen;">"Climate-driven chemistry and aerosol feedbacks in CMIP6 Earth system models"</b>, Atmospheric Chemistry and Physics., February, 2020.  Copernicus.
-	 [<a href="https://doi.org/10.5194/acp-2019-1207" target="_blank">DOI</a>] [<a href="https://doi.org/10.5194/acp-2019-1207" target="_blank">URL</a>]
-	</td>
-</tr>
+(<b>2020</b>)
+&nbsp;<a href="10.5194/acp-2019-1202">[DOI]</a>
+&nbsp;<a href="https://doi.org/10.5194/acp-2019-1202">[URL]</a>
+</ul>
+<br>
+<ul>
+J. Kok, A. Adebiyi, S. Albani, Y. Balkanski &amp; R. e. a. Checa-Garcia,
+<b style="color:MediumSeaGreen;">"Improved representation of the global dust cycle using observational constraints on dust properties and abundance"</b>,
+<i>Atmospheric Chemistry and Physics</i>
+,
 
-<tr id="Thornhill2020b" class="entry">
-	<td>Thornhill GD, Collins WJ, Kramer RJ, Olivié D, O'Connor F, Abraham NL, Checa-Garcia R, Bauer SE, Deushi M, Emmons L, Forster P, Horowitz L, Johnson B, Keeble J, Lamarque J-F, Michou M, Mills M, Mulcahy J, Myhre G, Nabat P, Naik V, Oshima N, Schulz M, Smith C, Takemura T, Tilmes S, Wu T, Zeng G and Zhang J (2020), <b style="color:MediumSeaGreen;">"Effective Radiative forcing from emissions of reactive gases and aerosols – a multimodel comparison"</b>, Atmospheric Chemistry and Physics Discussions.  Vol. 2020, pp. 1–29.
-	[<a href="https://doi.org/10.5194/acp-2019-1205" target="_blank">DOI</a>] [<a href="https://acp.copernicus.org/preprints/acp-2019-1205/" target="_blank">URL</a>]
-	</td>
-</tr>
+(<b>2020</b>)
+&nbsp;<a href="10.5194/acp-2020-1131">[DOI]</a>
 
-<tr id="Checa-GarciaEtAl_GRL_2018a" class="entry">
-	<td>Checa-Garcia R, Hegglin MI, Kinnison D, Plummer DA and Shine KP (2018), <b style="color:MediumSeaGreen;">"Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database"</b>, Geophysical Research Letters., April, 2018.  Vol. 45(7), pp. 3264-3273. American Geophysical Union (AGU).
-   [<a href="https://doi.org/10.1002/2017GL076770" target="_blank">DOI</a>] [<a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017GL076770" target="_blank">URL</a>]
-	</td>
-</tr>
+</ul>
+<br>
+<ul>
+G. Thornhill, W. Collins, D. Olivie, A. Archibald, S. Bauer, R. Checa-Garcia, S. Fiedler, G. Folberth, A. Gjermundsen, L. Horowitz, J.-F. Lamarque, M. Michou, J. Mulcahy, P. Nabat, V. Naik, F. M. O'Connor, F. Paulot, M. Schulz, C. E. Scott, R. Seferian, C. Smith, T. Takemura, S. Tilmes &amp; J. Weber,
+<b style="color:MediumSeaGreen;">"Climate-driven chemistry and aerosol feedbacks in CMIP6 Earth system models"</b>,
+<i>Atmospheric Chemistry and Physics</i>
+,
 
-<tr id="Checa-GarciaEtAl_ERL_2016a" class="entry">
-	<td>Checa-Garcia R, Shine KP and Hegglin MI (2016), <b style="color:MediumSeaGreen;">"The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends"</b>, Environmental Research Letters.  Vol. 11(9), pp. 094018. IOP Publishing.
-	 [<a href="https://doi.org/10.1088/1748-9326/11/9/094018" target="_blank">DOI</a>]
-	</td>
-</tr>
+(<b>2020</b>)
+&nbsp;<a href="10.5194/acp-2019-1207">[DOI]</a>
+&nbsp;<a href="https://doi.org/10.5194/acp-2019-1207">[URL]</a>
+</ul>
+<br>
+<ul>
+G. D. Thornhill, W. J. Collins, R. J. Kramer, D. Olivié, F. O'Connor, N. L. Abraham, R. Checa-Garcia, S. E. Bauer, M. Deushi, L. Emmons, P. Forster, L. Horowitz, B. Johnson, J. Keeble, J.-F. Lamarque, M. Michou, M. Mills, J. Mulcahy, G. Myhre, P. Nabat, V. Naik, N. Oshima, M. Schulz, C. Smith, T. Takemura, S. Tilmes, T. Wu, G. Zeng &amp; J. Zhang,
+<b style="color:MediumSeaGreen;">"Effective Radiative forcing from emissions of reactive gases and aerosols – a multimodel comparison"</b>,
+<i>Atmospheric Chemistry and Physics Discussions</i>
+,
+1–29
+(<b>2020</b>)
+&nbsp;<a href="10.5194/acp-2019-1205">[DOI]</a>
+&nbsp;<a href="https://acp.copernicus.org/preprints/acp-2019-1205/">[URL]</a>
+</ul>
+<br>
+<ul>
+R. Checa-Garcia, M. I. Hegglin, D. Kinnison, D. A. Plummer &amp; K. P. Shine,
+<b style="color:MediumSeaGreen;">"Historical Tropospheric and Stratospheric Ozone Radiative Forcing Using the CMIP6 Database"</b>,
+<i>Geophysical Research Letters</i>
+<b>45</b>,
+3264-3273
+(<b>2018</b>)
+&nbsp;<a href="10.1002/2017GL076770">[DOI]</a>
+&nbsp;<a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017GL076770">[URL]</a>
+</ul>
+<br>
+<ul>
+R. Checa-Garcia, K. P. Shine &amp; M. I. Hegglin,
+<b style="color:MediumSeaGreen;">"The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends"</b>,
+<i>Environmental Research Letters</i>
+<b>11</b>,
+094018
+(<b>2016</b>)
+&nbsp;<a href="10.1088/1748-9326/11/9/094018">[DOI]</a>
 
-<tr id="ButzEtAl_AMT_2015a" class="entry">
-	<td>Butz A, Orphal J, Checa-Garcia R, Friedl-Vallon F, von Clarmann T, Bovensmann H, Hasekamp O, Landgraf J, Knigge T, Weise D, Sqalli-Houssini O and Kemper D (2015), <b style="color:MediumSeaGreen;">"Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment"</b>, Atmospheric Measurement Techniques.  Vol. 8(11), pp. 4719-4734. Copernicus GmbH.
-	[<a href="https://doi.org/10.5194/amt-8-4719-2015" target="_blank">DOI</a>] [<a href="http://www.atmos-meas-tech.net/8/4719/2015/" target="_blank">URL</a>]
-	</td>
-</tr>
+</ul>
+<br>
+<ul>
+A. Butz, J. Orphal, R. Checa-Garcia, F. Friedl-Vallon, T. von Clarmann, H. Bovensmann, O. Hasekamp, J. Landgraf, T. Knigge, D. Weise, O. Sqalli-Houssini &amp; D. Kemper,
+<b style="color:MediumSeaGreen;">"Geostationary Emission Explorer for Europe (G3E): mission concept and initial performance assessment"</b>,
+<i>Atmospheric Measurement Techniques</i>
+<b>8</b>,
+4719-4734
+(<b>2015</b>)
+&nbsp;<a href="10.5194/amt-8-4719-2015">[DOI]</a>
+&nbsp;<a href="http://www.atmos-meas-tech.net/8/4719/2015/">[URL]</a>
+</ul>
+<br>
+<ul>
+R. Checa-Garcia, J. Landgraf, A. Galli, F. Hase, V. A. Velazco, H. Tran, V. Boudon, F. Alkemade &amp; A. Butz,
+<b style="color:MediumSeaGreen;">"Mapping spectroscopic uncertainties into prospective methane retrieval errors from Sentinel-5 and its precursor"</b>,
+<i>Atmospheric Measurement Techniques</i>
+<b>8</b>,
+3617-3629
+(<b>2015</b>)
+&nbsp;<a href="10.5194/amt-8-3617-2015">[DOI]</a>
+&nbsp;<a href="http://www.atmos-meas-tech.net/8/3617/2015/">[URL]</a>
+</ul>
+<br>
+<ul>
+R. Checa-Garcia, A. Tokay &amp; F. J. Tapiador,
+<b style="color:MediumSeaGreen;">"Binning effects on in-situ raindrop size distribution measurements"</b>,
+<i>Atmospheric Measurement Techniques Discussions</i>
+<b>7</b>,
+2339-2379
+(<b>2014</b>)
+&nbsp;<a href="10.5194/amtd-7-2339-2014">[DOI]</a>
+&nbsp;<a href="https://www.atmos-meas-tech-discuss.net/7/2339/2014/amtd-7-2339-2014.pdf">[URL]</a>
+</ul>
+<br>
+<ul>
+R. Checa-Garcia &amp; F. J. Tapiador,
+<b style="color:MediumSeaGreen;">"A Maximum Entropy Modelling of the Rain Drop Size Distribution"</b>,
+<i>Entropy</i>
+<b>13</b>,
+293-315
+(<b>2011</b>)
+&nbsp;<a href="10.3390/e13020293">[DOI]</a>
 
-<tr id="Checa-GarciaEtAl_AMT_2015a" class="entry">
-	<td>Checa-Garcia R, Landgraf J, Galli A, Hase F, Velazco VA, Tran H, Boudon V, Alkemade F and Butz A (2015), <b style="color:MediumSeaGreen;">"Mapping spectroscopic uncertainties into prospective methane retrieval errors from Sentinel-5 and its precursor"</b>, Atmospheric Measurement Techniques.  Vol. 8(9), pp. 3617-3629. Copernicus GmbH.
-	[<a href="https://doi.org/10.5194/amt-8-3617-2015" target="_blank">DOI</a>] [<a href="http://www.atmos-meas-tech.net/8/3617/2015/" target="_blank">URL</a>]
-	</td>
-</tr>
+</ul>
+<br>
+<ul>
+F. J. Tapiador, A. Y. Hou, M. de Castro, R. Checa-Garcia, F. Cuartero &amp; A. P. Barros,
+<b style="color:MediumSeaGreen;">"Precipitation estimates for hydroelectricity"</b>,
+<i>Energy &amp; Environmental Science</i>
+<b>4</b>,
+4435
+(<b>2011</b>)
+&nbsp;<a href="10.1039/c1ee01745d">[DOI]</a>
+&nbsp;<a href="http://dx.doi.org/10.1039/C1EE01745D">[URL]</a>
+</ul>
+<br>
+<ul>
+F. J. Tapiador, R. Checa-Garcia &amp; M. de Castro,
+<b style="color:MediumSeaGreen;">"An experiment to measure the spatial variability of rain drop size distribution using sixteen laser disdrometers"</b>,
+<i>Geophysical Research Letters</i>
+<b>37</b>,
+L16803
+(<b>2010</b>)
+&nbsp;<a href="10.1029/2010gl044120">[DOI]</a>
 
-<tr id="Checa-GarciaEtAl_AMTD_2014a" class="entry">
-	<td>Checa-Garcia R, Tokay A and Tapiador FJ (2014), <b style="color:MediumSeaGreen;">"Binning effects on in-situ raindrop size distribution measurements"</b>, Atmospheric Measurement Techniques Discussions.  Vol. 7(3), pp. 2339-2379. Copernicus GmbH.
-	[<a href="https://doi.org/10.5194/amtd-7-2339-2014" target="_blank">DOI</a>] [<a href="https://www.atmos-meas-tech-discuss.net/7/2339/2014/amtd-7-2339-2014.pdf" target="_blank">URL</a>]
-	</td>
-</tr>
+</ul>
+<br>
+<ul>
+P. Tarazona, R. Checa-Garcia &amp; E. Chacon,
+<b style="color:MediumSeaGreen;">"Critical Analysis of the Density Functional Theory Prediction of Enhanced Capillary Waves"</b>,
+<i>Physical Review Letters</i>
+<b>99</b>,
+196101
+(<b>2007</b>)
+&nbsp;<a href="10.1103/PhysRevLett.99.196101">[DOI]</a>
 
-<tr id="ChecaTapiador_E_2011a" class="entry">
-	<td>Checa-Garcia R and Tapiador FJ (2011), <b style="color:MediumSeaGreen;">"A Maximum Entropy Modelling of the Rain Drop Size Distribution"</b>, Entropy.  Vol. 13(12), pp. 293-315. MDPI AG.
-	[<a href="https://doi.org/10.3390/e13020293" target="_blank">DOI</a>]
-	</td>
-</tr>
+</ul>
+<br>
+<ul>
+R. Checa-Garcia, E. Chacon &amp; P. Tarazona,
+<b style="color:MediumSeaGreen;">"Density functional study of layering at liquid surfaces"</b>,
+<i>Physical Review E</i>
+<b>70</b>,
+061601
+(<b>2004</b>)
+&nbsp;<a href="10.1103/PhysRevE.70.061601">[DOI]</a>
 
-<tr id="TapiadorEtAl_EES_2011a" class="entry">
-	<td>Tapiador FJ, Hou AY, de Castro M, Checa-Garcia R, Cuartero F and Barros AP (2011), <b style="color:MediumSeaGreen;">"Precipitation estimates for hydroelectricity"</b>, Energy &amp; Environmental Science.  Vol. 4(11), pp. 4435. Royal Society of Chemistry (RSC).
-	<a href="https://doi.org/10.1039/c1ee01745d" target="_blank">DOI</a>] [<a href="http://dx.doi.org/10.1039/C1EE01745D" target="_blank">URL</a>]
-	</td>
-</tr>
-
-<tr id="TapiadorEtAl_GRL_2010a" class="entry">
-	<td>Tapiador FJ, Checa-Garcia R and de Castro M (2010), <b style="color:MediumSeaGreen;">"An experiment to measure the spatial variability of rain drop size distribution using sixteen laser disdrometers"</b>, Geophysical Research Letters.  Vol. 37(16), pp. L16803. Wiley-Blackwell.
-    [<a href="https://doi.org/10.1029/2010gl044120" target="_blank">DOI</a>]
-	</td>
-</tr>
-
-<tr id="TarazonaEtAl_PRL_2007a" class="entry">
-	<td>Tarazona P, Checa-Garcia R and Chacon E (2007), <b style="color:MediumSeaGreen;">"Critical Analysis of the Density Functional Theory Prediction of Enhanced Capillary Waves"</b>, Physical Review Letters.  Vol. 99(19), pp. 196101. American Physical Society (APS).
-   [<a href="https://doi.org/10.1103/PhysRevLett.99.196101" target="_blank">DOI</a>]
-	</td>
-</tr>
-
-<tr id="ChecaEtAl_PRE_2004a" class="entry">
-	<td>Checa-Garcia R, Chacon E and Tarazona P (2004), <b style="color:MediumSeaGreen;">"Density functional study of layering at liquid surfaces"</b>, Physical Review E.  Vol. 70(6), pp. 061601. American Physical Society (APS).
-	[<a href="https://doi.org/10.1103/PhysRevE.70.061601" target="_blank">DOI</a>]
-	</td>
-</tr>
-
-</tbody>
-</table>
+</ul>
 
 
 
