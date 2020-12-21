@@ -28,23 +28,21 @@ breadcrumb: true
 
 > List of publications in reverse chronological order and organized by different categories
 
-### Peer-Reviewed
-<br>
+# Peer-Reviewed
+
 {% include references_peer-review %}
 
-### Technical Reports
-<br>
+# Technical Reports
+
 {% include references_reports %}
 
-### Invited Talks 
-<br>
+# Invited Talks 
+
 {% include references_invited-talks %}
 
+# Conferences
 
-### Conferences
-<br>
 {% include references_conferences %}
-
 
 # Newpapers and Magazines
 
