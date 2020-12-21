@@ -28,3 +28,6 @@ breadcrumb: true
 
 {% include peer-review-Dec2020.html %}
 
+</div><!-- /.medium-8.columns -->
+</div><!-- /.row -->
+
