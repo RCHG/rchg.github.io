@@ -28,10 +28,7 @@ breadcrumb: true
 
 ## Peer-Reviewed
 
-<!-- {% include references_peer_review %} -->
-
-<!-- ## Technical Reports {% include references-reports %} ## Conferences {% include references-conferences %} ## Invited Talks {% include references-invited-talks %} ## Newspapers and Magazines {% include references-divulgative %} -->
-
+{% include references_peer-review %}
 
 
 </div><!-- /.medium-8.columns -->
