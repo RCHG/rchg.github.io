@@ -27,16 +27,10 @@ breadcrumb: true
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 ## Peer-Reviewed
+
 <!-- {% include references_peer_review %} -->
 
-<!-- ## Technical Reports
-{% include references-reports %}
-## Conferences
-{% include references-conferences %}
-## Invited Talks
-{% include references-invited-talks %}
-## Newspapers and Magazines
-{% include references-divulgative %} -->
+<!-- ## Technical Reports {% include references-reports %} ## Conferences {% include references-conferences %} ## Invited Talks {% include references-invited-talks %} ## Newspapers and Magazines {% include references-divulgative %} -->
 
 
 
