@@ -29,17 +29,14 @@ breadcrumb: true
 ## Peer-Reviewed
 {% include references-peer-review %}
 
-## Technical Reports
+<!-- ## Technical Reports
 {% include references-reports %}
-
 ## Conferences
 {% include references-conferences %}
-
 ## Invited Talks
 {% include references-invited-talks %}
-
 ## Newspapers and Magazines
-{% include references-divulgative %}
+{% include references-divulgative %} -->
 
 
 
