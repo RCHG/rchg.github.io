@@ -34,6 +34,11 @@ breadcrumb: true
 <br>
 {% include references_reports %}
 
+## Invited Talks 
+<br>
+{% include references_invited-talks %}
+
+
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
 
