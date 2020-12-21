@@ -26,6 +26,9 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
+## AAA
+{% include peer-review %}
+
 ## Peer-Review Publications 
 <ul>
 R. Checa-Garcia, Y. Balkanski, S. Albani, T. Bergman, T. Van Noije, A. Cozic, B. Marticorena, D. Olivié, F. O'Connor, M. Michou, P. Nabat &amp; M. Schulz,
