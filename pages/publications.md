@@ -25,7 +25,6 @@ breadcrumb: true
 
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
-
 <style type="text/css">
 
 table {font-size: 11px;  border: 1px gray none; width: 100%; empty-cells: show; border-spacing: 0em 0.1em; margin: 1em 0em; }
@@ -88,9 +87,6 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
    [<a href="https://doi.org/10.1002/2017GL076770" target="_blank">DOI</a>] [<a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017GL076770" target="_blank">URL</a>]
 	</td>
 </tr>
-<tr id="abs_Checa-GarciaEtAl_GRL_2018a" class="abstract noshow">
-	<td><b>Abstract</b>: Abstract We calculate ozone radiative forcing (RF) and stratospheric temperature adjustments for the period 1850–2014 using the newly available Coupled Model Intercomparison Project phase 6 (CMIP6) ozone data set. The CMIP6 total ozone RF (1850s to 2000s) is 0.28 ± 0.17 W m−2 (which is 80% higher than our CMIP5 estimation), and 0.30 ± 0.17 W m−2 out to the present day (2014). The total ozone RF grows rapidly until the 1970s, slows toward the 2000s, and shows a renewed growth thereafter. Since the 1990s the shortwave RF exceeds the longwave RF. Global stratospheric ozone RF is positive between 1930 and 1970 and then turns negative but remains positive in the Northern Hemisphere throughout. Derived stratospheric temperature changes show a localized cooling in the subtropical lower stratosphere due to tropospheric ozone increases and cooling in the upper stratosphere due to ozone depletion by more than 1 K already prior to the satellite era (1980) and by more than 2 K out to the present day (2014).</td>
-</tr>
 
 <tr id="Checa-GarciaEtAl_ERL_2016a" class="entry">
 	<td>Checa-Garcia R, Shine KP and Hegglin MI (2016), <b style="color:MediumSeaGreen;">"The contribution of greenhouse gases to the recent slowdown in global-mean temperature trends"</b>, Environmental Research Letters.  Vol. 11(9), pp. 094018. IOP Publishing.
@@ -127,9 +123,6 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 	<a href="https://doi.org/10.1039/c1ee01745d" target="_blank">DOI</a>] [<a href="http://dx.doi.org/10.1039/C1EE01745D" target="_blank">URL</a>]
 	</td>
 </tr>
-<tr id="abs_TapiadorEtAl_EES_2011a" class="abstract noshow">
-	<td><b>Abstract</b>: Hydroelectric plants require precise and timely estimates of rain, snow and other hydrometeors for operations. However, it is far from being a trivial task to measure and predict precipitation. This paper presents the linkages between precipitation science and hydroelectricity, and in doing so it provides insight into current research directions that are relevant for this renewable energy. Methods described include radars, disdrometers, satellites and numerical models. Two recent advances that have the potential of being highly beneficial for hydropower operations are featured: the Global Precipitation Measuring (GPM) mission, which represents an important leap forward in precipitation observations from space, and high performance computing (HPC) and grid technology, that allows building ensembles of numerical weather and climate models.</td>
-</tr>
 
 <tr id="TapiadorEtAl_GRL_2010a" class="entry">
 	<td>Tapiador FJ, Checa-Garcia R and de Castro M (2010), <b style="color:MediumSeaGreen;">"An experiment to measure the spatial variability of rain drop size distribution using sixteen laser disdrometers"</b>, Geophysical Research Letters.  Vol. 37(16), pp. L16803. Wiley-Blackwell.
@@ -151,6 +144,7 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 
 </tbody>
 </table>
+
 
 
 
