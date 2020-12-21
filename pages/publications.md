@@ -44,7 +44,7 @@ breadcrumb: true
 {% include references_conferences %}
 
 
-### Newpapers and Magaziones
+### Newpapers and Magazines
 
 {% include references_divulgation %}
 
