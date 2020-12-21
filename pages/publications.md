@@ -26,21 +26,23 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-### Peer-Reviewed
+> List of publications in reverse chronological order. 
 
+### Peer-Reviewed
+<br>
 {% include references_peer-review %}
 
 ### Technical Reports
-
+<br>
 {% include references_reports %}
 
 ### Invited Talks 
-
+<br>
 {% include references_invited-talks %}
 
 
 ### Conferences
-
+<br>
 {% include references_conferences %}
 
 
