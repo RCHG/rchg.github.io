@@ -28,7 +28,7 @@ breadcrumb: true
 
 <style type="text/css">
 
-table { border: 1px gray none; width: 100%; empty-cells: show; border-spacing: 0em 0.1em; margin: 1em 0em; }
+table { font-size: 9px; border: 1px gray none; width: 100%; empty-cells: show; border-spacing: 0em 0.1em; margin: 1em 0em; }
 th, td { border: none; padding: 0.5em; vertical-align: top; text-align: justify; }
 
 td a { color: navy; text-decoration: none; }
