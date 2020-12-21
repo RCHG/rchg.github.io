@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 subheadline: "Scientific Publications"
-permalink: "/research/publications/"
+permalink: "/research/publications-backup/"
 header:
     title: Scientific Publications
     pattern: pattern_jquery-dark-grey-tile.png
