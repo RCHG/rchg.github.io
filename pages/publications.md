@@ -28,23 +28,6 @@ breadcrumb: true
 
 <style type="text/css">
 
-form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
-span#searchstat {padding-left: 1em;}
-
-div#settings { margin-top:0.7em; /* border-bottom: 1px transparent solid; background-color: #efefef; border: 1px grey solid; */ }
-div#settings ul {margin: 0; padding: 0; }
-div#settings li {margin: 0; padding: 0 1em 0 0; display: inline; list-style: none; }
-div#settings li + li { border-left: 2px #efefef solid; padding-left: 0.5em;}
-div#settings input { margin-bottom: 0px;}
-
-div#settings.hidden {display:none;}
-
-#showsettings { border: 1px grey solid; padding: 0 0.5em; float:right; line-height: 1.6em; text-align: right; }
-#showsettings:hover { cursor: pointer; }
-
-.invalidsearch { background-color: red; }
-input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
-
 table { border: 1px gray none; width: 100%; empty-cells: show; border-spacing: 0em 0.1em; margin: 1em 0em; }
 th, td { border: none; padding: 0.5em; vertical-align: top; text-align: justify; }
 
