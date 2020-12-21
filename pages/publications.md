@@ -38,7 +38,7 @@ breadcrumb: true
 ## Invited Talks
 {% include references-invited-talks %}
 
-## Newspapers and Magaciones
+## Newspapers and Magazines
 {% include references-divulgative %}
 
 
