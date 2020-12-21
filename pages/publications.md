@@ -26,6 +26,10 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
+# Peer-Review Papers
+
+{% includes peer-review-Dec2020 %}
+
 
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
