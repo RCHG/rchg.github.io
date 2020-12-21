@@ -26,7 +26,7 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-> List of publications in reverse chronological order and organized in different categories
+> List of publications in reverse chronological order and organized by different categories
 
 ### Peer-Reviewed
 <br>
