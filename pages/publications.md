@@ -26,17 +26,27 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-## Peer-Reviewed
-<br>
+### Peer-Reviewed
+
 {% include references_peer-review %}
 
-## Technical Reports
-<br>
+### Technical Reports
+
 {% include references_reports %}
 
-## Invited Talks 
-<br>
+### Invited Talks 
+
 {% include references_invited-talks %}
+
+
+### Conferences
+
+{% include references_conferences %}
+
+
+### Newpapers and Magaziones
+
+{% include references_conferences %}
 
 
 </div><!-- /.medium-8.columns -->
