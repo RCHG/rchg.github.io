@@ -26,7 +26,6 @@ breadcrumb: true
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-{% include peer-review-Dec2020.html %}
 
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
