@@ -46,7 +46,7 @@ breadcrumb: true
 
 ### Newpapers and Magaziones
 
-{% include references_conferences %}
+{% include references_divulgation %}
 
 
 </div><!-- /.medium-8.columns -->
