@@ -27,7 +27,7 @@ breadcrumb: true
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 ## Peer-Reviewed
-{% include references-peer-review %}
+{% include references_peer_review %}
 
 <!-- ## Technical Reports
 {% include references-reports %}
