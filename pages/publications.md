@@ -25,25 +25,8 @@ breadcrumb: true
 
 </div><!-- /.medium-4.columns -->
 <div class="medium-8 medium-pull-4 columns" markdown="1">
-<style type="text/css">
 
-table {font-size: 11px;  border: 1px gray none; width: 100%; empty-cells: show; border-spacing: 0em 0.1em; margin: 1em 0em; }
-th, td { border: none; padding: 0.5em; vertical-align: top; text-align: justify; }
-
-td a { color: navy; text-decoration: none; }
-td a:hover  { text-decoration: underline; }
-
-tr.bibtex pre { width: 100%; overflow: auto; white-space: pre-wrap;}
-p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
-
-@media print {
-	p.infolinks, #qs_settings, #quicksearch, t.bibtex { display: none !important; }
-	tr { page-break-inside: avoid; }
-}
-</style>
-
-
-<h2> Peer-Review Publications </h2>
+## Peer-Review Publications 
 <table id="qs_table" border="1">
 <tbody>
 <tr id="ChecaGarciaRetal_ACP_2020a" class="entry">
