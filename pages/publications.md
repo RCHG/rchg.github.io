@@ -49,7 +49,7 @@ breadcrumb: true
 ### Newpapers and Magazines
 
 {% include references_divulgation %}
-
+{.smallblock}
 
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
