@@ -28,7 +28,7 @@ breadcrumb: true
 
 # Peer-Review Papers
 
-{% includes peer-review-Dec2020 %}
+{% includes peer-review-Dec2020.html %}
 
 
 </div><!-- /.medium-8.columns -->
