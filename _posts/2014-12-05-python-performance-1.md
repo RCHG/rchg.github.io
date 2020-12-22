@@ -6,7 +6,7 @@ title:  "Performance and Python (I)"
 teaser: "Tools and tips to improve the performance of python scripts. In this post is explained the library pycallgraph that can be used as an stand-alone command line or within our Python code. The use is illustrated with a real algorithm."
 breadcrumb: true
 tags:
-    - [scientific-computing, python]
+    - [Scientific Computing, Python]
 categories:
     - computing-blog
 header:
