@@ -5,7 +5,7 @@ subheadline: Notebook
 title:  "Land Surface Modelling"
 teaser: "Describing vegetation in climate models"
 breadcrumb: true
-tags: [land-surface-modeling, atmospheric-physics]
+tags: [Land Surface Modeling, Atmospheric Physics]
 categories:
     - science-blog
 header:
