@@ -6,7 +6,7 @@ title: "Meteorology/Climatology related software"
 excerpt: "Software for Meteorology, Climate and Atmospheric Sciences..."
 teaser: "Computer Tools for Meteorology, Climate and Atmospheric Sciences..."
 breadcrumb: true
-tags: [software-tools]
+tags: [Software Tools]
 categories:
     - computing-blog
 header:
