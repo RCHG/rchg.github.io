@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Using C procedures in a Fortran code"
 teaser: "C and Fortran together"
 breadcrumb: true
-tags: [scientific-computing, fortran, C/C++]
+tags: [Scientific Computing, Fortran, C/C++]
 categories:
     - computing-blog
 header:
