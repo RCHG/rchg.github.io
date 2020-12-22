@@ -6,7 +6,7 @@ title: "Debian Tips"
 excerpt: "Debian tricks, repairs, improvements..."
 teaser: "Here are indicated a long list of tips to solve typical debian/linux problems"
 breadcrumb: true
-tags: [linux, debian]
+tags: [Linux, Debian]
 categories:
     - computing-blog
 header:
