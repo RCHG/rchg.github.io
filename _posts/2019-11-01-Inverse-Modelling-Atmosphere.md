@@ -5,7 +5,7 @@ subheadline: Notebook
 title:  "Inverse Modelling"
 teaser: "Introduction to Inverse Modelling applied to Atmospheric Science"
 breadcrumb: true
-tags: [radiative-theory, atmospheric-physics, inverse-modelling]
+tags: [Radiative Theory, Atmospheric Physics, Inverse Modelling]
 categories:
     - science-blog
 header:
