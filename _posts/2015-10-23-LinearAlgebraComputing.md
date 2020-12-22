@@ -56,3 +56,21 @@ $$
 $$
 
 The subsystem $$B_{22}y_{2}=c_{2}$$ is indepentent of the other B matrices with the logical computational improvement.
+
+### Transpose Matrix
+
+The transpose matrix $$\mathbf{B}$$ of a given matrix $$\mathbf{A}$$ is a matrix with elements:
+
+$$[b_{ij}] = [a_{ji}] ,\quad\quad \forall i =1, \ldots , m ,\quad\quad \forall j = 1, \ldots , n $$
+
+The transpose matrix of  $$\mathbf{A}$$ is usually noted by $$\mathbf{A}^T$$.
+
+### Ortogonal Matrix
+
+A square matrix $$\mathbf{A}$$ is **orthogonal** when the matrix product with the transpose matrix has the following property: 
+
+$$\mathbf{A} \mathbf{A^T} = \mathbf{A^T} \mathbf{A} = \mathbf{I}$$
+
+### Symmetric Matrix
+
+A square matrix *$\mathbf{A}*$ is **symmetric** when $$[a_{ij}] = [a_{ji}]$$. Therefore, a matrix is symmetric if $$\mathbf{A} = \mathbf{A}^T$$.  
