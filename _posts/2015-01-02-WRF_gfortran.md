@@ -6,7 +6,7 @@ title:  "Notes on WRF-gfortran-compilation"
 teaser: "How to compile WRF with gfortran"
 breadcrumb: true
 tags:
-    - [scientific-computing, fortran, WRF]
+    - [scientific-computing, Fortran, WRF]
 categories:
     - computing-blog
     - science-blog
