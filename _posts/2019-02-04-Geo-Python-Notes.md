@@ -6,7 +6,7 @@ title: "Geo Python Notes"
 excerpt: "Step by Step "
 teaser: "collection of notes about python and geosciences"
 breadcrumb: true
-tags: [python, programming]
+tags: [Python, Programming]
 categories:
     - computing-blog
 header:
