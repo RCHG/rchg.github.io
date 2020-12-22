@@ -6,7 +6,7 @@ title:  "UNIX commands"
 teaser: "Terminal Linux-Unix Tools: pr, cut, grep..."
 breadcrumb: true
 tags:
-    - [scientific-computing, linux]
+    - [Scientific-computing, Linux, Unix]
 categories:
     - computing-blog
 header:
