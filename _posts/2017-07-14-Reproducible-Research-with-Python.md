@@ -6,7 +6,7 @@ title:  "Reproducible Research with Python"
 teaser: "Compilation of ideas for reproducible research"
 breadcrumb: true
 tags:
-    - [Scientific-computing, Research]
+    - [Scientific Computing, Research]
 categories:
     - computing-blog
 header:
