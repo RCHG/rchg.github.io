@@ -7,7 +7,7 @@ teaser: "Brief book review"
 author: ramiro_chg
 breadcrumb: true
 tags:
-    - [review, atmospheric-physics]
+    - [Review, Atmospheric-physics]
 categories:
     - science-blog
     - review
