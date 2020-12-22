@@ -6,7 +6,7 @@ title:  "Data Assimilation Notebook"
 teaser: "Introduction to Data Assimilation in NWPM"
 breadcrumb: true
 tags:
-    - [data-assimilation, NWPM]
+    - [Data Assimilation, NWPM]
 categories:
     - science-blog
 header:
