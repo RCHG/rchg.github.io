@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Linear Algebra and Computing"
 teaser:  "Scientific Computing and Linear Algebra"
 breadcrumb: true
-tags: [math, programming]
+tags: [Math, Programming]
 categories:
     - computing-blog
 header:
