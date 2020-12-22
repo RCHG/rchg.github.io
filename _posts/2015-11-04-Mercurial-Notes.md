@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Descentralized Version Control Notes"
 teaser: "Version Control Notes: Mercurial"
 breadcrumb: true
-tags: [VCS, scientific-computing, mercurial]
+tags: [VCS, Scientific Computing, Mercurial]
 categories:
     - computing-blog
 header:
