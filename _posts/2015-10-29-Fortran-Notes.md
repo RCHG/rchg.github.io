@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Fortran 90 Notebook"
 teaser: "Overview"
 breadcrumb: true
-tags: [scientific-computing, Fortran]
+tags: [Scientific Computing, Fortran]
 categories:
     - computing-blog
 header:
