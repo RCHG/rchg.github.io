@@ -6,7 +6,7 @@ title:  "Arrays en Julia"
 teaser: "Experiencias programando con Julia"
 breadcrumb: true
 tags:
-    - [scientific-computing, Julia]
+    - [Scientific Computing, Julia]
 categories:
     - julia-blog
 header:
