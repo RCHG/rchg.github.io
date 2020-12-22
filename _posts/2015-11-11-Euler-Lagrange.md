@@ -5,7 +5,7 @@ subheadline: Notebook
 title:  "Euler-Lagrange Equation"
 teaser: "Introduction to Variational Calculus"
 breadcrumb: true
-tags: [calculus-of-variations]
+tags: [Calculus of Variations]
 categories:
     - science-blog
 header:
