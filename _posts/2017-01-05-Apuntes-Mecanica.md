@@ -5,7 +5,7 @@ subheadline: Notebook
 title: "Apuntes de Mecánica Clásica"
 teaser: "Baticurrillo de ideas"
 breadcrumb: true
-tags: [classic-mechanics]
+tags: [Mecánica Clásica]
 categories:
     - science-blog
 header:
