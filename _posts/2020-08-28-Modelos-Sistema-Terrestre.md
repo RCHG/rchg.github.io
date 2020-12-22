@@ -6,7 +6,7 @@ subheadline: Article (en "The Conversation")
 author: ramiro_chg
 breadcrumb: true
 tags:
-    - [atmospheric-physics, theconversation, divulgation]
+    - [Atmospheric Physics, TheConversation, Divulgation]
 categories:
     - science-blog
 header:
