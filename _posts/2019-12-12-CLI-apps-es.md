@@ -6,7 +6,7 @@ title:  "Aplicaciones y utilidades CLI"
 teaser: "Terminal CLI"
 breadcrumb: true
 tags:
-    - [Scientific Computing, lLnux, CLI, Management]
+    - [Scientific Computing, Linux, CLI, Management]
 categories:
     - computing-blog
 header:
