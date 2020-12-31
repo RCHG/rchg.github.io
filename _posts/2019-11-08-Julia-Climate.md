@@ -6,7 +6,7 @@ title:  "Julia: librerias para geociencias comparadas con Python"
 teaser: "Experiencias programando con Julia"
 breadcrumb: true
 tags:
-    - [scientific-computing, Julia]
+    - [Scientific Computing, Julia]
 categories:
     - julia-blog
 header:
