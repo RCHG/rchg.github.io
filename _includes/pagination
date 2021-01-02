@@ -24,7 +24,8 @@
 
 
 <nav id="pagination">
-   <!--
+
+{% comment %}
       {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
       <a class="radius button small" href="{{ site.url }}/blog/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous_posts }}</a>
@@ -32,7 +33,8 @@
       <a class="radius button small" href="{{ site.url }}/blog/page{{ paginator.previous_page }}/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language.previous }}</a>
       {% endif %}
     {% endif %}
-   -->
+{% endcomment %}
+
     
       {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
