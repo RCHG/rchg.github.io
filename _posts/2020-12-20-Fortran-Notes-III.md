@@ -24,6 +24,7 @@ author: ramiro_chg
 </div>
 </section><!-- /#table-of-contents -->
 
+
 ## Tools
 
 | Name 	            | Goal                        | Licence       |	Docs   | Link       |
@@ -33,8 +34,8 @@ author: ramiro_chg
 | f2c               | Fortran77 to C translator   |  Open-Source  | [info](https://en.wikipedia.org/wiki/F2c) | [code](http://www.netlib.org/f2c/) |
 | fortran-language-server | support for editors   |  MIT          | [info](https://github.com/hansec/fortran-language-server) | [github](https://github.com/hansec/fortran-language-server) |
 | fntcheck                | code checker F77      |               |       |             |
-| gdb                     | gnu debugger          |  GLP          |       |             |
-
+| gdb                     | gnu debugger          |  GPL          |       |             |
+| fpm                     | package manager       |  MIT          | [info](https://github.com/fortran-lang/fpm/blob/master/PACKAGING.md) | [github](https://github.com/fortran-lang/fpm) |
 
 ## IDE
 
@@ -47,4 +48,11 @@ author: ramiro_chg
 | Atom              | general IDE (plugins)       |  Open-Source  |        |            |
 | Visual Studio     | general IDE (plugins)       |  Open-Source  |        |            |
 
+## Compilers
+
+| Name 	            | Kind                        | Licence       |	Docs   | Link       |
+| ----------------- | --------------------------- | ------------- | -------| ---------- |
+| gfortran          | GCC                         |  Open-Source  |        |            |
+| LFortran          | LLVM                        |  Open-Source  |        |            |
+| Flang             | LLVM                        |  Open-Source  |        |            |
 
