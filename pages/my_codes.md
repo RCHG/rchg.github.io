@@ -14,7 +14,7 @@ breadcrumb: true
 
 <div class="panel radius" markdown="1">
 
-## Table of Contents
+### Table of Contents
 {:.no_toc }
 *  TOC
 {:toc}
