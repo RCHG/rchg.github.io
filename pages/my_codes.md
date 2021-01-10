@@ -4,7 +4,7 @@ title: "Computer Software"
 subheadline: "Overview of selfmade software tools and libraries"
 permalink: "/research/my-codes/"
 header:
-    title: R. Checa-Garcia webpage | My codes
+    title: R. Checa-Garcia webpage | Software 
     pattern: pattern_jquery-dark-grey-tile.png
 breadcrumb: true
 ---
