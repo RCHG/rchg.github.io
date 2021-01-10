@@ -21,12 +21,10 @@
                         </div>
 			</div><!--  /.page-meta -->
 
-			<!--
-			{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
-			{% if page.teaser %}
-			<p class="teaser" itemprop="description">
-			{{ page.teaser }}
-			</p>
-			{% endif %}
-                        -->
+			<!-- {% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %} -->
+			<!-- {% if page.teaser %} -->
+			<!-- <p class="teaser" itemprop="description"> -->
+			<!-- {{ page.teaser }} -->
+			<!-- </p> -->
+			<!-- {% endif %}-->
 			
