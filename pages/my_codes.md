@@ -14,7 +14,7 @@ breadcrumb: true
 
 <div class="panel radius" markdown="1">
 
-### Table of Contents
+## Table of Contents
 {:.no_toc }
 *  TOC
 {:toc}
@@ -30,22 +30,43 @@ breadcrumb: true
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-### Overview
+## Overview
 
-This is not an exhaustive description of the codes that I have developed but those that currently I am maintaing more often. 
+This is not an exhaustive description of the codes that I have developed but those that currently I maintain more often. 
 
-#### Open Source Sites:
+### Open Source Sites/Repositories
 
-- [sourceforge](https://sourceforge.net/u/rchecagarcia/profile)
-- [github](https:/github.com/RCHG/)
-- [bitbucket](https://bitbucket.org/rchecagarcia/)
+- [github](https:/github.com/RCHG/): This is currently my main repository for open source codes.
+- [bitbucket](https://bitbucket.org/rchecagarcia/) I collaborate in two projects under github.
+- [sourceforge](https://sourceforge.net/u/rchecagarcia/profile) I barely use now for my own projects but still it is there.
 
+Note: I am evaluating gitlab for future projects. 
 
-#### With Python 
+### Earth Sciences 
+
+#### Short pieces of code (not well documented)
 
 - [pyozone](https://github.com/RCHG/pyozone): It is a piece of code that allows some python calculations. More information is also avaiable at [zenodo-link](https://zenodo.org/record/1118950)
-- [mie-scattering](https://rchg.github.io//science-blog/Mie-Scattering/)
-- pyIPSLpack, it is a python software to prepate specific climate diagnostics for IPSL model. It also perform additional opertations to test the CF-compilant of the diagnostics (netcdf files) and typical test to ascertain the main properties of the climate simulations.
+- [mie-scattering](https://rchg.github.io//science-blog/Mie-Scattering/) Part of this code has been refactored and integrated in FunFAN
+
+### FunFAN
+
+The main idea of [FunFAN](https://github.com/RCHG/FunFAN) project is to have a set of modules and functions used for aerosols studies that can be easely incorporated in different kind of projects. Several functions has been used in mineral dust aerosol studies.
+
+[Documentation](https://funfan.readthedocs.io/en/latest/) It is documented online in readthedocs.
+[Zenodo](https://zenodo.org/record/3672001) It is registered in Zenodo so you can cite it:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3672001.svg)](https://doi.org/10.5281/zenodo.3672001)
+
+
+### pyIPSLtools
+
+[pyIPSLtools] https://github.com/RCHG/pyIPSLtool is a python software to prepate specific climate diagnostics for IPSL model. It also perform additional opertations to test the CF-compilant of the diagnostics (netcdf files) and typical test to ascertain the main properties of the climate simulations. 
+
+[Zenodo](https://zenodo.org/record/41347471) It is registered in Zenodo so you can cite it: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4134747.svg)](https://doi.org/10.5281/zenodo.4134747)
+
+
+
 
 #### With Fortran
 
