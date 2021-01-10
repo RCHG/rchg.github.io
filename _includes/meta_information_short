@@ -1,7 +1,6 @@
+
 			<div id="page-meta" class="t30b">
 			 <div class="panel panel-default">
-			 	{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
-				
 				<p>
 					<!-- Look the author details up from the site config. -->
 					{% assign author = site.data.authors[page.author] %}
@@ -16,15 +15,18 @@
 				{% endif %}
 
 				{% if page.categories %}<span class="icon-archive pr20"> {{ page.categories | join: ' · ' | upcase }}{% endif %}</span>
-				<br/>
+				<br />
 				<span class="pr20">{% for tag in page.tags %}<span class="icon-price-tag pr10"><a href="/blog/archive_tags/#{{ tag }}">{{tag}}</a></span> {% endfor %}</span>
 			</p>
-			
+                        </div>
+			</div><!--  /.page-meta -->
+
+			<!--
+			{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
 			{% if page.teaser %}
 			<p class="teaser" itemprop="description">
 			{{ page.teaser }}
 			</p>
 			{% endif %}
+                        -->
 			
-                        </div>
-			</div><!--  /.page-meta -->
