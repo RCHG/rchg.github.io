@@ -91,7 +91,7 @@ body.video cite { color: #fff; }
         display: none;
     }
     #masthead {
-        height: 60px;
+        height: 100px;
     }
     #masthead-with-pattern {
         padding: 15px 0;
@@ -100,7 +100,7 @@ body.video cite { color: #fff; }
         padding: 15px 0;
     }
     #masthead-with-text {
-        height: 40px;
+        height: 70px;
         padding: 30px 0;
         font-size: rem-calc(16);
     }
@@ -118,7 +118,7 @@ body.video cite { color: #fff; }
         margin-top: 30px;
     }
     #masthead {
-        height: 30px;
+        height: 60px;
     }
     #masthead-with-pattern {
         padding: 20px 0;
@@ -127,8 +127,8 @@ body.video cite { color: #fff; }
         padding: 20px 0;
     }
     #masthead-with-text {
-        padding: 30px 0;
-        height: 60px;
+        padding: 60px 0;
+        height: 100px;
     }
 }
 
@@ -141,7 +141,7 @@ body.video cite { color: #fff; }
         margin-top: 30px;
     }
     #masthead {
-        height: 30px;
+        height: 60px;
     }
     #masthead-with-pattern {
         padding: 30px 0;
@@ -150,8 +150,8 @@ body.video cite { color: #fff; }
         padding: 30px 0;
     }
     #masthead-with-text {
-        height: 30px;
-        padding: 30px 0;
+        height: 60px;
+        padding: 60px 0;
     }
 }
 
@@ -161,20 +161,20 @@ body.video cite { color: #fff; }
 
 @media #{$xlarge-up} {
     #logo img {
-        margin-top: 30px;
+        margin-top: 60px;
     }
     #masthead {
-        height: 30px;
+        height: 60px;
     }
     #masthead-with-pattern {
-        padding: 35px 0;
+        padding: 45px 0;
     }
     #masthead-with-background-color {
-        padding: 35px 0;
+        padding: 45px 0;
     }
     #masthead-with-text {
-        padding: 45px 0;
-        height: 40px;
+        padding: 95px 0;
+        height: 60px;
     }
 }
 
