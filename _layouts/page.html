@@ -23,8 +23,8 @@ format: post
 				{% endif %}
 
 				<span itemprop="name">
-					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
 					<h2 style="text-align:right">{{ page.title }}</h2>
+			{% endif %}
 				</span>
 			</header>
 
@@ -33,11 +33,6 @@ format: post
             
 			{% if page.show_meta == true %}
 			{% include meta_information_short %}
-			{% if page.teaser %}
-			<p class="teaser" itemprop="description">
-				{{ page.teaser }}
-			</p>
-			{% endif %}
 			{% endif %}
 
 			<span itemprop="articleSection">
