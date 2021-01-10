@@ -3,7 +3,7 @@ layout: page
 sidebar: right
 subheadline: Notebook
 title: "Fortran 90 Notebook III"
-teaser: "Overview"
+teaser: "List of libraries, compilers and editors of Fortran. The list is mainly focused to Modern Fortran but there are some resources also useful for Fortran 77 users."
 breadcrumb: true
 tags: [Scientific-computing, Fortran]
 categories:
@@ -11,7 +11,6 @@ categories:
 header:
     title: Fortran 90/95
     pattern: pattern_jquery-dark-grey-tile.png
-author: ramiro_chg
 ---
 
 <section id="table-of-contents" class="toc">
