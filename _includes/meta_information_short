@@ -19,10 +19,12 @@
 				<br/>
 				<span class="pr20">{% for tag in page.tags %}<span class="icon-price-tag pr10"><a href="/blog/archive_tags/#{{ tag }}">{{tag}}</a></span> {% endfor %}</span>
 			</p>
+			
 			{% if page.teaser %}
 			<p class="teaser" itemprop="description">
 			{{ page.teaser }}
 			</p>
+			{% endif %}
 			
                         </div>
 			</div><!--  /.page-meta -->
