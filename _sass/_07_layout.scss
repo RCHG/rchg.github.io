@@ -71,7 +71,7 @@ body.video cite { color: #fff; }
 }
 #masthead-with-text {
     text-align: right;
-    font-size: rem-calc(22);
+    font-size: rem-calc(20);
     font-family: $header-font-family;
     color: #fff;
     text-shadow: 0 2px 3px rgba(0,0,0,.4);
@@ -91,7 +91,7 @@ body.video cite { color: #fff; }
         display: none;
     }
     #masthead {
-        height: 100px;
+        height: 60px;
     }
     #masthead-with-pattern {
         padding: 15px 0;
@@ -100,7 +100,7 @@ body.video cite { color: #fff; }
         padding: 15px 0;
     }
     #masthead-with-text {
-        height: 70px;
+        height: 40px;
         padding: 30px 0;
         font-size: rem-calc(16);
     }
@@ -118,7 +118,7 @@ body.video cite { color: #fff; }
         margin-top: 30px;
     }
     #masthead {
-        height: 60px;
+        height: 30px;
     }
     #masthead-with-pattern {
         padding: 20px 0;
@@ -127,8 +127,8 @@ body.video cite { color: #fff; }
         padding: 20px 0;
     }
     #masthead-with-text {
-        padding: 60px 0;
-        height: 100px;
+        padding: 30px 0;
+        height: 60px;
     }
 }
 
@@ -141,7 +141,7 @@ body.video cite { color: #fff; }
         margin-top: 30px;
     }
     #masthead {
-        height: 60px;
+        height: 30px;
     }
     #masthead-with-pattern {
         padding: 30px 0;
@@ -150,8 +150,8 @@ body.video cite { color: #fff; }
         padding: 30px 0;
     }
     #masthead-with-text {
-        height: 60px;
-        padding: 60px 0;
+        height: 30px;
+        padding: 30px 0;
     }
 }
 
@@ -161,20 +161,20 @@ body.video cite { color: #fff; }
 
 @media #{$xlarge-up} {
     #logo img {
-        margin-top: 60px;
+        margin-top: 30px;
     }
     #masthead {
-        height: 60px;
+        height: 30px;
     }
     #masthead-with-pattern {
-        padding: 45px 0;
+        padding: 35px 0;
     }
     #masthead-with-background-color {
-        padding: 45px 0;
+        padding: 35px 0;
     }
     #masthead-with-text {
-        padding: 95px 0;
-        height: 60px;
+        padding: 35px 0;
+        height: 30px;
     }
 }
 
