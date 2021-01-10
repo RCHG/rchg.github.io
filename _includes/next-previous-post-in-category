@@ -31,7 +31,11 @@
 {% endif %}
 {% endfor %}
 {% if next_post %}
-<a class="button tiny radius" href="{{ next_post }}"><span class="icon-chevron-right"></span>{{ site.data.language.next_post_in }} {{ cat | upcase }}</a>
+{% comment %}
+*<a class="button tiny radius" href="{{ next_post }}"><span class="icon-chevron-right"></span>{{ site.data.language.next_post_in }} {{ cat | upcase }}</a> 
+{% endcomment %}
+<a class="button tiny radius" href="{{ next_post }}"><span class="icon-chevron-right"></span>{{ next-post }} {{ cat | upcase }}</a> 
+
 {% endif %}
 {% if prev_post %}
 <a class="button tiny radius" href="{{ prev_post }}">{{ site.data.language.previous_post_in }} {{ cat | upcase }}<span class="icon-chevron-right"></span></a>
