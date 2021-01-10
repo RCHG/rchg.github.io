@@ -88,7 +88,7 @@ body.video cite { color: #fff; }
 
 @media #{$small-only} {
     #logo img {
-        display: none;
+        margin-top: 30px;
     }
     #masthead {
         height: 100px;
