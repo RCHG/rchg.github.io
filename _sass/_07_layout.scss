@@ -212,7 +212,7 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #page-meta, #page-meta a {
-    color: $grey-8;
+    color: $grey-14;
 }
 
 #page-meta .button {
@@ -223,6 +223,36 @@ body.video cite { color: #fff; }
     color: #fff;
 }
 #page-meta .button:hover {
+    background: $primary-color;
+}
+.meta-info p {
+  font-size: rem-calc(13);
+  color: scale-color($grey-1, $lightness: 30%);
+}
+  .meta-info a {
+    text-decoration: underline;
+    color: scale-color($grey-1, $lightness: 10%);
+  }
+  .meta-info a:hover {
+    text-decoration: none;
+    color: scale-color($grey-1, $lightness: 30%);
+  }
+
+/* Meta-2
+------------------------------------------------------------------- */
+
+#page-peta, #page-peta a {
+    color: $grey-4;
+}
+
+#page-peta .button {
+    background: #EDF5E1;
+    border: 0;
+}
+#page-peta .button {
+    color: #fff;
+}
+#page-peta .button:hover {
     background: $primary-color;
 }
 .meta-info p {
