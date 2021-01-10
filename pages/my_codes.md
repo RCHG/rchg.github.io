@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
-title: "Computer Software"
-subheadline: "Overview of selfmade software tools and libraries"
+# title: "Computer Software"
+subheadline: "Overview of my software tools and libraries"
 permalink: "/research/my-codes/"
 header:
     title: R. Checa-Garcia webpage | Software 
