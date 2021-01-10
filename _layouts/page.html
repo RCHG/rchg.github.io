@@ -29,14 +29,15 @@ format: post
 			</header>
 
 
+
+            
+			{% if page.show_meta == true %}
+			{% include meta_information_short %}
 			{% if page.teaser %}
 			<p class="teaser" itemprop="description">
 				{{ page.teaser }}
 			</p>
 			{% endif %}
-            
-			{% if page.show_meta == true %}
-			{% include meta_information_short %}
 			{% endif %}
 
 			<span itemprop="articleSection">
