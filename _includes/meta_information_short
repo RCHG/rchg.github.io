@@ -23,7 +23,6 @@
 			<p class="teaser" itemprop="description">
 			{{ page.teaser }}
 			</p>
-			</p>
 			
                         </div>
 			</div><!--  /.page-meta -->
