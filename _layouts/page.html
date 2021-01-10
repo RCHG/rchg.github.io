@@ -23,9 +23,7 @@ format: post
 			        <% endif %}
                                 -->
 				
-				<span itemprop="name">
-					<h2 style="text-align:right">{{ page.title }}</h2>
-				</span>
+				<span itemprop="name"><h2 style="text-align:right">{{ page.title }}</h2></span>
 			</header>
 
 
@@ -35,17 +33,18 @@ format: post
 			{% include meta_information_short %}
 			{% endif %}
 
-			<span itemprop="articleSection">
-			{{ content }}
-			</span>
+			<span itemprop="articleSection"> {{ content }} </span>
 
-			{% if page.show_meta == true %}
+			<!--
+                        {% if page.show_meta == true %}
 			{% include meta_information %}
 			{% endif %}
 
 			{% if page.comments == true %}
 			{% include comments %}
 			{% endif %}
+                         -->
+
 		</article>
 	</div><!-- /.medium-8.columns -->
 
