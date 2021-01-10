@@ -17,7 +17,10 @@ layout: compress
 	{% endunless %}
 
 	<!-- {% include masthead %} -->
-
+{% if page.breadcrumb == true %}
+{% include breadcrumb %}
+{% endif %}
+	
 	{{ content }}
 
 	{% unless page.skip_boilerplate %}
