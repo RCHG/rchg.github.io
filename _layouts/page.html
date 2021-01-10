@@ -7,9 +7,8 @@ format: post
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				{% if page.image.title %}
-				<figure>
+				    <figure>
 					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title escape_once }}" itemprop="image">
-
 					{% if page.image.caption_url && page.image.caption %}
 					<figcaption class="text-right">
 						<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
@@ -19,7 +18,8 @@ format: post
 						{{ page.image.caption }}
 					</figcaption>
 					{% endif %}
-				</figure>
+				    </figure>
+			        <% endif %}
 				<span itemprop="name">
 					<h2 style="text-align:right">{{ page.title }}</h2>
 				</span>
