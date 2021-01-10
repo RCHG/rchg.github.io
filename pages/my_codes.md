@@ -60,7 +60,7 @@ The main idea of [FunFAN](https://github.com/RCHG/FunFAN) project is to have a s
 
 #### pyIPSLtools
 
-[pyIPSLtools](https://github.com/RCHG/pyIPSLtool is a python software to prepate specific climate diagnostics for IPSL model. It also perform additional opertations to test the CF-compilant of the diagnostics (netcdf files) and typical test to ascertain the main properties of the climate simulations. It is registered in [Zenodo](https://zenodo.org/record/41347471) so you can cite it: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4134747.svg)](https://doi.org/10.5281/zenodo.4134747). This tool has been used to provide diagnostics of IPSL climate model for the projects CRESCENDO, AEROCOM and specific collaborations with Jasper Kok. It is open and modular, in principle with few work it could be adapted to other models.
+[pyIPSLtools](https://github.com/RCHG/pyIPSLtool) is a python software to prepate specific climate diagnostics for IPSL model. It also perform additional opertations to test the CF-compilant of the diagnostics (netcdf files) and typical test to ascertain the main properties of the climate simulations. It is registered in [Zenodo](https://zenodo.org/record/41347471) so you can cite it: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4134747.svg)](https://doi.org/10.5281/zenodo.4134747). This tool has been used to provide diagnostics of IPSL climate model for the projects CRESCENDO, AEROCOM and specific collaborations with Jasper Kok. It is open and modular, in principle with few work it could be adapted to other models.
 {:.smallblock}
 
 - Languages: Python, cdo and nco
