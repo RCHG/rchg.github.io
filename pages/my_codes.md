@@ -83,6 +83,8 @@ It is a code programmed to estimate a probability density function according to 
 
 ### C. Utilities
 
+#### (1) papers (python bibtex)
+
 I have adapted the tool [papers](https://github.com/RCHG/papers) originally programed by [perrette](https://github.com/perrette) for my own needs. It is a cli tool to manage bibtex files and the associated pdf (or other documents). I have added functionalities like open the files associated to a given bibtex entry, the managemenet of tags as bibtex keywords, a new list visualization between others.
 {:.smallblock}
 
