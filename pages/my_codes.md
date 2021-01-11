@@ -81,6 +81,12 @@ The main idea of [FunFAN](https://github.com/RCHG/FunFAN) project is to have a s
 It is a code programmed to estimate a probability density function according to a set of constrains that the pdf should fulfill, typically in the form of pdf-moments.
 {:.smallblock}
 
+### C. Utilities
+
+I have adapted the tool [papers](https://github.com/RCHG/papers) originally programed by [perrette](https://github.com/perrette) for my own needs. It is a cli tool to manage bibtex files and the associated pdf (or other documents). I have added functionalities like open the files associated to a given bibtex entry, the managemenet of tags as bibtex keywords, a new list visualization between others.
+{:.smallblock}
+
+
 <small markdown="1">[Up to table of contents](#toc)</small>
 {: .text-right }
 
