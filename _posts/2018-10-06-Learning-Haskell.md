@@ -14,6 +14,25 @@ header:
     pattern: pattern_jquery-dark-grey-tile.png
 ---
 
+
+
+# Intro 
+
+Haskell is a functional programming language. Its roots is the lambda calculus which is a mathematical-computational theory to build 
+algorithms different from the traditional *Turing Machine concept*. In this context, the *functions* in a programming language are
+closer to what a function is in mathematics, and in Haskell functions are *first-class elements*. Haskell is considered a *pure* functional
+programing language, going further than what you might found in other language where there are *elements* from functional programming
+paradigma.
+
+The word purity in functional programming is sometimes also
+used to mean what is more properly called referential transparency.
+Referential transparency means that the same function, given the
+same values to evaluate, will always return the same result in pure
+functional programming, as they do in math. (From the introduction of the book **Haskell Programming from First Principles**)
+{:.smallblock}
+
+
+
 Random Notes about Haskell
 ---------------------------
 
