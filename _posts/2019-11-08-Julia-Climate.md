@@ -69,4 +69,11 @@ es posible utilizar *matplotlib* y *cartopy* con **PyCall**. Hay una tentativa d
 muy funcional. ClimateTools.jl utiliza matplotlib via PyCall para la representación gráfica.
 
 
+# Tabla comparativa con librerias de Python
 
+| Julia 	          | Python                 | Notes                                                         |
+| ------------------- | ---------------------- | --------------------------------------------------------------|
+| GeoArrays.jl        | rasterio               | not tested functionality                                      |
+| DimensionalData.jl  | xarrays                | (several alternatives in Julia. Not very mature               |
+| NCDatasets.jl       | netcdf4-python         |                                                               |
+| GeoData.jl          | ?                      | Works. Unclear support of vertical dim. for climate models.   |
