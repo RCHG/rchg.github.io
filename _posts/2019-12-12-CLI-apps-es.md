@@ -22,11 +22,11 @@ header:
 </div>
 
 
-> Se recogen aplicaciones para la consola/terminal que he encontrado útiles en mi trabajo diario, y también en mi uso personal
+> Se recogen aplicaciones para la consola/terminal (CLI) que he encontrado útiles tanto en mi trabajo diario como en mi uso personal.
 
 ## Motivación
 
-En mi uso diario trabajo fundamentalmente en la terminal, tanto localmente como remotamente. Aunque lo usual es usar la terminal para scripts, poco a poco he ido desechando las típicas aplicaciones GUI y me es más cómodo el uso de aplicaciones CLI. Por una parte me resulta más rápido para muchas tareas, por ejemplo, dado que uso LaTex para escribir y la mayoría de las veces bajo un editor vim/nvim, la posibilidad de sumar a la terminal un programa para las referencias me hace tener un flujo de trabajo fluido, además lo usual es que requieran menos recursos y sean fáciles de instalar en cualquier computadora Unix/Linux. Dado que estoy trabajando la mayoría del tiempo en una terminal para programar, revisar simulaciones o similar, es conveniente gestionar varios aspectos desde la propia shell/terminal de comandos: gestión del tiempo, claves, incluso algunos también gestionan el correo electrónico. Incluso si uno usa un entorno de escritorio tipo 'tiling windows' que se maneja esencialmente desde el teclado se incrementa nuestra productividad. En mi caso uso *i3* aunque tambien he usado *xmonad*. 
+En mi trabajo diario la herramienta principal que uso es la terminal de comandos, tanto localmente como remotamente. Aunque es usual usar la terminal solo para scripts, poco a poco he ido desechando las típicas aplicaciones GUI y me es más cómodo el uso de aplicaciones CLI. Por una parte me resulta más rápido para muchas tareas, por ejemplo, de modo continuo uso LaTeX para escribir y la mayoría de las veces bajo un editor vim/nvim/emacs, la posibilidad de sumar a la terminal un programa para las referencias me hace tener un flujo de trabajo fluido, además lo usual es que requieran menos recursos y sean fáciles de instalar en cualquier computadora Unix/Linux. Dado que estoy trabajando la mayoría del tiempo en una terminal para programar, revisar simulaciones o tareas similar, es conveniente gestionar varios aspectos desde la propia shell/terminal de comandos: gestión del tiempo, claves, incluso algunos también gestionan el correo electrónico. Incluso si uno usa un entorno de escritorio tipo 'tiling windows' que se maneja esencialmente desde el teclado se incrementa nuestra productividad. En mi caso uso *xmonad* aunque tambien he usado *i3/sway*. 
 
 
 ## Manejo de referencias bibliográficas
@@ -41,7 +41,7 @@ Da como salida un archivo *bibtex* donde por ejemplo tienes el DOI, digamos myDO
 
 ` > pubs add -D myDOI -d mypaper.pdf`
 
-La utilidad cli *papers* podría ser una buena alternativa a pubs por si sola, pero no ha tenido actualizaciones del código desde hace tiempo mientas que pubs es bastante activa.
+La utilidad cli *papers* podría ser una buena alternativa a pubs por si sola, pero no ha tenido actualizaciones del código desde hace tiempo mientas que pubs es bastante activa e incorpora muchas mejoras. Yo mismo he intentado mejorar [papers-rchg](https://github.com/rchg/papers) incorporando algunas funcionalidades nuevas como palabras clave (tags/keywords) o mejorar la visualización de busquedas, sin embargo *pubs* sigue siendo más completa.   
 
 Pueden existir alternativas para extraer el DOI de un pdf, tal como pdfx (que es una applicacion un poco más general que no intenta generar un archivo bibtext del pdf, sino que busca metadata, enlaces etc). 
 
@@ -76,7 +76,7 @@ for fpdf in list_pdfs:
                     
 {% endhighlight %}
 
-Una vez instalado pubs y dado un repositorio (hay modos de tener varios independientes). Podemos de manera sencilla acceder a lo que necesitemos:
+Una vez instalado pubs y dado un repositorio (hay modos de tener varios independientes, tal y como aparece en la documentación del proyecto en github). Podemos de manera sencilla acceder a lo que necesitemos:
 
 - Para guardar la referencia en bibtex en un archivo: `> pubs export Monks_2009 > reference.bib`
 - Para copiar el pdf del paper en el directorio actual: `> pubs doc export Monks_2009 ./`
@@ -95,6 +95,9 @@ Ya que nos pedirá confirmación para cada ejecución que haga *xargs* del coman
 `> pubs list "title:ozone" -k | xargs -l -p -I $  pubs tag $ +ozone`
 
 `> pubs tag Checa_Garcia_2018 +ozone ?...` y nos pide confirmación (y/n).
+
+En mi caso es importante el uso de keywords para clasificar las referencias por proyectos, de esta manera puedo desde una base de
+datos más general obtener las referencias que corresponden o son útiles para un determinado proyecto.
 
 ### Uso de pubs para buscar referencias
 
@@ -125,9 +128,6 @@ Podemos importar previous archivos bibtex mediante
 `> pubs import bibpath`  que admite varias opciones extra y bibpath puede ser bibtex u otros formatos soportados
 
 El manejo de varias bibliotecas aparece descrito en [multiple-repositories](https://github.com/pubs/pubs#multiple-pubs-repository) posibilidad muy util si queremos tener diferentes biblotecas por temas, proyectos etc.
-
-
-
 
 ## Gestión del tiempo y de tareas
 
@@ -163,9 +163,17 @@ Tracking Nuevo-Projecto
 
 - [Taskwarrior](https://taskwarrior.org/) es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse también en casos multiusuario.
 
+**Actualización**: He usado durante un tiempo las herramientas Taskwarrior y Timewarrior pero en este momento utilizo **org-mode** en emacs (en mi caso en doom-emacs). Es una herramienta completa, potente y que sirve para multiples facetas de mi trabajo diario: manejor de proyectos, gestión de tareas, monitorizar el tiempo entre otras muchas. Como es un mundo en si mismo, recomiendo una busqueda en internet acerca de org-mode. La curva de aprendizaje puede ser mayor, pero las posibilidades que ofrece lo merece.
+{:.smallblock}
+
+
 ## Manejo de claves
 
 La aplicación **pass** permite almacenar claves encriptadas desde la terminal, dado que se basa en un des-encriptado seguro, en teoría es posible compartir la base de datos entre ordenadores mediante entornos como dropbox or similares. Hay documentacion extensa, muchas extensiones y utilidades [pass](https://www.passwordstore.org). Para casos con varios ordenadores hay alternativas especificas, también basadas en open-source, como **bitwarden**, pero no es una aplicación CLI.
+
+
+**Actualización**: bitwarden parece que ofrece tambien una version para la terminal de comandos aunque aun no la he probado.
+{:.smallblock}
 
 ## Como llevar los gastos/ingresos: accounting
 
