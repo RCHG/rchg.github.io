@@ -163,7 +163,7 @@ Tracking Nuevo-Projecto
 
 - [Taskwarrior](https://taskwarrior.org/) es un gestor de tareas, dentro del abanico de GTDs. Ofrece muchas funcionalidades y posibilidad de extensiones y de gestores visuales (que permite su uso para aquellos no habituados a la terminal). Personalmente, uso **zenkit** ya que permite compartir tareas con colaboradores, desconozco si taskwarrior puede usarse también en casos multiusuario.
 
-**Actualización**: He usado durante un tiempo las herramientas Taskwarrior y Timewarrior pero en este momento utilizo **org-mode** en emacs (en mi caso en doom-emacs). Es una herramienta completa, potente y que sirve para multiples facetas de mi trabajo diario: manejor de proyectos, gestión de tareas, monitorizar el tiempo entre otras muchas. Como es un mundo en si mismo, recomiendo una busqueda en internet acerca de org-mode. La curva de aprendizaje puede ser mayor, pero las posibilidades que ofrece lo merece.
+**Actualización**: He usado durante un tiempo las herramientas Taskwarrior y Timewarrior pero en este momento utilizo **org-mode** en emacs (en mi caso en doom-emacs). Es una herramienta completa, potente y que sirve para multiples facetas de mi trabajo diario como manejo de proyectos, gestión de tareas o monitorizar el tiempo, y eso entre otras muchas. Como es un mundo en si mismo, recomiendo una busqueda en internet acerca de org-mode. La curva de aprendizaje puede ser mayor, pero las posibilidades que ofrece lo merece.
 {:.smallblock}
 
 
