@@ -25,13 +25,13 @@ Introducción a los arrays en Julia para computación científica.
 {:toc}
 </div>
 
-Uno de los aspectos que intentan estar más cuidados en Julia son los arrays ya que constituyen un bloque esencial de la computación científica. Además dado que la libreria *standard* incluye una parte de algebra lineal, más proximo a como sucede en MatLab o incluso en Fortran. No ocurre lo mismo en otros lenguajes como Python, Haskell o C donde es necesario optar por una libreria adicional (en Python esta consolidada numpy como standard pero no forma parte del Python *oficial*).
+Uno de los aspectos que intentan estar más cuidados en Julia son los arrays ya que constituyen un bloque esencial de la computación científica. Además dado que la libreria *standard* incluye una parte de algebra lineal, más proximo a como sucede en MatLab o incluso en Fortran. No ocurre lo mismo en otros lenguajes como Python, Haskell o C donde es necesario optar por una librería adicional (en Python esta consolidada numpy como standard pero no forma parte del Python *oficial*).
 
-Por otra parte, si bien es cierto que los arrays son centrales para lenguajes como Julia, en su caso no deja por ello de integrarse bien en el sistema de tipos del lenguaje a traves de [AbtractArrays](https://docs.julialang.org/en/v1/base/arrays/#Core.AbstractArray). 
+Además dado que los arrays son centrales para lenguajes como Julia, estos se integran de modo natural en el sistema de tipos del lenguaje a traves de [AbstractArrays](https://docs.julialang.org/en/v1/base/arrays/#Core.AbstractArray). Veamos  más información y ejemplos sobre los arrays en Julia.
 
 ## Definición
 
-Un array es una colleción de elementos en una estructura multidimensional. Formalmente, esta estructura tiene forma de *grid*, lo que permite acceder a los elementos por indices que refieren a cada una de las dimensiones del array. En Julia estos elementos pueden tener formalmente cualquier tipo (o tipo `any`). Para propositos de calculo computacional lo normal es tipo float, pero estructuralmente la forma es similar. De hecho si definimos en Julia un tipo mediante `struct`, podemos construir un array de este tipo si lo deseasemos.
+Un array es una colleción de elementos en una estructura multidimensional. Formalmente, esta estructura tiene forma de *grid*, lo que permite acceder a los elementos por indices que refieren a cada una de las dimensiones del array. En Julia estos elementos pueden tener formalmente cualquier tipo (o tipo `any`). Para propositos de cálculo computacional lo normal es tipo *float*, pero estructuralmente la forma es similar. De hecho si definimos en Julia un tipo mediante `struct`, podemos construir un array de este tipo si lo deseasemos.
 
 ## Como construir arrays
 
@@ -68,8 +68,6 @@ Es posible definir tambien arrays con la sintaxis [ ... ],
 
 Donde Julia ha inferido el tipo como Int64. Notar que en Python una lista (cuya sintaxis es [...]) y un array numpy son dos cosas diferentes. En Julia, la sintaxis [...] define un array. Por su puesto en Julia hay otros tipos que representan colecciones de datos como `sets` o `dictionaries` entre otros llamados en general [collections](https://docs.julialang.org/en/v1/base/collections/), pero estas estructuras de datos no se refieren a una red/grid multidimensional de valores.
 
-
-
 ## De archivos de texto a arrays
 
 Esto es sencillo gracias a parte de la libreria standard llamada DelimitedFiles. Si por ejemplo tengo un archivo de datos llamado datos.txt
@@ -90,6 +88,29 @@ data = DelimitedFiles.readdlm("datos.txt")
 
 {% endhighlight %}
 
+## Creando un array 1...10
+
+Este ejercicio es interesante para entender el funcionamiento de los arrays en Julia
+
+{% highlight Julia %}
+A = [1:10]
+{% endhighlight %}
+produces in Julia v1.5:
+{% highlight Julia %}
+1-element Array{UnitRange{Int64},1}:
+ 1:10
+{% endhighlight %}
+{% highlight Julia %}
+A = [1:3 ;]
+{% endhighlight %}
+produces in Julia v1.5:
+{% highlight Julia %}
+3-element Array{Int64,1}:
+  1
+  2
+  3
+{% endhighlight %}
+Which is the same than 'collect(1:3)'
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
 {: .text-right }
