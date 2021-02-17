@@ -95,22 +95,30 @@ Este ejercicio es interesante para entender el funcionamiento de los arrays en J
 {% highlight Julia %}
 A = [1:10]
 {% endhighlight %}
-produces in Julia v1.5:
+crea un array en Julia v1.5 con 1 elemento!
 {% highlight Julia %}
 1-element Array{UnitRange{Int64},1}:
  1:10
 {% endhighlight %}
+En cambio:
 {% highlight Julia %}
 A = [1:3 ;]
 {% endhighlight %}
-produces in Julia v1.5:
+crea un array en Julia v1.5 con 3 elementos (de modo identico a  `collect(1:3)`).
+
 {% highlight Julia %}
 3-element Array{Int64,1}:
   1
   2
   3
 {% endhighlight %}
-Which is the same than 'collect(1:3)'
+
+Es importante tambien tener en mente el sistema de tipos. Si transponemos el array anterior con `collect(1:3)'`, es decir con el operador `'`. Tenemos,
+{% highlight Julia %}
+1×3 LinearAlgebra.Adjoint{Int64,Array{Int64,1}}:
+ 1  2  3
+{% endhighlight %}
+que parece un array como fila en lugar de columna pero posee un tipo diferente. El lector puede probar las siguientes definiciones: `reshape(collect(1:3),(1,3))` , `reshape(collect(1:3),(3))`, `reshape(collect(1:3),(3,1))`, `[ i  for i in 1:3]`.
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
 {: .text-right }
