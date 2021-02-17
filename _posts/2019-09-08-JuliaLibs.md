@@ -28,7 +28,7 @@ Lista con Librerias para Julia para computacion cientifica.
 ## Entiendiendo Pkgs.jl 
 
 Existe una lista de paquetes para Julia que esta creciendo continuamente, y se manejan de modo sencillo gracias a Pkgs.jl
-La manera basica de uso se centra en su uso en REPL, es decir, entramos en `> Julia` y escribimos `]`:
+La manera básica de uso se centra en su uso en REPL, es decir, entramos en `> Julia` y escribimos `]`:
 
 {% highlight bash %}
 > julia
@@ -154,7 +154,7 @@ Es decir se ha creado un directorio con *mientorno* donde he invocado julia, y p
 
 La motivacion de todo esto la podemos ver en el propio manual de Pkg.jl
 
-> El conjunto exacto de paquetes y versiones en un *enviroment* se describe en un archivo de Manifest.toml que se puede registrar en un repositorio de proyectos y rastrear en el control de versiones, lo que mejora significativamente la reproducibilidad de los proyectos. Si alguna vez ha intentado ejecutar código que no ha utilizado durante un tiempo solo para descubrir que no puede hacer que funcione porque ha actualizado o desinstalado algunos de los paquetes que estaba usando su proyecto, comprenderá el motivación para este enfoque. En Pkg, dado que cada proyecto mantiene su propio conjunto independiente de versiones de paquetes, nunca más tendrá este problema. Además, si revisa un proyecto en un nuevo sistema, simplemente puede materializar el entorno descrito por su archivo de manifiesto e inmediatamente estará en funcionamiento con un conjunto de dependencias bien conocido.
+> El conjunto exacto de paquetes y versiones en un *enviroment* se describe en un archivo de Manifest.toml que se puede registrar en un repositorio de proyectos y rastrear en el control de versiones, lo que mejora significativamente la reproducibilidad de los proyectos. Si alguna vez has intentado ejecutar código que no has utilizado durante un tiempo solo para descubrir que no puede hacer que funcione porque se ha actualizado o desinstalado algunos de los paquetes que estaba usando su proyecto, comprenderá el motivación para este enfoque. En Pkg, dado que cada proyecto mantiene su propio conjunto independiente de versiones de paquetes, nunca más tendrá este problema. Además, si revisa un proyecto en un nuevo sistema, simplemente puede materializar el entorno descrito por su archivo de manifiesto e inmediatamente estará en funcionamiento con un conjunto de dependencias bien conocido.
 > (Manual Pkg.jl)
 
 
@@ -169,9 +169,9 @@ Os indico algunos modulos dentro de la libreria estandar (que es distribuida con
 - **Dates**: Proporciona dos tipos llamados `Date` y `DateTime` que se diferencian esencialmente en la resolucion que proporciona. De modo formal estos tipos cumplen con *ISO 8601* de modo que el calendario usado es proleptic Gregorian.
 - **Delimited Files**: Esta libreria es esencial si trabajas con archivos de texto organizados/separados por columnas con un caracter o conjunto de ellos conocido. 
 - **Pkg**: Ya lo hemos comentado antes, y es parte de la libreria estandar.
-- **Random**: Implementa el metodo de `Mersenne Twister` para generar numeros aleatorios. `rand(Float64, (n, m, p))` por ejemplo genera un array tridimensional con dimensiones (n, m, p) con valores aleatorios entre 0 y 1, es decir, numeros positivos entre 0 y 1 (incluyendo 0 pero no 1). Cuando leas la documentacion ten encuenta que aunque el modulo de numeros aleatorios es Random.Random, las funciones rand, rand!, randn, randexp estan en Base (es decir Base.rand, Base.rand! etc). 
-- **Statistics**: Hay algunas functiones detro de la libreria estandar, pero en este caso es bastante limitada ya que unicamente ofrece estadisticos basicos (media, mediana, etc). Recomiendo revisar **Distributions.jl** si quieres trabajas con estadistica en Julia.
-- **Unit Testing**: Creo que esta es otra libreria muy util y recomiendo aprenderla desde el principio cuando aprendas Julia.
+- **Random**: Implementa el método de `Mersenne Twister` para generar números aleatorios. `rand(Float64, (n, m, p))` , por ejemplo, genera un array tridimensional con dimensiones (n, m, p) con valores aleatorios entre 0 y 1, es decir, números positivos entre 0 y 1 (incluyendo 0 pero no 1). Cuando leas la documentacion ten encuenta que aunque el modulo de números aleatorios es Random.Random, las funciones rand, rand!, randn, randexp estan en Base (es decir Base.rand, Base.rand! etc). 
+- **Statistics**: Hay algunas functiones detro de la librería estandar, pero en este caso es bastante limitada ya que unicamente ofrece estaísticos básicos (media, mediana, etc). Recomiendo revisar **Distributions.jl** si quieres trabajar con estadística más avanzada en Julia.
+- **Unit Testing**: Creo que esta es otra librería muy útil y recomiendo aprenderla desde el principio cuando aprendas Julia.
 
 
 ### Paquetes de Visualización 
@@ -220,7 +220,7 @@ El paquete Documenter.jl es bastante interesante, y combina bien con la forma de
 
 ## Librerias equivalentes a xarray
 
-No existe aun una única libreria consolidada que sea equivalente al xarray de Python, y dentro del ecosistema existen muchas opciones diferentes, habrá que esperar un poco para ver la evolución y la posible integración de varias de ellas en otra más madura. Las opciones son: AxisArrays.jl, NamedArrays.jl, CircularArrays, NamedDimensions.jl, GeoArrays.jl etc. En principio AxisArrays.jl ha tenido bastante exito, pero el consenso general es que es necesario re-evaluar la implementación actual. 
+No existe aun una única librería consolidada que sea equivalente al xarray de Python, y dentro del ecosistema existen muchas opciones diferentes, habrá que esperar un poco para ver la evolución y la posible integración de varias de ellas en otra más madura. Las opciones son: AxisArrays.jl, NamedArrays.jl, CircularArrays, NamedDimensions.jl, GeoArrays.jl etc. En principio AxisArrays.jl ha tenido bastante exito, pero el consenso general es que es necesario re-evaluar la implementación actual. 
 
 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
