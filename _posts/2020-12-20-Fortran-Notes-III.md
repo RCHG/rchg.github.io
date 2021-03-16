@@ -49,11 +49,13 @@ For further information you can read two summaries at [resurrecting-fortran](htt
 | Name 	            | Kind                        | Licence       |	Docs   | Link       |
 | ----------------- | --------------------------- | ------------- | -------| ---------- |
 | Geany             | General IDE                 |  Open-Source  |        |            |
-| Code-Blocks       | More support Fortran and C  |  Open-Source  |        |            |
+| Code-Blocks       | Support Fortran and C  |  Open-Source  |        |            |
 | Eclipse+Photran   | Fortran in Eclipse          |  Open-Source  |        |            |
 | Kate              | general IDE                 |  Open-Source  |        |            |
 | Atom              | general IDE (plugins)       |  Open-Source  |        |            |
+| Emacs             | Two fortran modes (f77 & f90)| Open-Source  |        |            |
 | Visual Studio     | general IDE (plugins)       |  Open-Source  |        |            |
+| vim               | with vim-fortran plugin     |  Open-Source  |        |            |
 
 ## Compilers
 
