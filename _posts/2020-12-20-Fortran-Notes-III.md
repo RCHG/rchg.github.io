@@ -46,18 +46,24 @@ For further information you can read two summaries at [resurrecting-fortran](htt
 
 ## IDE
 
+Here there is a list of text editors that I have tested myself. My main editor has been vim or neovim, now I am learning emacs (doom-emacs in particular). From time to time I use Geany which works well for many projects. For very large projects it might be worth to check Eclipse and Code-Blocks, as they have specific features of fortran. My recommendation if you are beginner is to try emacs or neovim.
+
 | Name 	            | Kind                        | Licence       |	Docs   | Link       |
 | ----------------- | --------------------------- | ------------- | -------| ---------- |
 | Geany             | General IDE                 |  Open-Source  |        |            |
 | Code-Blocks       | Support Fortran and C  |  Open-Source  |        |            |
 | Eclipse+Photran   | Fortran in Eclipse          |  Open-Source  |        |            |
-| Kate              | general IDE                 |  Open-Source  |        |            |
+| Kate / Gedit      | general IDE                 |  Open-Source  |        |            |
 | Atom              | general IDE (plugins)       |  Open-Source  |        |            |
 | Emacs             | Two fortran modes (f77 & f90)| Open-Source  |        |            |
 | Visual Studio     | general IDE (plugins)       |  Open-Source  |        |            |
-| vim               | with vim-fortran plugin     |  Open-Source  |        |            |
+| Vim/Neovim        | with vim-fortran plugin     |  Open-Source  |        |            |
+| kakoune           |                             |  Open-Source  |        |            |
+
 
 ## Compilers
+
+There are several compilers, here I list only those that are open-source. I use mostly gfortran although it is generaly consider that the intel fortran is a bit faster. 
 
 | Name 	            | Kind                        | Licence       |	Docs   | Link       |
 | ----------------- | --------------------------- | ------------- | -------| ---------- |
