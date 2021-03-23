@@ -2,7 +2,7 @@
 layout: page
 sidebar: right
 subheadline: Notebook
-title:  "Arrays en Julia"
+title:  "Arrays en Julia: entender los 'tipos'"
 teaser: "Experiencias programando con Julia"
 breadcrumb: true
 tags:
@@ -25,9 +25,9 @@ Introducción a los arrays en Julia para computación científica.
 {:toc}
 </div>
 
-Uno de los aspectos que intentan estar más cuidados en Julia son los arrays ya que constituyen un bloque esencial de la computación científica. Además dado que la libreria *standard* incluye una parte de algebra lineal, más proximo a como sucede en MatLab o incluso en Fortran. No ocurre lo mismo en otros lenguajes como Python, Haskell o C donde es necesario optar por una librería adicional (en Python esta consolidada numpy como standard pero no forma parte del Python *oficial*).
+Uno de los aspectos que intentan estar más cuidados en Julia son los arrays ya que constituyen un bloque esencial de la computación científica. Además, dado que la libreria *standard* incluye una parte de algebra lineal, para el usuario que se inicia en programacion cientifica, Julia esta proximo a MatLab/Octave o incluso Fortran. No ocurre lo mismo en otros lenguajes como Python, Haskell o C donde es necesario optar por una librería adicional (en Python esta consolidada numpy como standard pero no forma parte del Python *oficial*, en Haskell existen varias opciones para tener arrays multi-dimensionales).
 
-Además dado que los arrays son centrales para lenguajes como Julia, estos se integran de modo natural en el sistema de tipos del lenguaje a traves de [AbstractArrays](https://docs.julialang.org/en/v1/base/arrays/#Core.AbstractArray). Veamos  más información y ejemplos sobre los arrays en Julia.
+Además dado que los arrays son centrales para lenguajes como Julia, estos se integran de modo natural en el sistema de tipos del lenguaje a traves de [AbstractArrays](https://docs.julialang.org/en/v1/base/arrays/#Core.AbstractArray). Veamos más información y ejemplos sobre los arrays en Julia y suis tipos.
 
 ## Definición
 
@@ -149,6 +149,10 @@ Tambien puedes comparar,
 
 `[[1 2], 3]`
 
-Es importante saber siempre el tipo obtenido para entender correctamente la sintaxis. 
+Es importante saber siempre el tipo obtenido para entender correctamente la sintaxis. Una vez que tenemos cierta familiaridad con el tipo
+que podemos tener asocuiado a cada array, podremos pasar a analizar y usarlas en casos mas complejos.
+
+
+
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
 {: .text-right }
