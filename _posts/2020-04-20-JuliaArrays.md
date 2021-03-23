@@ -114,25 +114,41 @@ crea un array en Julia v1.5 con 3 elementos (de modo identico a  `collect(1:3)`)
 {% endhighlight %}
 
 Es importante tambien tener en mente el sistema de tipos. Si transponemos el array anterior con `collect(1:3)'`, es decir con el operador `'`. Tenemos,
+
 {% highlight Julia %}
 1×3 LinearAlgebra.Adjoint{Int64,Array{Int64,1}}:
  1  2  3
 {% endhighlight %}
+
 que parece un array como fila en lugar de columna pero posee un tipo diferente. El lector puede probar las siguientes definiciones:
+
 `reshape(collect(1:3),(1,3))` 
+
 `reshape(collect(1:3),(3))`
+
 `reshape(collect(1:3),(3,1))`
+
 `[ i  for i in 1:3]`
-Incluso si definimos `A=[ i  for i in 1:10]` podemos probar
+
+Incluso si definimos `A=[ i  for i in 1:10]` podemos probar:
+
 `cat(A; dims=1)`
+
 `cat(A; dims=2)`
+
 `cat(A; dims=1)`
+
 Tambien puedes comparar,
 `[1  2  3]`
+
 `[1, 2, 3]`
+
 `[1; 2; 3]`
+
 `[[1 2] 3]`
+
 `[[1 2], 3]`
-Es importante ser siempre el tipo obtenido para entender correctamente la sintaxis. 
+
+Es importante saber siempre el tipo obtenido para entender correctamente la sintaxis. 
 <small markdown="1">[Volver a la tabla de contenidos](#toc)</small>
 {: .text-right }
