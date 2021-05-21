@@ -105,6 +105,9 @@ href="http://sites.krieger.jhu.edu/waugh/files/2016/03/vortex-schematic.png"><im
 </figure>
 
 
+#### Definitions
+
+**Half-Life**: it is the time that a species need to decrease its concentration to half of its initial value.
 
 
 
